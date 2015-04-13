@@ -1,0 +1,90 @@
+Date: Mon Mar 9 2015.
+
+Introduction to Python, for those who know something about programming.
+
+Try to find out how much audience knows about programming: what kind of languages?
+C, Java, C++, Perl, PHP, JavaScript?
+
+perhaps use ipython3 (“ipython3 qtconsole” or “ipython3 notebook”) for easier
+management of snippets
+
+Talk about:
+
+dynamically-typed language: no need to declare variables. Every name is a variable.
+Upside: more compact code
+Downside: typos (need to be caught through testing)
+Python tries to mitigate this by making variables local by default unless declared
+global (with exception for read-only access to globals)
+
+Relative complexity: e.g. Java core language spec (no builtins, not even java.lang)
+is about 700 pages, Python core, including builtins, I estimate is about one-fifth that.
+And Python manages to include features, like user-definable operator overloading and
+functions as first-class objects, that Java cannot.
+
+dynamic storage management: no need to explicit allocate and free storage for
+objects. Objects (usually) simply disappear when you forget about them. CPython
+implementation does reference-counting as well as garbage collection; other
+implementations tend to do only garbage collection (not so popular, for some reason).
+
+* ?whiteboard: reference counting versus garbage collection
+
+mention heap versus stack allocation?
+    stack: last-in, first-out
+    heap: allocate in any order, free in any order
+
+* ?whiteboard: stack versus heap
+
+statement syntax: like JavaScript, semicolons are optional, but unlike JavaScript,
+can do explicit statement continuation with “\”. Compound statements are delimited
+by indentation, not symbols--significant whitespace.
+
+data types (integer/real, strings, lists/arrays, tuples, dicts, sets, custom)
+being able to directly construct expressions of data types.
+Most of Python’s power comes from its data-handling features, and these are
+exploited heavily in Python class libraries.
+
+examples of (built-in) operator overloading:
+    addition of numbers versus strings
+    multiplication of numbers versus strings: string * integer, integer * string work,
+        string * string or multiplication by float doesn’t
+
+data definition e.g. array
+    d = [17, 19, 23]
+    d[1] = "green" # heterogeneous element types allowed
+
+should I mention references to mutable types?
+
+* ?whiteboard: multiple references to shared (mutable) objects
+
+    e = d # same object
+    e = d[0:2] # copy of part
+    e = d[0:3] # copy of whole thing
+    e = d[:] # copy of whole thing
+
+e.g. build dict in Python versus Java/C++ (only JavaScript is similar)
+Java:
+    HashMap<String, String> d = new HashMap<String, String>();
+    d.put("colour", "green");
+    d.put("height", "tall" );
+Python version 1
+    d = dict() # keys, values not constrained to strings
+    d["colour] = "green"
+    d["height"] = "tall"
+Python version 2
+    d = \
+        {
+            "colour" : "green",
+            "height" : "tall",
+        }
+
+“Everything is an object” (including numeric types), and has classes
+with methods defined in them. Even classes.
+
+“dir” and special method names on objects? E.g. meaning of “+” for numbers
+versus strings, controlled by implementation of “__add__” method. C++ has
+custom operator overloading too, but much more complicated; Java cannot do it
+for user-defined types at all.
+
+control constructs
+
+defining functions
