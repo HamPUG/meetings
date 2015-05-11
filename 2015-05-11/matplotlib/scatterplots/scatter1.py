@@ -7,7 +7,7 @@ import matplotlib.pyplot as plt
 
 def main(args):
     """
-    Plots the counts per hour.
+    Scatter plot of slug length vs weight
     """
     if len(args) > 0:
         fname = args[0]
