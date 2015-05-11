@@ -6,6 +6,13 @@ and the `pyinsert.py` file.
 
 *Part 4* of the Libreoffice using Python presentation highlights the use of the python program pyinsert.py.
 
+Update for Version 2 of *Part 4*:
+
+The Part 4 Version 2 presentation reflects changes that have been made to `pyinsert.py`. This modified file has now be named user2document.py. The changes include: 
+
+1. Using a console command line interface to pass input and output files etc to the user2document.py program. This is done using the argparse module.
+2. Using the module lxml to perform the modifications to the Manifest and Content xml files.
+
 The subfolder `pushbuttontimefile` contains files that were used/created as part of generating the LibreOffice using python presentation. As follows:
 
 ```
