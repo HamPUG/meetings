@@ -4,9 +4,6 @@ import csv
 import datetime
 import time
 import matplotlib.pyplot as plt
-from numpy import linspace,exp
-from numpy.random import randn
-from scipy.interpolate import UnivariateSpline
 
 def main(args):
     """
