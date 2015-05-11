@@ -6,7 +6,7 @@ import math
 
 def main(args):
     """
-    Scatter plot of bolts UCI dataset
+    Scatter plot of bolts/bodyfat UCI dataset
     """
     if len(args) > 0:
         fname = args[0]
