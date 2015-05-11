@@ -1,0 +1,1 @@
+wget -r --accept-regex ".*.txt.gz"  http://list.waikato.ac.nz/pipermail/wekalist/
