@@ -52,7 +52,7 @@ def main(args):
     ax.set_title('Wekalist - posts per hour')
     ax.set_xlabel('Hour')
     ax.set_ylabel('Counts')
-    ax.plot(hours, shelpcounts, "blue", label="All")
+    ax.plot(hours, scounts, "blue", label="All")
     ax.fill_between(hours, 0, scounts, facecolor='blue', alpha=0.5)
     ax.plot(hours, shelpcounts, "red", label="help?")
     ax.plot(hours, showcounts, "black", label="how?")
