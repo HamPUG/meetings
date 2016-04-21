@@ -1,0 +1,31 @@
+# prime_number_locater_reference.txt
+#
+Prime Number Locater - References
+
+The following are some of the links that were used in the development of this program:
+
+http://www.tutorialspoint.com/python/time_clock.htm
+
+https://python-textbok.readthedocs.org/en/1.0/Introduction_to_GUI_Programming.html
+http://stackoverflow.com/questions/17125842/python-3-tkinter-change-label-text
+https://www.tcl.tk/man/tcl8.5/TkCmd/contents.htm
+
+http://infohost.nmt.edu/tcc/help/pubs/tkinter/web/ttk-element-layer.html
+http://infohost.nmt.edu/tcc/help/pubs/tkinter/web/ttk-layouts.html
+http://infohost.nmt.edu/tcc/help/pubs/tkinter/web/ttk-map.html
+http://infohost.nmt.edu/tcc/help/pubs/tkinter/web/labelframe.html
+
+https://inventwithpython.com/hacking/chapter23.html
+
+Scrollect Text:
+http://www.tutorialspoint.com/python/tk_text.htm
+http://stackoverflow.com/questions/13832720/how-to-attach-a-scrollbar-to-a-text-widget
+
+Progress Bar:
+http://infohost.nmt.edu/tcc/help/pubs/tkinter/web/ttk-Progressbar.html
+http://stackoverflow.com/questions/15323574/how-to-connect-a-progress-bar-to-a-function
+
+Menubar:
+https://tkinter.unpythonic.net/wiki/tkFileDialog
+
+

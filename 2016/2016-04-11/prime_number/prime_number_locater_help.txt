@@ -1,0 +1,105 @@
+# File: prime_number_locator_help.txt
+# Objective: This is the help file for prime_number_locater.py
+# Author: Ian Stewart
+# Date: 2016-04-16
+# Version: 1.0
+# Note: Lines commencing with a "#" are not displayed in the help text field.
+Prime Number Locator - Help
+
+The program prime_number_locater.py is a python3 / tkinter GUI script.
+
+New Zealand has the National Certificate of Educational Achievement (NCEA), levels 1 to 3, for students in the last three years of secondary school.
+
+Digital Technologies and Computing are NCEA subjects. These subjects are comprised of units and at least one unit of these units may be completed by writing a program in python.
+
+The prime_number_locater.py is an example of a python program that may meet the specifications of the Digital Technologies unit 91637. This level 3 unit is titled: "Develop a complex computer program for a specified task".
+
+The task of this program is to locate prime numbers from a selected range. Four selectable algorithm are provided to locate the prime numbers. One objective is for the user to evaluate differences in the duration taken to locate prime numbers depending on which algorithm is used.
+
+This program was developed and tested on the Ubuntu Desktop environment version 15.10 which uses the Linux operating system. 
+
+The program uses python3 and imports tkinter to provide the Graphical User Interface (GUI). The GUI has the following themed tkinter (TTK) widgets: label, button, entry, combobox, and progressbar. It also uses the scrolledtext widget and includes a menu bar. The help information is opened in a seperate window and the help text is read from a file that is expected to be in the same folder as the program.
+
+Setting the font type and size is the only use made of the style capabilities of themed tkinter. The geometry manager used is the "grid" method.
+
+The algorithms for locating prime numbers are:
+
+1. For n of a given integer range, every integer from 1 to n-1 is divided into n and its modulo is evaluated. If the modulo is 0, then a counter is incremented. At the end of completing every division from 1 to n-1 the counter is evaluated to see if the count is 1. If so, then n is a prime number. The python code is as follows:
+
+    def prime_number_method_1(start_integer, end_integer):
+        prime_number_list = []
+        for i in range(start_integer, end_integer):
+            count = 0
+            for j in range(1, i):
+                if i % j == 0:
+                    count += 1
+            if count == 1:
+                prime_number_list.append(i)
+
+2. The same as method 1, but if n is an even number then skip it.
+
+    def prime_number_method_1(start_integer, end_integer):
+        prime_number_list = []
+        if start_integer <= 2:  
+            prime_number_list.append(2)
+        for i in range(start_integer, end_integer):
+            if i % 2 == 0:
+                continue
+            count = 0
+            for j in range(1, i):
+                if i % j == 0:
+                    count += 1
+            if count == 1:
+                prime_number_list.append(i)
+
+3. The same as the above methods but only evaluate numbers that, when divided by six, have a modulo of either 1 or 5.
+
+    def prime_number_method_2(start_integer, end_integer):
+        prime_number_list = []
+        if start_integer < 3: 
+            prime_number_list.append(2)
+            prime_number_list.append(3)
+        if start_integer == 3:
+            prime_number_list.append(3)
+        for i in range(start_integer, end_integer):
+            if i % 6 in [0,2,3,4]:
+                continue
+            count = 0
+            for j in range(1, i):
+                if i % j == 0:
+                    count += 1
+            if count == 1:
+                prime_number_list.append(i)
+            
+4. The same as method 1, but only evaluate numbers up to the square root of n. If a number is determined to be a non-prime number then break from performing further evaluation.
+
+    def prime_number_method_3(start_integer, end_integer):
+        prime_number_list = []
+        if start_integer < 2:
+            start_integer = 2
+        for i in range(start_integer, end_integer):
+            for j in range(2, int(math.sqrt(i)+1)):
+                if i % j == 0:            
+                    break
+            else:
+                prime_number_list.append(i)
+ 
+
+This program may be enhanced to add other algorithms. To do so:
+1. Add another item to the variable method_list. E.g "4. My prime algorithm"
+2. In the function def button_1_callback(self): add the lines
+    if method_index == 4:
+        # Call the prime number method and pass start and end
+        primes = self.prime_number_method_4(self.entry_1_integer.get(), 
+                                                end_integer)
+3. Cut and paste the whole of function:
+    def prime_number_method_3(self, start_integer, end_integer):
+   Rename the function to be method_4:    
+    def prime_number_method_4(self, start_integer, end_integer):
+   Change the algorithm in this new function to one that you desire.
+
+4. Launch the program and select the last method in the combobox list.
+
+
+This program was used in a Hamilton Python User Group meeting presentation on 2016-04-11. More information is available at: https://github.com/hampug   
+

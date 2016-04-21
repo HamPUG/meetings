@@ -1,0 +1,125 @@
+# prime_number_locater_flow.txt
+#
+Prime Number Locater - Flow
+
+The following is the overall flow of the Prime Number Locater program.
+
+Shebang - So that on Linux the script will be interpreted by python3
+Comments / Notes / Copyright
+Importing of built-in modules
+Check linux platform and python is version 3
+Import tkinter modules
+Define variables
+Define constants
+
+Class for Help information
+    (see below for details)
+
+Class for main GUI and algorithms
+    (see below for details)
+
+if __name__ == "__main__":
+    Start of program.
+    Check and apply any command line arguments
+    Instantiate Tk (GUI toolkit)
+    Call the GUI_Prime_Number_Locater class
+    provide the mainloop
+
+=====
+
+Flow of the Help information class
+
+class HelpFrame(tk.Toplevel):
+    Open a child Toplevel window. 
+    Provide a button to select and display text from multiple files.
+    This class is called from the main GUI class
+
+    def __init__ Initialize
+        Call the create widgets method
+
+    def create_widgets(self):
+        Create a pointer for accessing the list of help files
+        Create two buttons and a scrolled text widgets
+        Add the widgets to the Toplevel frame using grid packing geometry.
+        Call the select_help_button method for initial setup.
+
+    def select_help_button(self):
+        Clear and text in the scrolled text widget
+        Based on the value of the help_button_text_index open a help file
+        Iterate over the file reading line by line
+        Ignore lines beginning with #
+        Append all other lines to the scrolled text widget
+        Increment the help_button_text_index. 
+        If index value greater then list length of help files reset to 0 
+        Based on the value of the help_button_text_index change button text
+        Button is ready to be clicked again to get next help screen.
+
+    def close_help_button(self):
+        Callback for the close button. Closes the Toplevel help frame. 
+
+=====
+  
+Flow of the main GUI class
+          
+class GUI_Prime_Number_Locater(ttk.Frame):
+    Open a ttkFrame and add widgets.
+    Use of entry, comboboxes, and button widgets run a prime number algorithm
+    Use labels and progress bar to monitor the execution of an algorithm
+    Place the results in a scrolled text widget
+    Includes a menubar to save the data, display help information, and exit
+    
+    def __init__(self, parent, start, range_):
+        ttk.Frame.__init__(self, parent)    
+        Initialization. self is ttk.Frame, parent is Tk()
+        Call create_widgets
+
+    def create_widgets(self, start, range_):
+        Initialize Tk variables for entry and combobox widgets
+        Initialize a variable for handling the saving of data
+        Set the root style for the font type and size of all widgets
+        Instantiate button, label, progress bar, scrolledtext, widgets
+        Create the menubar to support Save, Exit and Help
+        Use grid packing geometry to add widgets to the ttk.Frame
+    
+    The following methods are menubar callbacks:    
+    def help_launch(self):
+        Call the help class to launch the help and other information frame 
+
+    def help_about(self):
+        Open a Tk messagebox
+
+    def file_save(self):
+        Overwrite the prime number data
+
+    def file_save(self):
+        Allow selection of path and filename and save prime number data
+
+    def file_exit(self):
+        Close the program
+
+    The following methods are callbacks from widgets
+    def is_valid_entry_1(self, txt):
+        Used to check only numeric data is entered into the entry widget
+    def is_invalid_entry_1(self, widget_name, txt):
+        Used to check only numeric data is entered into the entry widget
+
+    def button_1_callback(self):
+        Call the method to start the desired prime number search
+        Housekeeping. Prepare labels, timers and progressbar, etc.
+
+    def button_2_callback(self): 
+        Clear the contents of the scrolled text widget
+
+    def prime_number_method_0(self, start_integer, end_integer):
+        Perform algorithm 1 to build list of priroot.mainloop()me numbers
+
+    def prime_number_method_1(self, start_integer, end_integer):
+        Perform algorithm 2 to build list of prime numbers
+
+    def prime_number_method_2(self, start_integer, end_integer):
+        Perform algorithm 3 to build list of prime numbers
+
+    def prime_number_method_3(self, start_integer, end_integer):
+        Perform algorithm 4 to build list of prime numbers
+
+
