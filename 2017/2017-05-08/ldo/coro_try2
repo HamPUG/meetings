@@ -1,0 +1,40 @@
+#!/usr/bin/python3
+#+
+# How to use a coroutine with my own mini event loop.
+# More details: <https://docs.python.org/3/reference/datamodel.html#coroutines>
+#-
+
+class MyTask :
+    "example of my own custom awaitable objects."
+
+    def __init__(self, init) :
+        self.val = init
+    #end __init__
+
+    def __await__(self) :
+        print("task enter await")
+        new_val = yield "give me a value"
+        print("task done yield %s" % repr(new_val))
+        prev_val = self.val
+        self.val = new_val
+        print("task about to return")
+        return \
+            prev_val
+    #end __await__
+
+#end MyTask :
+
+async def corofunc(other) :
+    print("corofunc running 1")
+    res = await other
+    print("corofunc running 2, got %s" % repr(res))
+    res = await other
+    print("corofunc running 3, got %s" % repr(res))
+#end corofunc
+
+mytask = MyTask("firstval")
+corobj = corofunc(mytask)
+print("about to start %s" % repr(corobj))
+print("got from send 1: %s" % repr(corobj.send(None)))
+print("got from send 2: %s" % repr(corobj.send("cont1")))
+print("got from send 3: %s" % repr(corobj.send("cont2")))

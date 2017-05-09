@@ -1,0 +1,17 @@
+#!/usr/bin/python3
+#+
+# Command-line wrapper around hailstone.py
+#-
+
+import sys
+import getopt
+from hailstone import \
+    hailstone
+
+if len(sys.argv) != 2 :
+    raise getopt.GetoptError("need exactly one arg, the starting integer")
+#end if
+
+for n in hailstone(int(sys.argv[1])) :
+    sys.stdout.write("%d\n" % n)
+#end for

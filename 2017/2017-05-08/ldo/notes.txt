@@ -1,0 +1,236 @@
+Iterator: an object that returns a sequence of values, one at a time.
+Can use “next” built-in function to obtain each value in turn. Or
+use directly in “for” statement to iterate over all values.
+
+An iterator is any object that has a “__next__()” method. It is expected
+to raise the StopIteration exception when it has run out of values to
+return.
+
+Can be returned from various object methods, or created from a list or
+tuple with “iter” function, e.g.
+
+    iter_list = iter([1, 2, 3])
+    iter_list.__next__()
+    iter_list.__next__()
+    iter_list.__next__()
+    iter_list.__next__() # will raise StopIteration
+
+The “iter” function knows how to generate an iterator from any
+sequence or range. Given an object that is already an iterator,
+it returns it unchanged:
+
+    iter_list = iter([1, 2, 3])
+    iter_list is iter(iter_list) # returns True
+
+The for-statement essentially applies “iter” to the “in”-expression,
+and automatically recognizes StopIteration as a signal to terminate
+the loop:
+
+    for i in iter123() :
+        print(i)
+    #end for
+
+The built-in “next” function is basically a wrapper around __next__.
+This is useful where a for-statement doesn’t give you enough
+control over the iteration:
+
+    iter_list = iter([1, 2, 3])
+    next(iter_list)
+    next(iter_list)
+    next(iter_list)
+    next(iter_list) # will raise StopIteration
+
+However, unlike the underlying method, the function can also be given
+a terminal value to return instead of raising StopIteration:
+
+    iter_list = iter([1, 2, 3])
+    next(iter_list, "nomore") # returns 1
+    next(iter_list, "nomore") # returns 2
+    next(iter_list, "nomore") # returns 3
+    next(iter_list, "nomore") # returns "nomore"
+
+An iterator can also be created by calling a “generator function”.
+This lets you process a long sequence of values one at a time, so they
+don’t all have to be kept in memory at once. (E.g. results from a
+database query.)
+
+Generator functions have been in Python for a long time. Trivial example:
+
+    def iter123() :
+        yield 1
+        yield 2
+        yield 3
+    #end iter123
+
+Looks just like a regular function, except for using “yield” instead of
+“return”. Also note there are statements after a “yield” (in this case,
+more “yield”s, but they can be anything). Where “return” returns
+a value and terminates the function, “yield” only suspends the
+function execution, allowing resumption later. When the function
+actually gets to a “return” (e.g. implicitly, by falling off the
+end), it automatically raises a StopIteration exception.
+
+This generator yields the same sequence of results as previous “iter”
+example:
+
+    iter_list = iter123()
+    next(iter_list)
+    next(iter_list)
+    next(iter_list)
+    next(iter_list) # will automatically raise StopIteration when iterator terminates
+
+More elaborate example: hailstone sequences (see accompanying
+collatz_generator and hailstone.py scripts).
+
+    from hailstone import hailstone
+    h = hailstone(10)
+    next(h) # 10
+    next(h) # 5
+    next(h) # 16
+    next(h) # 8
+    next(h) # 4
+    next(h) # 2
+    next(h) # 1
+    next(h) # StopIteration
+
+Use in for-loop:
+
+    ./collatz_generator 27
+
+Later (way back in Python 2.5), the yield-construct became, not just a
+statement, but an expression. That meant a generator could not only
+transmit values out via a yield, but also receive them. The caller
+must invoke the generator in a different way: instead of using the
+“next” function or the “__next__” method (neither of which has any
+provision for passing values into the generator), it must call the
+“send” method on the generator object.
+
+From Python 3.3, there is also another new construct called “yield
+from”, which is a shortcut for obtaining a sequence of values from
+another generator and yielding them in turn.
+
+(See accompanying yield_expression script). Give explanation of experiment
+with yield-expressions, trying to write a generator which yields previous
+value while accepting new one.
+
+I remember looking at these additional developments at the time and
+commenting that while the original “yield” concept was a restricted subset
+of coroutine functionality that was ideally suited to certain simple
+use-cases, the later complications were clearly stretching the
+limitations of the concept. Python would have been better off with
+a full coroutine facility from the beginning--it would have kept the
+language simpler, while still offering greater power.
+
+GvR was ahead of me...
+
+In Python 3.5, a new kind of function was introduced: a coroutine,
+defined with “async def”. Within such a function, “await” constructs
+(expressions, not just statements) can be used to suspend one
+coroutine to allow another to run. The latter can also return a
+value, which becomes the result of the “await”.
+
+So how do you use such a coroutine function? When you try calling it,
+it just returns a “coroutine object” -- just as with generators,
+this only contains the context for running the function code, it
+hasn’t actually started running yet.
+
+As with a generator that uses yield-expressions, you call the
+coroutine’s “send” method. This takes a single argument; the first
+call must always pass None, because this is the one that starts the
+coroutine running, before it gets to the first “await” construct, so
+there is nowhere for the value to go.
+
+Demo: coro_try1.py. Import; call; show result from .send() call.
+
+So how do you use the “await” construct? What can you pass to it?
+The answer is, you can pass any object that is “awaitable”, namely
+it has an “__await__” method. The “await” construct is exactly
+equivalent to calling this method.
+
+So to recap, we now have 3 different mechanisms for transferring
+control (and data) between different execution contexts:
+  * “__next__” method and “next” built-in wrapper function;
+    “next” function offers option to ignore StopIteration
+    exception and return a terminal value instead
+  * “send” method on iterator and coroutine objects -- no special
+    wrapper, call directly. Used to start execution of generators that
+    use yield-expressions (as opposed to just yield-statements) and
+    coroutines.
+  * “__await__” method and “await” wrapper construct: used
+    by coroutines to transfer control to any awaitable object.
+
+Why is “await” a special construct, when “next” was just a built-in
+function? I think it’s so the compiler can check when you
+inappropriately try to use “await” outside of a coroutine, and throw a
+syntax error.
+
+Demo: show coro_try2 script, and explain results from running it.
+Note how my __await__ method is a generator, which has both
+“yield” and “return” constructs, and the “yield” occurs in an
+expression. The “yield” transfers control to the mainline, while
+the “return” goes back to the coroutine that did the “await”.
+
+In sum: generators become a stepping-stone between coroutines
+and the mainline execution thread:
+    mainline → send → coroutine or generator
+    coroutine → await → coroutine or generator
+    coroutine → return → mainline (raises StopIteration)
+    generator → yield → mainline
+    generator → return → mainline (raises StopIteration)
+    generator → return → coroutine (doesn’t raise StopIteration)
+
+(Show my connections.svg diagram.)
+
+Note that “yield” from a coroutine is not allowed. (Actually it is
+allowed in 3.6, but I haven’t looked into that yet.)
+
+So here I am putting together the beginnings of my own event-loop
+machinery to make use of coroutines. But I don’t need to, because
+the Python developers have already done this for me. Enter asyncio.
+
+The purpose of an event loop is to juggle two priorities:
+  * quick response to events without blocking
+  * avoid busy-waiting that needlessly consumes CPU
+
+Every GUI toolkit implements an event loop, e.g. Glib for GTK, Qt has
+one etc. So the nice thing about event loops, like GUI toolkits, is
+that there are so many to choose from.
+
+So what did the Python developers do? They created another one!
+
+To be fair, they were trying to build support for event loops into the
+language. So they created a standard API (coroutines and
+asyncio.AbstractEventLoop), and a reference implementation
+(asyncio.BaseEventLoop) for the event loop. Those experienced with
+common GUI toolkits should be able to hook their event loops into
+asyncio (subclassing asyncio.AbstractEventLoop) in such a way that
+standard Python coroutines will work with them. This way, you can
+write code that becomes event-loop-agnostic. I think this is a Good
+Thing.
+
+asyncio docs <https://docs.python.org/3/library/asyncio.html> cover 9
+pages in Library Reference: quite a lot there. Some highlights:
+
+Futures: a future is like an empty box with a sign
+over it saying “watch this space”. It is awaitable, so
+it can be used to block one coroutine until another one
+fills in the future to indicate completion of some operation.
+
+Also: 18.5.1 add reader/writer to watch file descriptors. This allows
+you to implement servers that can handle network connections from
+multiple clients at once and remain responsive, without having to
+worry about threading. This works fine as long as the bottleneck is
+going to be I/O, not CPU processing. Otherwise you may need to use
+threads, which means Python (or at least pure Python) becomes
+unsuitable.
+
+example scripts: rocket launch simulation with callbacks; rocket
+launch simulation with coroutines. In former, sequence of non-blocking
+steps requires sequence of callbacks; version that puts entire
+sequence in a single coroutine saves about a dozen lines of code.
+
+However, callbacks have call_at and call_later, there is no
+corresponding create_task_at or create_task_later; so I need a
+mission_control coroutine to sequence everything, making the
+necessary create_task calls at the right times (just need to
+add a few lines of await-sleep calls.)

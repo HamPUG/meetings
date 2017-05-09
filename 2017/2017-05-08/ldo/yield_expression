@@ -1,0 +1,39 @@
+#!/usr/bin/python3
+#+
+# Example of using “yield” in an expression.
+#-
+
+def generator1() :
+    # failed attempt to produce a generator that yields an output
+    # sequence one step behind its input.
+    print("enter generator")
+    value = "start"
+    while value != "stop" :
+        prev_value = value
+        print("about to give %s" % repr(value))
+        value = yield value
+        print("gave %s, got back %s" % (repr(prev_value), repr(value)))
+    #end while
+#end generator1
+
+def generator2() :
+    # a generator that yields the value that was sent to it on the
+    # previous yield, so the output sequence is one step behind the
+    # input sequence.
+    print("enter generator")
+    value1 = "start"
+    value2 = yield None # yield a dummy value from initial “send(None)”
+    while True :
+        value3 = yield value1
+        if value1 == "stop" :
+            break
+        value1, value2 = value2, value3
+    #end while
+#end generator2
+
+gen = generator2()
+print("generator %s created" % gen.__name__)
+for val in (None, "something", "anything", "stop", "onemore", "twomore") :
+    print("about to send %s" % repr(val))
+    print("%s => %s" % (val, gen.send(val)))
+#end for

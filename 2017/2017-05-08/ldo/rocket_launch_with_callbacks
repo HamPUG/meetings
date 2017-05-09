@@ -1,0 +1,57 @@
+#!/usr/bin/python3
+#+
+# Rocket-launch simulation with asyncio but without coroutines.
+#-
+
+import sys
+import asyncio
+
+loop = asyncio.get_event_loop()
+start_time = loop.time()
+
+def log_msg(msg) :
+    now = loop.time() - start_time
+    sys.stdout.write("%05.1f: %s\n" % (now, msg))
+#end log_msg
+
+def launch_rocket(name) :
+
+    count = 5
+
+    def countdown() :
+        nonlocal count
+        log_msg("%s countdown T minus %d seconds" % (name, count))
+        count -= 1
+        if count > 0 :
+            loop.call_later(1, countdown)
+        else :
+            loop.call_later(1, liftoff)
+        #end if
+    #end countdown
+
+    def liftoff() :
+        log_msg("%s liftoff!" % name)
+        loop.call_later(5, booster_separation)
+    #end liftoff
+
+    def booster_separation() :
+        log_msg("%s booster separation" % name)
+        loop.call_later(5, orbit_achieved)
+    #end booster_separation
+
+    def orbit_achieved() :
+        log_msg("%s orbit achieved." % name)
+    #end orbit_achieved
+
+#begin launch_rocket
+    return \
+        countdown
+#end launch_rocket
+
+log_msg("simulation starts")
+loop.call_at(start_time, launch_rocket("alpha"))
+loop.call_at(start_time + 3, launch_rocket("beta"))
+loop.call_at(start_time + 6, launch_rocket("gamma"))
+loop.call_at(start_time + 25, loop.stop)
+loop.run_forever()
+log_msg("simulation stops")
