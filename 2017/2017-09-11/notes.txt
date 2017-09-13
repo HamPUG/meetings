@@ -1,0 +1,37 @@
+Loading:
+   * Could have left out “undef” usage values -- instead, I inserted them as nulls
+     (Then have to ignore them in reports).
+   * initial naïve loader, one record at a time -- very slow
+   * batch up multiple records (up to 1000) in single “insert” statement -- much faster
+
+Querying:
+   * My simple, general-purpose “db_iter” function that wraps up cursor
+     creation, query execution and iterating over and conversion of results.
+   * simple text-based report of average usage over a day -- daily_usage
+
+Plotting:
+   * version creating graphical plot -- plot_daily_usage
+   * more elaborate report of usage over entire period -- plot_period_usage
+   * Seaborn -- adds some prettier options for theming, colouring etc.
+
+Matplotlib has a huge, sprawling API, which doesn’t seem well-documented.
+That is, there are docs for most of the API calls, but very little guidance
+as to how to use them. Consider the diagram of the “Artist” subclass hierarchy
+here <https://matplotlib.org/2.0.2/api/artist_api.html> -- but where is a description
+of what all those classes are for? And how does the 3D stuff fit in? So far I have
+(tentatively) figured out that:
+  * every part of a chart is an “Artist” object
+  * each subplot is an “Axes” object <https://matplotlib.org/api/axes_api.html>,
+    the axes of which are “Axis” objects <https://matplotlib.org/api/axis_api.html>.
+  * pyplot is a whole separate thing <https://matplotlib.org/api/pyplot_summary.html>.
+    I think this is meant to provide a more MATLAB-like charting API. But what
+    do I know...
+  * 3D plotting is a separate API layer, beginning here
+    <https://matplotlib.org/mpl_toolkits/mplot3d/api.html>. That is not
+    linked from <https://matplotlib.org/2.0.2/api/index.html>, instead
+    you will find it as part of the “Toolkits”
+    <https://matplotlib.org/mpl_toolkits/index.html> (also mentions Seaborn).
+
+3D Plotting:
+   * Jupyter notebook -- after much floundering around, I managed to get
+     a wireframe and a polys3d plot.

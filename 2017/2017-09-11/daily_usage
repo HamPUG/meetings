@@ -1,0 +1,116 @@
+#!/usr/bin/python3
+#+
+# Simple reporting on the data in the SQLite database.
+# Invoke this script as follows:
+#
+#     daily_usage --minutes=«minutes» [--unit_serial=«unit_serial»] «db_name»
+#
+# to get a minute-by-minute summary of usage throughout the day,
+# summed over all days covered by the data. The summary will be for
+# the unit specified with --unit-serial, or for all sensor units if
+# that is not specified.
+#
+# Copyright 2017 by Lawrence D'Oliveiro <ldo@geek-central.gen.nz>. This
+# script is licensed CC0
+# <https://creativecommons.org/publicdomain/zero/1.0/>; do with it
+# what you will.
+#-
+
+import sys
+import apsw as sqlite # docs: <https://rogerbinns.github.io/apsw/>
+import statistics
+import getopt
+
+#+
+# Useful stuff
+#-
+
+def db_iter(db, cmd, mapfn = lambda x : x) :
+    "executes cmd on a new cursor from connection db and yields the results in turn."
+    cu = db.cursor()
+    result = cu.execute(cmd)
+    while True :
+        yield mapfn(next(result))
+    #end while
+#end db_iter
+
+seconds_per_day = 86400
+
+#+
+# Mainline
+#-
+
+unit_serial = None
+interval_minutes = 1
+opts, args = getopt.getopt \
+  (
+    sys.argv[1:],
+    "",
+    ["minutes=", "unit_serial="]
+  )
+for keyword, value in opts :
+    if keyword == "--minutes" :
+        interval_minutes = int(value)
+        assert interval_minutes > 0
+    elif keyword == "--unit_serial" :
+        unit_serial = value
+    #end if
+#end for
+if len(args) != 1 :
+    raise getopt.GetoptError("usage: %s «db_name»" % sys.argv[0])
+#end if
+db_name, = args
+
+db = sqlite.Connection(db_name, flags = sqlite.SQLITE_OPEN_READONLY)
+
+cur_minute_bucket = None
+counts = None
+if unit_serial != None :
+    where_extra = " and unit_serial = %s" % sqlite.format_sql_value(unit_serial)
+else :
+    where_extra = ""
+#end if
+entries = \
+    db_iter \
+      (
+        db = db,
+        cmd =
+                "select day_nr, minute_nr, usage from data"
+                " where usage is not null%s"
+                " order by minute_nr, day_nr"
+            %
+                where_extra
+      )
+while True :
+    entry = next(entries, None)
+    if entry != None :
+        day_nr, minute_nr, usage = entry
+        minute_bucket = minute_nr // interval_minutes
+    #end if
+    if entry == None or minute_bucket != cur_minute_bucket :
+        if counts != None :
+            cur_time = "%02d:%02d" % (cur_minute_bucket * interval_minutes // 60, cur_minute_bucket * interval_minutes % 60)
+            try :
+                stddev = "%.2f" % statistics.stdev(counts)
+            except statistics.StatisticsError :
+                stddev = "?"
+            #end try
+            sys.stdout.write \
+              (
+                    "%s+%d usage %.2f ± %s\n"
+                %
+                    (cur_time, interval_minutes, statistics.mean(counts), stddev)
+              )
+        #end if
+        if entry == None :
+            break
+        counts = None
+    #end if
+    if counts == None :
+        counts = []
+        cur_minute_bucket = minute_bucket
+    #end if
+    counts.append(usage)
+#end while
+
+db.close()

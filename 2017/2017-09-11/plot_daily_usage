@@ -1,0 +1,157 @@
+#!/usr/bin/python3
+#+
+# Simple graphical plotting the data in the SQLite database.
+# Invoke this script as follows:
+#
+#     plot_daily_usage --minutes=«minutes» [--unit_serial=«unit_serial»] «db_name» «plotfile_name»
+#
+# to get a minute-by-minute summary of usage throughout the day,
+# summed over all days covered by the data. The summary will be for
+# the unit specified with --unit-serial, or for all sensor units if
+# that is not specified.
+#
+# Copyright 2017 by Lawrence D'Oliveiro <ldo@geek-central.gen.nz>. This
+# script is licensed CC0
+# <https://creativecommons.org/publicdomain/zero/1.0/>; do with it
+# what you will.
+#-
+
+import sys
+import apsw as sqlite # docs: <https://rogerbinns.github.io/apsw/>
+import statistics
+import matplotlib # docs: <https://matplotlib.org/>
+matplotlib.use("Agg") # needed for offscreen plots
+from matplotlib import \
+    pyplot, \
+    ticker
+#import seaborn # temporarily broken on sid
+import getopt
+
+#+
+# Useful stuff
+#-
+
+def db_iter(db, cmd, mapfn = lambda x : x) :
+    "executes cmd on a new cursor from connection db and yields the results in turn."
+    cu = db.cursor()
+    result = cu.execute(cmd)
+    while True :
+        yield mapfn(next(result))
+    #end while
+#end db_iter
+
+#+
+# Mainline
+#-
+
+unit_serial = None
+interval_minutes = 1
+use_seaborn = False
+opts, args = getopt.getopt \
+  (
+    sys.argv[1:],
+    "",
+    ["minutes=", "seaborn", "unit_serial="]
+  )
+for keyword, value in opts :
+    if keyword == "--minutes" :
+        interval_minutes = int(value)
+        assert interval_minutes > 0
+    elif keyword == "--seaborn" :
+        use_seaborn = True
+    elif keyword == "--unit_serial" :
+        unit_serial = value
+    #end if
+#end for
+if len(args) != 2 :
+    raise getopt.GetoptError("usage: %s «db_name» «plotfile_name»" % sys.argv[0])
+#end if
+db_name, plotfile_name = args
+
+db = sqlite.Connection(db_name, flags = sqlite.SQLITE_OPEN_READONLY)
+plot_data = []
+cur_minute_bucket = None
+counts = None
+if unit_serial != None :
+    where_extra = " and unit_serial = %s" % sqlite.format_sql_value(unit_serial)
+else :
+    where_extra = ""
+#end if
+entries = \
+    db_iter \
+      (
+        db = db,
+        cmd =
+                "select day_nr, minute_nr, usage from data"
+                " where usage is not null%s"
+                " order by minute_nr, day_nr"
+            %
+                where_extra
+      )
+while True :
+    entry = next(entries, None)
+    if entry != None :
+        day_nr, minute_nr, usage = entry
+        minute_bucket = minute_nr // interval_minutes
+    #end if
+    if entry == None or minute_bucket != cur_minute_bucket :
+        if counts != None :
+            try :
+                stddev = statistics.stdev(counts)
+            except statistics.StatisticsError :
+                stddev = None
+            #end try
+            plot_data.append \
+              (
+                {
+                    "time" : cur_minute_bucket,
+                    "mean" : statistics.mean(counts),
+                    "stddev" : stddev,
+                }
+              )
+        #end if
+        if entry == None :
+            break
+        counts = None
+    #end if
+    if counts == None :
+        counts = []
+        cur_minute_bucket = minute_bucket
+    #end if
+    counts.append(usage)
+#end while
+db.close()
+
+def format_minutes(tickval, tickpos) :
+    cur_minute = tickval * interval_minutes
+    return \
+        "%02d:%02d" % (cur_minute // 60, cur_minute % 60)
+#end format_minutes
+
+if use_seaborn :
+    seaborn.set()
+#end if
+fig = pyplot.figure(figsize = (12, 6))
+  # docs: <https://matplotlib.org/api/figure_api.html#matplotlib.figure.Figure>
+subplot = fig.add_subplot(111)
+subplot.margins(x = 0)
+subplot.xaxis.set_major_formatter(ticker.FuncFormatter(format_minutes))
+subplot.errorbar \
+  (
+    x = list(p["time"] for p in plot_data),
+    y = list(p["mean"] for p in plot_data),
+    yerr = list(p["stddev"] for p in plot_data),
+  )
+if unit_serial != None :
+    for_unit = "unit %s" % unit_serial
+else :
+    for_unit = "all units"
+#end if
+subplot.set_title \
+  (
+    "Average daily energy usage every %d minutes for %s" % (interval_minutes, for_unit)
+  )
+subplot.set_xlabel("Time of Day")
+subplot.set_ylabel("Usage")
+fig.savefig(plotfile_name)
+

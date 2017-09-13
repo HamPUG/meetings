@@ -1,0 +1,161 @@
+#!/usr/bin/python3
+#+
+# Simple graphical plotting the data in the SQLite database.
+# Invoke this script as follows:
+#
+#     plot_period_usage --minutes=«minutes» «db_name» «plotfile_name»
+#
+# to get a minute-by-minute report of usage over the entire period covered
+# by the data.
+#
+# Copyright 2017 by Lawrence D'Oliveiro <ldo@geek-central.gen.nz>. This
+# script is licensed CC0
+# <https://creativecommons.org/publicdomain/zero/1.0/>; do with it
+# what you will.
+#-
+
+import sys
+import datetime
+import apsw as sqlite # docs: <https://rogerbinns.github.io/apsw/>
+import statistics
+import matplotlib # docs: <https://matplotlib.org/>
+matplotlib.use("Agg") # needed for offscreen plots
+from matplotlib import \
+    pyplot, \
+    ticker
+#import seaborn # temporarily broken on sid
+import getopt
+
+#+
+# Useful stuff
+#-
+
+def db_iter(db, cmd, mapfn = lambda x : x) :
+    "executes cmd on a new cursor from connection db and yields the results in turn."
+    cu = db.cursor()
+    result = cu.execute(cmd)
+    while True :
+        yield mapfn(next(result))
+    #end while
+#end db_iter
+
+minutes_per_day = 1440
+
+#+
+# Mainline
+#-
+
+interval_minutes = 1
+use_seaborn = False
+figsize = (18, 6)
+opts, args = getopt.getopt \
+  (
+    sys.argv[1:],
+    "",
+    ["figwidth=", "minutes=", "seaborn"]
+  )
+for keyword, value in opts :
+    if keyword == "--figwidth" :
+        figsize = (float(value), figsize[1])
+        assert all(f > 0 for f in figsize)
+    elif keyword == "--minutes" :
+        interval_minutes = int(value)
+        assert interval_minutes > 0
+    elif keyword == "--seaborn" :
+        use_seaborn = True
+    #end if
+#end for
+if len(args) != 2 :
+    raise getopt.GetoptError("usage: %s «db_name» «plotfile_name»" % sys.argv[0])
+#end if
+db_name, plotfile_name = args
+
+db = sqlite.Connection(db_name, flags = sqlite.SQLITE_OPEN_READONLY)
+unit_serials = []
+plot_data = []
+for unit_serial in \
+    db_iter \
+      (
+        db = db,
+        cmd = "select distinct unit_serial from data order by unit_serial",
+        mapfn = lambda x : x[0]
+      ) \
+:
+    unit_serials.append(unit_serial)
+    cur_series = []
+    cur_minute_bucket = None
+    cur_usage = None
+    entries = \
+        db_iter \
+          (
+            db = db,
+            cmd =
+                    "select day_nr, minute_nr, usage from data"
+                    " where usage is not null and unit_serial = %s"
+                    " order by day_nr, minute_nr"
+                %
+                    sqlite.format_sql_value(unit_serial)
+          )
+    while True :
+        entry = next(entries, None)
+        if entry != None :
+            day_nr, minute_nr, usage = entry
+            minute_nr += day_nr * minutes_per_day
+            minute_bucket = minute_nr // interval_minutes
+        #end if
+        if entry == None or minute_bucket != cur_minute_bucket :
+            if cur_usage != None :
+                cur_series.append((cur_minute_bucket, cur_usage))
+                cur_usage = None
+            #end if
+            if entry != None :
+                cur_minute_bucket = minute_bucket
+                cur_usage = 0
+            #end if
+        #end if
+        if entry == None :
+            break
+        cur_usage += usage
+    #end while
+    plot_data.append(cur_series)
+#end for
+db.close()
+
+def format_minutes(tickval, tickpos) :
+    cur_minute = tickval * interval_minutes
+    return \
+      (
+        (datetime.datetime(1970, 1, 1) + datetime.timedelta(minutes = cur_minute))
+            .strftime("%b-%d %H:%M")
+      )
+#end format_minutes
+
+if use_seaborn :
+    seaborn.set()
+#end if
+fig = pyplot.figure(figsize = figsize, tight_layout = True)
+  # docs: <https://matplotlib.org/api/figure_api.html#matplotlib.figure.Figure>
+subplot = fig.add_subplot(111)
+subplot.margins(x = 0)
+subplot.xaxis.set_major_formatter(ticker.FuncFormatter(format_minutes))
+line_styles = tuple \
+  (
+    colour + dash
+    for dash in (":", "--", "")
+    for colour in ("y", "c", "g", "b")
+  )
+for i, series in enumerate(plot_data) :
+    subplot.plot \
+      (
+        tuple(p[0] for p in plot_data[i]),
+        tuple(p[1] for p in plot_data[i]),
+        line_styles[i],
+        label = unit_serials[i]
+      )
+#end for
+subplot.set_title("Energy usage every %d minutes" % interval_minutes)
+subplot.set_xlabel("Date/Time")
+subplot.set_ylabel("Usage")
+subplot.legend(title = "Sensors:")
+fig.savefig(plotfile_name)
+

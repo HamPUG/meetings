@@ -1,0 +1,102 @@
+#!/usr/bin/python3
+#+
+# Example of loading the CSV data into an SQLite database.
+#
+# Simple-minded one-record-at-a-time insertion with default
+# autocommit: 4320 records # from file power_2017-08-17.csv took 412 seconds.
+# Turning off autocommit with explicit “begin/end transaction” commands,
+# loading entire database of 47520 records could be done in 0.6 seconds.
+# (Thanks to Peter Reutemann for suggesting trying that.)
+#
+# Copyright 2017 by Lawrence D'Oliveiro <ldo@geek-central.gen.nz>. This
+# script is licensed CC0
+# <https://creativecommons.org/publicdomain/zero/1.0/>; do with it
+# what you will.
+#-
+
+import sys
+import os
+import time
+import calendar
+import re
+import apsw as sqlite # docs: <https://rogerbinns.github.io/apsw/>
+import csv
+import getopt
+
+seconds_per_day = 86400
+
+opts, args = getopt.getopt \
+  (
+    sys.argv[1:],
+    "",
+    []
+  )
+if len(args) < 2 :
+    raise getopt.GetoptError("usage: %s «csv-in» [«csv-in» ...] «db-out»" % sys.argv[0])
+#end if
+csv_in_files = args[:-1]
+db_out = args[-1]
+
+db = sqlite.Connection \
+  (
+    db_out,
+    flags = sqlite.SQLITE_OPEN_READWRITE | sqlite.SQLITE_OPEN_CREATE
+  )
+cu = db.cursor()
+cu.execute \
+  (
+    "create table data\n"
+    "  (\n"
+    "    unit_serial integer not null,\n"
+    "    day_nr integer not null,\n"
+    "    minute_nr integer not null,\n"
+    "    usage integer,\n"
+    "    primary key (unit_serial, day_nr, minute_nr)\n"
+    "  )"
+  )
+start_time = time.time()
+count = 0
+last_update = start_time
+cu.execute("begin transaction")
+for filename in csv_in_files :
+    date_parts = re.fullmatch(r"power_(\d{4})\-(\d{2})\-(\d{2})\.csv", os.path.basename(filename))
+    day_nr = calendar.timegm((int(date_parts.group(1)), int(date_parts.group(2)), int(date_parts.group(3)), 0, 0, 0)) // seconds_per_day
+    sys.stderr.write("day_nr for %s = %d\n" % (filename, day_nr)) # debug
+    csv_in = csv.reader(open(filename, "r"))
+    field_names = next(csv_in)
+    field_names = list(f for f in field_names if len(f) != 0)
+    sys.stderr.write("csv field names = %s\n" % repr(field_names)) # debug
+    assert field_names[0] == "Time", "first field name should be “Time”, not “%s”" % field_names[0]
+    for fields in csv_in :
+        field_values = []
+        for i, f in enumerate(fields) :
+            if len(f) != 0 :
+                if i != 0 and f == "undef" :
+                    f = None
+                else :
+                    f = int(f)
+                #end if
+                field_values.append(f)
+            #end if
+        #end for
+        minute_nr = field_values[0]
+        for field_name, field_value in zip(field_names[1:], field_values[1:]) :
+            cu.execute \
+              (
+                "insert into data(unit_serial, day_nr, minute_nr, usage) values (?, ?, ?, ?)",
+                [field_name, day_nr, minute_nr, field_value]
+              )
+            count += 1
+            now = time.time()
+            if now - last_update >= 5 :
+                sys.stderr.write("loaded: %d\n" % count)
+                last_update = now
+            #end if
+        #end for
+    #end for
+#end for
+cu.execute("end transaction")
+cu.close()
+db.close()
+end_time = time.time()
+sys.stdout.write("total %d records inserted in %.1fs\n" % (count, end_time - start_time))
