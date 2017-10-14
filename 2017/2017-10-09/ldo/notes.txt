@@ -1,0 +1,92 @@
+Why coroutines? Traditionally, if you wanted to do multiple things at
+once on a Unix system, you ran multiple processes. Processes are
+“default-shared-nothing”: each execution context has its own memory
+space and open files, and any exchange of information between them has
+to be via some explicit mechanism, e.g. setting up a shared memory
+section, or exchanging messages via sockets or pipes.
+
+Then in about the 1990s, threads became popular. Multiple execution
+contexts share a single process context, including memory and open
+files. This is “default-shared-everything”, which means that different
+threads running in the same process context can easily exchange
+information with very low overhead. But on the other hand, it is
+notoriously prone to bugs caused by race conditions, due to incorrect
+synchronization between threads when accessing common objects. These
+can be very hard to reproduce, and hence hard to fix.
+
+Coroutines are a very old idea. They look like threads, but they are
+non-preemptive. That is, one coroutine execution context cannot be
+preempted by another, it has to explicitly yield control. Threads and
+processes can take advantage of multiple CPUs to run multiple
+execution contexts at once, coroutines cannot. They sound like a step
+backwards. So why use them?
+
+Because they are simpler. Entire categories of race-condition bugs
+that can occur with threads simply disappear.
+
+Just as importantly, not all problems are CPU-intensive. If you have
+something that requires lots of computation (e.g. 3D rendering, video
+encoding, weather simulation), then you want to make maximum use of
+your available CPUs. But a lot of problems are not like this. For
+example, a web server is often limited by the available network
+bandwidth. A GUI app is usually limited by how fast the user can press
+keys and click mouse buttons.
+
+But at the same time, you may want to run different tasks in parallel.
+For example, limitations on I/O bandwidth may mean it takes some time
+for a server to respond to one request, because it has to wait for
+some other component to respond to its requests, and that should not
+block its ability to handle other requests. Coroutines are a good fit
+for this situation, because a coroutine can be spawned to handle each
+request, and when a coroutine blocks itself waiting for a response
+from another component, that does not prevent other coroutines from
+proceeding with their own processing.
+
+There is an alternative to coroutines, and that is callback-chaining.
+Each step of the processing is written as a separate procedure:
+when one procedure initiates some time-consuming action, it specifies
+the next procedure in the chain to be invoked when the action completes,
+which handles the next step of the processing before handing off
+to yet another callback etc.
+
+This does work, but it means breaking up the logic of the processing
+into a whole lot of separate pieces, which makes it harder to follow.
+This is not quite as notoriously prone to bugs as threads, but it
+still does mean writing more code. Coroutines help you keep the logic
+in a single sequence.
+
+All this coordination between coroutines requires an event loop. When
+a coroutine is created, it needs to be queued for execution on the event
+loop, and when it blocks or terminates, the event loop needs to be able
+to resume to handle other pending tasks. You can create your own
+custom event loop in your program, but it’s usually easier to
+call on a standard one.
+
+Python defines the “asyncio” framework
+<https://docs.python.org/3/library/asyncio.html> which provides a
+default event loop, the class asyncio.BaseEventLoop. Note I said
+“default”, not “standard”, event loop. This is because there are lots
+of GUI toolkits around, and every single one of them already defines
+their own event loop. Are they going to abandon their one to adopt
+Python’s BaseEventLoop as a standard? Not a chance.
+
+However, they don’t need to. Because asyncio defines more than an
+event loop, it defines an event-loop API. And that, more than a
+particular event-loop implementation, is the important standard. This
+is the abstract base class AbstractEventLoop. The idea is that other
+event loops can be wrapped in Python classes that are subclasses of
+AbstractEventLoop. So code that is written for the asyncio API becomes
+“event-loop-agnostic”: the same code can work unchanged with any event
+loop!
+
+There are already one or two proofs of this concept. Let me present my
+own: glibcoro <https://github.com/ldo/glibcoro>,
+<https://gitlab.com/ldo/glibcoro>. This is a wrapper for the GLib
+event loop
+<https://developer.gnome.org/glib/stable/glib-The-Main-Event-Loop.html>,
+which is a core part of the GTK+ GUI toolkit used to build apps for
+the GNOME desktop environment. This is currently about 370 lines of
+Python code, which is a not a large amount. But it is already
+sufficiently functional to run some useful examples
+<https://github.com/ldo/glibcoro_examples>,
+<https://gitlab.com/ldo/glibcoro_examples>.
