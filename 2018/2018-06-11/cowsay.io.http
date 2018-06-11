@@ -1,0 +1,13 @@
+### Get request for json
+GET http://cowsay.io/say/hello
+Accept: application/json
+
+### Get request for text
+GET http://cowsay.io/say/hello
+Accept: text/plain
+
+### Get request for xml (will get text/html)
+GET http://cowsay.io/say/hello
+Accept: application/xml
+
+###
