@@ -1,0 +1,88 @@
+#!/usr/bin/python3
+#+
+# Pycairo version of spirotri example from
+# <https://github.com/ldo/qahirah_examples>.
+#-
+
+import sys
+import os
+import math
+import cairo
+
+deg = math.pi / 180
+circle = 2 * math.pi
+
+triangle_corners = list \
+  (
+    (math.cos(a / 3 * circle), math.sin(a / 3 * circle)) for a in range(3)
+  )
+triangle_step = (1.5, math.sqrt(3) / 2)
+flip_adjust = (0.5, 0)
+
+pix_size = 700
+figure_size = 150
+pix = cairo.ImageSurface \
+  (
+    cairo.FORMAT_ARGB32, # format
+    round(pix_size), # width
+    round(pix_size) # height
+  )
+ctx = cairo.Context(pix)
+ctx.translate(0.5 * pix_size, 0.5 * pix_size)
+ctx.set_source_rgb(1, 1, 1)
+ctx.paint()
+ctx.set_source_rgb(0, 0, 0)
+ctx.set_line_width(2)
+
+def draw_cell(ctx, angle, colours) :
+    ctx.save()
+    m = cairo.Matrix()
+    m.rotate(angle)
+    m.scale(figure_size, figure_size)
+    ctx.transform(m)
+    scale_step = 0.87
+    ctx.set_line_width(ctx.get_line_width() / figure_size)
+      # compensate for scaling of entire coordinate system
+    for step in range(15) :
+        for i in range(3) :
+            ctx.new_path()
+            ctx.move_to(*triangle_corners[i - 1])
+            ctx.line_to(*triangle_corners[i])
+            ctx.set_source_rgb(*colours[i])
+            ctx.stroke()
+        #end for
+        m = cairo.Matrix()
+        m.rotate(5 * deg)
+        m.scale(scale_step, scale_step)
+        ctx.transform(m)
+        ctx.set_line_width(ctx.get_line_width() / scale_step)
+    #end for
+    ctx.restore()
+#end draw_cell
+
+for row in range(-3, 4) :
+    for col in range(-2, 2) :
+        flip = (row ^ col) & 1
+        ctx.save()
+        ctx.translate \
+          (
+            (col * triangle_step[0] + flip_adjust[0] * flip) * figure_size,
+            (row * triangle_step[1] + flip_adjust[1] * flip) * figure_size
+          )
+        draw_cell \
+          (
+            ctx = ctx,
+            angle = flip * 180 * deg,
+            colours =
+                [
+                    (0.2, 0.34, 0.4),
+                    (0.4, 0.26, 0.2),
+                    (0.36, 0.2, 0.4),
+                ]
+          )
+        ctx.restore()
+    #end for
+#end for
+
+pix.flush()
+pix.write_to_png("%s.png" % os.path.basename(sys.argv[0]))

@@ -1,0 +1,115 @@
+There is frequently a need in Python code to access libraries for
+various functionality not directly available in Python itself. These
+libraries are often written for use from C or C++ code, not from
+Python, so you need to create some kind of Python wrapper for them.
+One common answer is to write an “extension module” in C or C++, using
+the Python C API <https://docs.python.org/3/c-api/index.html>,
+<https://docs.python.org/3/extending/index.html> to wrap the library
+functionality in Python objects.
+
+However, there is another approach, and that is to create the wrapper
+entirely in Python, using the ctypes
+<https://docs.python.org/3/library/ctypes.html> module. When I first
+started reading about this, I assumed that it was a clunky solution
+that should be used as a last resort -- that it would be preferable
+in terms of usability, efficiency etc to go the extension-module
+route, wherever possible.
+
+However, I gradually found out that this is wrong. ctypes is actually
+a very well-designed module, which can be used to create very
+“Pythonic” wrappers -- that is, they behave as though the library
+directly supports Python objects, with little or no hint that the
+underlying library is actually implemented in C or C++, with no
+thought for Python. In other words, using a ctypes wrapper can quite a
+pleasant experience.
+
+As an example, I am going to look at the Cairo graphics API
+<https://www.cairographics.org/>, a powerful and versatile 2D graphics
+engine. This has long had an “official” (?) Python binding, called
+Pycairo <https://pycairo.readthedocs.io/en/latest/>. This binding is
+not a complete wrapper for the functionality of Cairo: there was no
+upstream development for many years (between 2011 and 2017
+<https://pycairo.readthedocs.io/en/latest/changelog.html>), leaving it
+with many gaps in its functionality. These have been mostly remedied
+now, with the notable exception of fonts: there is still no support
+for FreeType fonts
+<https://www.cairographics.org/manual/cairo-FreeType-Fonts.html> or
+user fonts
+<https://www.cairographics.org/manual/cairo-User-Fonts.html>, and
+another thing that continues to annoy me: no option to pass arguments
+by keyword!
+
+During this hiatus, I spent some time looking at filling in some of
+these gaps, before deciding that it would be less effort to start
+again from scratch.
+
+** Walkthrough
+    example of ctypes calls, using accompanying ctypes_example.ipynb
+**
+
+So I created Qahirah <https://github.com/ldo/qahirah>, a pure-Python
+binding for Cairo, using ctypes.
+
+For comparison, Pycairo has about 10,000 lines of C code, while
+qahirah.py is just about 7500 lines of Python code. The main omissions
+from the latter are support for on-screen drawing through
+platform-specific GUIs, but it has essentially everything else,
+including all the font support. Plus I was able to add high-level
+Python objects for Vector, Matrix, Colour and Path types. And being
+pure Python, you get keyword arguments for free. It can also take
+advantage of my pure-Python bindings for FreeType
+<https://github.com/ldo/python_freetype/> and Fontconfig
+<https://github.com/ldo/python_fontconfig/> if these are installed.
+
+The way I like to think of Qahirah is: it’s what I think a graphics
+API should look like if it was designed specifically for Python.
+
+What are the supposed advantages of implementing
+an extension module in compiled C/C++ code? As far as
+I can tell, they are
+* You can keep the insides of the module really private,
+  whereas a Python module will always have its insides
+  accessible from outside.
+* Compiled code is more efficient than interpreted Python
+  code.
+
+I don’t see the first advantage as really much of an advantage. Guido
+van Rossum, when asked why Python does not have visibility controls on
+its modules and classes, replied “we’re all consenting adults here”.
+Also, because a Python wrapper using ctypes does not completely lock
+down its internal interface to the C library, it is possible, without
+a great deal of effort, for users to resort to their own lower-level
+accesses if they feel they need to, to handle situations that the
+implementor of the wrapper did not envisage. This means
+flexibility.
+
+As for the efficiency issue, there may be libraries where it does
+matter, but interfacing to Cairo is not one of them. Rendering graphics
+means doing a lot of low-level pixel manipulation. So a lot of the CPU
+time is spent inside the Cairo library doing just that, not in
+interfacing to Python.
+
+If you look at the Pycairo docs, the reason they give for not
+supporting the additional font functionality is that “there is no open
+source Python bindings [sic] to FreeType (and fontconfig) that
+provides a C API”. Basically, they want another extension module for
+Python that provides an API that allows the Pycairo extension module
+to hook directly into it. They provide such a C API themselves
+<https://pycairo.readthedocs.io/en/latest/pycairo_c_api.html> to allow
+other extension modules to interface with them. But it seems to me
+this is an overcomplicated and unnecessary way of doing things.
+
+** Walkthrough
+    comparison of doing Cairo calls: C versus Pycairo versus
+    Qahirah, using accompanying spirotri programs
+**
+
+Limitations of ctypes? only two major ones that I have found:
+* Cannot pass a C struct by value, only by address
+  (e.g. in Fontconfig, args of Value type -- thankfully not
+  essential, there were alternative type-specific calls I was able
+  to use)
+* Cannot handle setjmp/longjmp -- required by libpng for
+  its exception handling, which provides no other options
+  for error notification besides setjmp/longjmp or aborting
+  the program. This one leaves me stuck for now.
