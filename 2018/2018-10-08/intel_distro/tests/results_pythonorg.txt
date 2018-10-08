@@ -1,0 +1,31 @@
+list with 1,000 elements
+24.335118479997618
+list of 100 random numbers
+8.018228168017231
+exp of 100 random numbers
+18.94400721800048
+log10 of 100 random numbers
+20.69218650800758
+sqrt of 100 random numbers
+15.86556010399363
+random 100x100 matrix
+76.89958401001059
+dot product of two random matrices (20x20)
+11.167444169986993
+1000 normal distributed random numbers
+40.84140222900896
+1000 gamma distributed random numbers
+68.01580518300761
+array + scalar
+1.4920096450077835
+array - scalar
+1.5849103429936804
+array * scalar
+1.5524815829994623
+inverse of matrix
+49.827351605985314
+fft and ifft
+35.68038148799678
+LU decomposition
+8.487990034016548
+
