@@ -1,0 +1,118 @@
+archive3d.net is source of approximately 59,000 free 3D models, mostly
+in .3ds format, with some .gsm (Archicad format). Estimated total size
+maybe 250GB. Most of the .3ds models can be imported with geometry
+intact into Blender (some hiccups), while I have yet to find a .gsm
+importer. Materials usually need work.
+
+Downloading one by one was too painful, so I looked at how to do bulk
+access. After some examination of site, I narrowed it down to two kinds
+of pages:
+ * A page for a single model, identified by an ID consisting of 8
+   lowercase hex digits (what I call the “short ID”), with a thumbnail
+   image (mostly around 256×256) and a download link.
+ * A page listing for a numbered category (e.g. 2 for bedroom furniture)
+   or a named tag (e.g. “chair”). Each page shows links, with small
+   thumbnails, for up to 24 models in that category or with that tag,
+   with next/prev links if there are more models.
+
+Show home page with some links.
+
+Examples of good links:
+  https://archive3d.net/?a=download&id=daf26f19
+  https://archive3d.net/?a=download&id=05458d60
+  https://archive3d.net/?a=download&id=dbb8df61
+  https://archive3d.net/?a=download&id=c8ccba82
+
+Extract descriptive name from this part of info page, e.g.
+ID daf26f19:
+
+    <div id="info">
+    <h2>Car 3D Model</h2>
+    ...
+    </div>
+
+Info page URL
+
+    https://archive3d.net/?a=download&id=«short_id»
+
+can be easily transformed into download URL:
+
+    https://archive3d.net/?a=download&do=get&id=«short_id»
+
+(just insert the “&do=get” bit) which gets redirected to something
+that looks like
+
+    https://storage3d.com/storage/«yyyy».«mm»/«long_id».«ext»
+
+where «ext» might be (mostly) .zip or .rar, with occasional other
+oddities. I save this file under the name
+«descriptive-name»-«short_id».«ext» after stripping off the “3D Model”
+part from the descriptive name.
+
+The download “popup” that shows Ts&Cs is just a div that is always
+present in page, made visible when the download link is clicked.
+
+Also from the info page, the preview image can be found from the part
+
+    <div id="prevbig">
+    ...
+    <img src="https://storage3d.com/storage/«yyyy».«mm»/«long_id».«ext» ...>
+    ...
+    </div>
+
+(in this case, «ext» is mostly .jpg, with some .gif) and I also
+download this for easy browsing. It’s small (typically 256×256)
+but better than nothing.
+
+So, for example, from the info page
+“https://archive3d.net/?a=download&id=daf26f19”, I extract the
+descriptive name “Car” and save the archive as “Car-daf26f19.zip” and
+the preview image as “Car-daf26f19.jpg”.
+
+Keeping the unique ID in the downloaded file names lets me refer back
+to the original model page, and also I can skip duplicate downloads.
+Sometimes the descriptive name isn’t quite accurate (e.g. the
+“House-c8ccba82” example, which is really a castle). Also some
+Cyrillic letters get substituted for similar-looking Roman letters
+sometimes -- e.g. “Сar” instead of “Car”.
+
+Imports into Blender are not always flawless. One that downloads OK
+but doesn’t import properly:
+
+    https://archive3d.net/?a=download&id=fdbb3527
+
+(There are a few like this.)
+
+BeautifulSoup
+<https://www.crummy.com/software/BeautifulSoup/bs4/doc/>
+-- I first came across this library while trying to scrape other sites
+many years ago. Back then I had to cope with a lot of broken HTML,
+which could cause errors in conventional HTML parsers. BeautifulSoup
+was able to cope with this and still return some intelligible info.
+
+Not sure if this is actually still the case -- it now seems to rely
+on other HTML parsers, some of which can be strict. In any case
+this site doesn’t seem to have trouble with bad HTML (bad links --
+that’s another story). So I just use BeautifulSoup as a convenient
+high-level representation of the page from which I can easily
+extract relevant bits.
+
+Quirks: had to deal with some item pages where there was no
+valid download link, e.g.
+
+Examples of pages with bad download links:
+    https://archive3d.net/?a=download&id=127a9f92
+    https://archive3d.net/?a=download&id=cf865234
+    https://archive3d.net/?a=download&id=8f513180
+    https://archive3d.net/?a=download&id=127a9f92
+
+Additional refinements: also added a --count-items option to my
+download script, just to show a quick summary of the various names and
+how many models I have under each. May look at adding limit on max nr
+bytes downloaded (to ration my bandwidth cap).
+
+I’m not sure I should make my script publicly available. Site owners
+might not appreciate lots of people hitting them with bulk
+downloaders. I have been careful to restrict it to downloading only
+one model at a time. So far (after about 50GB of downloads) they
+haven’t blocked me.
