@@ -89,3 +89,18 @@ install required dependencies:
 
 * place `object_detection_webcam.py` in `~/tf/models/research/object_detection`
 
+* adapt any parameters as required:
+
+  * `monitored_labels` - the types of objects to monitor
+  * `threshold_labels` - the probabilities (0-1) for each monitored label, 
+    other than default probability (`threshold_default`)
+  * `url`, `url_user`, `url_pw` - for retrieving images from webcam
+  * `output_dir` - for storing images that triggered
+  * `capture_interval` - the period to wait between frame captures
+
+* execute script with:
+
+  ```
+  ~/tf/venv/bin/python ~/tf/models/research/object_detection/object_detection_webcam.py
+  ```
+
