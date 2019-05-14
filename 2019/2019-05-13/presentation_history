@@ -1,0 +1,64 @@
+### Prepare presentation. Remove venv0 and python3-venv
+cd ~/
+rm -R venv0
+sudo apt remove python3-venv
+### Check virtual environment
+sudo apt install python3-venv
+python3 -m venv --version
+python3 -m venv -h
+### Create Virtual environment
+python3 -m venv --copies venv0
+ls venv0
+source venv0/bin/activate
+### Install Nikola and look around
+pip install --upgrade "Nikola[extras]" 
+ls venv0/
+ls venv0/bin/
+ls venv0/lib/
+ls venv0/lib/python3.6/
+ls venv0/lib/python3.6/site-packages/
+ls venv0/lib/python3.6/site-packages/nikola/
+ls venv0/bin/
+ls venv0/bin/nikola
+cat venv0/bin/nikola | more
+ls venv0/lib/python3.6/site-packages/nikola/
+cat venv0/lib/python3.6/site-packages/nikola/__main__.py | more
+cat venv0/lib/python3.6/site-packages/nikola/nikola.py | more
+### Test Nikola install / works by getting version, etc.
+nikola version
+nikola help
+### Create websites
+nikola init --demo website_demo
+ls -l website_demo
+# Create --quiet website. default
+nikola init --quiet website_quiet
+ls -l website_quiet
+### Look at conf.py and launch demo website
+cd website_demo
+cat conf.py | more
+nikola build
+nikola serve
+### Review website_demo on browser at http://127.0.0.1:8000/. 
+### View the Users Manual. Control C to stop server
+cd ..
+cd website_quiet
+nikola auto
+### Review website_quiet on browser at http://127.0.0.1:8000/.
+### Use File manager to look around. Output file created.
+### Use an edited conf.py
+diff conf.py ~/conf_quiet.py -d
+cp ~/conf_quiet.py conf.py
+nikola clean
+rm -R output
+nikola auto
+### Get 404 errors. No Pages! Clear http://127.0.0.1:8000/ so nothing cached.
+nikola new_page --title=Index
+nikola auto
+nikola new_page --title = "About Us" -2
+nikola auto
+### Time to use a reST editor on the index.rst and about-us.rst webpages.
+### Quick look at plugins
+nikola plugin help
+nikola plugin --list
+nikola plugin --list-installed
+
