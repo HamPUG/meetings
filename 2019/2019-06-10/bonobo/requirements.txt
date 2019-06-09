@@ -1,0 +1,6 @@
+mysqlclient
+bonobo
+bonobo_sqlalchemy
+python-dotenv
+psycopg2
+awesome-slugify

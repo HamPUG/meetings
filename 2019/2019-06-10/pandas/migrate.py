@@ -1,6 +1,5 @@
 import pandas as pd
 from sqlalchemy import create_engine
-import MySQLdb
 
 # SQLite DB path
 sqlite_path = '/home/fracpete/development/projects/employees-db-sqlite/employees_db-full-1.0.6.db'
@@ -33,7 +32,6 @@ sqlite_engine = create_engine('sqlite:///' + sqlite_path)
 
 # migrate tables
 with sqlite_engine.connect() as sqlite_conn, sqlite_conn.begin():
-    pass
     for table in tables:
         print(table)
         # read

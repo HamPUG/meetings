@@ -13,9 +13,20 @@ python3 -m venv venv
 ./venv/bin/pip install -r requirements.txt
 ```
 
+Number of dependencies:
+
+```
+$ ./venv/bin/pip freeze | wc -l
+8
+```
+
 ## What's happening
 
 * converting SQLite employees database to MySQL
 * extending table by inserting employee email address
 * adding social media information (twitter handles) from a CSV file as separate table
 
+## Pros/Cons
+
+* P: very flexible
+* C: loads all rows into memory (use chunking)
