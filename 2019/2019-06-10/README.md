@@ -6,6 +6,10 @@ Overview of available ETL frameworks:
 
 https://blog.panoply.io/top-9-python-etl-tools-and-when-to-use-them
 
+Further list from petl:
+
+https://petl.readthedocs.io/en/stable/related_work.html
+
 Covered in the presentation:
 * [pandas](pandas)
 * [bonobo](bonobo)
