@@ -29,4 +29,5 @@ $ ./venv/bin/pip freeze | wc -l
 ## Pros/Cons
 
 * P: very flexible
+* P: good documentation, lots of examples
 * C: loads all rows into memory (use chunking)

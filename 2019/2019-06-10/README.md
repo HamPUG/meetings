@@ -8,4 +8,7 @@ https://blog.panoply.io/top-9-python-etl-tools-and-when-to-use-them
 
 Covered in the presentation:
 * [pandas](pandas)
+* [bonobo](bonobo)
+* [bubbles](bubbles)
+* [petl](petl)
 
