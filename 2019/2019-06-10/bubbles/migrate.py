@@ -17,12 +17,12 @@ csv_dir = '../data'
 
 # the tables to migrate
 tables = [
-    #'departments',
-    #'dept_emp',
-    #'dept_manager',
-    #'employees',
-    #'salaries',
-    #'titles',
+    'departments',
+    'dept_emp',
+    'dept_manager',
+    'employees',
+    'salaries',
+    'titles',
 ]
 
 # connect to databases
