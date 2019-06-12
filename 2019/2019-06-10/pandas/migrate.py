@@ -1,5 +1,6 @@
 import pandas as pd
 from sqlalchemy import create_engine
+import time
 
 # SQLite DB path
 sqlite_path = '/home/fracpete/development/projects/employees-db-sqlite/employees_db-full-1.0.6.db'
@@ -22,6 +23,8 @@ tables = [
     'salaries',
     'titles',
 ]
+
+start_time = time.time()
 
 # connect to mysql
 mysql_engine = create_engine(
@@ -75,4 +78,7 @@ data.to_sql('socialmedia', con=mysql_engine, index=False, if_exists='replace')
 # close connections
 sqlite_conn.close()
 # MySQL automatically closes
+
+end_time = time.time()
+print("execution time", end_time - start_time)
 

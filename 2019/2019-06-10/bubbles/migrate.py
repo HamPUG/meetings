@@ -2,6 +2,7 @@ import bubbles
 from bubbles import open_store
 from bubbles.metadata import Field
 import sqlalchemy
+import time
 
 # SQLite DB path
 sqlite_path = '/home/fracpete/development/projects/employees-db-sqlite/employees_db-full-1.0.6.db'
@@ -24,6 +25,8 @@ tables = [
     'salaries',
     'titles',
 ]
+
+start_time = time.time()
 
 # connect to databases
 sqlite_store = open_store(
@@ -70,4 +73,7 @@ for row in csv_obj.rows():
     # TODO run SQL query to get emp_no
     mysql_obj.append(row)
 mysql_obj.flush()
+
+end_time = time.time()
+print("execution time", end_time - start_time)
     

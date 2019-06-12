@@ -16,3 +16,8 @@ Covered in the presentation:
 * [bubbles](bubbles)
 * [petl](petl)
 
+## Execution times (in seconds)
+* pandas: 92.8
+* bonobo: N/A
+* bubbles: 87.1 (though without additional columns)
+* petl: 281.1

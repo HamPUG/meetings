@@ -24,4 +24,4 @@ python3 -m venv venv
 * P: good documentation, lots of examples
 * P: fast
 * P: lots of utility functions
-
+* C: database inserts are slower than through pandas

@@ -1,6 +1,6 @@
 import petl as etl
-import sqlite3
-import pymysql
+from sqlalchemy import create_engine
+import time
 
 # SQLite DB path
 sqlite_path = '/home/fracpete/development/projects/employees-db-sqlite/employees_db-full-1.0.6.db'
@@ -24,17 +24,20 @@ tables = [
     'titles',
 ]
 
-# connect to sqlite
-sqlite_conn = sqlite3.connect(sqlite_path)
+start_time = time.time()
 
 # connect to mysql
-mysql_conn = pymysql.connect(host=mysql_host, database=mysql_db, user=mysql_user, password=mysql_pw)
-mysql_conn.cursor().execute('SET SQL_MODE=ANSI_QUOTES')
+mysql_engine = create_engine(
+    'mysql+mysqldb://' + mysql_user + ':' + mysql_pw + '@' + mysql_host + '/' + mysql_db)
+mysql_engine.connect().execute('SET SQL_MODE=ANSI_QUOTES')
+
+# connect to sqlite
+sqlite_engine = create_engine('sqlite:///' + sqlite_path)
 
 # migrate tables
 for table in tables:
     print(table)
-    data = etl.fromdb(sqlite_conn, 'select * from ' + table)
+    data = etl.fromdb(sqlite_engine, 'select * from ' + table)
     if table == 'employees':
         recs = etl.records(data)
         emails = []
@@ -43,7 +46,7 @@ for table in tables:
         data2 = etl.addcolumn(data, 'email', emails)
     else:
         data2 = data
-    etl.todb(data2, mysql_conn, table, create=True)
+    etl.todb(data2, mysql_engine, table, create=True)
 
 # load CSV file
 data = etl.fromcsv(source=socialmedia_csv)
@@ -52,7 +55,7 @@ recs = etl.records(data)
 empnos = []
 for rec in recs:
     sub = etl.fromdb(
-            sqlite_conn,
+            sqlite_engine,
             "SELECT emp_no FROM employees " 
             + "where last_name = '" + rec['last_name'] + "' "
             + "and first_name = '" + rec['first_name'] + "' "
@@ -66,8 +69,7 @@ for rec in recs:
         empnos.append(-1) # dummy
 # adding column gets ignored??
 data2 = etl.addcolumn(data, 'emp_no', empnos)
-etl.todb(data2, mysql_conn, 'socialmedia', create=True)
+etl.todb(data2, mysql_engine, 'socialmedia', create=True)
 
-# close connections
-sqlite_conn.close()
-
+end_time = time.time()
+print("execution time", end_time - start_time)
