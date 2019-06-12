@@ -40,8 +40,10 @@ for table in tables:
         emails = []
         for rec in recs:
             emails.append(rec['first_name'] + '.' + rec['last_name'] + '@mycompany.com')
-        etl.addcolumn(data, 'email', emails)
-    etl.todb(data, mysql_conn, table, create=True)
+        data2 = etl.addcolumn(data, 'email', emails)
+    else:
+        data2 = data
+    etl.todb(data2, mysql_conn, table, create=True)
 
 # load CSV file
 data = etl.fromcsv(source=socialmedia_csv)
@@ -63,16 +65,8 @@ for rec in recs:
     else:
         empnos.append(-1) # dummy
 # adding column gets ignored??
-etl.addcolumn(data, 'emp_no', empnos)
-etl.todb(data, mysql_conn, 'socialmedia', create=True)
-
-# this works however???
-#table1 = [['foo', 'bar'],
-#          ['A', 1],
-#          ['B', 2]]
-#col = [True, False]
-#table2 = etl.addcolumn(table1, 'baz', col)
-#etl.todb(table2, mysql_conn, 'socialmedia2', create=True)
+data2 = etl.addcolumn(data, 'emp_no', empnos)
+etl.todb(data2, mysql_conn, 'socialmedia', create=True)
 
 # close connections
 sqlite_conn.close()

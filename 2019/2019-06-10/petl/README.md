@@ -24,5 +24,4 @@ python3 -m venv venv
 * P: good documentation, lots of examples
 * P: fast
 * P: lots of utility functions
-* C: extending table read from database/CSV cannot change their structure?
 
