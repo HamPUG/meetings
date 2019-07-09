@@ -17,6 +17,7 @@ Refer to the file: */irsbugs/Introduction to Python - Overall Presentation .odp*
 
 Using Python on a Raspberry Pi to control GPIO ports with LED's attached.
 Refer to the file: */irsbugs/Introduction to Python - Overall Presentation .odp*. Slides 13 to 17
+
 Two python program running on the RPi were demonstrated. These programs are 
 */irsbugs/06_demo_ttk_4_led_counter_inc_dec.py* and */irsbugs/09_demo_ttk_pwm_exponential.py*.
 
