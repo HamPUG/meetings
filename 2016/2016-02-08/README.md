@@ -2,12 +2,27 @@
 
 ### IPython
 
-Lawrence D'Oliveiro delivered a presentation on IPython. Lawrence provided two ipynb files, ** **.
+Lawrence D'Oliveiro delivered a presentation on IPython. Lawrence provided two ipynb files, 
+*Exponential Series.ipynb* and *Solid Angle Of A Circle.ipynb*.
 
-The file ** may be launch using the binder Jupyter kernel by clicking on the following icon...
+The file *Exponential Series.ipynb* may be launched using the binder Jupyter kernel by 
+clicking on the following icon...
 
-The file ** may be launch using the binder Jupyter kernel by clicking on the following icon...
+[![Binder](https://mybinder.org/badge_logo.svg)](https://mybinder.org/v2/gh/HamPUG/meetings/master?filepath=2016%2F2016-02-08%2FExponential%20Series.ipynb)
 
+The file *Solid Angle Of A Circle.ipynb* may be launched using the binder Jupyter kernel 
+by clicking on the following icon...
+
+[![Binder](https://mybinder.org/badge_logo.svg)](https://mybinder.org/v2/gh/HamPUG/meetings/master?filepath=2016%2F2016-02-08%2FSolid%20Angle%20Of%20A%20Circle.ipynb)
+
+Exponential Series.ipynb 	
+
+[![Binder](https://mybinder.org/badge_logo.svg)](https://mybinder.org/v2/gh/HamPUG/meetings/master?filepath=2016%2F2016-02-08%2FExponential%20Series.ipynb)
+
+
+Solid Angle Of A Circle.ipynb
+
+[![Binder](https://mybinder.org/badge_logo.svg)](https://mybinder.org/v2/gh/HamPUG/meetings/master?filepath=2016%2F2016-02-08%2FSolid%20Angle%20Of%20A%20Circle.ipynb)
 ### Presentation Notes
 
 IPython is an interactive shell, originally for Python. Though it is now being generalized, via the Jupyter project, to handle other languages on an equal basis.
