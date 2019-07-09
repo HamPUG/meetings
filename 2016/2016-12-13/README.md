@@ -1,7 +1,5 @@
 #### M#30
 
-#### M#30
-
 ### Floating Point
 
 Lawrence D'Oliveiro delivered a presentation on  Floating-Point∶ Beyond Standard Python.
