@@ -32,9 +32,9 @@ Demonstation of a python script using the python Universal Network Object (uno) 
 a python script will generate a LibreOffice Draw document. See slides 38 and 39.
 Refer to the file: */irsbugs/pythonhouse-2016-03-14.py*.
 
-#### Nikola, a static web-site generator
+#### Nikola static web-site generator
 
-William McKee demonstated Nikola, a static web-site generator, that is written in python.
+William Mckee demonstated Nikola, a static web-site generator, that is written in python.
 Refer to the file: */irsbugs/nikola-march.svg*.
 
 #### Introduction to Programming in Python
