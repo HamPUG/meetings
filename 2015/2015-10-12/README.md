@@ -6,7 +6,9 @@ Brief presentations were delivered on some of the command line parsing
 Python modules. 
 
 **begin** - *Command line programs for busy developers*
+
 **plac** - *The smartest command line arguments parser in the world*
+
 **sys.argv** - *Most command line arguments parsers initially use*
 
 
