@@ -1,6 +1,6 @@
 #### M#2
 
-#### Regular Meeting of HamPUG
+### Regular Meeting of HamPUG
 
 Established that HamPUG monthly meetings would be on the second Monday of the month starting at 7pm. 
 There would not be any meeting for the month of January.
