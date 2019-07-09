@@ -10,4 +10,4 @@ See the sub-directory *matplotlib*.
 
 #### Libreoffice House
 
-Ian Stewart presented on how to draw a house in [LibreOffice](http://www.libreoffice.org/) Impress using Python. See the sub-directory *libreoffice*.
+Ian Stewart presented on how to draw a house in [LibreOffice](http://www.libreoffice.org/) Impress using Python. See the sub-directory *libreoffice*
