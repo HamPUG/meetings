@@ -2,9 +2,9 @@
 
 ### An Introduction to Python.
 
-Multiple presentations were delivered feature Python and its capabilities.
+Multiple presentations were delivered to show the features Python and its capabilities.
 
-Presenters were: William Mckee, Lawrence D'Oliveiro and Ian Stewart
+Presenters were: William Mckee, Lawrence D'Oliveiro and Ian Stewart.
 
 The following presentation were delivered:
 
