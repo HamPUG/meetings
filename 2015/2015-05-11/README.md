@@ -1,5 +1,14 @@
-Plots and Graphs in Python
-==========================
+#### M#15
 
-* **matplotlib** - some example scripts for generating plots using [matplotlib](http://matplotlib.org/)
-* **libreoffice** - how to draw a house in [LibreOffice](http://www.libreoffice.org/) Impress using Python and more
+### Plots and Graphs in Python
+
+#### matplotlib
+
+Peter Reutemann presented some example scripts for generating plots using [matplotlib](http://matplotlib.org/)
+See the sub-directory ** **.
+
+
+#### Libreoffice House
+
+Ian Stewart presented on how to draw a house in [LibreOffice](http://www.libreoffice.org/) Impress using Python.
+
