@@ -1,4 +1,6 @@
-README
-======
+#### M#28
 
-Contains Ian's web2py presentation.
+### Web2py - Website generator
+
+Ian Stewart delivered a web2py presentation. His slide show is the 
+file *web2py_presentation.odp*.

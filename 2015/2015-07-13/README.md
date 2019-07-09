@@ -1,5 +1,8 @@
-README
-======
+#### M#16
 
-* `ian` - Ian Stewart's demo code on tkinter: themed widgets and message boxes.
+### Options in the Tkinter GUI.
 
+Ian Stewart presented features of Tkinter. The themed toolkit and the options
+available with messagebox.
+
+See the files in the sub-directory *ian*.

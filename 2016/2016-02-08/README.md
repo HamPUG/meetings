@@ -1,3 +1,22 @@
+#### M#22
+
+### IPython
+
+Lawrence D'Oliveiro delivered a presentation on IPython. Lawrence provided two ipynb files, 
+*Exponential Series.ipynb* and *Solid Angle Of A Circle.ipynb*.
+
+The file *Exponential Series.ipynb* may be launched using the binder Jupyter kernel by 
+clicking on the following icon...
+
+[![Binder](https://mybinder.org/badge_logo.svg)](https://mybinder.org/v2/gh/HamPUG/meetings/master?filepath=2016%2F2016-02-08%2FExponential%20Series.ipynb)
+
+The file *Solid Angle Of A Circle.ipynb* may be launched using the binder Jupyter kernel 
+by clicking on the following icon...
+
+[![Binder](https://mybinder.org/badge_logo.svg)](https://mybinder.org/v2/gh/HamPUG/meetings/master?filepath=2016%2F2016-02-08%2FSolid%20Angle%20Of%20A%20Circle.ipynb)
+
+### Presentation Notes
+
 IPython is an interactive shell, originally for Python. Though it is now being generalized, via the Jupyter project, to handle other languages on an equal basis.
 
 IPython interfaces to the language implementation via its own “kernel” process. Separate from the kernel is the front end, of which there are three: one based on a character terminal, one built with the Qt GUI toolkit, and the web-based notebook interface. Of the three, the notebook interface is the most powerful, it’s the only one I have much experience with, and it is the one I will talk about here. If you’ve used Mathematica, the notebook concept will be very familiar.
