@@ -7,7 +7,7 @@ the WEKA machine learning workbench (written in Java) in a Python environment.
 
 See the README in the sub-directory *datamining*
 
-### Hamgman
+### Hangman
 
 Ian Stewart wrote python scripts to review the Linux English dictionary and strip 
 out the words that are not suitable when playing the game hangman. 
