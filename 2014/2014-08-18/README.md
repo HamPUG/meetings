@@ -1,4 +1,6 @@
-### Virtualenv and Setuptool - M#7
+#### M#7
+
+### Virtualenv and Setuptool
 
 Peter Reutemann presented  virtualenv and using the setuptool python module.
 
