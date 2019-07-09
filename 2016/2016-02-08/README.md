@@ -15,14 +15,6 @@ by clicking on the following icon...
 
 [![Binder](https://mybinder.org/badge_logo.svg)](https://mybinder.org/v2/gh/HamPUG/meetings/master?filepath=2016%2F2016-02-08%2FSolid%20Angle%20Of%20A%20Circle.ipynb)
 
-Exponential Series.ipynb 	
-
-[![Binder](https://mybinder.org/badge_logo.svg)](https://mybinder.org/v2/gh/HamPUG/meetings/master?filepath=2016%2F2016-02-08%2FExponential%20Series.ipynb)
-
-
-Solid Angle Of A Circle.ipynb
-
-[![Binder](https://mybinder.org/badge_logo.svg)](https://mybinder.org/v2/gh/HamPUG/meetings/master?filepath=2016%2F2016-02-08%2FSolid%20Angle%20Of%20A%20Circle.ipynb)
 ### Presentation Notes
 
 IPython is an interactive shell, originally for Python. Though it is now being generalized, via the Jupyter project, to handle other languages on an equal basis.
