@@ -6,9 +6,9 @@ Peter Reutemann delivered a presentation on Nikola static web-site generator.
 His slide show presentation is available as *nikola.odp* or *nikola.pdf*.
 
 
-### IPython Notebook
+### Introduction to Python
 
-Lawrence D'Oliveiro presented the IPython Notebook. Refer to the ipynb file:
+Lawrence D'Oliveiro presented an Introduction to Python. Refer to the ipynb file:
 */ldo/Python Intro Talk 1∕2.ipynb*
 
 Click on the *launch binder* icon to launch the ipynb presentation in binder...
