@@ -1,2 +1,7 @@
-#### M#xx
+#### M#25
 
+### Python 2.7 to Python 3
+
+Peter Reutemann provided a presentation on migrating Python 2.7 to Pythyon 3.
+
+His presentation includes the files python2python3.pdf and python2to3migration.md
