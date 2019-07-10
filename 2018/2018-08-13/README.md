@@ -4,7 +4,7 @@
 
 Lawrence D'Oliverio delivered a presentation on creating api bindings using ctypes.
 
-Lawrence's presentation includes the Jupyter notebook Fctypes example.ipnb. 
+Lawrence's presentation includes the Jupyter notebook ctypes example.ipnb. 
 
 Click on the *launch binder* icon to run this ipynb file in the binder Jupyter server...
 
