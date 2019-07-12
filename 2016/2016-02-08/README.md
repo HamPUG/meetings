@@ -10,6 +10,11 @@ clicking on the following icon...
 
 [![Binder](https://mybinder.org/badge_logo.svg)](https://mybinder.org/v2/gh/HamPUG/meetings/master?filepath=2016%2F2016-02-08%2FExponential%20Series.ipynb)
 
+The file *Exponential Series v4.ipynb* may be launched using the binder Jupyter kernel by 
+clicking on the following icon...
+
+[![Binder](https://mybinder.org/badge_logo.svg)](https://mybinder.org/v2/gh/HamPUG/meetings/master?filepath=2016%2F2016-02-08%2FExponential%20Series%20v4.ipynb)
+
 The file *Solid Angle Of A Circle.ipynb* may be launched using the binder Jupyter kernel 
 by clicking on the following icon...
 
