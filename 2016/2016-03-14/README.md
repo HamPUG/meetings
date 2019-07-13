@@ -45,3 +45,7 @@ Refer to the file: 	*/ldo/Python Intro Talk.ipynb*.
 The ipynb presentation by Lawrence may be launched by binder by clicking on the icon below
 
 [![Binder](https://mybinder.org/badge_logo.svg)](https://mybinder.org/v2/gh/HamPUG/meetings/master?filepath=2016%2F2016-03-14%2Fldo%2FPython%20Intro%20Talk.ipynb)
+
+The ipynb version 4 presentation by Lawrence may be launched by binder by clicking on the icon below
+
+[![Binder](https://mybinder.org/badge_logo.svg)](https://mybinder.org/v2/gh/HamPUG/meetings/master?filepath=2016%2F2016-03-14%2Fldo%2FPython%20Intro%20Talk%20v4.ipynb)
