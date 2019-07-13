@@ -2,7 +2,13 @@
 
 ### web-scraping
 
-Lawrence D’Oliveiro demonstrated a simple web-scraping task, namely automating the downloading of files from a 3D model archive site, using Python with the BeautifulSoup HTML-analysis library. This could be a useful introduction to those new to the concept of web-scraping.
+Lawrence D’Oliveiro demonstrated a simple web-scraping task, namely automating the downloading of files from a 3D model archive site, using Python with the BeautifulSoup HTML-analysis library. This could be a useful introduction to those new to the concept of web-scraping. 
+
+The files for this presentation are in the folder */ldo-web-scraping/*
+
+Click on the launch binder icon to run Lawrence's ipynb file on the binder Jupyter server...
+
+[![Binder](https://mybinder.org/badge_logo.svg)](https://mybinder.org/v2/gh/HamPUG/meetings/master?filepath=2018%2F2018-10-08%2Fldo-web-scraping%2FBeautifulSoup%20Demo.ipynb)
 
 ### Intel basic speed comparisons
 
