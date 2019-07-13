@@ -1,8 +1,5 @@
-Linux provides an extensive set of characters. In the range from 9,000 to 10,000 
-many of the characters are for console terminal line drawing.
+There are sets of line drawing characters. They reside in the range from 9480 through 9628. 
+For example the python code print(chr(9492)) will display the character that is a bottom 
+left corner of a rectangle.
 
-The notebook line_drawing.ipynb demonstrates the line drawing sets available.
-
-Click on the *launch binder* icon to run the notebook on-line using binder
-
-[![Binder](https://mybinder.org/badge_logo.svg)](https://mybinder.org/v2/gh/HamPUG/meetings/master?filepath=2019%2F2019-06-10%2Fian%2Fline_drawing.ipynb)
+The notebook file *line_drawing.ipynb* demonstrates the line drawing sets available.
