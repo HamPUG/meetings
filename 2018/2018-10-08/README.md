@@ -14,6 +14,8 @@ Click on the launch binder icon to run Lawrence's ipynb file on the binder Jupyt
 
 Intel claims that their custom Python distribution (https://software.seek.intel.com/python-distribution) delivers "close-to-native-code performance". Peter Reutemann ran some basic speed comparisons to see whether it lives up to that claim.
 
+Refer to the files in the folder */intel_distro/*
+
 ### Introduce data manipulation using List methods
 
 The list() function to convert a string to an array of characters is complemented by a string's join() method. The list methods include append() and pop(0) which allow a list to be used as a fifo buffer. Ian Stewart gave a brief Jupyter Notebook presentation to introduce data manipulation using list methods.
