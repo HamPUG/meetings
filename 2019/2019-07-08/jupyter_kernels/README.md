@@ -47,6 +47,8 @@ For example the markdown code to produce the launch binder icon is:
 
 `[![Binder](https://mybinder.org/badge_logo.svg)](https://mybinder.org/v2/gh/HamPUG/meetings/master?filepath=2019%2F2019-07-08%2Fjupyter_kernels%2Ftest.ipynb)`
 
+[![Binder](https://mybinder.org/badge_logo.svg)](https://mybinder.org/v2/gh/HamPUG/meetings/master?filepath=2019%2F2019-07-08%2Fjupyter_kernels%2Ftest.ipynb)
+
 
 ### C++ and Binder
 
