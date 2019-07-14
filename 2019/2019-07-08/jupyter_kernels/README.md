@@ -63,5 +63,5 @@ Xeus-cling is installed using the anaconda package manager.
 https://xeus-cling.readthedocs.io/en/latest/installation.html
 
 
-On scrolling down the README at the xeus-cling github site https://github.com/QuantStack/xeus-cling you will see that you can launch Binder. This will provide an run Jupyter C++ online.
+On scrolling down the README at the xeus-cling github site https://github.com/QuantStack/xeus-cling you will see that you can launch Binder. This will provide and run Jupyter C++ online.
 
