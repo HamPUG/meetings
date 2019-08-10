@@ -1,6 +1,7 @@
-#### M#39
+# 2017-10-09
+#### 39
 
-### AsyncIO galore!
+## AsyncIO galore!
 
 Lawrence D'Oliveiro presented on the AsynIO module.
 
