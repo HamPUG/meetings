@@ -1,6 +1,7 @@
-#### M#22
+# 2016-02-08/
+#### 22
 
-### IPython
+## IPython
 
 Lawrence D'Oliveiro delivered a presentation on IPython. Lawrence provided two ipynb files, 
 *Exponential Series.ipynb* and *Solid Angle Of A Circle.ipynb*.
