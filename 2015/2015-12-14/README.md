@@ -1,6 +1,7 @@
-#### M#21
+# 2015-12-14
+#### 21
 
-### RPi.GPIO
+## RPi.GPIO
 
 Ian Stewart presented the RPi.GPIO python module.
 
