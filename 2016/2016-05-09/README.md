@@ -1,6 +1,7 @@
-#### M#25
+# 2016-05-09
+#### 25
 
-### Python 2.7 to Python 3
+## Python 2.7 to Python 3
 
 Peter Reutemann provided a presentation on migrating Python 2.7 to Pythyon 3.
 
