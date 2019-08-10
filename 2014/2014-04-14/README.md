@@ -1,7 +1,7 @@
-#### M#3
+# 2014-04-14
+#### 3
 
-Introduction
-===
+## Introduction
 
 Yesterday I did a talk on using Python to scrape all the song lyrics from a particular artist (from lyricsfreak.com) and then create a word cloud from all those lyrics using either using [Wordle](http://www.wordle.net/) or using R's `wordcloud` package. The idea was to get a visual representation of the words that were said the most by a particular band or artist.
 
