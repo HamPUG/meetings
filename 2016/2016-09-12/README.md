@@ -1,6 +1,7 @@
-#### M#27
+# 2016-09-12
+#### 27
 
-### Evolution of a Python program
+## Evolution of a Python program
 
 Ian Stewart delivered a presentation on the Art of Python. It demonstrates 
 how a python program should have a good structure and how to evaluate the 
@@ -8,7 +9,7 @@ quality of a program. His slide presentation is */ian-python_art/art_of_python.o
 
 Included with his presentation are 4 x circle.py programs of varying complexity. 
 
-### Tkinter template program
+## Tkinter template program
 
 Ian Stewart presented a code generator that will produce python3 tkinter GUI 
 template programs. His slide show is the file 
@@ -18,7 +19,7 @@ The presentation demonstrates the creation of a template with 3 x frames, 1 x en
 
 Example code is included as the files *circle.py* and *circle_initial.py*
 
-### Introduction to Python - Part 2
+## Introduction to Python - Part 2
 
 Last month Lawrence delivered the first part of his Introduction to Python. This month he continues to expand on the features of Python.
 
