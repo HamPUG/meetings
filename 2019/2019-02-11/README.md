@@ -1,3 +1,6 @@
+# 2019-02-11
+#### 53
+
 ## Web Framework - Django
 
 Sum Abiut delivered a presentation on the Django Web Framework. His presentation included installation of Django and getting started by creating a simple web-site.
