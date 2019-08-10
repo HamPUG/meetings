@@ -1,6 +1,7 @@
-#### M#47
+# 2018-07-09
+#### 47
 
-### Python Panda
+## Python Panda
 
 Gary Buczma's Jupyter notebooks on his Python Pandas talk, to unlock and
 exploit the potential of unstructured data and open data, as a Data science
