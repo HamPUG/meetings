@@ -1,7 +1,8 @@
-#### M#14
+# 2015-04-13
+#### 14
 
 
-### Using Python as the macro script with Libreoffice.
+## Using Python as the macro script with Libreoffice.
 
 Libre Office distribution includes the BASIC scripting language for use with
 Libre Office applications. Ian Stewart presented the use of Python as an 
@@ -14,7 +15,7 @@ document file.
 See the sub-directory *libreoffice* for Ian's presentation material. 
 
 
-### Collections module and defaultdict
+## Collections module and defaultdict
 
 Peter Reutemann presented from collections import deque, defaultdict
 
