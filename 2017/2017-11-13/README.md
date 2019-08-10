@@ -1,4 +1,5 @@
-#### M#40
+# 2017-11-13
+#### 40
 
 Meeting held at Homestead Bar and Eatery.
 
