@@ -1,4 +1,7 @@
-#### M#37
+# 2017-08-10
+#### 37
+
+## Classes & Metaclasses
 
 Lawrence delivered a presentation on Classes & Metaclasses
 
