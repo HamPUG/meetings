@@ -1,6 +1,7 @@
-### M#24
+# 2016-04-11
+#### 24
 
-### Python in the Digital Technologies subject at NZ secondary schools
+## Python in the Digital Technologies subject at NZ secondary schools
 
 Ian Stewart presented examples of using python as part of the New Zealand 
 Secondary Schools, **Digital Technologies** subject which is a component of 
