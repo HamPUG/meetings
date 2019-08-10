@@ -1,6 +1,7 @@
-#### M#7
+# 2014-08-18
+#### 7
 
-### Virtualenv and Setuptool
+## Virtualenv and Setuptool
 
 Peter Reutemann presented  virtualenv and using the setuptool python module.
 
@@ -8,7 +9,7 @@ The file *virtualenv_and_setuptools.odp* is Peter's slide show. While *PyFunk.ta
 is a zip of the files involved his **setuptools** presentation.
 
 
-#### Update Note as of 2019:
+### Update Note as of 2019:
 
 venv — Creation of virtual environments became new in version 3.3 (September 2012). 
 The venv module provides support for creating lightweight “virtual environments” with their own 
