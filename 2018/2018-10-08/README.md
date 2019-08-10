@@ -1,6 +1,7 @@
-#### M#50
+# 2018-10-08
+#### 50
 
-### web-scraping
+## web-scraping
 
 Lawrence D’Oliveiro demonstrated a simple web-scraping task, namely automating the downloading of files from a 3D model archive site, using Python with the BeautifulSoup HTML-analysis library. This could be a useful introduction to those new to the concept of web-scraping. 
 
