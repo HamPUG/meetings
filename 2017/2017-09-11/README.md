@@ -1,6 +1,7 @@
-#### M#38
+# 2017-09-11
+#### 38
 
-### Interactive Data Visualization Using Matplotlib.
+## Interactive Data Visualization Using Matplotlib.
 
 Lawrence D'Oliveiro delivered a Jupyter notebook presentation on Interactive Data 
 Visualization Using Matplotlib.
