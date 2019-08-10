@@ -1,12 +1,13 @@
-#### M#18
+# 2015-09-14
+#### 18
 
-### Demostration of two python programs
+## Demostration of two python programs
 
 Ian Stewart demonstrated two of his python programs. The programs are the 
 files *loadscript.py* and *cadence_hampug_demo.py*.
 
 
-#### loadscript.py
+### loadscript.py
 
 `loadscript.py` is designed to load a python script file or bash script file
 from a current development folder and place it into `/usr/local/bin/` folder.
@@ -36,7 +37,7 @@ $ loadscript --help
 for more details.
 
 
-#### cadence_hampug_demo.py
+### cadence_hampug_demo.py
 
 cadence is a command line program to model a bikes pedalling cadence to its
 speed depending on what gears are used.
