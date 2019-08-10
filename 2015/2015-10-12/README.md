@@ -1,6 +1,7 @@
-#### M#19
+# 2015-10-12
+#### 19
 
-### Command Line Parsing Frameworks
+## Command Line Parsing Frameworks
 
 Brief presentations were delivered on some of the command line parsing 
 Python modules. 
