@@ -1,9 +1,10 @@
 # 2017-09-11
-#### 38
+#### 41
 
 ## Interactive Data Visualization Using Matplotlib.
+**Lawrence D'Oliveiro** 
 
-Lawrence D'Oliveiro delivered a Jupyter notebook presentation on Interactive Data 
+Lawrence delivered a Jupyter notebook presentation on Interactive Data 
 Visualization Using Matplotlib.
 
 Click the *launch binder* icon to run Lawrence's ipynb presentation using the binder server...
