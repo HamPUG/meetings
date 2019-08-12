@@ -1,8 +1,11 @@
 # 2017-10-09
-#### 39
+#### 42
 
 ## AsyncIO galore!
+**Lawrence D'Oliveiro** 
 
-Lawrence D'Oliveiro presented on the AsynIO module.
+Lawrence presented on the AsynIO module.
 
-Ian Stewart presentated a bicycle cadence program using the AsyncIO feature now available in Python3.
+**Ian Stewart** 
+
+Ian presentated a bicycle cadence program using the AsyncIO feature now available in Python3.
