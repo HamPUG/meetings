@@ -1,9 +1,10 @@
 # 2019-04-08
-#### 55
+#### 58
 
 ## Intro to Python
 
-Lawrence D'Oliverior delivered his Intro to Python presentation for 2019.
+**Lawrence D'Oliveriro** 
+Lawrence delivered his Intro to Python presentation for 2019.
 
 Click the *launch binder* icon to run Lawrences presentation in binders Jupyter server...
 
