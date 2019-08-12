@@ -1,7 +1,8 @@
 # 2018-04-09
-#### 44
+#### 47
 
 ## Classes, Descriptors & Metaclasses
+**Lawrence D'Oliveiro**
 
 Lawrence delivered a presentation on Classes, Descriptors & Metaclasses
 
@@ -13,8 +14,9 @@ Click on the *launch binder* icon to run the ipynb file in the binder Jupyter se
 
 
 ## virtual environments
+**Peter Reutemann** 
 
-Peter Reutemann delivered a presentation on **virtual environments** with one objective
+Peter delivered a presentation on **virtual environments** with one objective
 being *how **not** to stuff up your machine*.
 
 Refer to the folder *virtual_environments* for the slide show for Peter's presentation.
