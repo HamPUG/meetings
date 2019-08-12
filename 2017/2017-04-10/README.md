@@ -1,14 +1,11 @@
 # 2017-04-10
-#### 33
+#### 36
 
 ## Pycuda Skcuda Cumpy and Matplotlib
-
-* Chris
+**Chris**
 
 ## Flask Web Framework
-
-* Ian Stewart
+**Ian Stewart**
 
 ## Python Intro Talk 2/2
-
-* Lawrence D'Oliveiro
+**Lawrence D'Oliveiro**
