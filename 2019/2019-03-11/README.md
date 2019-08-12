@@ -3,8 +3,10 @@
 
 ## Tensorflow
 **Peter Reutemann** 
+
 Peter talked about using Tensorflow to detect burglars and pets
 
-## Using ~/home/user/bin
-**Ian Stewart** 
+## Using ~/home/user/bin Directory
+**Ian Stewart**
+
 Ian showed how to manage your (executable) scripts from your (Linux) home directory
