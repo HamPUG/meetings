@@ -1,5 +1,10 @@
 # 2019-03-11
-#### 54
+#### 57
 
-* Peter Reutemann talks about using Tensorflow to detect burglars and pets
-* Ian Stewart shows how to manage your (executable) scripts from your (Linux) home directory
+## Tensorflow
+**Peter Reutemann** 
+Peter talked about using Tensorflow to detect burglars and pets
+
+## Using ~/home/user/bin
+**Ian Stewart** 
+Ian showed how to manage your (executable) scripts from your (Linux) home directory
