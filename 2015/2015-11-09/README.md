@@ -1,13 +1,10 @@
 # 2015-11-09
-#### 20
+#### 21
 
 ## Pelican is a static site generator
-
 Pelican is a static site generator, written in Python. Refer to the sub-directory *pelican*.
 
-
 ## pyudev module
-
 Detecting Insertion and Removal of a USB device using pyudev.
 
 Ian Stewart presented an introduction to the effects of inserting and removing 
