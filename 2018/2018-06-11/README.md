@@ -1,9 +1,10 @@
 # 2018-06-11
-#### 46
+#### 49
 
 ## Flask / Docker
+**Andreas Loef**
 
-Andreas Loef's presentation on his microservice *Cowsay*, built using
+Andreas' presentation on his microservice *Cowsay*, built using
 Flask and deployable via Docker in the cloud.
 
 You can view the presentation, by opening *presentation.html* in your
