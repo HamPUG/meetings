@@ -1,9 +1,10 @@
 # 2018-08-13
-#### 48
+#### 51
 
-### Creating Api Bindings Using ctypes
+## Creating Api Bindings Using ctypes
+**Lawrence D'Oliverio**
 
-Lawrence D'Oliverio delivered a presentation on creating api bindings using ctypes.
+Lawrence delivered a presentation on creating api bindings using ctypes.
 
 Lawrence's presentation includes the Jupyter notebook ctypes example.ipnb. 
 
