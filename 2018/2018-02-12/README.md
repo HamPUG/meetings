@@ -1,11 +1,9 @@
 # 2018-02-12
-#### 42
+#### 45
 
-## setuptools, pypi and mkdocs
-
-* Peter Reutemann
+## Setuptools, Pypi and Mkdocs
+**Peter Reutemann**
 
 
 ## QtChart tutorial GUI demo
-
-* Ian Stewart
+**Ian Stewart**
