@@ -1,5 +1,5 @@
 # 2015-09-14
-#### 18
+#### 19
 
 ## Demostration of two python programs
 
@@ -19,7 +19,6 @@ is checked to ensure it has a shebang in the first line. E.g.
 ```bash
 #!/usr/bin/env python3
 ```
-
 The script may now be executed at the command line by just typing the file name
 and providing any input options or arguments the program requires. E.g. 
 ```bash
