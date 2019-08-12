@@ -1,8 +1,7 @@
 # 2015-12-14
-#### 21
+#### 22
 
 ## RPi.GPIO
-
 Ian Stewart presented the RPi.GPIO python module.
 
 The Raspberry Pi computer has a connector to provide physical access to connect
