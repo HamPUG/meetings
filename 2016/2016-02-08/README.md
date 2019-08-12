@@ -1,9 +1,9 @@
 # 2016-02-08/
-#### 22
+#### 23
 
 ## IPython
 
-Lawrence D'Oliveiro delivered a presentation on IPython. Lawrence provided two ipynb files, 
+**Lawrence D'Oliveiro** delivered a presentation on IPython. Lawrence provided two ipynb files, 
 *Exponential Series.ipynb* and *Solid Angle Of A Circle.ipynb*.
 
 The file *Exponential Series.ipynb* may be launched using the binder Jupyter kernel by 
