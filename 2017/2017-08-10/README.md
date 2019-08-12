@@ -1,7 +1,8 @@
 # 2017-08-10
-#### 37
+#### 40
 
 ## Classes & Metaclasses
+**Lawrence D'Oliveiro**
 
 Lawrence delivered a presentation on Classes & Metaclasses
 
