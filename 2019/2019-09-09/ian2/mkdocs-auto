@@ -1,0 +1,567 @@
+#!/usr/bin/env python3
+#!
+# mkdocs-auto
+#
+# TODO: One time program to setup the environment?
+# Original clone of irsbugs/meeting
+# $ git clone https://github.com/irsbugs/meetings.git
+#
+# Objectives:
+# This program uses the Github hampug meetings repository for data.
+# It resides in the top level of the meetings repository.
+# It must be launched from the local git meetings repository 
+# It requires: git, mkdocs, mkdocs-exclude, mkdocs-material
+# It should be launched from a virtual environment.
+# This program resides in:
+#   ~/.../meetings/
+#   Thus it is becomes part of the meeting repository
+# Creates a temporary mkdocs.yml that resides up-one-level
+#
+# ===
+
+import sys
+if sys.version_info[:2] < (3, 5):
+    sys.exit("Please use Python 3.5 or higher.")
+if sys.platform != 'linux':
+    sys.exit("Please use Linux.")
+
+import os
+import glob  # Requires V3.5+
+import subprocess
+
+# Debug Flag: -d or --debug.
+DEBUG = False
+if "-d" in sys.argv or "--debug" in sys.argv:
+    DEBUG = True
+
+VERSION = str(0.1)
+REPO_DIR = "meetings"
+ORG = "Hamilton Python Users Group"
+GITHUB = "https://github.com/hampug/"
+URL = "https://hampug/github.io/meetings/"
+SITE = "site"
+# The next level up directory can have any name.
+# TOP_DIR = "hampug-website"
+
+# Force launching the program from repo directory.
+# Thus level above can have any name. It will be accessed by reference.
+CWD = os.getcwd()
+cwd_list = CWD.split(os.sep)
+if DEBUG: print("cwd:", CWD, "cwd_list[-1]:", cwd_list[-1])
+if cwd_list[-1] != REPO_DIR:
+    sys.exit("Program launched from: {}. \n"
+             "This program should reside and be launched this from the\n" 
+             "'{}' repository folder.".format(CWD, REPO_DIR))
+
+# Get directory depth used for slicing prefix folders in mkdocs.yml:
+if DEBUG: print("len(cwd_list):", len(cwd_list))
+if DEBUG: print("cwd_list:" , cwd_list) 
+# cwd_list: ['', 'home', 'ian', 'hampug-website', 'meetings']
+DEPTH = cwd_list.index(REPO_DIR) + 1
+if DEBUG: print("DEPTH:", DEPTH) # 5
+
+
+# Concept: Directory constants/ variables will end with the os seperator.
+cwd_list.pop()
+TOP_DIR = os.sep.join(cwd_list) + os.sep
+CWD = CWD + os.sep
+if DEBUG: print("TOP_DIR:", TOP_DIR, "CWD:", CWD)
+
+
+# If mkdocs can not reference up a dir, then need to os.chdir()
+# Else in CWD is python program and mkdocs.yml. THe mkdocs.yml needs to
+# have a site or docs in the TOP_DIR. Files created in TOP_DIR can be
+# deleted by this program. mkdocs.yml and docs/
+
+# Test if git exists
+if glob.glob(CWD + ".git") == []:
+    sys.exit("This folder, {}, is not a .git repository.".format(CWD))
+
+
+#print(INTRO)
+
+print(sys.argv)
+print(os.getcwd())  # /home/ian/hampug-meetings
+print(sys.argv[0])  # meetings/hampug-mkdocs
+print(os.sep)  # /
+
+#CWD = os.getcwd() + os.sep
+
+# Launch program inside of the repository meetings.
+# os.chdir("..") or similar to hampug-meetings
+#>>> os.getcwd()
+#'/home/ian/hampug-meetings'
+#>>> os.chdir("..")
+#>>> os.getcwd()
+#'/home/ian'
+
+def get_readme():
+    # https://www.mkyong.com/python/python-how-to-list-all-files-in-a-directory/
+    # https://docs.python.org/3/library/os.html#os.walk 
+
+    import os
+
+    path = CWD #'/home/ian/venv7'
+
+    files = []
+    # r=root, d=directories, f = files
+    for r, d, f in os.walk(path):
+        for file in f:
+            #if '.txt' in file:
+                #files.append(os.path.join(r, file))
+            files.append(os.path.join(r, file))
+    for f in files:
+        print(f)
+
+
+
+def get_file_dict(path):
+    """
+    Files must reside off ~/.../meetings/...
+    The files must have an extension.
+    The absolute *path* is passed to this function. 
+
+    Return a dictionary with each path as a key containing a list of files.
+
+    The absolute paths are the keys. Another function will remove the prefixes 
+    of the absolute paths when the navigation tree is built
+
+    Purge from dictionary any key for a folder that has no files.
+
+    Uses: glob module
+    Requires: Python 3.5 or better
+
+    # https://www.mkyong.com/python/python-how-to-list-all-files-in-a-directory/ 
+    # https://docs.python.org/3/library/glob.html
+    """
+    #path = '/home/ian/venv7/'  # Requires final /
+    #path = '/home/ian/hampug-meetings/'
+
+    file_dict = {}
+
+    # Build a dictionary of an empty list, where key is a folder path.        
+    if DEBUG: print("Locating folders, build dictionary keys with empty list")
+    folders = [f for f in glob.glob(path + "**/", recursive=True)]
+    for folder in sorted(folders):
+        if DEBUG: print(folder)
+        file_dict[folder] = []
+
+    if DEBUG: print(file_dict) # , '/home/ian/venv7/share/python-wheels/': []}
+    if DEBUG: print("len(file_dict): ", len(file_dict))  # len(file_dict) : 495
+
+
+    # Use the file list to add filenames to the dictionary
+    if DEBUG: print("Adding files to dictionary")
+    if DEBUG: print(glob.glob(path + "**/*.*", recursive=True))
+    # File needs an extension to be recognised. i.e. glob *.*
+    file_list = glob.glob(path + "**/*.*", recursive=True)
+    for file in file_list:
+        file_split = file.split("/")
+        file_name = file_split.pop()
+        key = "/".join(file_split)
+        key = key + "/"
+        if DEBUG: print(key, file_name)
+        file_dict[key].append(file_name)
+
+    if DEBUG: print(file_dict)
+    if DEBUG: print("len(file_dict): ", len(file_dict))
+
+    # Remove keys for any folders that are empty.
+    # Two stages as can not remove keys when iterating over a dictionary
+    remove_list = []
+    for key, value in file_dict.items():
+        if value == []:
+            remove_list.append(key)
+
+    if DEBUG: print(remove_list)
+
+    print("\nWARNING: Folders contain no files. May have sub-folders:")
+    for key in remove_list:
+        print(key)
+    print("\n")
+
+    for key in remove_list:
+        file_dict.pop(key)
+
+    if DEBUG: print("len(file_dict): ", len(file_dict))
+
+    for key, value in file_dict.items():
+        if DEBUG: print(key, len(value))
+
+    return file_dict
+
+
+def get_markdown_files(file_dict):
+    """
+    Build a dictionary of the markdown files. i.e. file extension of .md
+    Needs to be a list as may be more than 1 x .md in a folder.
+    E.g.
+    /home/ian/hampug-website/meetings/2019/ ['extra.md', 'README.md']
+    """
+
+    markdown_dict = {}
+    for key, item in file_dict.items():
+        for file_name in item:
+            if file_name.endswith(".md"):
+                if key in markdown_dict.keys():
+                    # Already exists so append to list
+                    markdown_dict[key].append(file_name)
+                else:
+                    # Create a list and append
+                    markdown_dict[key] = []
+                    markdown_dict[key].append(file_name)
+
+    if DEBUG:
+        for key, item in markdown_dict.items():
+            #print(key, len(item))
+            print(key, item, len(item))
+    if DEBUG: print("len(markdown_dict):", len(markdown_dict)) # 110
+
+
+    if DEBUG: print("Checking. Files that do not start with '# ':")
+    count = 0
+    for key, item in markdown_dict.items():
+        for file_name in item:
+            with open(key + file_name, "r") as fin:
+                s = fin.readlines()[0]
+                if s.startswith("# "):
+                    #print(s) 
+                    pass
+                else:
+                    print(key, file_name, s)
+                    count += 1
+
+    print("Total markdown files that do not start with # : {}".format(count))
+
+    return markdown_dict
+
+def build_navigation(markdown_dict):
+    """
+    NOT USED: Use auto config of nav
+    What if 2 x md in same folder. Does markdown_dict work?
+    Build the nav: string for use in mkdocs.yml
+    Requires: markdown_dict
+        DEPTH of "meetings" folder in all keys S/B: 4
+    """
+    s = "\nnav:\n"
+    for key, item in markdown_dict.items():
+        # item is a list
+        key_list = key.split(os.sep)
+        if DEBUG: print(key_list)
+        # ['', 'home', 'ian', 'hampug-website', 'meetings', '2019', '']
+
+        key_list = key_list[DEPTH:]
+        key_indent = len(key_list)
+        if DEBUG: print(key_list) # ['2019', '']
+        key_short = os.sep.join(key_list)
+        if DEBUG: print(key_short) # 2019/
+        for file_name in item:
+            with open(key + file_name, "r") as fin:
+                title = fin.readlines()[0]
+                title = title[2:]  # Strip the '# '
+                title = title.strip() # Strip the n/l and trailing spaces
+    
+            path = key_short + file_name
+            if DEBUG: print(path) # 2019/README.md
+            prefix = " " * key_indent * 4 + "- "
+            path = ": '"+ path + "'"
+            if DEBUG: print(prefix + title + path)
+            s += prefix + title + path + "\n"
+
+            #nav:
+            #    - About: 'about.md'
+            #    - Meetings: 'README.md'
+            #        - 2014: '2014/README.md'
+            #            - 2014-02-24: '2014/2014-02-24/README.md'
+            #            - 2014-03-10: '2014/2014-03-10/README.md'
+            #            - 2014-04-14: '2014/2014-04-14/README.md'
+            #            - 2014-05-12: '2014/2014-05-12/README.md'
+            #            - 2014-06-09: '2014/2014-06-09/README.md'
+            #                - Spyder: '2014/2014-06-09/spyderlib/README.md'
+ 
+            #['', 'home', 'ian', 'hampug-website', 'meetings', '2019', '']
+            #['2019', '']
+            #2019/
+            #2019/extra.md
+            #    -: '2019/extra.md'
+            #2019/README.md
+            #    -: '2019/README.md'
+    s += "\n"
+    if DEBUG: print(s)
+    return s
+        
+def run_mkdocs(mkdocs_file):
+    """
+    MkDocs is run up-one-level (TOP_DIR) from CWD, so it finds its folders OK.
+    Create the file mkdocs.yml up-one-level
+    If folder doesn't exist may need to create docs/ up-one-level
+    """
+    with open(TOP_DIR + "mkdocs.yml", "w") as fout:
+        fout.write(mkdocs_file)
+
+    # Remove contents of docs
+    # 
+    command = "rm -r docs/*"
+    completed = subprocess.run(command, shell=True)
+    print('returncode:', completed.returncode)
+    
+
+    # run mkdocs built --clean up one level
+    print("os.getcwd():", os.getcwd())
+    # Go up one directory to run the mkdocs
+    os.chdir("..")
+    #os.path.normpath(os.getcwd() + os.sep + os.pardir)
+    print("os.getcwd():", os.getcwd())
+
+    #command = 'ls .. -1'  # < -- Works
+    # Run mkdocs
+    command = "mkdocs build --clean"
+    completed = subprocess.run(command, shell=True)
+    print('returncode:', completed.returncode)
+
+    os.chdir("meetings")
+    print("os.getcwd():", os.getcwd())   
+
+    # Check if want to continue.
+    prompt = "About to proceed with git update. Do you want to continue? [Y/n]: "
+    response = input(prompt)
+    if response == "":
+        response = "y"
+    if response[0].lower() not in ("y", "t", 1):
+        sys.exit("Exiting...")
+
+    command = "rsync -r ../docs/ docs/"
+    completed = subprocess.run(command, shell=True)
+    print('returncode:', completed.returncode)
+
+    command = "git status"
+    completed = subprocess.run(command, shell=True)
+    print('returncode:', completed.returncode)
+
+    command = "git add --all"
+    completed = subprocess.run(command, shell=True)
+    print('returncode:', completed.returncode)
+
+    command = "git commit -m 'update website'"
+    completed = subprocess.run(command, shell=True)
+    print('returncode:', completed.returncode)
+
+    command = "git push -u origin master"
+    completed = subprocess.run(command, shell=True)
+    print('returncode:', completed.returncode)
+
+
+def create_data():
+    # In the meetings folder create mock data
+    pass
+        
+
+def program_info():
+    """
+    Provide some information on program launch.
+    """
+    print("Python3 program: {}".format(sys.argv[0]))
+    print("Version: {}".format(VERSION))
+    print("Launched from: {}".format(CWD))
+    print("Contains .git repository: {}".format(os.path.isdir(CWD + ".git")))
+
+
+    #dir_list = CWD.split("/")
+    # print(len(dir_list), dir_list, dir_list[-2])
+    # 5 ['', 'home', 'ian', 'hampug-meetings', ''] hampug-meetings
+    #if dir_list[-2] != LAUNCH_DIR:
+    #print(os.path.isfile("/home/ian/hampug-meetings/meetings/mkdocs-auto"))
+    #print(os.path.isdir("/home/ian/hampug-meetings/meetings/.git"))
+
+def help():
+    if "-h" in sys.argv or "--help" in sys.argv:
+        print(INTRO)
+        sys.exit()
+
+def main():
+    help()
+
+    program_info()
+
+    #get_readme()
+    #file_dict = get_file_dict('/home/ian/venv7/')
+
+
+    # Get a dictionary of all files in 
+    file_dict = get_file_dict(CWD)
+    #file_dict = get_file_dict('/home/ian/hampug-meetings/')
+
+    for key, value in file_dict.items():
+        if DEBUG: print(key, len(value))
+
+    # len(file_dict):  147
+    # len(file_dict):  138  # 9 empty folders:
+
+    markdown_dict = get_markdown_files(file_dict)
+
+    # OK to here 110 .md files all start with # 
+    # TODO: Build the nav path
+    nav_string = build_navigation(markdown_dict)
+    if DEBUG: print(nav_string)
+
+    #  nav: string not required auto-generated.
+    mkdocs_file = TEMPLATE  #  + nav_string
+    if DEBUG: print(mkdocs_file)
+
+    run_mkdocs(mkdocs_file)
+
+    sys.exit()
+
+    #get_glob_short_path()
+    filter_prefix = "/home/ian/"
+    filter_prefix = '/home/ian/hampug-meetings/'
+    #filter_prefix = '/home/ian/venv7/'  
+    build_nav(file_dict, filter_prefix)
+    #build_nav(file_dict)
+
+
+    pass
+
+# Stuff long-winded constants here...
+# The template for building the mkdocs.yml file
+TEMPLATE = """site_name: HamPUG
+docs_dir: meetings  # Source files. default is docs
+site_dir: docs      # Website files. (Temporary) Default is site.
+                    # Website files are later rsync'ed to meetings/docs
+
+# The material theme uses a different search from the default mkdocs theme
+theme: 
+    name: 'material'  # default is 'mkdocs' theme
+    palette:
+        primary: 'indigo'
+        accent: 'indigo'
+
+# Exclude plugin: https://github.com/apenwarr/mkdocs-exclude
+# Exclude the /docs/ folder (the website) in the meetings source folder
+# Since meetings is the source, then just need doc/* to exclude
+# This is later used to hold the website via:
+# rsync -r docs/ meetings/docs/ 
+# Exclude: 
+#   Impress presentation files (.opd) 
+#   Jupyter Notebook (.ipynb)
+# '- search' needs to be added to the plugins list.
+
+plugins:
+    - exclude:
+        glob:
+            - docs/* 
+            - "*.odp"
+            - "*.ipynb"
+            - "*.yml"
+            - about.md
+    - search:
+
+"""
+
+INTRO = """
+Welcome to the program '{}' version {}.
+This program is for creating a Github project website for:
+{}.
+Their Github account is: {}
+The specific repository is: '{}'.
+The created website will have the URL: {}
+
+It is assumed that the current document layout on Github is in a sorted 
+fashion. The website navigation will be based on a sort of the Github
+repository. 
+
+A requirement is that all markdown documents commence the first
+line with a single hash, '#', and space, followed by a brief title. This
+title is used in the website navigation.
+
+This program assumes that you have a local git repository called '{}'
+and that this program is being run from that repository. For example your
+local folders may be ~/hampug-website/meetings/
+
+Prerequisites:
+0. This program is already in the top level Github meetings repository.
+1. Run this program from a virtual environment which includes:
+    o Python3.5 or higher.
+    o mkdocs version 1.0.4 or higher.
+    o mkdocs-exclude 1.0.2 or higher. Plugin to exclude files or folders.
+    o mkdocs-material 4.4.2 or higher. Theme plugin
+    o git version 2.17.1 or higher.
+2. In the {} Github repository {} 'Clone or Download' the repository so that 
+    it becomes one of your Github repositories.
+3. Create a local folder. E.g. $ mkdir github-website
+4. Change directory to that folder. E.g. $ cd github-website
+5. Clone Github to the local directory
+    $ git cloan https://github.com/MY_GITHUB_ACCOUNT/{}.git
+    This will create the folder {} which will be a git repository with a .git
+    folder off it.
+6. Set default to meetings. E.g. cd meetings.
+7. Run this program. From this meetings directory.
+8. The mkdocs.yml file and the /docs folder containing the website are placed
+    into the directory above meetings.
+9. Execute mkdocs commands from this directory as follows:
+    (venv) ian:~/website/meetings$ cd .. ; mkdocs build ; cd meetings
+    INFO    -  Cleaning site directory 
+    INFO    -  Building documentation to directory: /home/ian/meetings/docs 
+
+The program will do the following: 
+1. Review the '{}' repository and locate all markdown files.
+2. Check all markdown files meet the 'first line' requirement.
+3. Build the nav: structure.
+4. Build mkdocs.yml which will be placed folder up one level in: {}.
+5. Up one level create the folder for the website: {}
+6. Second line requirment is "Links: github" 
+7. Run mkdocs to build the website
+8. Run rsync to move the website into the respository off the /docs folder
+
+When the program terminates you may then:
+1. Test the website with mkdocs serve
+2. Push the .git repository to Github. The changes will be the /docs folder.
+3. Test the updated website at: {}
+""".format(sys.argv[0], VERSION, ORG, GITHUB, REPO_DIR, URL, REPO_DIR, 
+GITHUB, REPO_DIR, REPO_DIR, REPO_DIR, REPO_DIR, TOP_DIR, SITE, URL)
+
+
+if __name__=="__main__":
+    main()
+
+
+"""
+Notes:
+https://docs.python.org/3/library/glob.html
+>>> import glob
+>>> dir(glob)
+['__all__', '__builtins__', '__cached__', '__doc__', '__file__', '__loader__', '__name__', '__package__', '__spec__', '_glob0', '_glob1', '_glob2', '_iglob', '_ishidden', '_isrecursive', '_iterdir', '_rlistdir', 'escape', 'fnmatch', 'glob', 'glob0', 'glob1', 'has_magic', 'iglob', 'magic_check', 'magic_check_bytes', 'os', 're']
+>>> 
+
+If recursive is true, the pattern “**” will match any files and zero or more directories and subdirectories. If the pattern is followed by an os.sep, only directories and subdirectories match.
+Changed in version 3.5: Support for recursive globs using “**”.
+
+https://stackoverflow.com/questions/3964681/find-all-files-in-a-directory-with-extension-txt-in-python
+
+You can use glob:
+
+import glob, os
+os.chdir("/mydir")
+for file in glob.glob("*.txt"):
+    print(file)
+
+or simply os.listdir:
+
+import os
+for file in os.listdir("/mydir"):
+    if file.endswith(".txt"):
+        print(os.path.join("/mydir", file))
+
+or if you want to traverse directory, use os.walk:
+
+import os
+for root, dirs, files in os.walk("/mydir"):
+    for file in files:
+        if file.endswith(".txt"):
+             print(os.path.join(root, file))
+
+
+for file in [f for f in os.listdir('/mydir') if f.endswith('.txt')]:
+
+"""
+
