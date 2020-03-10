@@ -1,5 +1,5 @@
-March 2020
+# March 2020
 
-Lawrence presented An Intro to Python
+* Lawrence presented An Intro to Python
 
-Ian presented the Kivy and Buildozer applications
+* Ian presented the Kivy and Buildozer applications
