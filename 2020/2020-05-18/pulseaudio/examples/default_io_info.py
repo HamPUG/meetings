@@ -2,7 +2,7 @@
 
 from pulsectl import Pulse, PulseVolumeInfo
 
-with Pulse('hampug') as pulse:
+with Pulse('nzpug') as pulse:
     def_source = pulse.server_info().default_source_name
     print("\nsource", def_source)
     for s in pulse.source_list():

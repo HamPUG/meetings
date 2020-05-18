@@ -2,7 +2,7 @@
 
 from pulsectl import Pulse
 
-with Pulse('hampug') as pulse:
+with Pulse('nzpug') as pulse:
     source = pulse.source_list()[4]
     pulse.default_set(source)
     source.volume.value_flat = 0.5

@@ -2,7 +2,7 @@
 
 from pulsectl import Pulse
 
-with Pulse('event-printer') as pulse:
+with Pulse('nzpug') as pulse:
   def print_events(ev):
     print('Pulse event:', ev)
 
