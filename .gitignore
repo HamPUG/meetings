@@ -3,3 +3,5 @@
 .~lock*
 
 /.project
+venv
+
