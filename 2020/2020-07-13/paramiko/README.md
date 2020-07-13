@@ -104,7 +104,7 @@ optional arguments:
 
 Start the application with something like this:
 ```
-$ python paramiko_demo.py -s 1.2.3.4 -p 22 -u aroha -w my_password
+$ python paramiko_demo.py -s 1.2.3.4 -p 22 -u admin -w my_password
 ```
 
 ### 4.
