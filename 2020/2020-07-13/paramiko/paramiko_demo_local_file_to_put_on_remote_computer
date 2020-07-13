@@ -1,0 +1,7 @@
+Test file for paramiko
+
+paramiko_demo_local_file_to_put_on_remote_computer
+
+Copy this from current working directory on local machine to remote server.
+
+ 
