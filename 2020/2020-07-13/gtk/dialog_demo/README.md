@@ -19,9 +19,9 @@ that lasts for a random time and then the dialog frame is destroyed.
 
 The *MessageDialog* supports limited markup of the text field using tags, as follows:
 
-* <b>: Bold </b>
-* <big>: Makes font relatively larger, equivalent to <span size="larger"> </big>
-* <i>: Italic </i>
+* \<b>: Bold \</b>
+* \<big>: Makes font relatively larger, equivalent to <span size="larger"> \</big>
+* \<i>: Italic \</i>
 * <s>: Strikethrough </s>
 * <sub>: Subscript </sub>
 * <sup>: Superscript </sup>
