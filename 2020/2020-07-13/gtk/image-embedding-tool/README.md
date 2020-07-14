@@ -114,7 +114,7 @@ A folder named `images` is included such that it may be downloaded and you can t
 
 On launching the program the initial screen is as follows:
 
-<img src="https://github.com/irsbugs/image-embedding-tool/blob/master/initial_screen.png">
+<img src="https://github.com/HamPUG/meetings/blob/master/2020/2020-07-13/gtk/image-embedding-tool/initial_screen.png">
 
 Note that the program contains an embedded image of a dogs face using the constant B64_IMAGE_2.
 Line 39 of the program is: `ICON_IMAGE = 2`. If this is changed to `ICON_IMAGE = 1`, then 
@@ -124,4 +124,5 @@ After an image file has been selected the text view widget displays the image as
 it to the constant **B64_IMAGE**. *Select All* and *Copy* the contents of the constant in the text 
 view widget into the program you are developing.
 
-<img src="https://github.com/irsbugs/image-embedding-tool/blob/master/after_selecting_image.png">
+<img src="https://github.com/HamPUG/meetings/blob/master/2020/2020-07-13/gtk/image-embedding-tool/after_selecting_image.png">
+
