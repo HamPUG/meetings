@@ -36,10 +36,10 @@ if sys.version_info < PYTHON_VERSION_MIN:
 
 
 # Select which Icon image to use. 0,1,2,...:
-ICON_IMAGE = 0
+ICON_IMAGE = 2
 
 # Labelling...
-VERSION = "2020-07-10"
+VERSION = "2020-07-14"
 TITLE = "Icon Embedding Tool"
 FRAME_1 = "Convert an Image to Base 64 for embedding in a Python program"
 LABEL_1 = "Click <b>Select Image</b> to locate an image to be converted to base 64"
@@ -53,34 +53,11 @@ WINDOW_HEIGHT = 800
 MARGIN_SIZE = 10
 
 # Use CSS as method for changing fonts and colours, etc.
-CSS = """
-    /* Display */
-    /* Warning changes the font in the file chooser dialog. Strange? 
-    scrolledwindow {
-        font-family: "Courier New", Mono;
-        font-weight: 700;
-        font-size: 15px;        
-    } */
-    
-    /* CSS to set the font size for self.frame, which has been named 'frame' */
-    #frame_2 * {
-    font: 18px Mono;
+CSS = """    
+    /* CSS to set the font size for scrolled_window_1 which contains textview */
+    #scrolled_window_1 * {
+    font: 15px Mono;
     } 
-"""
-"""
-Old CSS
-    /* CSS to set the font size for self.frame, which has been named 'frame' */
-    #frame * {
-    font: 18px Sans;
-    }
-    /* CSS to set the font size for treeview, which has been named 'tree' */
-    #tree * {
-    font: 16px Sans;
-    }
-    /* CSS to set Message Dialog, but doesn't seem to work */
-    #messagedialog * {
-    font: 16px Sans;
-    }
 """
 
 
@@ -241,6 +218,7 @@ class Icon_Window(Gtk.Window):
         self.frame_2.set_label_align(0.1, 0.9)
                 
         scrolledwindow = Gtk.ScrolledWindow()
+        scrolledwindow.set_name("scrolled_window_1")
         scrolledwindow.set_hexpand(True)
         scrolledwindow.set_vexpand(True)
         scrolledwindow.set_min_content_height(200)
@@ -501,55 +479,7 @@ YXRoMjgiCiAgICAgICBpbmtzY2FwZTpjb25uZWN0b3ItY3VydmF0dXJlPSIwIgogICAgICAgc29k
 aXBvZGk6bm9kZXR5cGVzPSJjY2NjY2NjYyIgLz4KICA8L2c+Cjwvc3ZnPgo=
 """)
 
-B64_IMAGE = (b"""
-PD94bWwgdmVyc2lvbj0iMS4wIiBlbmNvZGluZz0iVVRGLTgiIHN0YW5kYWxvbmU9Im5vIj8+Cjwh
-LS0gQ3JlYXRlZCB3aXRoIElua3NjYXBlIChodHRwOi8vd3d3Lmlua3NjYXBlLm9yZy8pIC0tPgoK
-PHN2ZwogICB4bWxuczpkYz0iaHR0cDovL3B1cmwub3JnL2RjL2VsZW1lbnRzLzEuMS8iCiAgIHht
-bG5zOmNjPSJodHRwOi8vY3JlYXRpdmVjb21tb25zLm9yZy9ucyMiCiAgIHhtbG5zOnJkZj0iaHR0
-cDovL3d3dy53My5vcmcvMTk5OS8wMi8yMi1yZGYtc3ludGF4LW5zIyIKICAgeG1sbnM6c3ZnPSJo
-dHRwOi8vd3d3LnczLm9yZy8yMDAwL3N2ZyIKICAgeG1sbnM9Imh0dHA6Ly93d3cudzMub3JnLzIw
-MDAvc3ZnIgogICB4bWxuczpzb2RpcG9kaT0iaHR0cDovL3NvZGlwb2RpLnNvdXJjZWZvcmdlLm5l
-dC9EVEQvc29kaXBvZGktMC5kdGQiCiAgIHhtbG5zOmlua3NjYXBlPSJodHRwOi8vd3d3Lmlua3Nj
-YXBlLm9yZy9uYW1lc3BhY2VzL2lua3NjYXBlIgogICB3aWR0aD0iMzIiCiAgIGhlaWdodD0iMzIi
-CiAgIGlkPSJzdmcyOTkxIgogICB2ZXJzaW9uPSIxLjEiCiAgIGlua3NjYXBlOnZlcnNpb249IjAu
-OTIuNSAoMjA2MGVjMWY5ZiwgMjAyMC0wNC0wOCkiCiAgIGlua3NjYXBlOmV4cG9ydC14ZHBpPSI5
-MCIKICAgaW5rc2NhcGU6ZXhwb3J0LXlkcGk9IjkwIgogICBzb2RpcG9kaTpkb2NuYW1lPSJmYXZp
-Y29uX2JsdWVfMzJfYmlnLnN2ZyI+CiAgPGRlZnMKICAgICBpZD0iZGVmczI5OTMiIC8+CiAgPHNv
-ZGlwb2RpOm5hbWVkdmlldwogICAgIGlkPSJiYXNlIgogICAgIHBhZ2Vjb2xvcj0iI2ZmZmZmZiIK
-ICAgICBib3JkZXJjb2xvcj0iIzY2NjY2NiIKICAgICBib3JkZXJvcGFjaXR5PSIxLjAiCiAgICAg
-aW5rc2NhcGU6cGFnZW9wYWNpdHk9IjAuMCIKICAgICBpbmtzY2FwZTpwYWdlc2hhZG93PSIyIgog
-ICAgIGlua3NjYXBlOnpvb209IjIyLjYyNzQxNyIKICAgICBpbmtzY2FwZTpjeD0iMTUuMDIzMTY5
-IgogICAgIGlua3NjYXBlOmN5PSIxNi41MjA5NzgiCiAgICAgaW5rc2NhcGU6ZG9jdW1lbnQtdW5p
-dHM9InB4IgogICAgIGlua3NjYXBlOmN1cnJlbnQtbGF5ZXI9ImxheWVyMSIKICAgICBzaG93Z3Jp
-ZD0idHJ1ZSIKICAgICBib3JkZXJsYXllcj0idHJ1ZSIKICAgICBvYmplY3R0b2xlcmFuY2U9IjEi
-CiAgICAgZ3JpZHRvbGVyYW5jZT0iMSIKICAgICBpbmtzY2FwZTp3aW5kb3ctd2lkdGg9IjEzNTUi
-CiAgICAgaW5rc2NhcGU6d2luZG93LWhlaWdodD0iMTAwMiIKICAgICBpbmtzY2FwZTp3aW5kb3ct
-eD0iMTUxIgogICAgIGlua3NjYXBlOndpbmRvdy15PSI0MiIKICAgICBpbmtzY2FwZTp3aW5kb3ct
-bWF4aW1pemVkPSIwIgogICAgIHNob3dndWlkZXM9ImZhbHNlIj4KICAgIDxpbmtzY2FwZTpncmlk
-CiAgICAgICB0eXBlPSJ4eWdyaWQiCiAgICAgICBpZD0iZ3JpZDMxMjEiCiAgICAgICBlbXBzcGFj
-aW5nPSI1IgogICAgICAgdmlzaWJsZT0idHJ1ZSIKICAgICAgIGVuYWJsZWQ9InRydWUiCiAgICAg
-ICBzbmFwdmlzaWJsZWdyaWRsaW5lc29ubHk9ImZhbHNlIiAvPgogIDwvc29kaXBvZGk6bmFtZWR2
-aWV3PgogIDxtZXRhZGF0YQogICAgIGlkPSJtZXRhZGF0YTI5OTYiPgogICAgPHJkZjpSREY+CiAg
-ICAgIDxjYzpXb3JrCiAgICAgICAgIHJkZjphYm91dD0iIj4KICAgICAgICA8ZGM6Zm9ybWF0Pmlt
-YWdlL3N2Zyt4bWw8L2RjOmZvcm1hdD4KICAgICAgICA8ZGM6dHlwZQogICAgICAgICAgIHJkZjpy
-ZXNvdXJjZT0iaHR0cDovL3B1cmwub3JnL2RjL2RjbWl0eXBlL1N0aWxsSW1hZ2UiIC8+CiAgICAg
-ICAgPGRjOnRpdGxlPjwvZGM6dGl0bGU+CiAgICAgIDwvY2M6V29yaz4KICAgIDwvcmRmOlJERj4K
-ICA8L21ldGFkYXRhPgogIDxnCiAgICAgaW5rc2NhcGU6bGFiZWw9IkxheWVyIDEiCiAgICAgaW5r
-c2NhcGU6Z3JvdXBtb2RlPSJsYXllciIKICAgICBpZD0ibGF5ZXIxIgogICAgIHRyYW5zZm9ybT0i
-dHJhbnNsYXRlKDAsLTEwMjAuMzYyMikiPgogICAgPHBhdGgKICAgICAgIHN0eWxlPSJmaWxsOiNm
-NWFiMTQ7ZmlsbC1vcGFjaXR5OjE7ZmlsbC1ydWxlOm5vbnplcm87c3Ryb2tlOm5vbmU7c3Ryb2tl
-LXdpZHRoOjIuMzMzMzMzMjUiCiAgICAgICBkPSJtIDIzLjQzNzUsMTAyMi4zNjIyIHYgMTguODEy
-NSBsIC01LjEwNDE2NywtNi41Nzg0IGMgMC4wMTY1NywxMC4zMDA4IDAsLTAuNDk3NyAtMC4wMjMx
-LDkuODM3NCBsIDQuNjE2ODI3LDUuOTI4NSBIIDMwIHYgLTI4IHoiCiAgICAgICBpZD0icGF0aDI4
-LTUiCiAgICAgICBpbmtzY2FwZTpjb25uZWN0b3ItY3VydmF0dXJlPSIwIgogICAgICAgc29kaXBv
-ZGk6bm9kZXR5cGVzPSJjY2NjY2NjYyIgLz4KICAgIDxwYXRoCiAgICAgICBzdHlsZT0iZmlsbDoj
-MzNhNGQ1O2ZpbGwtb3BhY2l0eToxO2ZpbGwtcnVsZTpub256ZXJvO3N0cm9rZTpub25lO3N0cm9r
-ZS13aWR0aDoyLjMzMzMzMzI1IgogICAgICAgZD0ibSAxLjk5OTk5OTgsMTAyMi4zNjIyIHYgMjgg
-aCA2LjU2MjQ5OTkgdiAtMTguNDQ4IGwgNy4zOTg4MzAzLDkuNTY1NyBjIDAsMCAwLjAxMTA4LC0w
-LjE0OTMgMC4wMzg2OCwtOS45MjYyIGwgLTcuMTQ1ODMzLC05LjE5MTUgeiIKICAgICAgIGlkPSJw
-YXRoMjgiCiAgICAgICBpbmtzY2FwZTpjb25uZWN0b3ItY3VydmF0dXJlPSIwIgogICAgICAgc29k
-aXBvZGk6bm9kZXR5cGVzPSJjY2NjY2NjYyIgLz4KICA8L2c+Cjwvc3ZnPgo=
-""")
+
 NOTES = """
 Image Embedding Tool. Version: {}
  
