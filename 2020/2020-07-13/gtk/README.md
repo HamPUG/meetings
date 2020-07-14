@@ -2,7 +2,7 @@
 
 This presentation demonstrates aspects of GTK.
 
-Please review the slide show for information on the various demos:
+Please review the slide show for information on all the demos:
 
 * gtk_presentation.odp
 * gtk_presentation.pdf
