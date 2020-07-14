@@ -126,8 +126,6 @@ Enter the password for the account on the remote server: my_password
 
 ## Screenshot
 
-<img src="https://github.com/irsbugs/paramiko/blob/master/sreenshot.png">
+paramiko_demo.py
 
-
-Ian Stewart - 2020-07-08
-
+<img src="https://github.com/HamPUG/meetings/blob/master/2020/2020-07-13/paramiko/sreenshot.png">
