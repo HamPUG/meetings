@@ -1,4 +1,21 @@
 # GTK Bits and Pieces
 
-The following snipets of code demonstrate aspects of GTK.
+This presentation demonstrates aspects of GTK.
 
+Please review the slide show for information on the various demos:
+
+* gtk_presentation.odp
+* gtk_presentation.pdf
+
+## Image Embedding Tool
+
+image-embedding-tool
+
+## MessageDialog Function
+
+* dialog_demo
+
+## GTK Constants, Enums and Flags
+
+
+ 
