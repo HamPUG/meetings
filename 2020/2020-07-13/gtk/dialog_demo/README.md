@@ -1,4 +1,4 @@
-# MessageDialog Demons
+# MessageDialog Demo's
 
 The **Gtk.MessageDialog()** is normally used to provide a message, like, *Are you finished?* and you click on *Yes* or *No*
 buttons. Once a button has been clicked on, then the dialog frame is destroyed and the response of *Yes* or *No* is returned.
@@ -29,4 +29,4 @@ The *MessageDialog* supports limited markup of the text field using tags, as fol
 * \<tt>: Monospace
 * \<u>: Underline
   
-Also *MessageDialog* supports CSS. The program *dialog_demo_timeout_css.py* demonstrates markup and CSS. 
+Also *MessageDialog* supports CSS. The program *dialog_demo_timeout.py* demonstrates markup, while *dialog_demo_timeout_css.py* demonstrates both markup and CSS. 
