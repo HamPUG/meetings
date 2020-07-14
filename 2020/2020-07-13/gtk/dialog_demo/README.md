@@ -19,14 +19,14 @@ that lasts for a random time and then the dialog frame is destroyed.
 
 The *MessageDialog* supports limited markup of the text field using tags, as follows:
 
-* \<b>: Bold \</b>
-* \<big>: Makes font relatively larger, equivalent to <span size="larger"> \</big>
-* \<i>: Italic \</i>
-* <s>: Strikethrough </s>
-* <sub>: Subscript </sub>
-* <sup>: Superscript </sup>
-* <small>: Makes font relatively smaller, equivalent to <span size="smaller"> </small> 
-* <tt>: Monospace </tt>
-* <u>: Underline </u>
+* \<b>: Bold
+* \<big>: Makes font relatively larger, equivalent to <span size="larger">
+* \<i>: Italic
+* \<s>: Strikethrough
+* \<sub>: Subscript
+* \<sup>: Superscript
+* \<small>: Makes font relatively smaller, equivalent to <span size="smaller"> 
+* \<tt>: Monospace
+* \<u>: Underline
   
 Also *MessageDialog* supports CSS. The program *dialog_demo_timeout_css.py* demonstrates markup and CSS. 
