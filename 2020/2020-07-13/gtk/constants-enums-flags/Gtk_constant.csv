@@ -1,0 +1,931 @@
+Gtk.BINARY_AGE,<class 'int'>,2420
+Gtk.HSV,<class 'gi.types.GObjectMeta'>,<class 'gi.repository.Gtk.HSV'>
+Gtk.INPUT_ERROR,<class 'int'>,-1
+Gtk.INTERFACE_AGE,<class 'int'>,16
+Gtk.LEVEL_BAR_OFFSET_FULL,<class 'str'>,full
+Gtk.LEVEL_BAR_OFFSET_HIGH,<class 'str'>,high
+Gtk.LEVEL_BAR_OFFSET_LOW,<class 'str'>,low
+Gtk.MAJOR_VERSION,<class 'int'>,3
+Gtk.MAX_COMPOSE_LEN,<class 'int'>,7
+Gtk.MICRO_VERSION,<class 'int'>,20
+Gtk.MINOR_VERSION,<class 'int'>,24
+Gtk.PAPER_NAME_A3,<class 'str'>,iso_a3
+Gtk.PAPER_NAME_A4,<class 'str'>,iso_a4
+Gtk.PAPER_NAME_A5,<class 'str'>,iso_a5
+Gtk.PAPER_NAME_B5,<class 'str'>,iso_b5
+Gtk.PAPER_NAME_EXECUTIVE,<class 'str'>,na_executive
+Gtk.PAPER_NAME_LEGAL,<class 'str'>,na_legal
+Gtk.PAPER_NAME_LETTER,<class 'str'>,na_letter
+Gtk.PATH_PRIO_MASK,<class 'int'>,15
+Gtk.PRINT_SETTINGS_COLLATE,<class 'str'>,collate
+Gtk.PRINT_SETTINGS_DEFAULT_SOURCE,<class 'str'>,default-source
+Gtk.PRINT_SETTINGS_DITHER,<class 'str'>,dither
+Gtk.PRINT_SETTINGS_DUPLEX,<class 'str'>,duplex
+Gtk.PRINT_SETTINGS_FINISHINGS,<class 'str'>,finishings
+Gtk.PRINT_SETTINGS_MEDIA_TYPE,<class 'str'>,media-type
+Gtk.PRINT_SETTINGS_NUMBER_UP,<class 'str'>,number-up
+Gtk.PRINT_SETTINGS_NUMBER_UP_LAYOUT,<class 'str'>,number-up-layout
+Gtk.PRINT_SETTINGS_N_COPIES,<class 'str'>,n-copies
+Gtk.PRINT_SETTINGS_ORIENTATION,<class 'str'>,orientation
+Gtk.PRINT_SETTINGS_OUTPUT_BASENAME,<class 'str'>,output-basename
+Gtk.PRINT_SETTINGS_OUTPUT_BIN,<class 'str'>,output-bin
+Gtk.PRINT_SETTINGS_OUTPUT_DIR,<class 'str'>,output-dir
+Gtk.PRINT_SETTINGS_OUTPUT_FILE_FORMAT,<class 'str'>,output-file-format
+Gtk.PRINT_SETTINGS_OUTPUT_URI,<class 'str'>,output-uri
+Gtk.PRINT_SETTINGS_PAGE_RANGES,<class 'str'>,page-ranges
+Gtk.PRINT_SETTINGS_PAGE_SET,<class 'str'>,page-set
+Gtk.PRINT_SETTINGS_PAPER_FORMAT,<class 'str'>,paper-format
+Gtk.PRINT_SETTINGS_PAPER_HEIGHT,<class 'str'>,paper-height
+Gtk.PRINT_SETTINGS_PAPER_WIDTH,<class 'str'>,paper-width
+Gtk.PRINT_SETTINGS_PRINTER,<class 'str'>,printer
+Gtk.PRINT_SETTINGS_PRINTER_LPI,<class 'str'>,printer-lpi
+Gtk.PRINT_SETTINGS_PRINT_PAGES,<class 'str'>,print-pages
+Gtk.PRINT_SETTINGS_QUALITY,<class 'str'>,quality
+Gtk.PRINT_SETTINGS_RESOLUTION,<class 'str'>,resolution
+Gtk.PRINT_SETTINGS_RESOLUTION_X,<class 'str'>,resolution-x
+Gtk.PRINT_SETTINGS_RESOLUTION_Y,<class 'str'>,resolution-y
+Gtk.PRINT_SETTINGS_REVERSE,<class 'str'>,reverse
+Gtk.PRINT_SETTINGS_SCALE,<class 'str'>,scale
+Gtk.PRINT_SETTINGS_USE_COLOR,<class 'str'>,use-color
+Gtk.PRINT_SETTINGS_WIN32_DRIVER_EXTRA,<class 'str'>,win32-driver-extra
+Gtk.PRINT_SETTINGS_WIN32_DRIVER_VERSION,<class 'str'>,win32-driver-version
+Gtk.PRIORITY_RESIZE,<class 'int'>,110
+Gtk.STOCK_ABOUT,<class 'str'>,gtk-about
+Gtk.STOCK_ADD,<class 'str'>,gtk-add
+Gtk.STOCK_APPLY,<class 'str'>,gtk-apply
+Gtk.STOCK_BOLD,<class 'str'>,gtk-bold
+Gtk.STOCK_CANCEL,<class 'str'>,gtk-cancel
+Gtk.STOCK_CAPS_LOCK_WARNING,<class 'str'>,gtk-caps-lock-warning
+Gtk.STOCK_CDROM,<class 'str'>,gtk-cdrom
+Gtk.STOCK_CLEAR,<class 'str'>,gtk-clear
+Gtk.STOCK_CLOSE,<class 'str'>,gtk-close
+Gtk.STOCK_COLOR_PICKER,<class 'str'>,gtk-color-picker
+Gtk.STOCK_CONNECT,<class 'str'>,gtk-connect
+Gtk.STOCK_CONVERT,<class 'str'>,gtk-convert
+Gtk.STOCK_COPY,<class 'str'>,gtk-copy
+Gtk.STOCK_CUT,<class 'str'>,gtk-cut
+Gtk.STOCK_DELETE,<class 'str'>,gtk-delete
+Gtk.STOCK_DIALOG_AUTHENTICATION,<class 'str'>,gtk-dialog-authentication
+Gtk.STOCK_DIALOG_ERROR,<class 'str'>,gtk-dialog-error
+Gtk.STOCK_DIALOG_INFO,<class 'str'>,gtk-dialog-info
+Gtk.STOCK_DIALOG_QUESTION,<class 'str'>,gtk-dialog-question
+Gtk.STOCK_DIALOG_WARNING,<class 'str'>,gtk-dialog-warning
+Gtk.STOCK_DIRECTORY,<class 'str'>,gtk-directory
+Gtk.STOCK_DISCARD,<class 'str'>,gtk-discard
+Gtk.STOCK_DISCONNECT,<class 'str'>,gtk-disconnect
+Gtk.STOCK_DND,<class 'str'>,gtk-dnd
+Gtk.STOCK_DND_MULTIPLE,<class 'str'>,gtk-dnd-multiple
+Gtk.STOCK_EDIT,<class 'str'>,gtk-edit
+Gtk.STOCK_EXECUTE,<class 'str'>,gtk-execute
+Gtk.STOCK_FILE,<class 'str'>,gtk-file
+Gtk.STOCK_FIND,<class 'str'>,gtk-find
+Gtk.STOCK_FIND_AND_REPLACE,<class 'str'>,gtk-find-and-replace
+Gtk.STOCK_FLOPPY,<class 'str'>,gtk-floppy
+Gtk.STOCK_FULLSCREEN,<class 'str'>,gtk-fullscreen
+Gtk.STOCK_GOTO_BOTTOM,<class 'str'>,gtk-goto-bottom
+Gtk.STOCK_GOTO_FIRST,<class 'str'>,gtk-goto-first
+Gtk.STOCK_GOTO_LAST,<class 'str'>,gtk-goto-last
+Gtk.STOCK_GOTO_TOP,<class 'str'>,gtk-goto-top
+Gtk.STOCK_GO_BACK,<class 'str'>,gtk-go-back
+Gtk.STOCK_GO_DOWN,<class 'str'>,gtk-go-down
+Gtk.STOCK_GO_FORWARD,<class 'str'>,gtk-go-forward
+Gtk.STOCK_GO_UP,<class 'str'>,gtk-go-up
+Gtk.STOCK_HARDDISK,<class 'str'>,gtk-harddisk
+Gtk.STOCK_HELP,<class 'str'>,gtk-help
+Gtk.STOCK_HOME,<class 'str'>,gtk-home
+Gtk.STOCK_INDENT,<class 'str'>,gtk-indent
+Gtk.STOCK_INDEX,<class 'str'>,gtk-index
+Gtk.STOCK_INFO,<class 'str'>,gtk-info
+Gtk.STOCK_ITALIC,<class 'str'>,gtk-italic
+Gtk.STOCK_JUMP_TO,<class 'str'>,gtk-jump-to
+Gtk.STOCK_JUSTIFY_CENTER,<class 'str'>,gtk-justify-center
+Gtk.STOCK_JUSTIFY_FILL,<class 'str'>,gtk-justify-fill
+Gtk.STOCK_JUSTIFY_LEFT,<class 'str'>,gtk-justify-left
+Gtk.STOCK_JUSTIFY_RIGHT,<class 'str'>,gtk-justify-right
+Gtk.STOCK_LEAVE_FULLSCREEN,<class 'str'>,gtk-leave-fullscreen
+Gtk.STOCK_MEDIA_FORWARD,<class 'str'>,gtk-media-forward
+Gtk.STOCK_MEDIA_NEXT,<class 'str'>,gtk-media-next
+Gtk.STOCK_MEDIA_PAUSE,<class 'str'>,gtk-media-pause
+Gtk.STOCK_MEDIA_PLAY,<class 'str'>,gtk-media-play
+Gtk.STOCK_MEDIA_PREVIOUS,<class 'str'>,gtk-media-previous
+Gtk.STOCK_MEDIA_RECORD,<class 'str'>,gtk-media-record
+Gtk.STOCK_MEDIA_REWIND,<class 'str'>,gtk-media-rewind
+Gtk.STOCK_MEDIA_STOP,<class 'str'>,gtk-media-stop
+Gtk.STOCK_MISSING_IMAGE,<class 'str'>,gtk-missing-image
+Gtk.STOCK_NETWORK,<class 'str'>,gtk-network
+Gtk.STOCK_NEW,<class 'str'>,gtk-new
+Gtk.STOCK_NO,<class 'str'>,gtk-no
+Gtk.STOCK_OK,<class 'str'>,gtk-ok
+Gtk.STOCK_OPEN,<class 'str'>,gtk-open
+Gtk.STOCK_ORIENTATION_LANDSCAPE,<class 'str'>,gtk-orientation-landscape
+Gtk.STOCK_ORIENTATION_PORTRAIT,<class 'str'>,gtk-orientation-portrait
+Gtk.STOCK_ORIENTATION_REVERSE_LANDSCAPE,<class 'str'>,gtk-orientation-reverse-landscape
+Gtk.STOCK_ORIENTATION_REVERSE_PORTRAIT,<class 'str'>,gtk-orientation-reverse-portrait
+Gtk.STOCK_PAGE_SETUP,<class 'str'>,gtk-page-setup
+Gtk.STOCK_PASTE,<class 'str'>,gtk-paste
+Gtk.STOCK_PREFERENCES,<class 'str'>,gtk-preferences
+Gtk.STOCK_PRINT,<class 'str'>,gtk-print
+Gtk.STOCK_PRINT_ERROR,<class 'str'>,gtk-print-error
+Gtk.STOCK_PRINT_PAUSED,<class 'str'>,gtk-print-paused
+Gtk.STOCK_PRINT_PREVIEW,<class 'str'>,gtk-print-preview
+Gtk.STOCK_PRINT_REPORT,<class 'str'>,gtk-print-report
+Gtk.STOCK_PRINT_WARNING,<class 'str'>,gtk-print-warning
+Gtk.STOCK_PROPERTIES,<class 'str'>,gtk-properties
+Gtk.STOCK_QUIT,<class 'str'>,gtk-quit
+Gtk.STOCK_REDO,<class 'str'>,gtk-redo
+Gtk.STOCK_REFRESH,<class 'str'>,gtk-refresh
+Gtk.STOCK_REMOVE,<class 'str'>,gtk-remove
+Gtk.STOCK_REVERT_TO_SAVED,<class 'str'>,gtk-revert-to-saved
+Gtk.STOCK_SAVE,<class 'str'>,gtk-save
+Gtk.STOCK_SAVE_AS,<class 'str'>,gtk-save-as
+Gtk.STOCK_SELECT_ALL,<class 'str'>,gtk-select-all
+Gtk.STOCK_SELECT_COLOR,<class 'str'>,gtk-select-color
+Gtk.STOCK_SELECT_FONT,<class 'str'>,gtk-select-font
+Gtk.STOCK_SORT_ASCENDING,<class 'str'>,gtk-sort-ascending
+Gtk.STOCK_SORT_DESCENDING,<class 'str'>,gtk-sort-descending
+Gtk.STOCK_SPELL_CHECK,<class 'str'>,gtk-spell-check
+Gtk.STOCK_STOP,<class 'str'>,gtk-stop
+Gtk.STOCK_STRIKETHROUGH,<class 'str'>,gtk-strikethrough
+Gtk.STOCK_UNDELETE,<class 'str'>,gtk-undelete
+Gtk.STOCK_UNDERLINE,<class 'str'>,gtk-underline
+Gtk.STOCK_UNDO,<class 'str'>,gtk-undo
+Gtk.STOCK_UNINDENT,<class 'str'>,gtk-unindent
+Gtk.STOCK_YES,<class 'str'>,gtk-yes
+Gtk.STOCK_ZOOM_100,<class 'str'>,gtk-zoom-100
+Gtk.STOCK_ZOOM_FIT,<class 'str'>,gtk-zoom-fit
+Gtk.STOCK_ZOOM_IN,<class 'str'>,gtk-zoom-in
+Gtk.STOCK_ZOOM_OUT,<class 'str'>,gtk-zoom-out
+Gtk.STYLE_CLASS_ACCELERATOR,<class 'str'>,accelerator
+Gtk.STYLE_CLASS_ARROW,<class 'str'>,arrow
+Gtk.STYLE_CLASS_BACKGROUND,<class 'str'>,background
+Gtk.STYLE_CLASS_BOTTOM,<class 'str'>,bottom
+Gtk.STYLE_CLASS_BUTTON,<class 'str'>,button
+Gtk.STYLE_CLASS_CALENDAR,<class 'str'>,calendar
+Gtk.STYLE_CLASS_CELL,<class 'str'>,cell
+Gtk.STYLE_CLASS_CHECK,<class 'str'>,check
+Gtk.STYLE_CLASS_COMBOBOX_ENTRY,<class 'str'>,combobox-entry
+Gtk.STYLE_CLASS_CONTEXT_MENU,<class 'str'>,context-menu
+Gtk.STYLE_CLASS_CSD,<class 'str'>,csd
+Gtk.STYLE_CLASS_CURSOR_HANDLE,<class 'str'>,cursor-handle
+Gtk.STYLE_CLASS_DEFAULT,<class 'str'>,default
+Gtk.STYLE_CLASS_DESTRUCTIVE_ACTION,<class 'str'>,destructive-action
+Gtk.STYLE_CLASS_DIM_LABEL,<class 'str'>,dim-label
+Gtk.STYLE_CLASS_DND,<class 'str'>,dnd
+Gtk.STYLE_CLASS_DOCK,<class 'str'>,dock
+Gtk.STYLE_CLASS_ENTRY,<class 'str'>,entry
+Gtk.STYLE_CLASS_ERROR,<class 'str'>,error
+Gtk.STYLE_CLASS_EXPANDER,<class 'str'>,expander
+Gtk.STYLE_CLASS_FLAT,<class 'str'>,flat
+Gtk.STYLE_CLASS_FRAME,<class 'str'>,frame
+Gtk.STYLE_CLASS_GRIP,<class 'str'>,grip
+Gtk.STYLE_CLASS_HEADER,<class 'str'>,header
+Gtk.STYLE_CLASS_HIGHLIGHT,<class 'str'>,highlight
+Gtk.STYLE_CLASS_HORIZONTAL,<class 'str'>,horizontal
+Gtk.STYLE_CLASS_IMAGE,<class 'str'>,image
+Gtk.STYLE_CLASS_INFO,<class 'str'>,info
+Gtk.STYLE_CLASS_INLINE_TOOLBAR,<class 'str'>,inline-toolbar
+Gtk.STYLE_CLASS_INSERTION_CURSOR,<class 'str'>,insertion-cursor
+Gtk.STYLE_CLASS_LABEL,<class 'str'>,label
+Gtk.STYLE_CLASS_LEFT,<class 'str'>,left
+Gtk.STYLE_CLASS_LEVEL_BAR,<class 'str'>,level-bar
+Gtk.STYLE_CLASS_LINKED,<class 'str'>,linked
+Gtk.STYLE_CLASS_LIST,<class 'str'>,list
+Gtk.STYLE_CLASS_LIST_ROW,<class 'str'>,list-row
+Gtk.STYLE_CLASS_MARK,<class 'str'>,mark
+Gtk.STYLE_CLASS_MENU,<class 'str'>,menu
+Gtk.STYLE_CLASS_MENUBAR,<class 'str'>,menubar
+Gtk.STYLE_CLASS_MENUITEM,<class 'str'>,menuitem
+Gtk.STYLE_CLASS_MESSAGE_DIALOG,<class 'str'>,message-dialog
+Gtk.STYLE_CLASS_MONOSPACE,<class 'str'>,monospace
+Gtk.STYLE_CLASS_NEEDS_ATTENTION,<class 'str'>,needs-attention
+Gtk.STYLE_CLASS_NOTEBOOK,<class 'str'>,notebook
+Gtk.STYLE_CLASS_OSD,<class 'str'>,osd
+Gtk.STYLE_CLASS_OVERSHOOT,<class 'str'>,overshoot
+Gtk.STYLE_CLASS_PANE_SEPARATOR,<class 'str'>,pane-separator
+Gtk.STYLE_CLASS_PAPER,<class 'str'>,paper
+Gtk.STYLE_CLASS_POPOVER,<class 'str'>,popover
+Gtk.STYLE_CLASS_POPUP,<class 'str'>,popup
+Gtk.STYLE_CLASS_PRIMARY_TOOLBAR,<class 'str'>,primary-toolbar
+Gtk.STYLE_CLASS_PROGRESSBAR,<class 'str'>,progressbar
+Gtk.STYLE_CLASS_PULSE,<class 'str'>,pulse
+Gtk.STYLE_CLASS_QUESTION,<class 'str'>,question
+Gtk.STYLE_CLASS_RADIO,<class 'str'>,radio
+Gtk.STYLE_CLASS_RAISED,<class 'str'>,raised
+Gtk.STYLE_CLASS_READ_ONLY,<class 'str'>,read-only
+Gtk.STYLE_CLASS_RIGHT,<class 'str'>,right
+Gtk.STYLE_CLASS_RUBBERBAND,<class 'str'>,rubberband
+Gtk.STYLE_CLASS_SCALE,<class 'str'>,scale
+Gtk.STYLE_CLASS_SCALE_HAS_MARKS_ABOVE,<class 'str'>,scale-has-marks-above
+Gtk.STYLE_CLASS_SCALE_HAS_MARKS_BELOW,<class 'str'>,scale-has-marks-below
+Gtk.STYLE_CLASS_SCROLLBAR,<class 'str'>,scrollbar
+Gtk.STYLE_CLASS_SCROLLBARS_JUNCTION,<class 'str'>,scrollbars-junction
+Gtk.STYLE_CLASS_SEPARATOR,<class 'str'>,separator
+Gtk.STYLE_CLASS_SIDEBAR,<class 'str'>,sidebar
+Gtk.STYLE_CLASS_SLIDER,<class 'str'>,slider
+Gtk.STYLE_CLASS_SPINBUTTON,<class 'str'>,spinbutton
+Gtk.STYLE_CLASS_SPINNER,<class 'str'>,spinner
+Gtk.STYLE_CLASS_STATUSBAR,<class 'str'>,statusbar
+Gtk.STYLE_CLASS_SUBTITLE,<class 'str'>,subtitle
+Gtk.STYLE_CLASS_SUGGESTED_ACTION,<class 'str'>,suggested-action
+Gtk.STYLE_CLASS_TITLE,<class 'str'>,title
+Gtk.STYLE_CLASS_TITLEBAR,<class 'str'>,titlebar
+Gtk.STYLE_CLASS_TOOLBAR,<class 'str'>,toolbar
+Gtk.STYLE_CLASS_TOOLTIP,<class 'str'>,tooltip
+Gtk.STYLE_CLASS_TOP,<class 'str'>,top
+Gtk.STYLE_CLASS_TOUCH_SELECTION,<class 'str'>,touch-selection
+Gtk.STYLE_CLASS_TROUGH,<class 'str'>,trough
+Gtk.STYLE_CLASS_UNDERSHOOT,<class 'str'>,undershoot
+Gtk.STYLE_CLASS_VERTICAL,<class 'str'>,vertical
+Gtk.STYLE_CLASS_VIEW,<class 'str'>,view
+Gtk.STYLE_CLASS_WARNING,<class 'str'>,warning
+Gtk.STYLE_CLASS_WIDE,<class 'str'>,wide
+Gtk.STYLE_PROPERTY_BACKGROUND_COLOR,<class 'str'>,background-color
+Gtk.STYLE_PROPERTY_BACKGROUND_IMAGE,<class 'str'>,background-image
+Gtk.STYLE_PROPERTY_BORDER_COLOR,<class 'str'>,border-color
+Gtk.STYLE_PROPERTY_BORDER_RADIUS,<class 'str'>,border-radius
+Gtk.STYLE_PROPERTY_BORDER_STYLE,<class 'str'>,border-style
+Gtk.STYLE_PROPERTY_BORDER_WIDTH,<class 'str'>,border-width
+Gtk.STYLE_PROPERTY_COLOR,<class 'str'>,color
+Gtk.STYLE_PROPERTY_FONT,<class 'str'>,font
+Gtk.STYLE_PROPERTY_MARGIN,<class 'str'>,margin
+Gtk.STYLE_PROPERTY_PADDING,<class 'str'>,padding
+Gtk.STYLE_PROVIDER_PRIORITY_APPLICATION,<class 'int'>,600
+Gtk.STYLE_PROVIDER_PRIORITY_FALLBACK,<class 'int'>,1
+Gtk.STYLE_PROVIDER_PRIORITY_SETTINGS,<class 'int'>,400
+Gtk.STYLE_PROVIDER_PRIORITY_THEME,<class 'int'>,200
+Gtk.STYLE_PROVIDER_PRIORITY_USER,<class 'int'>,800
+Gtk.STYLE_REGION_COLUMN,<class 'str'>,column
+Gtk.STYLE_REGION_COLUMN_HEADER,<class 'str'>,column-header
+Gtk.STYLE_REGION_ROW,<class 'str'>,row
+Gtk.STYLE_REGION_TAB,<class 'str'>,tab
+Gtk.TEXT_VIEW_PRIORITY_VALIDATE,<class 'int'>,125
+Gtk.TREE_SORTABLE_DEFAULT_SORT_COLUMN_ID,<class 'int'>,-1
+Gtk.TREE_SORTABLE_UNSORTED_SORT_COLUMN_ID,<class 'int'>,-2
+Gtk.AccelFlags.LOCKED,<class 'gi.repository.Gtk.AccelFlags'>,<flags GTK_ACCEL_LOCKED of type Gtk.AccelFlags>
+Gtk.AccelFlags.MASK,<class 'gi.repository.Gtk.AccelFlags'>,<flags GTK_ACCEL_VISIBLE | GTK_ACCEL_LOCKED | GTK_ACCEL_MASK of type Gtk.AccelFlags>
+Gtk.AccelFlags.VISIBLE,<class 'gi.repository.Gtk.AccelFlags'>,<flags GTK_ACCEL_VISIBLE of type Gtk.AccelFlags>
+Gtk.Align.BASELINE,<class 'gi.repository.Gtk.Align'>,<enum GTK_ALIGN_BASELINE of type Gtk.Align>
+Gtk.Align.CENTER,<class 'gi.repository.Gtk.Align'>,<enum GTK_ALIGN_CENTER of type Gtk.Align>
+Gtk.Align.END,<class 'gi.repository.Gtk.Align'>,<enum GTK_ALIGN_END of type Gtk.Align>
+Gtk.Align.FILL,<class 'gi.repository.Gtk.Align'>,<enum GTK_ALIGN_FILL of type Gtk.Align>
+Gtk.Align.START,<class 'gi.repository.Gtk.Align'>,<enum GTK_ALIGN_START of type Gtk.Align>
+Gtk.ApplicationInhibitFlags.IDLE,<class 'gi.repository.Gtk.ApplicationInhibitFlags'>,<flags GTK_APPLICATION_INHIBIT_IDLE of type Gtk.ApplicationInhibitFlags>
+Gtk.ApplicationInhibitFlags.LOGOUT,<class 'gi.repository.Gtk.ApplicationInhibitFlags'>,<flags GTK_APPLICATION_INHIBIT_LOGOUT of type Gtk.ApplicationInhibitFlags>
+Gtk.ApplicationInhibitFlags.SUSPEND,<class 'gi.repository.Gtk.ApplicationInhibitFlags'>,<flags GTK_APPLICATION_INHIBIT_SUSPEND of type Gtk.ApplicationInhibitFlags>
+Gtk.ApplicationInhibitFlags.SWITCH,<class 'gi.repository.Gtk.ApplicationInhibitFlags'>,<flags GTK_APPLICATION_INHIBIT_SWITCH of type Gtk.ApplicationInhibitFlags>
+Gtk.ArrowPlacement.BOTH,<class 'gi.repository.Gtk.ArrowPlacement'>,<enum GTK_ARROWS_BOTH of type Gtk.ArrowPlacement>
+Gtk.ArrowPlacement.END,<class 'gi.repository.Gtk.ArrowPlacement'>,<enum GTK_ARROWS_END of type Gtk.ArrowPlacement>
+Gtk.ArrowPlacement.START,<class 'gi.repository.Gtk.ArrowPlacement'>,<enum GTK_ARROWS_START of type Gtk.ArrowPlacement>
+Gtk.ArrowType.DOWN,<class 'gi.repository.Gtk.ArrowType'>,<enum GTK_ARROW_DOWN of type Gtk.ArrowType>
+Gtk.ArrowType.LEFT,<class 'gi.repository.Gtk.ArrowType'>,<enum GTK_ARROW_LEFT of type Gtk.ArrowType>
+Gtk.ArrowType.NONE,<class 'gi.repository.Gtk.ArrowType'>,<enum GTK_ARROW_NONE of type Gtk.ArrowType>
+Gtk.ArrowType.RIGHT,<class 'gi.repository.Gtk.ArrowType'>,<enum GTK_ARROW_RIGHT of type Gtk.ArrowType>
+Gtk.ArrowType.UP,<class 'gi.repository.Gtk.ArrowType'>,<enum GTK_ARROW_UP of type Gtk.ArrowType>
+Gtk.AssistantPageType.CONFIRM,<class 'gi.repository.Gtk.AssistantPageType'>,<enum GTK_ASSISTANT_PAGE_CONFIRM of type Gtk.AssistantPageType>
+Gtk.AssistantPageType.CONTENT,<class 'gi.repository.Gtk.AssistantPageType'>,<enum GTK_ASSISTANT_PAGE_CONTENT of type Gtk.AssistantPageType>
+Gtk.AssistantPageType.CUSTOM,<class 'gi.repository.Gtk.AssistantPageType'>,<enum GTK_ASSISTANT_PAGE_CUSTOM of type Gtk.AssistantPageType>
+Gtk.AssistantPageType.INTRO,<class 'gi.repository.Gtk.AssistantPageType'>,<enum GTK_ASSISTANT_PAGE_INTRO of type Gtk.AssistantPageType>
+Gtk.AssistantPageType.PROGRESS,<class 'gi.repository.Gtk.AssistantPageType'>,<enum GTK_ASSISTANT_PAGE_PROGRESS of type Gtk.AssistantPageType>
+Gtk.AssistantPageType.SUMMARY,<class 'gi.repository.Gtk.AssistantPageType'>,<enum GTK_ASSISTANT_PAGE_SUMMARY of type Gtk.AssistantPageType>
+Gtk.AttachOptions.EXPAND,<class 'gi.repository.Gtk.AttachOptions'>,<flags GTK_EXPAND of type Gtk.AttachOptions>
+Gtk.AttachOptions.FILL,<class 'gi.repository.Gtk.AttachOptions'>,<flags GTK_FILL of type Gtk.AttachOptions>
+Gtk.AttachOptions.SHRINK,<class 'gi.repository.Gtk.AttachOptions'>,<flags GTK_SHRINK of type Gtk.AttachOptions>
+Gtk.BaselinePosition.BOTTOM,<class 'gi.repository.Gtk.BaselinePosition'>,<enum GTK_BASELINE_POSITION_BOTTOM of type Gtk.BaselinePosition>
+Gtk.BaselinePosition.CENTER,<class 'gi.repository.Gtk.BaselinePosition'>,<enum GTK_BASELINE_POSITION_CENTER of type Gtk.BaselinePosition>
+Gtk.BaselinePosition.TOP,<class 'gi.repository.Gtk.BaselinePosition'>,<enum GTK_BASELINE_POSITION_TOP of type Gtk.BaselinePosition>
+Gtk.BorderStyle.DASHED,<class 'gi.repository.Gtk.BorderStyle'>,<enum GTK_BORDER_STYLE_DASHED of type Gtk.BorderStyle>
+Gtk.BorderStyle.DOTTED,<class 'gi.repository.Gtk.BorderStyle'>,<enum GTK_BORDER_STYLE_DOTTED of type Gtk.BorderStyle>
+Gtk.BorderStyle.DOUBLE,<class 'gi.repository.Gtk.BorderStyle'>,<enum GTK_BORDER_STYLE_DOUBLE of type Gtk.BorderStyle>
+Gtk.BorderStyle.GROOVE,<class 'gi.repository.Gtk.BorderStyle'>,<enum GTK_BORDER_STYLE_GROOVE of type Gtk.BorderStyle>
+Gtk.BorderStyle.HIDDEN,<class 'gi.repository.Gtk.BorderStyle'>,<enum GTK_BORDER_STYLE_HIDDEN of type Gtk.BorderStyle>
+Gtk.BorderStyle.INSET,<class 'gi.repository.Gtk.BorderStyle'>,<enum GTK_BORDER_STYLE_INSET of type Gtk.BorderStyle>
+Gtk.BorderStyle.NONE,<class 'gi.repository.Gtk.BorderStyle'>,<enum GTK_BORDER_STYLE_NONE of type Gtk.BorderStyle>
+Gtk.BorderStyle.OUTSET,<class 'gi.repository.Gtk.BorderStyle'>,<enum GTK_BORDER_STYLE_OUTSET of type Gtk.BorderStyle>
+Gtk.BorderStyle.RIDGE,<class 'gi.repository.Gtk.BorderStyle'>,<enum GTK_BORDER_STYLE_RIDGE of type Gtk.BorderStyle>
+Gtk.BorderStyle.SOLID,<class 'gi.repository.Gtk.BorderStyle'>,<enum GTK_BORDER_STYLE_SOLID of type Gtk.BorderStyle>
+Gtk.BuilderError.DUPLICATE_ID,<class 'gi.repository.Gtk.BuilderError'>,<enum GTK_BUILDER_ERROR_DUPLICATE_ID of type Gtk.BuilderError>
+Gtk.BuilderError.INVALID_ATTRIBUTE,<class 'gi.repository.Gtk.BuilderError'>,<enum GTK_BUILDER_ERROR_INVALID_ATTRIBUTE of type Gtk.BuilderError>
+Gtk.BuilderError.INVALID_ID,<class 'gi.repository.Gtk.BuilderError'>,<enum GTK_BUILDER_ERROR_INVALID_ID of type Gtk.BuilderError>
+Gtk.BuilderError.INVALID_PROPERTY,<class 'gi.repository.Gtk.BuilderError'>,<enum GTK_BUILDER_ERROR_INVALID_PROPERTY of type Gtk.BuilderError>
+Gtk.BuilderError.INVALID_SIGNAL,<class 'gi.repository.Gtk.BuilderError'>,<enum GTK_BUILDER_ERROR_INVALID_SIGNAL of type Gtk.BuilderError>
+Gtk.BuilderError.INVALID_TAG,<class 'gi.repository.Gtk.BuilderError'>,<enum GTK_BUILDER_ERROR_INVALID_TAG of type Gtk.BuilderError>
+Gtk.BuilderError.INVALID_TYPE_FUNCTION,<class 'gi.repository.Gtk.BuilderError'>,<enum GTK_BUILDER_ERROR_INVALID_TYPE_FUNCTION of type Gtk.BuilderError>
+Gtk.BuilderError.INVALID_VALUE,<class 'gi.repository.Gtk.BuilderError'>,<enum GTK_BUILDER_ERROR_INVALID_VALUE of type Gtk.BuilderError>
+Gtk.BuilderError.MISSING_ATTRIBUTE,<class 'gi.repository.Gtk.BuilderError'>,<enum GTK_BUILDER_ERROR_MISSING_ATTRIBUTE of type Gtk.BuilderError>
+Gtk.BuilderError.MISSING_PROPERTY_VALUE,<class 'gi.repository.Gtk.BuilderError'>,<enum GTK_BUILDER_ERROR_MISSING_PROPERTY_VALUE of type Gtk.BuilderError>
+Gtk.BuilderError.OBJECT_TYPE_REFUSED,<class 'gi.repository.Gtk.BuilderError'>,<enum GTK_BUILDER_ERROR_OBJECT_TYPE_REFUSED of type Gtk.BuilderError>
+Gtk.BuilderError.TEMPLATE_MISMATCH,<class 'gi.repository.Gtk.BuilderError'>,<enum GTK_BUILDER_ERROR_TEMPLATE_MISMATCH of type Gtk.BuilderError>
+Gtk.BuilderError.UNHANDLED_TAG,<class 'gi.repository.Gtk.BuilderError'>,<enum GTK_BUILDER_ERROR_UNHANDLED_TAG of type Gtk.BuilderError>
+Gtk.BuilderError.VERSION_MISMATCH,<class 'gi.repository.Gtk.BuilderError'>,<enum GTK_BUILDER_ERROR_VERSION_MISMATCH of type Gtk.BuilderError>
+Gtk.ButtonBoxStyle.CENTER,<class 'gi.repository.Gtk.ButtonBoxStyle'>,<enum GTK_BUTTONBOX_CENTER of type Gtk.ButtonBoxStyle>
+Gtk.ButtonBoxStyle.EDGE,<class 'gi.repository.Gtk.ButtonBoxStyle'>,<enum GTK_BUTTONBOX_EDGE of type Gtk.ButtonBoxStyle>
+Gtk.ButtonBoxStyle.END,<class 'gi.repository.Gtk.ButtonBoxStyle'>,<enum GTK_BUTTONBOX_END of type Gtk.ButtonBoxStyle>
+Gtk.ButtonBoxStyle.EXPAND,<class 'gi.repository.Gtk.ButtonBoxStyle'>,<enum GTK_BUTTONBOX_EXPAND of type Gtk.ButtonBoxStyle>
+Gtk.ButtonBoxStyle.SPREAD,<class 'gi.repository.Gtk.ButtonBoxStyle'>,<enum GTK_BUTTONBOX_SPREAD of type Gtk.ButtonBoxStyle>
+Gtk.ButtonBoxStyle.START,<class 'gi.repository.Gtk.ButtonBoxStyle'>,<enum GTK_BUTTONBOX_START of type Gtk.ButtonBoxStyle>
+Gtk.ButtonRole.CHECK,<class 'gi.repository.Gtk.ButtonRole'>,<enum GTK_BUTTON_ROLE_CHECK of type Gtk.ButtonRole>
+Gtk.ButtonRole.NORMAL,<class 'gi.repository.Gtk.ButtonRole'>,<enum GTK_BUTTON_ROLE_NORMAL of type Gtk.ButtonRole>
+Gtk.ButtonRole.RADIO,<class 'gi.repository.Gtk.ButtonRole'>,<enum GTK_BUTTON_ROLE_RADIO of type Gtk.ButtonRole>
+Gtk.ButtonsType.CANCEL,<class 'gi.repository.Gtk.ButtonsType'>,<enum GTK_BUTTONS_CANCEL of type Gtk.ButtonsType>
+Gtk.ButtonsType.CLOSE,<class 'gi.repository.Gtk.ButtonsType'>,<enum GTK_BUTTONS_CLOSE of type Gtk.ButtonsType>
+Gtk.ButtonsType.NONE,<class 'gi.repository.Gtk.ButtonsType'>,<enum GTK_BUTTONS_NONE of type Gtk.ButtonsType>
+Gtk.ButtonsType.OK,<class 'gi.repository.Gtk.ButtonsType'>,<enum GTK_BUTTONS_OK of type Gtk.ButtonsType>
+Gtk.ButtonsType.OK_CANCEL,<class 'gi.repository.Gtk.ButtonsType'>,<enum GTK_BUTTONS_OK_CANCEL of type Gtk.ButtonsType>
+Gtk.ButtonsType.YES_NO,<class 'gi.repository.Gtk.ButtonsType'>,<enum GTK_BUTTONS_YES_NO of type Gtk.ButtonsType>
+Gtk.CalendarDisplayOptions.NO_MONTH_CHANGE,<class 'gi.repository.Gtk.CalendarDisplayOptions'>,<flags GTK_CALENDAR_NO_MONTH_CHANGE of type Gtk.CalendarDisplayOptions>
+Gtk.CalendarDisplayOptions.SHOW_DAY_NAMES,<class 'gi.repository.Gtk.CalendarDisplayOptions'>,<flags GTK_CALENDAR_SHOW_DAY_NAMES of type Gtk.CalendarDisplayOptions>
+Gtk.CalendarDisplayOptions.SHOW_DETAILS,<class 'gi.repository.Gtk.CalendarDisplayOptions'>,<flags GTK_CALENDAR_SHOW_DETAILS of type Gtk.CalendarDisplayOptions>
+Gtk.CalendarDisplayOptions.SHOW_HEADING,<class 'gi.repository.Gtk.CalendarDisplayOptions'>,<flags GTK_CALENDAR_SHOW_HEADING of type Gtk.CalendarDisplayOptions>
+Gtk.CalendarDisplayOptions.SHOW_WEEK_NUMBERS,<class 'gi.repository.Gtk.CalendarDisplayOptions'>,<flags GTK_CALENDAR_SHOW_WEEK_NUMBERS of type Gtk.CalendarDisplayOptions>
+Gtk.CellRendererAccelMode.GTK,<class 'gi.repository.Gtk.CellRendererAccelMode'>,<enum GTK_CELL_RENDERER_ACCEL_MODE_GTK of type Gtk.CellRendererAccelMode>
+Gtk.CellRendererAccelMode.MODIFIER_TAP,<class 'gi.repository.Gtk.CellRendererAccelMode'>,<enum GTK_CELL_RENDERER_ACCEL_MODE_MODIFIER_TAP of type Gtk.CellRendererAccelMode>
+Gtk.CellRendererAccelMode.OTHER,<class 'gi.repository.Gtk.CellRendererAccelMode'>,<enum GTK_CELL_RENDERER_ACCEL_MODE_OTHER of type Gtk.CellRendererAccelMode>
+Gtk.CellRendererMode.ACTIVATABLE,<class 'gi.repository.Gtk.CellRendererMode'>,<enum GTK_CELL_RENDERER_MODE_ACTIVATABLE of type Gtk.CellRendererMode>
+Gtk.CellRendererMode.EDITABLE,<class 'gi.repository.Gtk.CellRendererMode'>,<enum GTK_CELL_RENDERER_MODE_EDITABLE of type Gtk.CellRendererMode>
+Gtk.CellRendererMode.INERT,<class 'gi.repository.Gtk.CellRendererMode'>,<enum GTK_CELL_RENDERER_MODE_INERT of type Gtk.CellRendererMode>
+Gtk.CellRendererState.EXPANDABLE,<class 'gi.repository.Gtk.CellRendererState'>,<flags GTK_CELL_RENDERER_EXPANDABLE of type Gtk.CellRendererState>
+Gtk.CellRendererState.EXPANDED,<class 'gi.repository.Gtk.CellRendererState'>,<flags GTK_CELL_RENDERER_EXPANDED of type Gtk.CellRendererState>
+Gtk.CellRendererState.FOCUSED,<class 'gi.repository.Gtk.CellRendererState'>,<flags GTK_CELL_RENDERER_FOCUSED of type Gtk.CellRendererState>
+Gtk.CellRendererState.INSENSITIVE,<class 'gi.repository.Gtk.CellRendererState'>,<flags GTK_CELL_RENDERER_INSENSITIVE of type Gtk.CellRendererState>
+Gtk.CellRendererState.PRELIT,<class 'gi.repository.Gtk.CellRendererState'>,<flags GTK_CELL_RENDERER_PRELIT of type Gtk.CellRendererState>
+Gtk.CellRendererState.SELECTED,<class 'gi.repository.Gtk.CellRendererState'>,<flags GTK_CELL_RENDERER_SELECTED of type Gtk.CellRendererState>
+Gtk.CellRendererState.SORTED,<class 'gi.repository.Gtk.CellRendererState'>,<flags GTK_CELL_RENDERER_SORTED of type Gtk.CellRendererState>
+Gtk.CornerType.BOTTOM_LEFT,<class 'gi.repository.Gtk.CornerType'>,<enum GTK_CORNER_BOTTOM_LEFT of type Gtk.CornerType>
+Gtk.CornerType.BOTTOM_RIGHT,<class 'gi.repository.Gtk.CornerType'>,<enum GTK_CORNER_BOTTOM_RIGHT of type Gtk.CornerType>
+Gtk.CornerType.TOP_LEFT,<class 'gi.repository.Gtk.CornerType'>,<enum GTK_CORNER_TOP_LEFT of type Gtk.CornerType>
+Gtk.CornerType.TOP_RIGHT,<class 'gi.repository.Gtk.CornerType'>,<enum GTK_CORNER_TOP_RIGHT of type Gtk.CornerType>
+Gtk.CssProviderError.DEPRECATED,<class 'gi.repository.Gtk.CssProviderError'>,<enum GTK_CSS_PROVIDER_ERROR_DEPRECATED of type Gtk.CssProviderError>
+Gtk.CssProviderError.FAILED,<class 'gi.repository.Gtk.CssProviderError'>,<enum GTK_CSS_PROVIDER_ERROR_FAILED of type Gtk.CssProviderError>
+Gtk.CssProviderError.IMPORT,<class 'gi.repository.Gtk.CssProviderError'>,<enum GTK_CSS_PROVIDER_ERROR_IMPORT of type Gtk.CssProviderError>
+Gtk.CssProviderError.NAME,<class 'gi.repository.Gtk.CssProviderError'>,<enum GTK_CSS_PROVIDER_ERROR_NAME of type Gtk.CssProviderError>
+Gtk.CssProviderError.SYNTAX,<class 'gi.repository.Gtk.CssProviderError'>,<enum GTK_CSS_PROVIDER_ERROR_SYNTAX of type Gtk.CssProviderError>
+Gtk.CssProviderError.UNKNOWN_VALUE,<class 'gi.repository.Gtk.CssProviderError'>,<enum GTK_CSS_PROVIDER_ERROR_UNKNOWN_VALUE of type Gtk.CssProviderError>
+Gtk.CssSectionType.BINDING_SET,<class 'gi.repository.Gtk.CssSectionType'>,<enum GTK_CSS_SECTION_BINDING_SET of type Gtk.CssSectionType>
+Gtk.CssSectionType.COLOR_DEFINITION,<class 'gi.repository.Gtk.CssSectionType'>,<enum GTK_CSS_SECTION_COLOR_DEFINITION of type Gtk.CssSectionType>
+Gtk.CssSectionType.DECLARATION,<class 'gi.repository.Gtk.CssSectionType'>,<enum GTK_CSS_SECTION_DECLARATION of type Gtk.CssSectionType>
+Gtk.CssSectionType.DOCUMENT,<class 'gi.repository.Gtk.CssSectionType'>,<enum GTK_CSS_SECTION_DOCUMENT of type Gtk.CssSectionType>
+Gtk.CssSectionType.IMPORT,<class 'gi.repository.Gtk.CssSectionType'>,<enum GTK_CSS_SECTION_IMPORT of type Gtk.CssSectionType>
+Gtk.CssSectionType.KEYFRAMES,<class 'gi.repository.Gtk.CssSectionType'>,<enum GTK_CSS_SECTION_KEYFRAMES of type Gtk.CssSectionType>
+Gtk.CssSectionType.RULESET,<class 'gi.repository.Gtk.CssSectionType'>,<enum GTK_CSS_SECTION_RULESET of type Gtk.CssSectionType>
+Gtk.CssSectionType.SELECTOR,<class 'gi.repository.Gtk.CssSectionType'>,<enum GTK_CSS_SECTION_SELECTOR of type Gtk.CssSectionType>
+Gtk.CssSectionType.VALUE,<class 'gi.repository.Gtk.CssSectionType'>,<enum GTK_CSS_SECTION_VALUE of type Gtk.CssSectionType>
+Gtk.DebugFlag.ACTIONS,<class 'gi.repository.Gtk.DebugFlag'>,<flags GTK_DEBUG_ACTIONS of type Gtk.DebugFlag>
+Gtk.DebugFlag.BASELINES,<class 'gi.repository.Gtk.DebugFlag'>,<flags GTK_DEBUG_BASELINES of type Gtk.DebugFlag>
+Gtk.DebugFlag.BUILDER,<class 'gi.repository.Gtk.DebugFlag'>,<flags GTK_DEBUG_BUILDER of type Gtk.DebugFlag>
+Gtk.DebugFlag.GEOMETRY,<class 'gi.repository.Gtk.DebugFlag'>,<flags GTK_DEBUG_GEOMETRY of type Gtk.DebugFlag>
+Gtk.DebugFlag.ICONTHEME,<class 'gi.repository.Gtk.DebugFlag'>,<flags GTK_DEBUG_ICONTHEME of type Gtk.DebugFlag>
+Gtk.DebugFlag.INTERACTIVE,<class 'gi.repository.Gtk.DebugFlag'>,<flags GTK_DEBUG_INTERACTIVE of type Gtk.DebugFlag>
+Gtk.DebugFlag.KEYBINDINGS,<class 'gi.repository.Gtk.DebugFlag'>,<flags GTK_DEBUG_KEYBINDINGS of type Gtk.DebugFlag>
+Gtk.DebugFlag.LAYOUT,<class 'gi.repository.Gtk.DebugFlag'>,<flags GTK_DEBUG_LAYOUT of type Gtk.DebugFlag>
+Gtk.DebugFlag.MISC,<class 'gi.repository.Gtk.DebugFlag'>,<flags GTK_DEBUG_MISC of type Gtk.DebugFlag>
+Gtk.DebugFlag.MODULES,<class 'gi.repository.Gtk.DebugFlag'>,<flags GTK_DEBUG_MODULES of type Gtk.DebugFlag>
+Gtk.DebugFlag.MULTIHEAD,<class 'gi.repository.Gtk.DebugFlag'>,<flags GTK_DEBUG_MULTIHEAD of type Gtk.DebugFlag>
+Gtk.DebugFlag.NO_CSS_CACHE,<class 'gi.repository.Gtk.DebugFlag'>,<flags GTK_DEBUG_NO_CSS_CACHE of type Gtk.DebugFlag>
+Gtk.DebugFlag.NO_PIXEL_CACHE,<class 'gi.repository.Gtk.DebugFlag'>,<flags GTK_DEBUG_NO_PIXEL_CACHE of type Gtk.DebugFlag>
+Gtk.DebugFlag.PIXEL_CACHE,<class 'gi.repository.Gtk.DebugFlag'>,<flags GTK_DEBUG_PIXEL_CACHE of type Gtk.DebugFlag>
+Gtk.DebugFlag.PLUGSOCKET,<class 'gi.repository.Gtk.DebugFlag'>,<flags GTK_DEBUG_PLUGSOCKET of type Gtk.DebugFlag>
+Gtk.DebugFlag.PRINTING,<class 'gi.repository.Gtk.DebugFlag'>,<flags GTK_DEBUG_PRINTING of type Gtk.DebugFlag>
+Gtk.DebugFlag.RESIZE,<class 'gi.repository.Gtk.DebugFlag'>,<flags GTK_DEBUG_RESIZE of type Gtk.DebugFlag>
+Gtk.DebugFlag.SIZE_REQUEST,<class 'gi.repository.Gtk.DebugFlag'>,<flags GTK_DEBUG_SIZE_REQUEST of type Gtk.DebugFlag>
+Gtk.DebugFlag.TEXT,<class 'gi.repository.Gtk.DebugFlag'>,<flags GTK_DEBUG_TEXT of type Gtk.DebugFlag>
+Gtk.DebugFlag.TOUCHSCREEN,<class 'gi.repository.Gtk.DebugFlag'>,<flags GTK_DEBUG_TOUCHSCREEN of type Gtk.DebugFlag>
+Gtk.DebugFlag.TREE,<class 'gi.repository.Gtk.DebugFlag'>,<flags GTK_DEBUG_TREE of type Gtk.DebugFlag>
+Gtk.DebugFlag.UPDATES,<class 'gi.repository.Gtk.DebugFlag'>,<flags GTK_DEBUG_UPDATES of type Gtk.DebugFlag>
+Gtk.DeleteType.CHARS,<class 'gi.repository.Gtk.DeleteType'>,<enum GTK_DELETE_CHARS of type Gtk.DeleteType>
+Gtk.DeleteType.DISPLAY_LINES,<class 'gi.repository.Gtk.DeleteType'>,<enum GTK_DELETE_DISPLAY_LINES of type Gtk.DeleteType>
+Gtk.DeleteType.DISPLAY_LINE_ENDS,<class 'gi.repository.Gtk.DeleteType'>,<enum GTK_DELETE_DISPLAY_LINE_ENDS of type Gtk.DeleteType>
+Gtk.DeleteType.PARAGRAPHS,<class 'gi.repository.Gtk.DeleteType'>,<enum GTK_DELETE_PARAGRAPHS of type Gtk.DeleteType>
+Gtk.DeleteType.PARAGRAPH_ENDS,<class 'gi.repository.Gtk.DeleteType'>,<enum GTK_DELETE_PARAGRAPH_ENDS of type Gtk.DeleteType>
+Gtk.DeleteType.WHITESPACE,<class 'gi.repository.Gtk.DeleteType'>,<enum GTK_DELETE_WHITESPACE of type Gtk.DeleteType>
+Gtk.DeleteType.WORDS,<class 'gi.repository.Gtk.DeleteType'>,<enum GTK_DELETE_WORDS of type Gtk.DeleteType>
+Gtk.DeleteType.WORD_ENDS,<class 'gi.repository.Gtk.DeleteType'>,<enum GTK_DELETE_WORD_ENDS of type Gtk.DeleteType>
+Gtk.DestDefaults.ALL,<class 'gi.repository.Gtk.DestDefaults'>,<flags GTK_DEST_DEFAULT_MOTION | GTK_DEST_DEFAULT_HIGHLIGHT | GTK_DEST_DEFAULT_DROP | GTK_DEST_DEFAULT_ALL of type Gtk.DestDefaults>
+Gtk.DestDefaults.DROP,<class 'gi.repository.Gtk.DestDefaults'>,<flags GTK_DEST_DEFAULT_DROP of type Gtk.DestDefaults>
+Gtk.DestDefaults.HIGHLIGHT,<class 'gi.repository.Gtk.DestDefaults'>,<flags GTK_DEST_DEFAULT_HIGHLIGHT of type Gtk.DestDefaults>
+Gtk.DestDefaults.MOTION,<class 'gi.repository.Gtk.DestDefaults'>,<flags GTK_DEST_DEFAULT_MOTION of type Gtk.DestDefaults>
+Gtk.DialogFlags.DESTROY_WITH_PARENT,<class 'gi.repository.Gtk.DialogFlags'>,<flags GTK_DIALOG_DESTROY_WITH_PARENT of type Gtk.DialogFlags>
+Gtk.DialogFlags.MODAL,<class 'gi.repository.Gtk.DialogFlags'>,<flags GTK_DIALOG_MODAL of type Gtk.DialogFlags>
+Gtk.DialogFlags.USE_HEADER_BAR,<class 'gi.repository.Gtk.DialogFlags'>,<flags GTK_DIALOG_USE_HEADER_BAR of type Gtk.DialogFlags>
+Gtk.DirectionType.DOWN,<class 'gi.repository.Gtk.DirectionType'>,<enum GTK_DIR_DOWN of type Gtk.DirectionType>
+Gtk.DirectionType.LEFT,<class 'gi.repository.Gtk.DirectionType'>,<enum GTK_DIR_LEFT of type Gtk.DirectionType>
+Gtk.DirectionType.RIGHT,<class 'gi.repository.Gtk.DirectionType'>,<enum GTK_DIR_RIGHT of type Gtk.DirectionType>
+Gtk.DirectionType.TAB_BACKWARD,<class 'gi.repository.Gtk.DirectionType'>,<enum GTK_DIR_TAB_BACKWARD of type Gtk.DirectionType>
+Gtk.DirectionType.TAB_FORWARD,<class 'gi.repository.Gtk.DirectionType'>,<enum GTK_DIR_TAB_FORWARD of type Gtk.DirectionType>
+Gtk.DirectionType.UP,<class 'gi.repository.Gtk.DirectionType'>,<enum GTK_DIR_UP of type Gtk.DirectionType>
+Gtk.DragResult.ERROR,<class 'gi.repository.Gtk.DragResult'>,<enum GTK_DRAG_RESULT_ERROR of type Gtk.DragResult>
+Gtk.DragResult.GRAB_BROKEN,<class 'gi.repository.Gtk.DragResult'>,<enum GTK_DRAG_RESULT_GRAB_BROKEN of type Gtk.DragResult>
+Gtk.DragResult.NO_TARGET,<class 'gi.repository.Gtk.DragResult'>,<enum GTK_DRAG_RESULT_NO_TARGET of type Gtk.DragResult>
+Gtk.DragResult.SUCCESS,<class 'gi.repository.Gtk.DragResult'>,<enum GTK_DRAG_RESULT_SUCCESS of type Gtk.DragResult>
+Gtk.DragResult.TIMEOUT_EXPIRED,<class 'gi.repository.Gtk.DragResult'>,<enum GTK_DRAG_RESULT_TIMEOUT_EXPIRED of type Gtk.DragResult>
+Gtk.DragResult.USER_CANCELLED,<class 'gi.repository.Gtk.DragResult'>,<enum GTK_DRAG_RESULT_USER_CANCELLED of type Gtk.DragResult>
+Gtk.EntryIconPosition.PRIMARY,<class 'gi.repository.Gtk.EntryIconPosition'>,<enum GTK_ENTRY_ICON_PRIMARY of type Gtk.EntryIconPosition>
+Gtk.EntryIconPosition.SECONDARY,<class 'gi.repository.Gtk.EntryIconPosition'>,<enum GTK_ENTRY_ICON_SECONDARY of type Gtk.EntryIconPosition>
+Gtk.EventControllerScrollFlags.BOTH_AXES,<class 'gi.repository.Gtk.EventControllerScrollFlags'>,<flags GTK_EVENT_CONTROLLER_SCROLL_VERTICAL | GTK_EVENT_CONTROLLER_SCROLL_HORIZONTAL | GTK_EVENT_CONTROLLER_SCROLL_BOTH_AXES of type Gtk.EventControllerScrollFlags>
+Gtk.EventControllerScrollFlags.DISCRETE,<class 'gi.repository.Gtk.EventControllerScrollFlags'>,<flags GTK_EVENT_CONTROLLER_SCROLL_DISCRETE of type Gtk.EventControllerScrollFlags>
+Gtk.EventControllerScrollFlags.HORIZONTAL,<class 'gi.repository.Gtk.EventControllerScrollFlags'>,<flags GTK_EVENT_CONTROLLER_SCROLL_HORIZONTAL of type Gtk.EventControllerScrollFlags>
+Gtk.EventControllerScrollFlags.KINETIC,<class 'gi.repository.Gtk.EventControllerScrollFlags'>,<flags GTK_EVENT_CONTROLLER_SCROLL_KINETIC of type Gtk.EventControllerScrollFlags>
+Gtk.EventControllerScrollFlags.NONE,<class 'gi.repository.Gtk.EventControllerScrollFlags'>,<flags 0 of type Gtk.EventControllerScrollFlags>
+Gtk.EventControllerScrollFlags.VERTICAL,<class 'gi.repository.Gtk.EventControllerScrollFlags'>,<flags GTK_EVENT_CONTROLLER_SCROLL_VERTICAL of type Gtk.EventControllerScrollFlags>
+Gtk.EventSequenceState.CLAIMED,<class 'gi.repository.Gtk.EventSequenceState'>,<enum GTK_EVENT_SEQUENCE_CLAIMED of type Gtk.EventSequenceState>
+Gtk.EventSequenceState.DENIED,<class 'gi.repository.Gtk.EventSequenceState'>,<enum GTK_EVENT_SEQUENCE_DENIED of type Gtk.EventSequenceState>
+Gtk.EventSequenceState.NONE,<class 'gi.repository.Gtk.EventSequenceState'>,<enum GTK_EVENT_SEQUENCE_NONE of type Gtk.EventSequenceState>
+Gtk.ExpanderStyle.COLLAPSED,<class 'gi.repository.Gtk.ExpanderStyle'>,<enum GTK_EXPANDER_COLLAPSED of type Gtk.ExpanderStyle>
+Gtk.ExpanderStyle.EXPANDED,<class 'gi.repository.Gtk.ExpanderStyle'>,<enum GTK_EXPANDER_EXPANDED of type Gtk.ExpanderStyle>
+Gtk.ExpanderStyle.SEMI_COLLAPSED,<class 'gi.repository.Gtk.ExpanderStyle'>,<enum GTK_EXPANDER_SEMI_COLLAPSED of type Gtk.ExpanderStyle>
+Gtk.ExpanderStyle.SEMI_EXPANDED,<class 'gi.repository.Gtk.ExpanderStyle'>,<enum GTK_EXPANDER_SEMI_EXPANDED of type Gtk.ExpanderStyle>
+Gtk.FileChooserAction.CREATE_FOLDER,<class 'gi.repository.Gtk.FileChooserAction'>,<enum GTK_FILE_CHOOSER_ACTION_CREATE_FOLDER of type Gtk.FileChooserAction>
+Gtk.FileChooserAction.OPEN,<class 'gi.repository.Gtk.FileChooserAction'>,<enum GTK_FILE_CHOOSER_ACTION_OPEN of type Gtk.FileChooserAction>
+Gtk.FileChooserAction.SAVE,<class 'gi.repository.Gtk.FileChooserAction'>,<enum GTK_FILE_CHOOSER_ACTION_SAVE of type Gtk.FileChooserAction>
+Gtk.FileChooserAction.SELECT_FOLDER,<class 'gi.repository.Gtk.FileChooserAction'>,<enum GTK_FILE_CHOOSER_ACTION_SELECT_FOLDER of type Gtk.FileChooserAction>
+Gtk.FileChooserConfirmation.ACCEPT_FILENAME,<class 'gi.repository.Gtk.FileChooserConfirmation'>,<enum GTK_FILE_CHOOSER_CONFIRMATION_ACCEPT_FILENAME of type Gtk.FileChooserConfirmation>
+Gtk.FileChooserConfirmation.CONFIRM,<class 'gi.repository.Gtk.FileChooserConfirmation'>,<enum GTK_FILE_CHOOSER_CONFIRMATION_CONFIRM of type Gtk.FileChooserConfirmation>
+Gtk.FileChooserConfirmation.SELECT_AGAIN,<class 'gi.repository.Gtk.FileChooserConfirmation'>,<enum GTK_FILE_CHOOSER_CONFIRMATION_SELECT_AGAIN of type Gtk.FileChooserConfirmation>
+Gtk.FileChooserError.ALREADY_EXISTS,<class 'gi.repository.Gtk.FileChooserError'>,<enum GTK_FILE_CHOOSER_ERROR_ALREADY_EXISTS of type Gtk.FileChooserError>
+Gtk.FileChooserError.BAD_FILENAME,<class 'gi.repository.Gtk.FileChooserError'>,<enum GTK_FILE_CHOOSER_ERROR_BAD_FILENAME of type Gtk.FileChooserError>
+Gtk.FileChooserError.INCOMPLETE_HOSTNAME,<class 'gi.repository.Gtk.FileChooserError'>,<enum GTK_FILE_CHOOSER_ERROR_INCOMPLETE_HOSTNAME of type Gtk.FileChooserError>
+Gtk.FileChooserError.NONEXISTENT,<class 'gi.repository.Gtk.FileChooserError'>,<enum GTK_FILE_CHOOSER_ERROR_NONEXISTENT of type Gtk.FileChooserError>
+Gtk.FileFilterFlags.DISPLAY_NAME,<class 'gi.repository.Gtk.FileFilterFlags'>,<flags GTK_FILE_FILTER_DISPLAY_NAME of type Gtk.FileFilterFlags>
+Gtk.FileFilterFlags.FILENAME,<class 'gi.repository.Gtk.FileFilterFlags'>,<flags GTK_FILE_FILTER_FILENAME of type Gtk.FileFilterFlags>
+Gtk.FileFilterFlags.MIME_TYPE,<class 'gi.repository.Gtk.FileFilterFlags'>,<flags GTK_FILE_FILTER_MIME_TYPE of type Gtk.FileFilterFlags>
+Gtk.FileFilterFlags.URI,<class 'gi.repository.Gtk.FileFilterFlags'>,<flags GTK_FILE_FILTER_URI of type Gtk.FileFilterFlags>
+Gtk.FontChooserLevel.FAMILY,<class 'gi.repository.Gtk.FontChooserLevel'>,<flags 0 of type Gtk.FontChooserLevel>
+Gtk.FontChooserLevel.FEATURES,<class 'gi.repository.Gtk.FontChooserLevel'>,<flags GTK_FONT_CHOOSER_LEVEL_FEATURES of type Gtk.FontChooserLevel>
+Gtk.FontChooserLevel.SIZE,<class 'gi.repository.Gtk.FontChooserLevel'>,<flags GTK_FONT_CHOOSER_LEVEL_SIZE of type Gtk.FontChooserLevel>
+Gtk.FontChooserLevel.STYLE,<class 'gi.repository.Gtk.FontChooserLevel'>,<flags GTK_FONT_CHOOSER_LEVEL_STYLE of type Gtk.FontChooserLevel>
+Gtk.FontChooserLevel.VARIATIONS,<class 'gi.repository.Gtk.FontChooserLevel'>,<flags GTK_FONT_CHOOSER_LEVEL_VARIATIONS of type Gtk.FontChooserLevel>
+Gtk.IMPreeditStyle.CALLBACK,<class 'gi.repository.Gtk.IMPreeditStyle'>,<enum GTK_IM_PREEDIT_CALLBACK of type Gtk.IMPreeditStyle>
+Gtk.IMPreeditStyle.NONE,<class 'gi.repository.Gtk.IMPreeditStyle'>,<enum GTK_IM_PREEDIT_NONE of type Gtk.IMPreeditStyle>
+Gtk.IMPreeditStyle.NOTHING,<class 'gi.repository.Gtk.IMPreeditStyle'>,<enum GTK_IM_PREEDIT_NOTHING of type Gtk.IMPreeditStyle>
+Gtk.IMStatusStyle.CALLBACK,<class 'gi.repository.Gtk.IMStatusStyle'>,<enum GTK_IM_STATUS_CALLBACK of type Gtk.IMStatusStyle>
+Gtk.IMStatusStyle.NONE,<class 'gi.repository.Gtk.IMStatusStyle'>,<enum GTK_IM_STATUS_NONE of type Gtk.IMStatusStyle>
+Gtk.IMStatusStyle.NOTHING,<class 'gi.repository.Gtk.IMStatusStyle'>,<enum GTK_IM_STATUS_NOTHING of type Gtk.IMStatusStyle>
+Gtk.IconLookupFlags.DIR_LTR,<class 'gi.repository.Gtk.IconLookupFlags'>,<flags GTK_ICON_LOOKUP_DIR_LTR of type Gtk.IconLookupFlags>
+Gtk.IconLookupFlags.DIR_RTL,<class 'gi.repository.Gtk.IconLookupFlags'>,<flags GTK_ICON_LOOKUP_DIR_RTL of type Gtk.IconLookupFlags>
+Gtk.IconLookupFlags.FORCE_REGULAR,<class 'gi.repository.Gtk.IconLookupFlags'>,<flags GTK_ICON_LOOKUP_FORCE_REGULAR of type Gtk.IconLookupFlags>
+Gtk.IconLookupFlags.FORCE_SIZE,<class 'gi.repository.Gtk.IconLookupFlags'>,<flags GTK_ICON_LOOKUP_FORCE_SIZE of type Gtk.IconLookupFlags>
+Gtk.IconLookupFlags.FORCE_SVG,<class 'gi.repository.Gtk.IconLookupFlags'>,<flags GTK_ICON_LOOKUP_FORCE_SVG of type Gtk.IconLookupFlags>
+Gtk.IconLookupFlags.FORCE_SYMBOLIC,<class 'gi.repository.Gtk.IconLookupFlags'>,<flags GTK_ICON_LOOKUP_FORCE_SYMBOLIC of type Gtk.IconLookupFlags>
+Gtk.IconLookupFlags.GENERIC_FALLBACK,<class 'gi.repository.Gtk.IconLookupFlags'>,<flags GTK_ICON_LOOKUP_GENERIC_FALLBACK of type Gtk.IconLookupFlags>
+Gtk.IconLookupFlags.NO_SVG,<class 'gi.repository.Gtk.IconLookupFlags'>,<flags GTK_ICON_LOOKUP_NO_SVG of type Gtk.IconLookupFlags>
+Gtk.IconLookupFlags.USE_BUILTIN,<class 'gi.repository.Gtk.IconLookupFlags'>,<flags GTK_ICON_LOOKUP_USE_BUILTIN of type Gtk.IconLookupFlags>
+Gtk.IconSize.BUTTON,<class 'gi.repository.Gtk.IconSize'>,<enum GTK_ICON_SIZE_BUTTON of type Gtk.IconSize>
+Gtk.IconSize.DIALOG,<class 'gi.repository.Gtk.IconSize'>,<enum GTK_ICON_SIZE_DIALOG of type Gtk.IconSize>
+Gtk.IconSize.DND,<class 'gi.repository.Gtk.IconSize'>,<enum GTK_ICON_SIZE_DND of type Gtk.IconSize>
+Gtk.IconSize.INVALID,<class 'gi.repository.Gtk.IconSize'>,<enum GTK_ICON_SIZE_INVALID of type Gtk.IconSize>
+Gtk.IconSize.LARGE_TOOLBAR,<class 'gi.repository.Gtk.IconSize'>,<enum GTK_ICON_SIZE_LARGE_TOOLBAR of type Gtk.IconSize>
+Gtk.IconSize.MENU,<class 'gi.repository.Gtk.IconSize'>,<enum GTK_ICON_SIZE_MENU of type Gtk.IconSize>
+Gtk.IconSize.SMALL_TOOLBAR,<class 'gi.repository.Gtk.IconSize'>,<enum GTK_ICON_SIZE_SMALL_TOOLBAR of type Gtk.IconSize>
+Gtk.IconThemeError.FAILED,<class 'gi.repository.Gtk.IconThemeError'>,<enum GTK_ICON_THEME_FAILED of type Gtk.IconThemeError>
+Gtk.IconThemeError.NOT_FOUND,<class 'gi.repository.Gtk.IconThemeError'>,<enum GTK_ICON_THEME_NOT_FOUND of type Gtk.IconThemeError>
+Gtk.IconViewDropPosition.DROP_ABOVE,<class 'gi.repository.Gtk.IconViewDropPosition'>,<enum GTK_ICON_VIEW_DROP_ABOVE of type Gtk.IconViewDropPosition>
+Gtk.IconViewDropPosition.DROP_BELOW,<class 'gi.repository.Gtk.IconViewDropPosition'>,<enum GTK_ICON_VIEW_DROP_BELOW of type Gtk.IconViewDropPosition>
+Gtk.IconViewDropPosition.DROP_INTO,<class 'gi.repository.Gtk.IconViewDropPosition'>,<enum GTK_ICON_VIEW_DROP_INTO of type Gtk.IconViewDropPosition>
+Gtk.IconViewDropPosition.DROP_LEFT,<class 'gi.repository.Gtk.IconViewDropPosition'>,<enum GTK_ICON_VIEW_DROP_LEFT of type Gtk.IconViewDropPosition>
+Gtk.IconViewDropPosition.DROP_RIGHT,<class 'gi.repository.Gtk.IconViewDropPosition'>,<enum GTK_ICON_VIEW_DROP_RIGHT of type Gtk.IconViewDropPosition>
+Gtk.IconViewDropPosition.NO_DROP,<class 'gi.repository.Gtk.IconViewDropPosition'>,<enum GTK_ICON_VIEW_NO_DROP of type Gtk.IconViewDropPosition>
+Gtk.ImageType.ANIMATION,<class 'gi.repository.Gtk.ImageType'>,<enum GTK_IMAGE_ANIMATION of type Gtk.ImageType>
+Gtk.ImageType.EMPTY,<class 'gi.repository.Gtk.ImageType'>,<enum GTK_IMAGE_EMPTY of type Gtk.ImageType>
+Gtk.ImageType.GICON,<class 'gi.repository.Gtk.ImageType'>,<enum GTK_IMAGE_GICON of type Gtk.ImageType>
+Gtk.ImageType.ICON_NAME,<class 'gi.repository.Gtk.ImageType'>,<enum GTK_IMAGE_ICON_NAME of type Gtk.ImageType>
+Gtk.ImageType.ICON_SET,<class 'gi.repository.Gtk.ImageType'>,<enum GTK_IMAGE_ICON_SET of type Gtk.ImageType>
+Gtk.ImageType.PIXBUF,<class 'gi.repository.Gtk.ImageType'>,<enum GTK_IMAGE_PIXBUF of type Gtk.ImageType>
+Gtk.ImageType.STOCK,<class 'gi.repository.Gtk.ImageType'>,<enum GTK_IMAGE_STOCK of type Gtk.ImageType>
+Gtk.ImageType.SURFACE,<class 'gi.repository.Gtk.ImageType'>,<enum GTK_IMAGE_SURFACE of type Gtk.ImageType>
+Gtk.InputHints.EMOJI,<class 'gi.repository.Gtk.InputHints'>,<flags GTK_INPUT_HINT_EMOJI of type Gtk.InputHints>
+Gtk.InputHints.INHIBIT_OSK,<class 'gi.repository.Gtk.InputHints'>,<flags GTK_INPUT_HINT_INHIBIT_OSK of type Gtk.InputHints>
+Gtk.InputHints.LOWERCASE,<class 'gi.repository.Gtk.InputHints'>,<flags GTK_INPUT_HINT_LOWERCASE of type Gtk.InputHints>
+Gtk.InputHints.NONE,<class 'gi.repository.Gtk.InputHints'>,<flags 0 of type Gtk.InputHints>
+Gtk.InputHints.NO_EMOJI,<class 'gi.repository.Gtk.InputHints'>,<flags GTK_INPUT_HINT_NO_EMOJI of type Gtk.InputHints>
+Gtk.InputHints.NO_SPELLCHECK,<class 'gi.repository.Gtk.InputHints'>,<flags GTK_INPUT_HINT_NO_SPELLCHECK of type Gtk.InputHints>
+Gtk.InputHints.SPELLCHECK,<class 'gi.repository.Gtk.InputHints'>,<flags GTK_INPUT_HINT_SPELLCHECK of type Gtk.InputHints>
+Gtk.InputHints.UPPERCASE_CHARS,<class 'gi.repository.Gtk.InputHints'>,<flags GTK_INPUT_HINT_UPPERCASE_CHARS of type Gtk.InputHints>
+Gtk.InputHints.UPPERCASE_SENTENCES,<class 'gi.repository.Gtk.InputHints'>,<flags GTK_INPUT_HINT_UPPERCASE_SENTENCES of type Gtk.InputHints>
+Gtk.InputHints.UPPERCASE_WORDS,<class 'gi.repository.Gtk.InputHints'>,<flags GTK_INPUT_HINT_UPPERCASE_WORDS of type Gtk.InputHints>
+Gtk.InputHints.VERTICAL_WRITING,<class 'gi.repository.Gtk.InputHints'>,<flags GTK_INPUT_HINT_VERTICAL_WRITING of type Gtk.InputHints>
+Gtk.InputHints.WORD_COMPLETION,<class 'gi.repository.Gtk.InputHints'>,<flags GTK_INPUT_HINT_WORD_COMPLETION of type Gtk.InputHints>
+Gtk.InputPurpose.ALPHA,<class 'gi.repository.Gtk.InputPurpose'>,<enum GTK_INPUT_PURPOSE_ALPHA of type Gtk.InputPurpose>
+Gtk.InputPurpose.DIGITS,<class 'gi.repository.Gtk.InputPurpose'>,<enum GTK_INPUT_PURPOSE_DIGITS of type Gtk.InputPurpose>
+Gtk.InputPurpose.EMAIL,<class 'gi.repository.Gtk.InputPurpose'>,<enum GTK_INPUT_PURPOSE_EMAIL of type Gtk.InputPurpose>
+Gtk.InputPurpose.FREE_FORM,<class 'gi.repository.Gtk.InputPurpose'>,<enum GTK_INPUT_PURPOSE_FREE_FORM of type Gtk.InputPurpose>
+Gtk.InputPurpose.NAME,<class 'gi.repository.Gtk.InputPurpose'>,<enum GTK_INPUT_PURPOSE_NAME of type Gtk.InputPurpose>
+Gtk.InputPurpose.NUMBER,<class 'gi.repository.Gtk.InputPurpose'>,<enum GTK_INPUT_PURPOSE_NUMBER of type Gtk.InputPurpose>
+Gtk.InputPurpose.PASSWORD,<class 'gi.repository.Gtk.InputPurpose'>,<enum GTK_INPUT_PURPOSE_PASSWORD of type Gtk.InputPurpose>
+Gtk.InputPurpose.PHONE,<class 'gi.repository.Gtk.InputPurpose'>,<enum GTK_INPUT_PURPOSE_PHONE of type Gtk.InputPurpose>
+Gtk.InputPurpose.PIN,<class 'gi.repository.Gtk.InputPurpose'>,<enum GTK_INPUT_PURPOSE_PIN of type Gtk.InputPurpose>
+Gtk.InputPurpose.TERMINAL,<class 'gi.repository.Gtk.InputPurpose'>,<enum GTK_INPUT_PURPOSE_TERMINAL of type Gtk.InputPurpose>
+Gtk.InputPurpose.URL,<class 'gi.repository.Gtk.InputPurpose'>,<enum GTK_INPUT_PURPOSE_URL of type Gtk.InputPurpose>
+Gtk.JunctionSides.BOTTOM,<class 'gi.repository.Gtk.JunctionSides'>,<flags GTK_JUNCTION_CORNER_BOTTOMLEFT | GTK_JUNCTION_CORNER_BOTTOMRIGHT | GTK_JUNCTION_BOTTOM of type Gtk.JunctionSides>
+Gtk.JunctionSides.CORNER_BOTTOMLEFT,<class 'gi.repository.Gtk.JunctionSides'>,<flags GTK_JUNCTION_CORNER_BOTTOMLEFT of type Gtk.JunctionSides>
+Gtk.JunctionSides.CORNER_BOTTOMRIGHT,<class 'gi.repository.Gtk.JunctionSides'>,<flags GTK_JUNCTION_CORNER_BOTTOMRIGHT of type Gtk.JunctionSides>
+Gtk.JunctionSides.CORNER_TOPLEFT,<class 'gi.repository.Gtk.JunctionSides'>,<flags GTK_JUNCTION_CORNER_TOPLEFT of type Gtk.JunctionSides>
+Gtk.JunctionSides.CORNER_TOPRIGHT,<class 'gi.repository.Gtk.JunctionSides'>,<flags GTK_JUNCTION_CORNER_TOPRIGHT of type Gtk.JunctionSides>
+Gtk.JunctionSides.LEFT,<class 'gi.repository.Gtk.JunctionSides'>,<flags GTK_JUNCTION_CORNER_TOPLEFT | GTK_JUNCTION_CORNER_BOTTOMLEFT | GTK_JUNCTION_LEFT of type Gtk.JunctionSides>
+Gtk.JunctionSides.NONE,<class 'gi.repository.Gtk.JunctionSides'>,<flags 0 of type Gtk.JunctionSides>
+Gtk.JunctionSides.RIGHT,<class 'gi.repository.Gtk.JunctionSides'>,<flags GTK_JUNCTION_CORNER_TOPRIGHT | GTK_JUNCTION_CORNER_BOTTOMRIGHT | GTK_JUNCTION_RIGHT of type Gtk.JunctionSides>
+Gtk.JunctionSides.TOP,<class 'gi.repository.Gtk.JunctionSides'>,<flags GTK_JUNCTION_CORNER_TOPLEFT | GTK_JUNCTION_CORNER_TOPRIGHT | GTK_JUNCTION_TOP of type Gtk.JunctionSides>
+Gtk.Justification.CENTER,<class 'gi.repository.Gtk.Justification'>,<enum GTK_JUSTIFY_CENTER of type Gtk.Justification>
+Gtk.Justification.FILL,<class 'gi.repository.Gtk.Justification'>,<enum GTK_JUSTIFY_FILL of type Gtk.Justification>
+Gtk.Justification.LEFT,<class 'gi.repository.Gtk.Justification'>,<enum GTK_JUSTIFY_LEFT of type Gtk.Justification>
+Gtk.Justification.RIGHT,<class 'gi.repository.Gtk.Justification'>,<enum GTK_JUSTIFY_RIGHT of type Gtk.Justification>
+Gtk.LevelBarMode.CONTINUOUS,<class 'gi.repository.Gtk.LevelBarMode'>,<enum GTK_LEVEL_BAR_MODE_CONTINUOUS of type Gtk.LevelBarMode>
+Gtk.LevelBarMode.DISCRETE,<class 'gi.repository.Gtk.LevelBarMode'>,<enum GTK_LEVEL_BAR_MODE_DISCRETE of type Gtk.LevelBarMode>
+Gtk.License.AGPL_3_0,<class 'gi.repository.Gtk.License'>,<enum GTK_LICENSE_AGPL_3_0 of type Gtk.License>
+Gtk.License.AGPL_3_0_ONLY,<class 'gi.repository.Gtk.License'>,<enum GTK_LICENSE_AGPL_3_0_ONLY of type Gtk.License>
+Gtk.License.APACHE_2_0,<class 'gi.repository.Gtk.License'>,<enum GTK_LICENSE_APACHE_2_0 of type Gtk.License>
+Gtk.License.ARTISTIC,<class 'gi.repository.Gtk.License'>,<enum GTK_LICENSE_ARTISTIC of type Gtk.License>
+Gtk.License.BSD,<class 'gi.repository.Gtk.License'>,<enum GTK_LICENSE_BSD of type Gtk.License>
+Gtk.License.BSD_3,<class 'gi.repository.Gtk.License'>,<enum GTK_LICENSE_BSD_3 of type Gtk.License>
+Gtk.License.CUSTOM,<class 'gi.repository.Gtk.License'>,<enum GTK_LICENSE_CUSTOM of type Gtk.License>
+Gtk.License.GPL_2_0,<class 'gi.repository.Gtk.License'>,<enum GTK_LICENSE_GPL_2_0 of type Gtk.License>
+Gtk.License.GPL_2_0_ONLY,<class 'gi.repository.Gtk.License'>,<enum GTK_LICENSE_GPL_2_0_ONLY of type Gtk.License>
+Gtk.License.GPL_3_0,<class 'gi.repository.Gtk.License'>,<enum GTK_LICENSE_GPL_3_0 of type Gtk.License>
+Gtk.License.GPL_3_0_ONLY,<class 'gi.repository.Gtk.License'>,<enum GTK_LICENSE_GPL_3_0_ONLY of type Gtk.License>
+Gtk.License.LGPL_2_1,<class 'gi.repository.Gtk.License'>,<enum GTK_LICENSE_LGPL_2_1 of type Gtk.License>
+Gtk.License.LGPL_2_1_ONLY,<class 'gi.repository.Gtk.License'>,<enum GTK_LICENSE_LGPL_2_1_ONLY of type Gtk.License>
+Gtk.License.LGPL_3_0,<class 'gi.repository.Gtk.License'>,<enum GTK_LICENSE_LGPL_3_0 of type Gtk.License>
+Gtk.License.LGPL_3_0_ONLY,<class 'gi.repository.Gtk.License'>,<enum GTK_LICENSE_LGPL_3_0_ONLY of type Gtk.License>
+Gtk.License.MIT_X11,<class 'gi.repository.Gtk.License'>,<enum GTK_LICENSE_MIT_X11 of type Gtk.License>
+Gtk.License.MPL_2_0,<class 'gi.repository.Gtk.License'>,<enum GTK_LICENSE_MPL_2_0 of type Gtk.License>
+Gtk.License.UNKNOWN,<class 'gi.repository.Gtk.License'>,<enum GTK_LICENSE_UNKNOWN of type Gtk.License>
+Gtk.MenuDirectionType.CHILD,<class 'gi.repository.Gtk.MenuDirectionType'>,<enum GTK_MENU_DIR_CHILD of type Gtk.MenuDirectionType>
+Gtk.MenuDirectionType.NEXT,<class 'gi.repository.Gtk.MenuDirectionType'>,<enum GTK_MENU_DIR_NEXT of type Gtk.MenuDirectionType>
+Gtk.MenuDirectionType.PARENT,<class 'gi.repository.Gtk.MenuDirectionType'>,<enum GTK_MENU_DIR_PARENT of type Gtk.MenuDirectionType>
+Gtk.MenuDirectionType.PREV,<class 'gi.repository.Gtk.MenuDirectionType'>,<enum GTK_MENU_DIR_PREV of type Gtk.MenuDirectionType>
+Gtk.MessageType.ERROR,<class 'gi.repository.Gtk.MessageType'>,<enum GTK_MESSAGE_ERROR of type Gtk.MessageType>
+Gtk.MessageType.INFO,<class 'gi.repository.Gtk.MessageType'>,<enum GTK_MESSAGE_INFO of type Gtk.MessageType>
+Gtk.MessageType.OTHER,<class 'gi.repository.Gtk.MessageType'>,<enum GTK_MESSAGE_OTHER of type Gtk.MessageType>
+Gtk.MessageType.QUESTION,<class 'gi.repository.Gtk.MessageType'>,<enum GTK_MESSAGE_QUESTION of type Gtk.MessageType>
+Gtk.MessageType.WARNING,<class 'gi.repository.Gtk.MessageType'>,<enum GTK_MESSAGE_WARNING of type Gtk.MessageType>
+Gtk.MovementStep.BUFFER_ENDS,<class 'gi.repository.Gtk.MovementStep'>,<enum GTK_MOVEMENT_BUFFER_ENDS of type Gtk.MovementStep>
+Gtk.MovementStep.DISPLAY_LINES,<class 'gi.repository.Gtk.MovementStep'>,<enum GTK_MOVEMENT_DISPLAY_LINES of type Gtk.MovementStep>
+Gtk.MovementStep.DISPLAY_LINE_ENDS,<class 'gi.repository.Gtk.MovementStep'>,<enum GTK_MOVEMENT_DISPLAY_LINE_ENDS of type Gtk.MovementStep>
+Gtk.MovementStep.HORIZONTAL_PAGES,<class 'gi.repository.Gtk.MovementStep'>,<enum GTK_MOVEMENT_HORIZONTAL_PAGES of type Gtk.MovementStep>
+Gtk.MovementStep.LOGICAL_POSITIONS,<class 'gi.repository.Gtk.MovementStep'>,<enum GTK_MOVEMENT_LOGICAL_POSITIONS of type Gtk.MovementStep>
+Gtk.MovementStep.PAGES,<class 'gi.repository.Gtk.MovementStep'>,<enum GTK_MOVEMENT_PAGES of type Gtk.MovementStep>
+Gtk.MovementStep.PARAGRAPHS,<class 'gi.repository.Gtk.MovementStep'>,<enum GTK_MOVEMENT_PARAGRAPHS of type Gtk.MovementStep>
+Gtk.MovementStep.PARAGRAPH_ENDS,<class 'gi.repository.Gtk.MovementStep'>,<enum GTK_MOVEMENT_PARAGRAPH_ENDS of type Gtk.MovementStep>
+Gtk.MovementStep.VISUAL_POSITIONS,<class 'gi.repository.Gtk.MovementStep'>,<enum GTK_MOVEMENT_VISUAL_POSITIONS of type Gtk.MovementStep>
+Gtk.MovementStep.WORDS,<class 'gi.repository.Gtk.MovementStep'>,<enum GTK_MOVEMENT_WORDS of type Gtk.MovementStep>
+Gtk.NotebookTab.FIRST,<class 'gi.repository.Gtk.NotebookTab'>,<enum GTK_NOTEBOOK_TAB_FIRST of type Gtk.NotebookTab>
+Gtk.NotebookTab.LAST,<class 'gi.repository.Gtk.NotebookTab'>,<enum GTK_NOTEBOOK_TAB_LAST of type Gtk.NotebookTab>
+Gtk.NumberUpLayout.BTLR,<class 'gi.repository.Gtk.NumberUpLayout'>,<enum GTK_NUMBER_UP_LAYOUT_BOTTOM_TO_TOP_LEFT_TO_RIGHT of type Gtk.NumberUpLayout>
+Gtk.NumberUpLayout.BTRL,<class 'gi.repository.Gtk.NumberUpLayout'>,<enum GTK_NUMBER_UP_LAYOUT_BOTTOM_TO_TOP_RIGHT_TO_LEFT of type Gtk.NumberUpLayout>
+Gtk.NumberUpLayout.LRBT,<class 'gi.repository.Gtk.NumberUpLayout'>,<enum GTK_NUMBER_UP_LAYOUT_LEFT_TO_RIGHT_BOTTOM_TO_TOP of type Gtk.NumberUpLayout>
+Gtk.NumberUpLayout.LRTB,<class 'gi.repository.Gtk.NumberUpLayout'>,<enum GTK_NUMBER_UP_LAYOUT_LEFT_TO_RIGHT_TOP_TO_BOTTOM of type Gtk.NumberUpLayout>
+Gtk.NumberUpLayout.RLBT,<class 'gi.repository.Gtk.NumberUpLayout'>,<enum GTK_NUMBER_UP_LAYOUT_RIGHT_TO_LEFT_BOTTOM_TO_TOP of type Gtk.NumberUpLayout>
+Gtk.NumberUpLayout.RLTB,<class 'gi.repository.Gtk.NumberUpLayout'>,<enum GTK_NUMBER_UP_LAYOUT_RIGHT_TO_LEFT_TOP_TO_BOTTOM of type Gtk.NumberUpLayout>
+Gtk.NumberUpLayout.TBLR,<class 'gi.repository.Gtk.NumberUpLayout'>,<enum GTK_NUMBER_UP_LAYOUT_TOP_TO_BOTTOM_LEFT_TO_RIGHT of type Gtk.NumberUpLayout>
+Gtk.NumberUpLayout.TBRL,<class 'gi.repository.Gtk.NumberUpLayout'>,<enum GTK_NUMBER_UP_LAYOUT_TOP_TO_BOTTOM_RIGHT_TO_LEFT of type Gtk.NumberUpLayout>
+Gtk.Orientation.HORIZONTAL,<class 'gi.repository.Gtk.Orientation'>,<enum GTK_ORIENTATION_HORIZONTAL of type Gtk.Orientation>
+Gtk.Orientation.VERTICAL,<class 'gi.repository.Gtk.Orientation'>,<enum GTK_ORIENTATION_VERTICAL of type Gtk.Orientation>
+Gtk.PackDirection.BTT,<class 'gi.repository.Gtk.PackDirection'>,<enum GTK_PACK_DIRECTION_BTT of type Gtk.PackDirection>
+Gtk.PackDirection.LTR,<class 'gi.repository.Gtk.PackDirection'>,<enum GTK_PACK_DIRECTION_LTR of type Gtk.PackDirection>
+Gtk.PackDirection.RTL,<class 'gi.repository.Gtk.PackDirection'>,<enum GTK_PACK_DIRECTION_RTL of type Gtk.PackDirection>
+Gtk.PackDirection.TTB,<class 'gi.repository.Gtk.PackDirection'>,<enum GTK_PACK_DIRECTION_TTB of type Gtk.PackDirection>
+Gtk.PackType.END,<class 'gi.repository.Gtk.PackType'>,<enum GTK_PACK_END of type Gtk.PackType>
+Gtk.PackType.START,<class 'gi.repository.Gtk.PackType'>,<enum GTK_PACK_START of type Gtk.PackType>
+Gtk.PadActionType.BUTTON,<class 'gi.repository.Gtk.PadActionType'>,<enum GTK_PAD_ACTION_BUTTON of type Gtk.PadActionType>
+Gtk.PadActionType.RING,<class 'gi.repository.Gtk.PadActionType'>,<enum GTK_PAD_ACTION_RING of type Gtk.PadActionType>
+Gtk.PadActionType.STRIP,<class 'gi.repository.Gtk.PadActionType'>,<enum GTK_PAD_ACTION_STRIP of type Gtk.PadActionType>
+Gtk.PageOrientation.LANDSCAPE,<class 'gi.repository.Gtk.PageOrientation'>,<enum GTK_PAGE_ORIENTATION_LANDSCAPE of type Gtk.PageOrientation>
+Gtk.PageOrientation.PORTRAIT,<class 'gi.repository.Gtk.PageOrientation'>,<enum GTK_PAGE_ORIENTATION_PORTRAIT of type Gtk.PageOrientation>
+Gtk.PageOrientation.REVERSE_LANDSCAPE,<class 'gi.repository.Gtk.PageOrientation'>,<enum GTK_PAGE_ORIENTATION_REVERSE_LANDSCAPE of type Gtk.PageOrientation>
+Gtk.PageOrientation.REVERSE_PORTRAIT,<class 'gi.repository.Gtk.PageOrientation'>,<enum GTK_PAGE_ORIENTATION_REVERSE_PORTRAIT of type Gtk.PageOrientation>
+Gtk.PageSet.ALL,<class 'gi.repository.Gtk.PageSet'>,<enum GTK_PAGE_SET_ALL of type Gtk.PageSet>
+Gtk.PageSet.EVEN,<class 'gi.repository.Gtk.PageSet'>,<enum GTK_PAGE_SET_EVEN of type Gtk.PageSet>
+Gtk.PageSet.ODD,<class 'gi.repository.Gtk.PageSet'>,<enum GTK_PAGE_SET_ODD of type Gtk.PageSet>
+Gtk.PanDirection.DOWN,<class 'gi.repository.Gtk.PanDirection'>,<enum GTK_PAN_DIRECTION_DOWN of type Gtk.PanDirection>
+Gtk.PanDirection.LEFT,<class 'gi.repository.Gtk.PanDirection'>,<enum GTK_PAN_DIRECTION_LEFT of type Gtk.PanDirection>
+Gtk.PanDirection.RIGHT,<class 'gi.repository.Gtk.PanDirection'>,<enum GTK_PAN_DIRECTION_RIGHT of type Gtk.PanDirection>
+Gtk.PanDirection.UP,<class 'gi.repository.Gtk.PanDirection'>,<enum GTK_PAN_DIRECTION_UP of type Gtk.PanDirection>
+Gtk.PathPriorityType.APPLICATION,<class 'gi.repository.Gtk.PathPriorityType'>,<enum GTK_PATH_PRIO_APPLICATION of type Gtk.PathPriorityType>
+Gtk.PathPriorityType.GTK,<class 'gi.repository.Gtk.PathPriorityType'>,<enum GTK_PATH_PRIO_GTK of type Gtk.PathPriorityType>
+Gtk.PathPriorityType.HIGHEST,<class 'gi.repository.Gtk.PathPriorityType'>,<enum GTK_PATH_PRIO_HIGHEST of type Gtk.PathPriorityType>
+Gtk.PathPriorityType.LOWEST,<class 'gi.repository.Gtk.PathPriorityType'>,<enum GTK_PATH_PRIO_LOWEST of type Gtk.PathPriorityType>
+Gtk.PathPriorityType.RC,<class 'gi.repository.Gtk.PathPriorityType'>,<enum GTK_PATH_PRIO_RC of type Gtk.PathPriorityType>
+Gtk.PathPriorityType.THEME,<class 'gi.repository.Gtk.PathPriorityType'>,<enum GTK_PATH_PRIO_THEME of type Gtk.PathPriorityType>
+Gtk.PathType.CLASS,<class 'gi.repository.Gtk.PathType'>,<enum GTK_PATH_CLASS of type Gtk.PathType>
+Gtk.PathType.WIDGET,<class 'gi.repository.Gtk.PathType'>,<enum GTK_PATH_WIDGET of type Gtk.PathType>
+Gtk.PathType.WIDGET_CLASS,<class 'gi.repository.Gtk.PathType'>,<enum GTK_PATH_WIDGET_CLASS of type Gtk.PathType>
+Gtk.PlacesOpenFlags.NEW_TAB,<class 'gi.repository.Gtk.PlacesOpenFlags'>,<flags GTK_PLACES_OPEN_NEW_TAB of type Gtk.PlacesOpenFlags>
+Gtk.PlacesOpenFlags.NEW_WINDOW,<class 'gi.repository.Gtk.PlacesOpenFlags'>,<flags GTK_PLACES_OPEN_NEW_WINDOW of type Gtk.PlacesOpenFlags>
+Gtk.PlacesOpenFlags.NORMAL,<class 'gi.repository.Gtk.PlacesOpenFlags'>,<flags GTK_PLACES_OPEN_NORMAL of type Gtk.PlacesOpenFlags>
+Gtk.PolicyType.ALWAYS,<class 'gi.repository.Gtk.PolicyType'>,<enum GTK_POLICY_ALWAYS of type Gtk.PolicyType>
+Gtk.PolicyType.AUTOMATIC,<class 'gi.repository.Gtk.PolicyType'>,<enum GTK_POLICY_AUTOMATIC of type Gtk.PolicyType>
+Gtk.PolicyType.EXTERNAL,<class 'gi.repository.Gtk.PolicyType'>,<enum GTK_POLICY_EXTERNAL of type Gtk.PolicyType>
+Gtk.PolicyType.NEVER,<class 'gi.repository.Gtk.PolicyType'>,<enum GTK_POLICY_NEVER of type Gtk.PolicyType>
+Gtk.PopoverConstraint.NONE,<class 'gi.repository.Gtk.PopoverConstraint'>,<enum GTK_POPOVER_CONSTRAINT_NONE of type Gtk.PopoverConstraint>
+Gtk.PopoverConstraint.WINDOW,<class 'gi.repository.Gtk.PopoverConstraint'>,<enum GTK_POPOVER_CONSTRAINT_WINDOW of type Gtk.PopoverConstraint>
+Gtk.PositionType.BOTTOM,<class 'gi.repository.Gtk.PositionType'>,<enum GTK_POS_BOTTOM of type Gtk.PositionType>
+Gtk.PositionType.LEFT,<class 'gi.repository.Gtk.PositionType'>,<enum GTK_POS_LEFT of type Gtk.PositionType>
+Gtk.PositionType.RIGHT,<class 'gi.repository.Gtk.PositionType'>,<enum GTK_POS_RIGHT of type Gtk.PositionType>
+Gtk.PositionType.TOP,<class 'gi.repository.Gtk.PositionType'>,<enum GTK_POS_TOP of type Gtk.PositionType>
+Gtk.PrintDuplex.HORIZONTAL,<class 'gi.repository.Gtk.PrintDuplex'>,<enum GTK_PRINT_DUPLEX_HORIZONTAL of type Gtk.PrintDuplex>
+Gtk.PrintDuplex.SIMPLEX,<class 'gi.repository.Gtk.PrintDuplex'>,<enum GTK_PRINT_DUPLEX_SIMPLEX of type Gtk.PrintDuplex>
+Gtk.PrintDuplex.VERTICAL,<class 'gi.repository.Gtk.PrintDuplex'>,<enum GTK_PRINT_DUPLEX_VERTICAL of type Gtk.PrintDuplex>
+Gtk.PrintError.GENERAL,<class 'gi.repository.Gtk.PrintError'>,<enum GTK_PRINT_ERROR_GENERAL of type Gtk.PrintError>
+Gtk.PrintError.INTERNAL_ERROR,<class 'gi.repository.Gtk.PrintError'>,<enum GTK_PRINT_ERROR_INTERNAL_ERROR of type Gtk.PrintError>
+Gtk.PrintError.INVALID_FILE,<class 'gi.repository.Gtk.PrintError'>,<enum GTK_PRINT_ERROR_INVALID_FILE of type Gtk.PrintError>
+Gtk.PrintError.NOMEM,<class 'gi.repository.Gtk.PrintError'>,<enum GTK_PRINT_ERROR_NOMEM of type Gtk.PrintError>
+Gtk.PrintOperationAction.EXPORT,<class 'gi.repository.Gtk.PrintOperationAction'>,<enum GTK_PRINT_OPERATION_ACTION_EXPORT of type Gtk.PrintOperationAction>
+Gtk.PrintOperationAction.PREVIEW,<class 'gi.repository.Gtk.PrintOperationAction'>,<enum GTK_PRINT_OPERATION_ACTION_PREVIEW of type Gtk.PrintOperationAction>
+Gtk.PrintOperationAction.PRINT,<class 'gi.repository.Gtk.PrintOperationAction'>,<enum GTK_PRINT_OPERATION_ACTION_PRINT of type Gtk.PrintOperationAction>
+Gtk.PrintOperationAction.PRINT_DIALOG,<class 'gi.repository.Gtk.PrintOperationAction'>,<enum GTK_PRINT_OPERATION_ACTION_PRINT_DIALOG of type Gtk.PrintOperationAction>
+Gtk.PrintOperationResult.APPLY,<class 'gi.repository.Gtk.PrintOperationResult'>,<enum GTK_PRINT_OPERATION_RESULT_APPLY of type Gtk.PrintOperationResult>
+Gtk.PrintOperationResult.CANCEL,<class 'gi.repository.Gtk.PrintOperationResult'>,<enum GTK_PRINT_OPERATION_RESULT_CANCEL of type Gtk.PrintOperationResult>
+Gtk.PrintOperationResult.ERROR,<class 'gi.repository.Gtk.PrintOperationResult'>,<enum GTK_PRINT_OPERATION_RESULT_ERROR of type Gtk.PrintOperationResult>
+Gtk.PrintOperationResult.IN_PROGRESS,<class 'gi.repository.Gtk.PrintOperationResult'>,<enum GTK_PRINT_OPERATION_RESULT_IN_PROGRESS of type Gtk.PrintOperationResult>
+Gtk.PrintPages.ALL,<class 'gi.repository.Gtk.PrintPages'>,<enum GTK_PRINT_PAGES_ALL of type Gtk.PrintPages>
+Gtk.PrintPages.CURRENT,<class 'gi.repository.Gtk.PrintPages'>,<enum GTK_PRINT_PAGES_CURRENT of type Gtk.PrintPages>
+Gtk.PrintPages.RANGES,<class 'gi.repository.Gtk.PrintPages'>,<enum GTK_PRINT_PAGES_RANGES of type Gtk.PrintPages>
+Gtk.PrintPages.SELECTION,<class 'gi.repository.Gtk.PrintPages'>,<enum GTK_PRINT_PAGES_SELECTION of type Gtk.PrintPages>
+Gtk.PrintQuality.DRAFT,<class 'gi.repository.Gtk.PrintQuality'>,<enum GTK_PRINT_QUALITY_DRAFT of type Gtk.PrintQuality>
+Gtk.PrintQuality.HIGH,<class 'gi.repository.Gtk.PrintQuality'>,<enum GTK_PRINT_QUALITY_HIGH of type Gtk.PrintQuality>
+Gtk.PrintQuality.LOW,<class 'gi.repository.Gtk.PrintQuality'>,<enum GTK_PRINT_QUALITY_LOW of type Gtk.PrintQuality>
+Gtk.PrintQuality.NORMAL,<class 'gi.repository.Gtk.PrintQuality'>,<enum GTK_PRINT_QUALITY_NORMAL of type Gtk.PrintQuality>
+Gtk.PrintStatus.FINISHED,<class 'gi.repository.Gtk.PrintStatus'>,<enum GTK_PRINT_STATUS_FINISHED of type Gtk.PrintStatus>
+Gtk.PrintStatus.FINISHED_ABORTED,<class 'gi.repository.Gtk.PrintStatus'>,<enum GTK_PRINT_STATUS_FINISHED_ABORTED of type Gtk.PrintStatus>
+Gtk.PrintStatus.GENERATING_DATA,<class 'gi.repository.Gtk.PrintStatus'>,<enum GTK_PRINT_STATUS_GENERATING_DATA of type Gtk.PrintStatus>
+Gtk.PrintStatus.INITIAL,<class 'gi.repository.Gtk.PrintStatus'>,<enum GTK_PRINT_STATUS_INITIAL of type Gtk.PrintStatus>
+Gtk.PrintStatus.PENDING,<class 'gi.repository.Gtk.PrintStatus'>,<enum GTK_PRINT_STATUS_PENDING of type Gtk.PrintStatus>
+Gtk.PrintStatus.PENDING_ISSUE,<class 'gi.repository.Gtk.PrintStatus'>,<enum GTK_PRINT_STATUS_PENDING_ISSUE of type Gtk.PrintStatus>
+Gtk.PrintStatus.PREPARING,<class 'gi.repository.Gtk.PrintStatus'>,<enum GTK_PRINT_STATUS_PREPARING of type Gtk.PrintStatus>
+Gtk.PrintStatus.PRINTING,<class 'gi.repository.Gtk.PrintStatus'>,<enum GTK_PRINT_STATUS_PRINTING of type Gtk.PrintStatus>
+Gtk.PrintStatus.SENDING_DATA,<class 'gi.repository.Gtk.PrintStatus'>,<enum GTK_PRINT_STATUS_SENDING_DATA of type Gtk.PrintStatus>
+Gtk.PropagationPhase.BUBBLE,<class 'gi.repository.Gtk.PropagationPhase'>,<enum GTK_PHASE_BUBBLE of type Gtk.PropagationPhase>
+Gtk.PropagationPhase.CAPTURE,<class 'gi.repository.Gtk.PropagationPhase'>,<enum GTK_PHASE_CAPTURE of type Gtk.PropagationPhase>
+Gtk.PropagationPhase.NONE,<class 'gi.repository.Gtk.PropagationPhase'>,<enum GTK_PHASE_NONE of type Gtk.PropagationPhase>
+Gtk.PropagationPhase.TARGET,<class 'gi.repository.Gtk.PropagationPhase'>,<enum GTK_PHASE_TARGET of type Gtk.PropagationPhase>
+Gtk.RcFlags.BASE,<class 'gi.repository.Gtk.RcFlags'>,<flags GTK_RC_BASE of type Gtk.RcFlags>
+Gtk.RcFlags.BG,<class 'gi.repository.Gtk.RcFlags'>,<flags GTK_RC_BG of type Gtk.RcFlags>
+Gtk.RcFlags.FG,<class 'gi.repository.Gtk.RcFlags'>,<flags GTK_RC_FG of type Gtk.RcFlags>
+Gtk.RcFlags.TEXT,<class 'gi.repository.Gtk.RcFlags'>,<flags GTK_RC_TEXT of type Gtk.RcFlags>
+Gtk.RcTokenType.ACTIVE,<class 'gi.repository.Gtk.RcTokenType'>,<enum GTK_RC_TOKEN_ACTIVE of type Gtk.RcTokenType>
+Gtk.RcTokenType.APPLICATION,<class 'gi.repository.Gtk.RcTokenType'>,<enum GTK_RC_TOKEN_APPLICATION of type Gtk.RcTokenType>
+Gtk.RcTokenType.BASE,<class 'gi.repository.Gtk.RcTokenType'>,<enum GTK_RC_TOKEN_BASE of type Gtk.RcTokenType>
+Gtk.RcTokenType.BG,<class 'gi.repository.Gtk.RcTokenType'>,<enum GTK_RC_TOKEN_BG of type Gtk.RcTokenType>
+Gtk.RcTokenType.BG_PIXMAP,<class 'gi.repository.Gtk.RcTokenType'>,<enum GTK_RC_TOKEN_BG_PIXMAP of type Gtk.RcTokenType>
+Gtk.RcTokenType.BIND,<class 'gi.repository.Gtk.RcTokenType'>,<enum GTK_RC_TOKEN_BIND of type Gtk.RcTokenType>
+Gtk.RcTokenType.BINDING,<class 'gi.repository.Gtk.RcTokenType'>,<enum GTK_RC_TOKEN_BINDING of type Gtk.RcTokenType>
+Gtk.RcTokenType.CLASS,<class 'gi.repository.Gtk.RcTokenType'>,<enum GTK_RC_TOKEN_CLASS of type Gtk.RcTokenType>
+Gtk.RcTokenType.COLOR,<class 'gi.repository.Gtk.RcTokenType'>,<enum GTK_RC_TOKEN_COLOR of type Gtk.RcTokenType>
+Gtk.RcTokenType.ENGINE,<class 'gi.repository.Gtk.RcTokenType'>,<enum GTK_RC_TOKEN_ENGINE of type Gtk.RcTokenType>
+Gtk.RcTokenType.FG,<class 'gi.repository.Gtk.RcTokenType'>,<enum GTK_RC_TOKEN_FG of type Gtk.RcTokenType>
+Gtk.RcTokenType.FONT,<class 'gi.repository.Gtk.RcTokenType'>,<enum GTK_RC_TOKEN_FONT of type Gtk.RcTokenType>
+Gtk.RcTokenType.FONTSET,<class 'gi.repository.Gtk.RcTokenType'>,<enum GTK_RC_TOKEN_FONTSET of type Gtk.RcTokenType>
+Gtk.RcTokenType.FONT_NAME,<class 'gi.repository.Gtk.RcTokenType'>,<enum GTK_RC_TOKEN_FONT_NAME of type Gtk.RcTokenType>
+Gtk.RcTokenType.GTK,<class 'gi.repository.Gtk.RcTokenType'>,<enum GTK_RC_TOKEN_GTK of type Gtk.RcTokenType>
+Gtk.RcTokenType.HIGHEST,<class 'gi.repository.Gtk.RcTokenType'>,<enum GTK_RC_TOKEN_HIGHEST of type Gtk.RcTokenType>
+Gtk.RcTokenType.IM_MODULE_FILE,<class 'gi.repository.Gtk.RcTokenType'>,<enum GTK_RC_TOKEN_IM_MODULE_FILE of type Gtk.RcTokenType>
+Gtk.RcTokenType.IM_MODULE_PATH,<class 'gi.repository.Gtk.RcTokenType'>,<enum GTK_RC_TOKEN_IM_MODULE_PATH of type Gtk.RcTokenType>
+Gtk.RcTokenType.INCLUDE,<class 'gi.repository.Gtk.RcTokenType'>,<enum GTK_RC_TOKEN_INCLUDE of type Gtk.RcTokenType>
+Gtk.RcTokenType.INSENSITIVE,<class 'gi.repository.Gtk.RcTokenType'>,<enum GTK_RC_TOKEN_INSENSITIVE of type Gtk.RcTokenType>
+Gtk.RcTokenType.INVALID,<class 'gi.repository.Gtk.RcTokenType'>,<enum GTK_RC_TOKEN_INVALID of type Gtk.RcTokenType>
+Gtk.RcTokenType.LAST,<class 'gi.repository.Gtk.RcTokenType'>,<enum GTK_RC_TOKEN_LAST of type Gtk.RcTokenType>
+Gtk.RcTokenType.LOWEST,<class 'gi.repository.Gtk.RcTokenType'>,<enum GTK_RC_TOKEN_LOWEST of type Gtk.RcTokenType>
+Gtk.RcTokenType.LTR,<class 'gi.repository.Gtk.RcTokenType'>,<enum GTK_RC_TOKEN_LTR of type Gtk.RcTokenType>
+Gtk.RcTokenType.MODULE_PATH,<class 'gi.repository.Gtk.RcTokenType'>,<enum GTK_RC_TOKEN_MODULE_PATH of type Gtk.RcTokenType>
+Gtk.RcTokenType.NORMAL,<class 'gi.repository.Gtk.RcTokenType'>,<enum GTK_RC_TOKEN_NORMAL of type Gtk.RcTokenType>
+Gtk.RcTokenType.PIXMAP_PATH,<class 'gi.repository.Gtk.RcTokenType'>,<enum GTK_RC_TOKEN_PIXMAP_PATH of type Gtk.RcTokenType>
+Gtk.RcTokenType.PRELIGHT,<class 'gi.repository.Gtk.RcTokenType'>,<enum GTK_RC_TOKEN_PRELIGHT of type Gtk.RcTokenType>
+Gtk.RcTokenType.RC,<class 'gi.repository.Gtk.RcTokenType'>,<enum GTK_RC_TOKEN_RC of type Gtk.RcTokenType>
+Gtk.RcTokenType.RTL,<class 'gi.repository.Gtk.RcTokenType'>,<enum GTK_RC_TOKEN_RTL of type Gtk.RcTokenType>
+Gtk.RcTokenType.SELECTED,<class 'gi.repository.Gtk.RcTokenType'>,<enum GTK_RC_TOKEN_SELECTED of type Gtk.RcTokenType>
+Gtk.RcTokenType.STOCK,<class 'gi.repository.Gtk.RcTokenType'>,<enum GTK_RC_TOKEN_STOCK of type Gtk.RcTokenType>
+Gtk.RcTokenType.STYLE,<class 'gi.repository.Gtk.RcTokenType'>,<enum GTK_RC_TOKEN_STYLE of type Gtk.RcTokenType>
+Gtk.RcTokenType.TEXT,<class 'gi.repository.Gtk.RcTokenType'>,<enum GTK_RC_TOKEN_TEXT of type Gtk.RcTokenType>
+Gtk.RcTokenType.THEME,<class 'gi.repository.Gtk.RcTokenType'>,<enum GTK_RC_TOKEN_THEME of type Gtk.RcTokenType>
+Gtk.RcTokenType.UNBIND,<class 'gi.repository.Gtk.RcTokenType'>,<enum GTK_RC_TOKEN_UNBIND of type Gtk.RcTokenType>
+Gtk.RcTokenType.WIDGET,<class 'gi.repository.Gtk.RcTokenType'>,<enum GTK_RC_TOKEN_WIDGET of type Gtk.RcTokenType>
+Gtk.RcTokenType.WIDGET_CLASS,<class 'gi.repository.Gtk.RcTokenType'>,<enum GTK_RC_TOKEN_WIDGET_CLASS of type Gtk.RcTokenType>
+Gtk.RcTokenType.XTHICKNESS,<class 'gi.repository.Gtk.RcTokenType'>,<enum GTK_RC_TOKEN_XTHICKNESS of type Gtk.RcTokenType>
+Gtk.RcTokenType.YTHICKNESS,<class 'gi.repository.Gtk.RcTokenType'>,<enum GTK_RC_TOKEN_YTHICKNESS of type Gtk.RcTokenType>
+Gtk.RecentChooserError.INVALID_URI,<class 'gi.repository.Gtk.RecentChooserError'>,<enum GTK_RECENT_CHOOSER_ERROR_INVALID_URI of type Gtk.RecentChooserError>
+Gtk.RecentChooserError.NOT_FOUND,<class 'gi.repository.Gtk.RecentChooserError'>,<enum GTK_RECENT_CHOOSER_ERROR_NOT_FOUND of type Gtk.RecentChooserError>
+Gtk.RecentFilterFlags.AGE,<class 'gi.repository.Gtk.RecentFilterFlags'>,<flags GTK_RECENT_FILTER_AGE of type Gtk.RecentFilterFlags>
+Gtk.RecentFilterFlags.APPLICATION,<class 'gi.repository.Gtk.RecentFilterFlags'>,<flags GTK_RECENT_FILTER_APPLICATION of type Gtk.RecentFilterFlags>
+Gtk.RecentFilterFlags.DISPLAY_NAME,<class 'gi.repository.Gtk.RecentFilterFlags'>,<flags GTK_RECENT_FILTER_DISPLAY_NAME of type Gtk.RecentFilterFlags>
+Gtk.RecentFilterFlags.GROUP,<class 'gi.repository.Gtk.RecentFilterFlags'>,<flags GTK_RECENT_FILTER_GROUP of type Gtk.RecentFilterFlags>
+Gtk.RecentFilterFlags.MIME_TYPE,<class 'gi.repository.Gtk.RecentFilterFlags'>,<flags GTK_RECENT_FILTER_MIME_TYPE of type Gtk.RecentFilterFlags>
+Gtk.RecentFilterFlags.URI,<class 'gi.repository.Gtk.RecentFilterFlags'>,<flags GTK_RECENT_FILTER_URI of type Gtk.RecentFilterFlags>
+Gtk.RecentManagerError.INVALID_ENCODING,<class 'gi.repository.Gtk.RecentManagerError'>,<enum GTK_RECENT_MANAGER_ERROR_INVALID_ENCODING of type Gtk.RecentManagerError>
+Gtk.RecentManagerError.INVALID_URI,<class 'gi.repository.Gtk.RecentManagerError'>,<enum GTK_RECENT_MANAGER_ERROR_INVALID_URI of type Gtk.RecentManagerError>
+Gtk.RecentManagerError.NOT_FOUND,<class 'gi.repository.Gtk.RecentManagerError'>,<enum GTK_RECENT_MANAGER_ERROR_NOT_FOUND of type Gtk.RecentManagerError>
+Gtk.RecentManagerError.NOT_REGISTERED,<class 'gi.repository.Gtk.RecentManagerError'>,<enum GTK_RECENT_MANAGER_ERROR_NOT_REGISTERED of type Gtk.RecentManagerError>
+Gtk.RecentManagerError.READ,<class 'gi.repository.Gtk.RecentManagerError'>,<enum GTK_RECENT_MANAGER_ERROR_READ of type Gtk.RecentManagerError>
+Gtk.RecentManagerError.UNKNOWN,<class 'gi.repository.Gtk.RecentManagerError'>,<enum GTK_RECENT_MANAGER_ERROR_UNKNOWN of type Gtk.RecentManagerError>
+Gtk.RecentManagerError.WRITE,<class 'gi.repository.Gtk.RecentManagerError'>,<enum GTK_RECENT_MANAGER_ERROR_WRITE of type Gtk.RecentManagerError>
+Gtk.RecentSortType.CUSTOM,<class 'gi.repository.Gtk.RecentSortType'>,<enum GTK_RECENT_SORT_CUSTOM of type Gtk.RecentSortType>
+Gtk.RecentSortType.LRU,<class 'gi.repository.Gtk.RecentSortType'>,<enum GTK_RECENT_SORT_LRU of type Gtk.RecentSortType>
+Gtk.RecentSortType.MRU,<class 'gi.repository.Gtk.RecentSortType'>,<enum GTK_RECENT_SORT_MRU of type Gtk.RecentSortType>
+Gtk.RecentSortType.NONE,<class 'gi.repository.Gtk.RecentSortType'>,<enum GTK_RECENT_SORT_NONE of type Gtk.RecentSortType>
+Gtk.RegionFlags.EVEN,<class 'gi.repository.Gtk.RegionFlags'>,<flags GTK_REGION_EVEN of type Gtk.RegionFlags>
+Gtk.RegionFlags.FIRST,<class 'gi.repository.Gtk.RegionFlags'>,<flags GTK_REGION_FIRST of type Gtk.RegionFlags>
+Gtk.RegionFlags.LAST,<class 'gi.repository.Gtk.RegionFlags'>,<flags GTK_REGION_LAST of type Gtk.RegionFlags>
+Gtk.RegionFlags.ODD,<class 'gi.repository.Gtk.RegionFlags'>,<flags GTK_REGION_ODD of type Gtk.RegionFlags>
+Gtk.RegionFlags.ONLY,<class 'gi.repository.Gtk.RegionFlags'>,<flags GTK_REGION_ONLY of type Gtk.RegionFlags>
+Gtk.RegionFlags.SORTED,<class 'gi.repository.Gtk.RegionFlags'>,<flags GTK_REGION_SORTED of type Gtk.RegionFlags>
+Gtk.ReliefStyle.HALF,<class 'gi.repository.Gtk.ReliefStyle'>,<enum GTK_RELIEF_HALF of type Gtk.ReliefStyle>
+Gtk.ReliefStyle.NONE,<class 'gi.repository.Gtk.ReliefStyle'>,<enum GTK_RELIEF_NONE of type Gtk.ReliefStyle>
+Gtk.ReliefStyle.NORMAL,<class 'gi.repository.Gtk.ReliefStyle'>,<enum GTK_RELIEF_NORMAL of type Gtk.ReliefStyle>
+Gtk.ResizeMode.IMMEDIATE,<class 'gi.repository.Gtk.ResizeMode'>,<enum GTK_RESIZE_IMMEDIATE of type Gtk.ResizeMode>
+Gtk.ResizeMode.PARENT,<class 'gi.repository.Gtk.ResizeMode'>,<enum GTK_RESIZE_PARENT of type Gtk.ResizeMode>
+Gtk.ResizeMode.QUEUE,<class 'gi.repository.Gtk.ResizeMode'>,<enum GTK_RESIZE_QUEUE of type Gtk.ResizeMode>
+Gtk.ResponseType.ACCEPT,<class 'gi.repository.Gtk.ResponseType'>,<enum GTK_RESPONSE_ACCEPT of type Gtk.ResponseType>
+Gtk.ResponseType.APPLY,<class 'gi.repository.Gtk.ResponseType'>,<enum GTK_RESPONSE_APPLY of type Gtk.ResponseType>
+Gtk.ResponseType.CANCEL,<class 'gi.repository.Gtk.ResponseType'>,<enum GTK_RESPONSE_CANCEL of type Gtk.ResponseType>
+Gtk.ResponseType.CLOSE,<class 'gi.repository.Gtk.ResponseType'>,<enum GTK_RESPONSE_CLOSE of type Gtk.ResponseType>
+Gtk.ResponseType.DELETE_EVENT,<class 'gi.repository.Gtk.ResponseType'>,<enum GTK_RESPONSE_DELETE_EVENT of type Gtk.ResponseType>
+Gtk.ResponseType.HELP,<class 'gi.repository.Gtk.ResponseType'>,<enum GTK_RESPONSE_HELP of type Gtk.ResponseType>
+Gtk.ResponseType.NO,<class 'gi.repository.Gtk.ResponseType'>,<enum GTK_RESPONSE_NO of type Gtk.ResponseType>
+Gtk.ResponseType.NONE,<class 'gi.repository.Gtk.ResponseType'>,<enum GTK_RESPONSE_NONE of type Gtk.ResponseType>
+Gtk.ResponseType.OK,<class 'gi.repository.Gtk.ResponseType'>,<enum GTK_RESPONSE_OK of type Gtk.ResponseType>
+Gtk.ResponseType.REJECT,<class 'gi.repository.Gtk.ResponseType'>,<enum GTK_RESPONSE_REJECT of type Gtk.ResponseType>
+Gtk.ResponseType.YES,<class 'gi.repository.Gtk.ResponseType'>,<enum GTK_RESPONSE_YES of type Gtk.ResponseType>
+Gtk.RevealerTransitionType.CROSSFADE,<class 'gi.repository.Gtk.RevealerTransitionType'>,<enum GTK_REVEALER_TRANSITION_TYPE_CROSSFADE of type Gtk.RevealerTransitionType>
+Gtk.RevealerTransitionType.NONE,<class 'gi.repository.Gtk.RevealerTransitionType'>,<enum GTK_REVEALER_TRANSITION_TYPE_NONE of type Gtk.RevealerTransitionType>
+Gtk.RevealerTransitionType.SLIDE_DOWN,<class 'gi.repository.Gtk.RevealerTransitionType'>,<enum GTK_REVEALER_TRANSITION_TYPE_SLIDE_DOWN of type Gtk.RevealerTransitionType>
+Gtk.RevealerTransitionType.SLIDE_LEFT,<class 'gi.repository.Gtk.RevealerTransitionType'>,<enum GTK_REVEALER_TRANSITION_TYPE_SLIDE_LEFT of type Gtk.RevealerTransitionType>
+Gtk.RevealerTransitionType.SLIDE_RIGHT,<class 'gi.repository.Gtk.RevealerTransitionType'>,<enum GTK_REVEALER_TRANSITION_TYPE_SLIDE_RIGHT of type Gtk.RevealerTransitionType>
+Gtk.RevealerTransitionType.SLIDE_UP,<class 'gi.repository.Gtk.RevealerTransitionType'>,<enum GTK_REVEALER_TRANSITION_TYPE_SLIDE_UP of type Gtk.RevealerTransitionType>
+Gtk.ScrollStep.ENDS,<class 'gi.repository.Gtk.ScrollStep'>,<enum GTK_SCROLL_ENDS of type Gtk.ScrollStep>
+Gtk.ScrollStep.HORIZONTAL_ENDS,<class 'gi.repository.Gtk.ScrollStep'>,<enum GTK_SCROLL_HORIZONTAL_ENDS of type Gtk.ScrollStep>
+Gtk.ScrollStep.HORIZONTAL_PAGES,<class 'gi.repository.Gtk.ScrollStep'>,<enum GTK_SCROLL_HORIZONTAL_PAGES of type Gtk.ScrollStep>
+Gtk.ScrollStep.HORIZONTAL_STEPS,<class 'gi.repository.Gtk.ScrollStep'>,<enum GTK_SCROLL_HORIZONTAL_STEPS of type Gtk.ScrollStep>
+Gtk.ScrollStep.PAGES,<class 'gi.repository.Gtk.ScrollStep'>,<enum GTK_SCROLL_PAGES of type Gtk.ScrollStep>
+Gtk.ScrollStep.STEPS,<class 'gi.repository.Gtk.ScrollStep'>,<enum GTK_SCROLL_STEPS of type Gtk.ScrollStep>
+Gtk.ScrollType.END,<class 'gi.repository.Gtk.ScrollType'>,<enum GTK_SCROLL_END of type Gtk.ScrollType>
+Gtk.ScrollType.JUMP,<class 'gi.repository.Gtk.ScrollType'>,<enum GTK_SCROLL_JUMP of type Gtk.ScrollType>
+Gtk.ScrollType.NONE,<class 'gi.repository.Gtk.ScrollType'>,<enum GTK_SCROLL_NONE of type Gtk.ScrollType>
+Gtk.ScrollType.PAGE_BACKWARD,<class 'gi.repository.Gtk.ScrollType'>,<enum GTK_SCROLL_PAGE_BACKWARD of type Gtk.ScrollType>
+Gtk.ScrollType.PAGE_DOWN,<class 'gi.repository.Gtk.ScrollType'>,<enum GTK_SCROLL_PAGE_DOWN of type Gtk.ScrollType>
+Gtk.ScrollType.PAGE_FORWARD,<class 'gi.repository.Gtk.ScrollType'>,<enum GTK_SCROLL_PAGE_FORWARD of type Gtk.ScrollType>
+Gtk.ScrollType.PAGE_LEFT,<class 'gi.repository.Gtk.ScrollType'>,<enum GTK_SCROLL_PAGE_LEFT of type Gtk.ScrollType>
+Gtk.ScrollType.PAGE_RIGHT,<class 'gi.repository.Gtk.ScrollType'>,<enum GTK_SCROLL_PAGE_RIGHT of type Gtk.ScrollType>
+Gtk.ScrollType.PAGE_UP,<class 'gi.repository.Gtk.ScrollType'>,<enum GTK_SCROLL_PAGE_UP of type Gtk.ScrollType>
+Gtk.ScrollType.START,<class 'gi.repository.Gtk.ScrollType'>,<enum GTK_SCROLL_START of type Gtk.ScrollType>
+Gtk.ScrollType.STEP_BACKWARD,<class 'gi.repository.Gtk.ScrollType'>,<enum GTK_SCROLL_STEP_BACKWARD of type Gtk.ScrollType>
+Gtk.ScrollType.STEP_DOWN,<class 'gi.repository.Gtk.ScrollType'>,<enum GTK_SCROLL_STEP_DOWN of type Gtk.ScrollType>
+Gtk.ScrollType.STEP_FORWARD,<class 'gi.repository.Gtk.ScrollType'>,<enum GTK_SCROLL_STEP_FORWARD of type Gtk.ScrollType>
+Gtk.ScrollType.STEP_LEFT,<class 'gi.repository.Gtk.ScrollType'>,<enum GTK_SCROLL_STEP_LEFT of type Gtk.ScrollType>
+Gtk.ScrollType.STEP_RIGHT,<class 'gi.repository.Gtk.ScrollType'>,<enum GTK_SCROLL_STEP_RIGHT of type Gtk.ScrollType>
+Gtk.ScrollType.STEP_UP,<class 'gi.repository.Gtk.ScrollType'>,<enum GTK_SCROLL_STEP_UP of type Gtk.ScrollType>
+Gtk.ScrollablePolicy.MINIMUM,<class 'gi.repository.Gtk.ScrollablePolicy'>,<enum GTK_SCROLL_MINIMUM of type Gtk.ScrollablePolicy>
+Gtk.ScrollablePolicy.NATURAL,<class 'gi.repository.Gtk.ScrollablePolicy'>,<enum GTK_SCROLL_NATURAL of type Gtk.ScrollablePolicy>
+Gtk.SelectionMode.BROWSE,<class 'gi.repository.Gtk.SelectionMode'>,<enum GTK_SELECTION_BROWSE of type Gtk.SelectionMode>
+Gtk.SelectionMode.MULTIPLE,<class 'gi.repository.Gtk.SelectionMode'>,<enum GTK_SELECTION_MULTIPLE of type Gtk.SelectionMode>
+Gtk.SelectionMode.NONE,<class 'gi.repository.Gtk.SelectionMode'>,<enum GTK_SELECTION_NONE of type Gtk.SelectionMode>
+Gtk.SelectionMode.SINGLE,<class 'gi.repository.Gtk.SelectionMode'>,<enum GTK_SELECTION_SINGLE of type Gtk.SelectionMode>
+Gtk.SensitivityType.AUTO,<class 'gi.repository.Gtk.SensitivityType'>,<enum GTK_SENSITIVITY_AUTO of type Gtk.SensitivityType>
+Gtk.SensitivityType.OFF,<class 'gi.repository.Gtk.SensitivityType'>,<enum GTK_SENSITIVITY_OFF of type Gtk.SensitivityType>
+Gtk.SensitivityType.ON,<class 'gi.repository.Gtk.SensitivityType'>,<enum GTK_SENSITIVITY_ON of type Gtk.SensitivityType>
+Gtk.ShadowType.ETCHED_IN,<class 'gi.repository.Gtk.ShadowType'>,<enum GTK_SHADOW_ETCHED_IN of type Gtk.ShadowType>
+Gtk.ShadowType.ETCHED_OUT,<class 'gi.repository.Gtk.ShadowType'>,<enum GTK_SHADOW_ETCHED_OUT of type Gtk.ShadowType>
+Gtk.ShadowType.IN,<class 'gi.repository.Gtk.ShadowType'>,<enum GTK_SHADOW_IN of type Gtk.ShadowType>
+Gtk.ShadowType.NONE,<class 'gi.repository.Gtk.ShadowType'>,<enum GTK_SHADOW_NONE of type Gtk.ShadowType>
+Gtk.ShadowType.OUT,<class 'gi.repository.Gtk.ShadowType'>,<enum GTK_SHADOW_OUT of type Gtk.ShadowType>
+Gtk.ShortcutType.ACCELERATOR,<class 'gi.repository.Gtk.ShortcutType'>,<enum GTK_SHORTCUT_ACCELERATOR of type Gtk.ShortcutType>
+Gtk.ShortcutType.GESTURE,<class 'gi.repository.Gtk.ShortcutType'>,<enum GTK_SHORTCUT_GESTURE of type Gtk.ShortcutType>
+Gtk.ShortcutType.GESTURE_PINCH,<class 'gi.repository.Gtk.ShortcutType'>,<enum GTK_SHORTCUT_GESTURE_PINCH of type Gtk.ShortcutType>
+Gtk.ShortcutType.GESTURE_ROTATE_CLOCKWISE,<class 'gi.repository.Gtk.ShortcutType'>,<enum GTK_SHORTCUT_GESTURE_ROTATE_CLOCKWISE of type Gtk.ShortcutType>
+Gtk.ShortcutType.GESTURE_ROTATE_COUNTERCLOCKWISE,<class 'gi.repository.Gtk.ShortcutType'>,<enum GTK_SHORTCUT_GESTURE_ROTATE_COUNTERCLOCKWISE of type Gtk.ShortcutType>
+Gtk.ShortcutType.GESTURE_STRETCH,<class 'gi.repository.Gtk.ShortcutType'>,<enum GTK_SHORTCUT_GESTURE_STRETCH of type Gtk.ShortcutType>
+Gtk.ShortcutType.GESTURE_TWO_FINGER_SWIPE_LEFT,<class 'gi.repository.Gtk.ShortcutType'>,<enum GTK_SHORTCUT_GESTURE_TWO_FINGER_SWIPE_LEFT of type Gtk.ShortcutType>
+Gtk.ShortcutType.GESTURE_TWO_FINGER_SWIPE_RIGHT,<class 'gi.repository.Gtk.ShortcutType'>,<enum GTK_SHORTCUT_GESTURE_TWO_FINGER_SWIPE_RIGHT of type Gtk.ShortcutType>
+Gtk.SizeGroupMode.BOTH,<class 'gi.repository.Gtk.SizeGroupMode'>,<enum GTK_SIZE_GROUP_BOTH of type Gtk.SizeGroupMode>
+Gtk.SizeGroupMode.HORIZONTAL,<class 'gi.repository.Gtk.SizeGroupMode'>,<enum GTK_SIZE_GROUP_HORIZONTAL of type Gtk.SizeGroupMode>
+Gtk.SizeGroupMode.NONE,<class 'gi.repository.Gtk.SizeGroupMode'>,<enum GTK_SIZE_GROUP_NONE of type Gtk.SizeGroupMode>
+Gtk.SizeGroupMode.VERTICAL,<class 'gi.repository.Gtk.SizeGroupMode'>,<enum GTK_SIZE_GROUP_VERTICAL of type Gtk.SizeGroupMode>
+Gtk.SizeRequestMode.CONSTANT_SIZE,<class 'gi.repository.Gtk.SizeRequestMode'>,<enum GTK_SIZE_REQUEST_CONSTANT_SIZE of type Gtk.SizeRequestMode>
+Gtk.SizeRequestMode.HEIGHT_FOR_WIDTH,<class 'gi.repository.Gtk.SizeRequestMode'>,<enum GTK_SIZE_REQUEST_HEIGHT_FOR_WIDTH of type Gtk.SizeRequestMode>
+Gtk.SizeRequestMode.WIDTH_FOR_HEIGHT,<class 'gi.repository.Gtk.SizeRequestMode'>,<enum GTK_SIZE_REQUEST_WIDTH_FOR_HEIGHT of type Gtk.SizeRequestMode>
+Gtk.SortType.ASCENDING,<class 'gi.repository.Gtk.SortType'>,<enum GTK_SORT_ASCENDING of type Gtk.SortType>
+Gtk.SortType.DESCENDING,<class 'gi.repository.Gtk.SortType'>,<enum GTK_SORT_DESCENDING of type Gtk.SortType>
+Gtk.SpinButtonUpdatePolicy.ALWAYS,<class 'gi.repository.Gtk.SpinButtonUpdatePolicy'>,<enum GTK_UPDATE_ALWAYS of type Gtk.SpinButtonUpdatePolicy>
+Gtk.SpinButtonUpdatePolicy.IF_VALID,<class 'gi.repository.Gtk.SpinButtonUpdatePolicy'>,<enum GTK_UPDATE_IF_VALID of type Gtk.SpinButtonUpdatePolicy>
+Gtk.SpinType.END,<class 'gi.repository.Gtk.SpinType'>,<enum GTK_SPIN_END of type Gtk.SpinType>
+Gtk.SpinType.HOME,<class 'gi.repository.Gtk.SpinType'>,<enum GTK_SPIN_HOME of type Gtk.SpinType>
+Gtk.SpinType.PAGE_BACKWARD,<class 'gi.repository.Gtk.SpinType'>,<enum GTK_SPIN_PAGE_BACKWARD of type Gtk.SpinType>
+Gtk.SpinType.PAGE_FORWARD,<class 'gi.repository.Gtk.SpinType'>,<enum GTK_SPIN_PAGE_FORWARD of type Gtk.SpinType>
+Gtk.SpinType.STEP_BACKWARD,<class 'gi.repository.Gtk.SpinType'>,<enum GTK_SPIN_STEP_BACKWARD of type Gtk.SpinType>
+Gtk.SpinType.STEP_FORWARD,<class 'gi.repository.Gtk.SpinType'>,<enum GTK_SPIN_STEP_FORWARD of type Gtk.SpinType>
+Gtk.SpinType.USER_DEFINED,<class 'gi.repository.Gtk.SpinType'>,<enum GTK_SPIN_USER_DEFINED of type Gtk.SpinType>
+Gtk.StackTransitionType.CROSSFADE,<class 'gi.repository.Gtk.StackTransitionType'>,<enum GTK_STACK_TRANSITION_TYPE_CROSSFADE of type Gtk.StackTransitionType>
+Gtk.StackTransitionType.NONE,<class 'gi.repository.Gtk.StackTransitionType'>,<enum GTK_STACK_TRANSITION_TYPE_NONE of type Gtk.StackTransitionType>
+Gtk.StackTransitionType.OVER_DOWN,<class 'gi.repository.Gtk.StackTransitionType'>,<enum GTK_STACK_TRANSITION_TYPE_OVER_DOWN of type Gtk.StackTransitionType>
+Gtk.StackTransitionType.OVER_DOWN_UP,<class 'gi.repository.Gtk.StackTransitionType'>,<enum GTK_STACK_TRANSITION_TYPE_OVER_DOWN_UP of type Gtk.StackTransitionType>
+Gtk.StackTransitionType.OVER_LEFT,<class 'gi.repository.Gtk.StackTransitionType'>,<enum GTK_STACK_TRANSITION_TYPE_OVER_LEFT of type Gtk.StackTransitionType>
+Gtk.StackTransitionType.OVER_LEFT_RIGHT,<class 'gi.repository.Gtk.StackTransitionType'>,<enum GTK_STACK_TRANSITION_TYPE_OVER_LEFT_RIGHT of type Gtk.StackTransitionType>
+Gtk.StackTransitionType.OVER_RIGHT,<class 'gi.repository.Gtk.StackTransitionType'>,<enum GTK_STACK_TRANSITION_TYPE_OVER_RIGHT of type Gtk.StackTransitionType>
+Gtk.StackTransitionType.OVER_RIGHT_LEFT,<class 'gi.repository.Gtk.StackTransitionType'>,<enum GTK_STACK_TRANSITION_TYPE_OVER_RIGHT_LEFT of type Gtk.StackTransitionType>
+Gtk.StackTransitionType.OVER_UP,<class 'gi.repository.Gtk.StackTransitionType'>,<enum GTK_STACK_TRANSITION_TYPE_OVER_UP of type Gtk.StackTransitionType>
+Gtk.StackTransitionType.OVER_UP_DOWN,<class 'gi.repository.Gtk.StackTransitionType'>,<enum GTK_STACK_TRANSITION_TYPE_OVER_UP_DOWN of type Gtk.StackTransitionType>
+Gtk.StackTransitionType.SLIDE_DOWN,<class 'gi.repository.Gtk.StackTransitionType'>,<enum GTK_STACK_TRANSITION_TYPE_SLIDE_DOWN of type Gtk.StackTransitionType>
+Gtk.StackTransitionType.SLIDE_LEFT,<class 'gi.repository.Gtk.StackTransitionType'>,<enum GTK_STACK_TRANSITION_TYPE_SLIDE_LEFT of type Gtk.StackTransitionType>
+Gtk.StackTransitionType.SLIDE_LEFT_RIGHT,<class 'gi.repository.Gtk.StackTransitionType'>,<enum GTK_STACK_TRANSITION_TYPE_SLIDE_LEFT_RIGHT of type Gtk.StackTransitionType>
+Gtk.StackTransitionType.SLIDE_RIGHT,<class 'gi.repository.Gtk.StackTransitionType'>,<enum GTK_STACK_TRANSITION_TYPE_SLIDE_RIGHT of type Gtk.StackTransitionType>
+Gtk.StackTransitionType.SLIDE_UP,<class 'gi.repository.Gtk.StackTransitionType'>,<enum GTK_STACK_TRANSITION_TYPE_SLIDE_UP of type Gtk.StackTransitionType>
+Gtk.StackTransitionType.SLIDE_UP_DOWN,<class 'gi.repository.Gtk.StackTransitionType'>,<enum GTK_STACK_TRANSITION_TYPE_SLIDE_UP_DOWN of type Gtk.StackTransitionType>
+Gtk.StackTransitionType.UNDER_DOWN,<class 'gi.repository.Gtk.StackTransitionType'>,<enum GTK_STACK_TRANSITION_TYPE_UNDER_DOWN of type Gtk.StackTransitionType>
+Gtk.StackTransitionType.UNDER_LEFT,<class 'gi.repository.Gtk.StackTransitionType'>,<enum GTK_STACK_TRANSITION_TYPE_UNDER_LEFT of type Gtk.StackTransitionType>
+Gtk.StackTransitionType.UNDER_RIGHT,<class 'gi.repository.Gtk.StackTransitionType'>,<enum GTK_STACK_TRANSITION_TYPE_UNDER_RIGHT of type Gtk.StackTransitionType>
+Gtk.StackTransitionType.UNDER_UP,<class 'gi.repository.Gtk.StackTransitionType'>,<enum GTK_STACK_TRANSITION_TYPE_UNDER_UP of type Gtk.StackTransitionType>
+Gtk.StateFlags.ACTIVE,<class 'gi.repository.Gtk.StateFlags'>,<flags GTK_STATE_FLAG_ACTIVE of type Gtk.StateFlags>
+Gtk.StateFlags.BACKDROP,<class 'gi.repository.Gtk.StateFlags'>,<flags GTK_STATE_FLAG_BACKDROP of type Gtk.StateFlags>
+Gtk.StateFlags.CHECKED,<class 'gi.repository.Gtk.StateFlags'>,<flags GTK_STATE_FLAG_CHECKED of type Gtk.StateFlags>
+Gtk.StateFlags.DIR_LTR,<class 'gi.repository.Gtk.StateFlags'>,<flags GTK_STATE_FLAG_DIR_LTR of type Gtk.StateFlags>
+Gtk.StateFlags.DIR_RTL,<class 'gi.repository.Gtk.StateFlags'>,<flags GTK_STATE_FLAG_DIR_RTL of type Gtk.StateFlags>
+Gtk.StateFlags.DROP_ACTIVE,<class 'gi.repository.Gtk.StateFlags'>,<flags GTK_STATE_FLAG_DROP_ACTIVE of type Gtk.StateFlags>
+Gtk.StateFlags.FOCUSED,<class 'gi.repository.Gtk.StateFlags'>,<flags GTK_STATE_FLAG_FOCUSED of type Gtk.StateFlags>
+Gtk.StateFlags.INCONSISTENT,<class 'gi.repository.Gtk.StateFlags'>,<flags GTK_STATE_FLAG_INCONSISTENT of type Gtk.StateFlags>
+Gtk.StateFlags.INSENSITIVE,<class 'gi.repository.Gtk.StateFlags'>,<flags GTK_STATE_FLAG_INSENSITIVE of type Gtk.StateFlags>
+Gtk.StateFlags.LINK,<class 'gi.repository.Gtk.StateFlags'>,<flags GTK_STATE_FLAG_LINK of type Gtk.StateFlags>
+Gtk.StateFlags.NORMAL,<class 'gi.repository.Gtk.StateFlags'>,<flags 0 of type Gtk.StateFlags>
+Gtk.StateFlags.PRELIGHT,<class 'gi.repository.Gtk.StateFlags'>,<flags GTK_STATE_FLAG_PRELIGHT of type Gtk.StateFlags>
+Gtk.StateFlags.SELECTED,<class 'gi.repository.Gtk.StateFlags'>,<flags GTK_STATE_FLAG_SELECTED of type Gtk.StateFlags>
+Gtk.StateFlags.VISITED,<class 'gi.repository.Gtk.StateFlags'>,<flags GTK_STATE_FLAG_VISITED of type Gtk.StateFlags>
+Gtk.StateType.ACTIVE,<class 'gi.repository.Gtk.StateType'>,<enum GTK_STATE_ACTIVE of type Gtk.StateType>
+Gtk.StateType.FOCUSED,<class 'gi.repository.Gtk.StateType'>,<enum GTK_STATE_FOCUSED of type Gtk.StateType>
+Gtk.StateType.INCONSISTENT,<class 'gi.repository.Gtk.StateType'>,<enum GTK_STATE_INCONSISTENT of type Gtk.StateType>
+Gtk.StateType.INSENSITIVE,<class 'gi.repository.Gtk.StateType'>,<enum GTK_STATE_INSENSITIVE of type Gtk.StateType>
+Gtk.StateType.NORMAL,<class 'gi.repository.Gtk.StateType'>,<enum GTK_STATE_NORMAL of type Gtk.StateType>
+Gtk.StateType.PRELIGHT,<class 'gi.repository.Gtk.StateType'>,<enum GTK_STATE_PRELIGHT of type Gtk.StateType>
+Gtk.StateType.SELECTED,<class 'gi.repository.Gtk.StateType'>,<enum GTK_STATE_SELECTED of type Gtk.StateType>
+Gtk.StyleContextPrintFlags.NONE,<class 'gi.repository.Gtk.StyleContextPrintFlags'>,<flags 0 of type Gtk.StyleContextPrintFlags>
+Gtk.StyleContextPrintFlags.RECURSE,<class 'gi.repository.Gtk.StyleContextPrintFlags'>,<flags GTK_STYLE_CONTEXT_PRINT_RECURSE of type Gtk.StyleContextPrintFlags>
+Gtk.StyleContextPrintFlags.SHOW_STYLE,<class 'gi.repository.Gtk.StyleContextPrintFlags'>,<flags GTK_STYLE_CONTEXT_PRINT_SHOW_STYLE of type Gtk.StyleContextPrintFlags>
+Gtk.TargetFlags.OTHER_APP,<class 'gi.repository.Gtk.TargetFlags'>,<flags GTK_TARGET_OTHER_APP of type Gtk.TargetFlags>
+Gtk.TargetFlags.OTHER_WIDGET,<class 'gi.repository.Gtk.TargetFlags'>,<flags GTK_TARGET_OTHER_WIDGET of type Gtk.TargetFlags>
+Gtk.TargetFlags.SAME_APP,<class 'gi.repository.Gtk.TargetFlags'>,<flags GTK_TARGET_SAME_APP of type Gtk.TargetFlags>
+Gtk.TargetFlags.SAME_WIDGET,<class 'gi.repository.Gtk.TargetFlags'>,<flags GTK_TARGET_SAME_WIDGET of type Gtk.TargetFlags>
+Gtk.TextBufferTargetInfo.BUFFER_CONTENTS,<class 'gi.repository.Gtk.TextBufferTargetInfo'>,<enum GTK_TEXT_BUFFER_TARGET_INFO_BUFFER_CONTENTS of type Gtk.TextBufferTargetInfo>
+Gtk.TextBufferTargetInfo.RICH_TEXT,<class 'gi.repository.Gtk.TextBufferTargetInfo'>,<enum GTK_TEXT_BUFFER_TARGET_INFO_RICH_TEXT of type Gtk.TextBufferTargetInfo>
+Gtk.TextBufferTargetInfo.TEXT,<class 'gi.repository.Gtk.TextBufferTargetInfo'>,<enum GTK_TEXT_BUFFER_TARGET_INFO_TEXT of type Gtk.TextBufferTargetInfo>
+Gtk.TextDirection.LTR,<class 'gi.repository.Gtk.TextDirection'>,<enum GTK_TEXT_DIR_LTR of type Gtk.TextDirection>
+Gtk.TextDirection.NONE,<class 'gi.repository.Gtk.TextDirection'>,<enum GTK_TEXT_DIR_NONE of type Gtk.TextDirection>
+Gtk.TextDirection.RTL,<class 'gi.repository.Gtk.TextDirection'>,<enum GTK_TEXT_DIR_RTL of type Gtk.TextDirection>
+Gtk.TextExtendSelection.LINE,<class 'gi.repository.Gtk.TextExtendSelection'>,<enum GTK_TEXT_EXTEND_SELECTION_LINE of type Gtk.TextExtendSelection>
+Gtk.TextExtendSelection.WORD,<class 'gi.repository.Gtk.TextExtendSelection'>,<enum GTK_TEXT_EXTEND_SELECTION_WORD of type Gtk.TextExtendSelection>
+Gtk.TextSearchFlags.CASE_INSENSITIVE,<class 'gi.repository.Gtk.TextSearchFlags'>,<flags GTK_TEXT_SEARCH_CASE_INSENSITIVE of type Gtk.TextSearchFlags>
+Gtk.TextSearchFlags.TEXT_ONLY,<class 'gi.repository.Gtk.TextSearchFlags'>,<flags GTK_TEXT_SEARCH_TEXT_ONLY of type Gtk.TextSearchFlags>
+Gtk.TextSearchFlags.VISIBLE_ONLY,<class 'gi.repository.Gtk.TextSearchFlags'>,<flags GTK_TEXT_SEARCH_VISIBLE_ONLY of type Gtk.TextSearchFlags>
+Gtk.TextViewLayer.ABOVE,<class 'gi.repository.Gtk.TextViewLayer'>,<enum GTK_TEXT_VIEW_LAYER_ABOVE of type Gtk.TextViewLayer>
+Gtk.TextViewLayer.ABOVE_TEXT,<class 'gi.repository.Gtk.TextViewLayer'>,<enum GTK_TEXT_VIEW_LAYER_ABOVE_TEXT of type Gtk.TextViewLayer>
+Gtk.TextViewLayer.BELOW,<class 'gi.repository.Gtk.TextViewLayer'>,<enum GTK_TEXT_VIEW_LAYER_BELOW of type Gtk.TextViewLayer>
+Gtk.TextViewLayer.BELOW_TEXT,<class 'gi.repository.Gtk.TextViewLayer'>,<enum GTK_TEXT_VIEW_LAYER_BELOW_TEXT of type Gtk.TextViewLayer>
+Gtk.TextWindowType.BOTTOM,<class 'gi.repository.Gtk.TextWindowType'>,<enum GTK_TEXT_WINDOW_BOTTOM of type Gtk.TextWindowType>
+Gtk.TextWindowType.LEFT,<class 'gi.repository.Gtk.TextWindowType'>,<enum GTK_TEXT_WINDOW_LEFT of type Gtk.TextWindowType>
+Gtk.TextWindowType.PRIVATE,<class 'gi.repository.Gtk.TextWindowType'>,<enum GTK_TEXT_WINDOW_PRIVATE of type Gtk.TextWindowType>
+Gtk.TextWindowType.RIGHT,<class 'gi.repository.Gtk.TextWindowType'>,<enum GTK_TEXT_WINDOW_RIGHT of type Gtk.TextWindowType>
+Gtk.TextWindowType.TEXT,<class 'gi.repository.Gtk.TextWindowType'>,<enum GTK_TEXT_WINDOW_TEXT of type Gtk.TextWindowType>
+Gtk.TextWindowType.TOP,<class 'gi.repository.Gtk.TextWindowType'>,<enum GTK_TEXT_WINDOW_TOP of type Gtk.TextWindowType>
+Gtk.TextWindowType.WIDGET,<class 'gi.repository.Gtk.TextWindowType'>,<enum GTK_TEXT_WINDOW_WIDGET of type Gtk.TextWindowType>
+Gtk.ToolPaletteDragTargets.GROUPS,<class 'gi.repository.Gtk.ToolPaletteDragTargets'>,<flags GTK_TOOL_PALETTE_DRAG_GROUPS of type Gtk.ToolPaletteDragTargets>
+Gtk.ToolPaletteDragTargets.ITEMS,<class 'gi.repository.Gtk.ToolPaletteDragTargets'>,<flags GTK_TOOL_PALETTE_DRAG_ITEMS of type Gtk.ToolPaletteDragTargets>
+Gtk.ToolbarSpaceStyle.EMPTY,<class 'gi.repository.Gtk.ToolbarSpaceStyle'>,<enum GTK_TOOLBAR_SPACE_EMPTY of type Gtk.ToolbarSpaceStyle>
+Gtk.ToolbarSpaceStyle.LINE,<class 'gi.repository.Gtk.ToolbarSpaceStyle'>,<enum GTK_TOOLBAR_SPACE_LINE of type Gtk.ToolbarSpaceStyle>
+Gtk.ToolbarStyle.BOTH,<class 'gi.repository.Gtk.ToolbarStyle'>,<enum GTK_TOOLBAR_BOTH of type Gtk.ToolbarStyle>
+Gtk.ToolbarStyle.BOTH_HORIZ,<class 'gi.repository.Gtk.ToolbarStyle'>,<enum GTK_TOOLBAR_BOTH_HORIZ of type Gtk.ToolbarStyle>
+Gtk.ToolbarStyle.ICONS,<class 'gi.repository.Gtk.ToolbarStyle'>,<enum GTK_TOOLBAR_ICONS of type Gtk.ToolbarStyle>
+Gtk.ToolbarStyle.TEXT,<class 'gi.repository.Gtk.ToolbarStyle'>,<enum GTK_TOOLBAR_TEXT of type Gtk.ToolbarStyle>
+Gtk.TreeModelFlags.ITERS_PERSIST,<class 'gi.repository.Gtk.TreeModelFlags'>,<flags GTK_TREE_MODEL_ITERS_PERSIST of type Gtk.TreeModelFlags>
+Gtk.TreeModelFlags.LIST_ONLY,<class 'gi.repository.Gtk.TreeModelFlags'>,<flags GTK_TREE_MODEL_LIST_ONLY of type Gtk.TreeModelFlags>
+Gtk.TreeViewColumnSizing.AUTOSIZE,<class 'gi.repository.Gtk.TreeViewColumnSizing'>,<enum GTK_TREE_VIEW_COLUMN_AUTOSIZE of type Gtk.TreeViewColumnSizing>
+Gtk.TreeViewColumnSizing.FIXED,<class 'gi.repository.Gtk.TreeViewColumnSizing'>,<enum GTK_TREE_VIEW_COLUMN_FIXED of type Gtk.TreeViewColumnSizing>
+Gtk.TreeViewColumnSizing.GROW_ONLY,<class 'gi.repository.Gtk.TreeViewColumnSizing'>,<enum GTK_TREE_VIEW_COLUMN_GROW_ONLY of type Gtk.TreeViewColumnSizing>
+Gtk.TreeViewDropPosition.AFTER,<class 'gi.repository.Gtk.TreeViewDropPosition'>,<enum GTK_TREE_VIEW_DROP_AFTER of type Gtk.TreeViewDropPosition>
+Gtk.TreeViewDropPosition.BEFORE,<class 'gi.repository.Gtk.TreeViewDropPosition'>,<enum GTK_TREE_VIEW_DROP_BEFORE of type Gtk.TreeViewDropPosition>
+Gtk.TreeViewDropPosition.INTO_OR_AFTER,<class 'gi.repository.Gtk.TreeViewDropPosition'>,<enum GTK_TREE_VIEW_DROP_INTO_OR_AFTER of type Gtk.TreeViewDropPosition>
+Gtk.TreeViewDropPosition.INTO_OR_BEFORE,<class 'gi.repository.Gtk.TreeViewDropPosition'>,<enum GTK_TREE_VIEW_DROP_INTO_OR_BEFORE of type Gtk.TreeViewDropPosition>
+Gtk.TreeViewGridLines.BOTH,<class 'gi.repository.Gtk.TreeViewGridLines'>,<enum GTK_TREE_VIEW_GRID_LINES_BOTH of type Gtk.TreeViewGridLines>
+Gtk.TreeViewGridLines.HORIZONTAL,<class 'gi.repository.Gtk.TreeViewGridLines'>,<enum GTK_TREE_VIEW_GRID_LINES_HORIZONTAL of type Gtk.TreeViewGridLines>
+Gtk.TreeViewGridLines.NONE,<class 'gi.repository.Gtk.TreeViewGridLines'>,<enum GTK_TREE_VIEW_GRID_LINES_NONE of type Gtk.TreeViewGridLines>
+Gtk.TreeViewGridLines.VERTICAL,<class 'gi.repository.Gtk.TreeViewGridLines'>,<enum GTK_TREE_VIEW_GRID_LINES_VERTICAL of type Gtk.TreeViewGridLines>
+Gtk.UIManagerItemType.ACCELERATOR,<class 'gi.repository.Gtk.UIManagerItemType'>,<flags GTK_UI_MANAGER_ACCELERATOR of type Gtk.UIManagerItemType>
+Gtk.UIManagerItemType.AUTO,<class 'gi.repository.Gtk.UIManagerItemType'>,<flags 0 of type Gtk.UIManagerItemType>
+Gtk.UIManagerItemType.MENU,<class 'gi.repository.Gtk.UIManagerItemType'>,<flags GTK_UI_MANAGER_MENU of type Gtk.UIManagerItemType>
+Gtk.UIManagerItemType.MENUBAR,<class 'gi.repository.Gtk.UIManagerItemType'>,<flags GTK_UI_MANAGER_MENUBAR of type Gtk.UIManagerItemType>
+Gtk.UIManagerItemType.MENUITEM,<class 'gi.repository.Gtk.UIManagerItemType'>,<flags GTK_UI_MANAGER_MENUITEM of type Gtk.UIManagerItemType>
+Gtk.UIManagerItemType.PLACEHOLDER,<class 'gi.repository.Gtk.UIManagerItemType'>,<flags GTK_UI_MANAGER_PLACEHOLDER of type Gtk.UIManagerItemType>
+Gtk.UIManagerItemType.POPUP,<class 'gi.repository.Gtk.UIManagerItemType'>,<flags GTK_UI_MANAGER_POPUP of type Gtk.UIManagerItemType>
+Gtk.UIManagerItemType.POPUP_WITH_ACCELS,<class 'gi.repository.Gtk.UIManagerItemType'>,<flags GTK_UI_MANAGER_POPUP_WITH_ACCELS of type Gtk.UIManagerItemType>
+Gtk.UIManagerItemType.SEPARATOR,<class 'gi.repository.Gtk.UIManagerItemType'>,<flags GTK_UI_MANAGER_SEPARATOR of type Gtk.UIManagerItemType>
+Gtk.UIManagerItemType.TOOLBAR,<class 'gi.repository.Gtk.UIManagerItemType'>,<flags GTK_UI_MANAGER_TOOLBAR of type Gtk.UIManagerItemType>
+Gtk.UIManagerItemType.TOOLITEM,<class 'gi.repository.Gtk.UIManagerItemType'>,<flags GTK_UI_MANAGER_TOOLITEM of type Gtk.UIManagerItemType>
+Gtk.Unit.INCH,<class 'gi.repository.Gtk.Unit'>,<enum GTK_UNIT_INCH of type Gtk.Unit>
+Gtk.Unit.MM,<class 'gi.repository.Gtk.Unit'>,<enum GTK_UNIT_MM of type Gtk.Unit>
+Gtk.Unit.NONE,<class 'gi.repository.Gtk.Unit'>,<enum GTK_UNIT_NONE of type Gtk.Unit>
+Gtk.Unit.POINTS,<class 'gi.repository.Gtk.Unit'>,<enum GTK_UNIT_POINTS of type Gtk.Unit>
+Gtk.WidgetHelpType.TOOLTIP,<class 'gi.repository.Gtk.WidgetHelpType'>,<enum GTK_WIDGET_HELP_TOOLTIP of type Gtk.WidgetHelpType>
+Gtk.WidgetHelpType.WHATS_THIS,<class 'gi.repository.Gtk.WidgetHelpType'>,<enum GTK_WIDGET_HELP_WHATS_THIS of type Gtk.WidgetHelpType>
+Gtk.WindowPosition.CENTER,<class 'gi.repository.Gtk.WindowPosition'>,<enum GTK_WIN_POS_CENTER of type Gtk.WindowPosition>
+Gtk.WindowPosition.CENTER_ALWAYS,<class 'gi.repository.Gtk.WindowPosition'>,<enum GTK_WIN_POS_CENTER_ALWAYS of type Gtk.WindowPosition>
+Gtk.WindowPosition.CENTER_ON_PARENT,<class 'gi.repository.Gtk.WindowPosition'>,<enum GTK_WIN_POS_CENTER_ON_PARENT of type Gtk.WindowPosition>
+Gtk.WindowPosition.MOUSE,<class 'gi.repository.Gtk.WindowPosition'>,<enum GTK_WIN_POS_MOUSE of type Gtk.WindowPosition>
+Gtk.WindowPosition.NONE,<class 'gi.repository.Gtk.WindowPosition'>,<enum GTK_WIN_POS_NONE of type Gtk.WindowPosition>
+Gtk.WindowType.POPUP,<class 'gi.repository.Gtk.WindowType'>,<enum GTK_WINDOW_POPUP of type Gtk.WindowType>
+Gtk.WindowType.TOPLEVEL,<class 'gi.repository.Gtk.WindowType'>,<enum GTK_WINDOW_TOPLEVEL of type Gtk.WindowType>
+Gtk.WrapMode.CHAR,<class 'gi.repository.Gtk.WrapMode'>,<enum GTK_WRAP_CHAR of type Gtk.WrapMode>
+Gtk.WrapMode.NONE,<class 'gi.repository.Gtk.WrapMode'>,<enum GTK_WRAP_NONE of type Gtk.WrapMode>
+Gtk.WrapMode.WORD,<class 'gi.repository.Gtk.WrapMode'>,<enum GTK_WRAP_WORD of type Gtk.WrapMode>
+Gtk.WrapMode.WORD_CHAR,<class 'gi.repository.Gtk.WrapMode'>,<enum GTK_WRAP_WORD_CHAR of type Gtk.WrapMode>
