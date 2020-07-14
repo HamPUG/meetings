@@ -14,7 +14,7 @@ There are three demonstration files:
 * dialog_demo_timeout.py
 * dialog_demo_timeout_css.py
 
-The program *dialog_demo.py* simulates requesting a Username and Password, whuke *dialog_demo_timeout.py* is a pop-up message 
+The program *dialog_demo.py* simulates requesting a Username and Password, while *dialog_demo_timeout.py* is a pop-up message 
 that lasts for a random time and then the dialog frame is destroyed. 
 
 The *MessageDialog* supports limited markup of the text field using tags, as follows:
