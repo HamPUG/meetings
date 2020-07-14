@@ -9,13 +9,18 @@ Please review the slide show for information on the various demos:
 
 ## Image Embedding Tool
 
-image-embedding-tool
+The [image-embedding-tool](https://github.com/HamPUG/meetings/tree/master/2020/2020-07-13/gtk/image-embedding-tool) produces
+a base64 constants of an image. This constant may be embedded into a python GTK program.
 
 ## MessageDialog Function
 
-* dialog_demo
+The [dialog_demo](https://github.com/HamPUG/meetings/tree/master/2020/2020-07-13/gtk/dialog_demo) highlights the
+MessageDialog() function. Normally this dialog will have buttons, like *OK* and *Cancel*. However the *Entry* widget
+may be added to a dialog and on typing into the *Entry* widget, the *Enter* terminates the dialog frame and returns
+the data that was entered.
 
 ## Constants, Enums and Flags
 
-
- 
+The [constants, enums and flags](https://github.com/HamPUG/meetings/tree/master/2020/2020-07-13/gtk/constants-enums-flags) contains a 
+program that performs a `>>> dir(Gtk)` and analyzes the output. Two *.csv* files are created, so that you can review all the constants,
+enums and flags that are available.
