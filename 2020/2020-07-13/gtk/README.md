@@ -15,7 +15,7 @@ image-embedding-tool
 
 * dialog_demo
 
-## GTK Constants, Enums and Flags
+## Constants, Enums and Flags
 
 
  
