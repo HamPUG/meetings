@@ -13,7 +13,7 @@ During the Covid pandemic level 2 to 4 periods in 2020, IT User Groups in New Ze
 
 As a work-around *HamPUG* and *WLUG* held virtual monthly meetings. One meeting used [Google Hangouts](https://hangouts.google.com/), the other five used the [BigBlueButton](https://bigbluebutton.org/) instance, kindly made available by the NZ Open-Source Society ~ [NZOSS](https://bbb.nzoss.nz/b). Most presentations were performed by presenters in Hamilton, with two exceptions of presenters delivering from Kerikeri and Arapuni.
 
-During this lockdown period some experimenting was preformed to see if a server located in Hamilton could be easily setup to provide open-source web conferencing. One attempt was with [Jitsi](https://jitsi.org/)<!--another with [BBB](https://bigbluebutton.org/)-->
+During this lockdown period some experimenting was performed to see if a server located in Hamilton could be easily setup to provide open-source web conferencing. One attempt was with [Jitsi](https://jitsi.org/)<!--another with [BBB](https://bigbluebutton.org/)-->
 
 
 This document includes: 
