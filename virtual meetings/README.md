@@ -177,7 +177,7 @@ When the Presenter is at home delivering a BBB presentation it is envisaged that
 * The radio-mic is passed around to anyone in the audience who wants to ask the presenter a question. Potential audio feedback problems will exist.
 * Attendees in the classroom could use their mobile phone to connect to the BBB session and ask questions from their mobile phone. May help avoid the feedback issue.
 
-## Hamilton Based Open-Source Web Conferencing.
+## Hamilton Based Open-Source Web Conferencing Server.
 
 Providing Web Conferencing may be considered as a service that should be provided to the community. Thus there may be a community centre in Hamilton with the IT infra-structure in place that would be prepared to host this service. 
 
