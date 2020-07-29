@@ -39,7 +39,7 @@ The following are guidelines for each of the above.
 
 #### Hardware and Setup
 
-* Computer. A 3GHz CPU with 8GB RAM.
+* Computer. A 3GHz, Quad Core, CPU with 8GB RAM.
 * Internet connection. Normally able to receive data at 1MB/s.
 * A quiet room. No sound from a TV in the background.
 * Web-cam is positioned so when you look at your screen you are looking at the camera.
