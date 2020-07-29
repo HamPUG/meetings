@@ -27,9 +27,9 @@ This document includes:
 
 A BBB Virtual Meeting involves people in three different roles:
 
+* Attendees
 * Moderator
 * Presenter
-* Attendees
 
 Also to be considered are general guidelines for your computer, web-camera, microphone, etc. 
 
