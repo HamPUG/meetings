@@ -11,7 +11,7 @@ During the Covid pandemic level 2 to 4 periods in 2020, IT User Groups in New Ze
 * Waikato Linux Users Group ~ [WLUG](http://www.wlug.org.nz/)
 * Hamilton Computer Club ~ [HCC](http://hamiltoncomputerclub.org.nz/)
 
-As a work-around *HamPUG* and *WLUG* held virtual monthly meetings. One meeting used [Google Hangouts](https://hangouts.google.com/), the other five used the [BigBlueButton](https://bigbluebutton.org/) instance, kindly made available by the NZ Open-Source Society ~ [NZOSS](https://bbb.nzoss.nz/b). Most presentations were performed by presenters in Hamilton, with the the exception of one presenter delivering his presentation in Kerikeri.
+As a work-around *HamPUG* and *WLUG* held virtual monthly meetings. One meeting used [Google Hangouts](https://hangouts.google.com/), the other five used the [BigBlueButton](https://bigbluebutton.org/) instance, kindly made available by the NZ Open-Source Society ~ [NZOSS](https://bbb.nzoss.nz/b). Most presentations were performed by presenters in Hamilton, with two exceptions of presenters delivering from Kerikeri and Arapuni.
 
 During this lockdown period some experimenting was preformed to see if a server located in Hamilton could be easily setup to provide open-source web conferencing. One attempt was with [Jitsi](https://jitsi.org/)<!--another with [BBB](https://bigbluebutton.org/)-->
 
@@ -99,6 +99,7 @@ The BBB server accepts a slide show from a presenter to be uploaded and then the
 * Ensure text in all media is of a font size that is legible.
 * Test upload of slide show is quick.
 * Discuss with each presenter on the format for interruptions for questions to be asked. E.g. After every two slides.
+* If this is the first time for a presenter on BBB then allow 30 minutes to an hour for their practice session.
 
 
 #### Session
@@ -121,6 +122,7 @@ Attend a practice session and ensure:
 * Upload slide show
 * Practice presenting.
 * Check microphone and headphones are working OK.
+* If this is the first time you are delivering a presentation on BBB then allow 30 minutes to an hour for this practice. 
 
 #### Session
 
