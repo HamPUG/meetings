@@ -1,4 +1,4 @@
-# Virtual Meetings using BBB - Hamilton
+# Virtual Meetings - Hamilton Users Groups experiences
 
 Draft document by Ian Stewart. Please email Ian if you have anything you wish to add or correct, etc. 
 
@@ -13,7 +13,7 @@ During the Covid pandemic level 2 to 4 periods in 2020, IT User Groups in New Ze
 
 As a work-around *HamPUG* and *WLUG* held virtual monthly meetings. One meeting used [Google Hangouts](https://hangouts.google.com/), the other five used the [BigBlueButton](https://bigbluebutton.org/) instance, kindly made available by the NZ Open-Source Society ~ [NZOSS](https://bbb.nzoss.nz/b). Most presentations were performed by presenters in Hamilton, with two exceptions of presenters delivering from Kerikeri and Arapuni.
 
-During this lockdown period some experimenting was performed to see if a server located in Hamilton could be easily setup to provide open-source web conferencing. One attempt was with [Jitsi](https://jitsi.org/)<!--another with [BBB](https://bigbluebutton.org/)-->
+During this lockdown period some experimenting was performed to see if a server located in Hamilton could be easily setup to provide open-source web conferencing. One attempt was with [Jitsi](https://jitsi.org/) another with [BBB](https://bigbluebutton.org/)
 
 
 This document includes: 
@@ -142,14 +142,17 @@ Experimenting was performed on open-source web conferencing server software.
 
 This was found to be easy to install. However the server it was installed onto did not have a registered domain name or an SSL certificate which are mandatory for Jitsi. As a result it could not be tested.
 
-Jitsi [Download](https://jitsi.org/downloads/)
+* Jitsi [Download](https://jitsi.org/downloads/)
+* Self Hosting Installation [Guide](https://jitsi.github.io/handbook/docs/devops-guide/devops-guide-start)
 
-Self Hosting Installation [Guide](https://jitsi.github.io/handbook/docs/devops-guide/devops-guide-start)
+### BBB
 
+The initial install took some fiddling before it was working OK. After adding the TLS there were problems.
 
-<!-- ### BBB -->
-<!-- TODO: -->
-
+* BigBlueButton [documentaton](https://docs.bigbluebutton.org/)
+* BigBlueButton [install](https://docs.bigbluebutton.org/2.2/install.html)
+* BigBlueButton [install-script](https://github.com/bigbluebutton/bbb-install)
+ 
 
 ## Future Meetings
 
