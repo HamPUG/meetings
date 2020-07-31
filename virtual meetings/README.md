@@ -1,4 +1,4 @@
-# Virtual Meetings - Hamilton Users Groups experiences
+# Virtual Meetings - Hamilton User Groups experiences
 
 Draft document by Ian Stewart. Please email Ian if you have anything you wish to add or correct, etc. 
 
