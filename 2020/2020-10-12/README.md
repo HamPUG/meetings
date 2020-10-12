@@ -1,3 +1,7 @@
+# 2020-10-12
+
+The meeting was mostly devoted to a Questions and Answers session. Toward the end of the meeting Ian Stewart demonstrated some of his recent code, as follows:
+
 
 
 # Demonstration Programs
@@ -12,22 +16,23 @@ Ian demonstrated two small programs that highlight some functions he had written
 
 Many programs require a default set of local parameters in order to run. Later these parameters may be tailored by the User to suit the needs of the User. These parameters are normally stored in a configuration file. On Linux systems the configuration file (.conf) is normally in the path:
 
+```
 /home/USER/.config/PROGRAM_NAME/PROGRAM_NAME.conf
-
+```
 Thus in this case where the User is Ian and the program name is config_checker.py, then the configuration file would be located in:
-
+```
 /home/ian/.config/config_checker/config_checker.conf
-
+```
 If, for example, the program was for listening to internet radio stations, then my program might be called radio.py and its configuration file would be located in:
-
+```
 /home/ian/.config/radio/radio.conf
-
+```
 In the case of radio.conf the contents of the file could be to set up three radio stations that are your favourites. These radio stations would then be selected by clicking on one of three buttons in the programs GUI. Thus the contents of the conf file might be:
-
+```
 Button_1, Waikato, Radio Waikato
 Button_2, Concert, RNZ Concert Program
 Button_3, Hauraki, Radio Hauraki
-
+```
 Thus the program begins by calling the function check_conf_file():
 
 configuration = check_conf_file()
@@ -38,12 +43,12 @@ If it does not exist then create_conf_file function is called and the path and .
 
 The conf file is read and its contents are returned from the function. The main() function of the programm may then be launched and it passes the configuration.
 
-This program utilises Path from the pathlib library. For example, "Path.read_text()" is used in place of "with open(file, "r") as fin".
+This program utilises Path from the pathlib library. For example, *Path.read_text()* is used in place of *with open(file, "r") as fin*.
 
 
 ## program_update.py
 
-This program is a simple attempt at self modifying code. The last line of the program is a comment delimiter followed by a number. The initial number is zero. Each time the program is run the number is incremented by one and the program is re-written with this updated number. Thus a built-in count of the number of times the program has been run is kept.
+This program is a simple attempt at *self-modifying code*. The last line of the program is a comment delimiter followed by a number. The initial number is zero. Each time the program is run the number is incremented by one and the program is re-written with this updated number. Thus a built-in count of the number of times the program has been run is kept.
 
 
 ## Pathlib source code
