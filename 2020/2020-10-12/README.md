@@ -34,14 +34,14 @@ Button_2, Concert, RNZ Concert Program
 Button_3, Hauraki, Radio Hauraki
 ```
 Thus the program begins by calling the function check_conf_file():
-
+```
 configuration = check_conf_file()
-
+```
 This function checks for the existance of a configuration file. 
 
-If it does not exist then create_conf_file function is called and the path and .conf file are created and the initial data is placed into the file. 
+If it does not exist then `create_conf_file` function is called and the path and .conf file are created and the initial data is placed into the file. 
 
-The conf file is read and its contents are returned from the function. The main() function of the programm may then be launched and it passes the configuration.
+The conf file is read and its contents are returned from the function. The `main()` function of the programm may then be launched and it passes the configuration.
 
 This program utilises Path from the pathlib library. For example, *Path.read_text()* is used in place of *with open(file, "r") as fin*.
 
