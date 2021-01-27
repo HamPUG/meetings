@@ -1,0 +1,72 @@
+Intro to Blender Python API, using Blender 2.8.
+
+Blender is the most amazing open-source computer graphics app.
+In a single compact, integrated package, it offers capabilities
+across all major areas of digital content creation:
+* 3D modelling, sculpting and painting
+* 3D rendering
+* 2D illustration
+* 3D and 2D animation
+* physical simulation: rigid-body, soft-body, cloth, fluids, fire & smoke
+* image compositing
+* video editing
+* workflow automation via Python scripting
+
+Brief intro to Blender UI--wants to run full-screen, has its own
+tiling window manager, each window can show any “editor”, and
+“workspaces” allow quick switching between preset/custom window layouts.
+
+Note Object → Action → Settings paradigm:
+  * select an object
+  * perform an action
+  * *then* tweak parameters for action and observe results
+    immediately. (Blender is doing automatic undo/redo behind the scenes.)
+Contrast this with having to deal with a popup dialog before the
+action is performed, guessing at suitable paramters, discovering they’re
+wrong, undoing and trying again.
+
+Example: create a new object (e.g. UV sphere), and choose parameters.
+
+Spin tool (icon in T shelf, not in menu) is a good example of this in action
+on existing object -- starts with spin origin and orientation at 3D cursor,
+but this can be changed interactively.
+
+Blender has extensive Python integration right through all its
+functionality. It supports “DOM” (“Document Object Model”, à la
+HTML+JavaScript)-style scriptability, where objects in a Blender document are
+directly accessible as Python objects, and conform to common Python idioms,
+like being able to iterate over sequences, test for attributes etc.
+
+There are different ways to access the Python API in Blender:
+* type directly into the built-in interactive Python console
+* the built-in Text Editor can execute any text block as a Python script
+* addons are written in Python; Blender comes with a bunch of standard
+  ones, and you can write your own. These can install themselves just
+  about anywhere in the Blender UI.
+* invoke Blender in batch mode
+
+Open initial document with default cube, and do some simple manipulations
+in Python console.
+
+    cube = bpy.data.objects["Cube"]
+    cube.matrix_basis
+    cube.matrix_basis @= Matrix.Rotation(pi / 4, 4, "Y")
+
+Try a slightly longer script in the Text Editor. Note that full system
+Python functionality is available, including any custom-installed modules.
+
+Show structure of a simple addon? UI actions are implemented as “operators”.
+These can be bound to buttons, menu items, keystrokes etc, or invoked by
+directly typing their name into search box (F3 in Blender 2.8).
+
+Explain a little about “bl_options” operator class attribute:
+  * “UNDO” -- allows addon action to be undone/redone
+    (Blender will save prior document state and restore it)
+  * “REGISTER” -- combined with “UNDO”, indicates conformance to
+    Object → Action → Settings paradigm. “invoke” method will
+    be called on initial operator invocation, and “execute” method
+    will be used for subsequent redo invocations.
+
+Look at my Bookmaker addon and Pythify scripts.
+
+Look at some of my render-useful scripts for running Blender in batch mode.
