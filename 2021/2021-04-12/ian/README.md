@@ -8,7 +8,7 @@ The presentation included 13 python programs in which the GUI is progressively d
 This should be helpful to anyone developing a GTK program.
 
 A summary of the progessions in each of the 13 programs is as follows:
-
+```
 1. Minimum window
 2. Provide a title <-- Not recommended. Probably be deprecated.
    Set size request to make it bigger
@@ -27,10 +27,10 @@ A summary of the progessions in each of the 13 programs is as follows:
 9. Add CSS for Frame and buttons.
 10. Add CSS Colour to buttons and label.
 11. Add Fav icon in the system tray. Not on the title bar with Ubuntu mate.
-11. Replacement Header Bar supporting sub-title.
+    Replacement Header Bar supporting sub-title.
 12. Add a Message box and its response when button 0 is clicked.
 13. Add an icon to the header bar.
-
+```
 
 A .odp file commences with two slides related to the GTK programs. This is also avaialble as a pdf file.
 
