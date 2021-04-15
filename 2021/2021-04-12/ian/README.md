@@ -11,13 +11,13 @@ A summary of the progessions in each of the 13 programs is as follows:
 
 1. Minimum window
 2. Provide a title <-- Not recommended. Probably be deprecated.
-2. Set size request to make it bigger
-2. Use dir to get the Window (self) attributes.
+   Set size request to make it bigger
+   Use dir to get the Window (self) attributes.
 3. Add the title field when instantiating the Window. <-- Recommended
 4. Add a grid.
-4. Place a frame in the grid.
+   Place a frame in the grid.
 5. In the frame add another grid.
-5. Create a list of buttons and place them into the frames grid.
+   Create a list of buttons and place them into the frames grid.
 6. Add connect to each button to call routine.
 6. When buttons are clicked perform action to update label.
 7. Add an identifier field to the buttons.
