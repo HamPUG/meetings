@@ -1,5 +1,6 @@
 # 14 April 2021
-Peter Reutemann will talk about his experiences with Deep Learning on edge devices.
+
+Peter Reutemann presentated his experiences with Deep Learning on edge devices.
 
 Ian Stewart delived a presentation designed as an Intro to using python to write GTK GUI programs. 
 This was presented in conjunction with the DEC 64-bit Alpha Computer Instruction set. Ian is developing 
