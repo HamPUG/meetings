@@ -1,6 +1,6 @@
 # Intro to GTK
 
-Presentaed by: Ian Stewart.
+Presented by: Ian Stewart.
 
 GTK is one of the GUI tookits available for python. 
 The presentation included 13 python programs in which the GUI is progressively developed.
