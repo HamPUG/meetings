@@ -77,7 +77,7 @@ class MyWindow(Gtk.Window):
         self.hb.props.subtitle = "Uses header bar supporting sub-title"
         self.set_titlebar(self.hb)
 
-		# 13. Add Header icon button
+        # 13. Add Header icon button
         self.hb_menu_button = Gtk.Button()
         icon = Gio.ThemedIcon(name="open-menu-symbolic")
         image = Gtk.Image.new_from_gicon(icon, Gtk.IconSize.BUTTON)
@@ -117,8 +117,10 @@ class MyWindow(Gtk.Window):
         if identifier == 0:
             self.message_dialog_1()
  
-	# 13. Call back for icon on header bar
+
+    # 13. Call back for icon on header bar
     def on_icon_click(self, widget):
+	print("Menu Bar Icon Pressed")
         self.label.set_label("Icon pressed")
                
     # Add a Message box.
@@ -128,16 +130,15 @@ class MyWindow(Gtk.Window):
         """
         message_dialog = Gtk.MessageDialog(
                 parent=self,
-                #modal=True,
+                modal=True,
                 destroy_with_parent=True,
                 message_type=Gtk.MessageType.QUESTION,
                 buttons=Gtk.ButtonsType.YES_NO,
                 text="Will it be Yes or will it be No?",
                 secondary_text="Yes or No will be placed in the label")
         message_dialog.connect("response", self.dialog_response)
-        # show the messagedialog
-        message_dialog.set_modal(True)
-        message_dialog.run()  # Not .show()
+        # run(), not show(), the message_dialog
+        message_dialog.run()
         
     # Message Box response. 
     def dialog_response(self, widget, response_id):
@@ -146,11 +147,11 @@ class MyWindow(Gtk.Window):
         """
         # If the button clicked gives response YES, continue.
         if response_id == Gtk.ResponseType.YES:
-            print("Selected Yes")
+            print("Selected: Yes")
             self.label.set_label("Yes")
         # If the button clicked gives response NO, stop application.
         elif response_id == Gtk.ResponseType.NO:
-            print("Selected No")
+            print("Selected: No")
             self.label.set_label("No")
         # If ESC is pressed then continue.
         elif response_id == Gtk.ResponseType.DELETE_EVENT:
