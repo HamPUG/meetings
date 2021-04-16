@@ -120,7 +120,7 @@ class MyWindow(Gtk.Window):
 
     # 13. Call back for icon on header bar
     def on_icon_click(self, widget):
-	print("Menu Bar Icon Pressed")
+        print("Menu Bar Icon Pressed")
         self.label.set_label("Icon pressed")
                
     # Add a Message box.
