@@ -1,0 +1,5 @@
+flask
+Flask-JWT
+scikit-learn
+joblib
+requests
