@@ -40,14 +40,17 @@ Manually launched Gtk.Window with default header bar. A label is manually placed
 Manually launched Gtk.Window with manually added Gtk.HeaderBar. A label is manually placed in the main window.
 
 **header_bar_glade_example.py**
+
 Manually launched Gtk.Window, but Gtk.Builder is used to read the XML file that contains the HeaderBar. A label is manually placed in 
 the main window.
 
 **conventional_window_glade_components.py**
+
 Manually launched Gtk.Window. Gtk.Builder reads the XML file that contains a HeaderBar with buttons that Open and Save files, etc., 
 plus displays the About box. A label manually placed in the main window.
 
 **double_precision.py**
+
 Manually launched Gtk.Window. Gtk.Builder reads the XML file that contains a HeaderBar with buttons that Open and Save files, etc., 
 plus displays the About box. A label manually placed in the main window. The main feature of the program is to model double precision 
 floating point data. This requires over 150 widgets to be added to the application. These are added manually using python looping 
