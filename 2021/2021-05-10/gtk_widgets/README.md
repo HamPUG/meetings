@@ -7,7 +7,7 @@ with using Glade and Builder to load some other widgets.
 
 The objective behind doing this is as follows...
 
-In creating a GTK GUI application, some widgets and their associated code is repetitive. These widgets and their callback 
+In creating a GTK GUI application, the creation of some widgets and their associated code is repetitive. These widgets and their callback 
 signals are designed in the Glade environment and this creates an XML User interface file. On launching the GTK application 
 the Gtk.Builder module reads this XML data and generates these widgets. An example of this is a GUI's Header bar and About box widgets. 
 This XML data may then be used as a template and moved to GTK applications that are developed in the future.
