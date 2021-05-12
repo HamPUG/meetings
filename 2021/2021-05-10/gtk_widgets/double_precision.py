@@ -32,8 +32,10 @@ class Main_Window(Gtk.Window):
     def __init__(self):
         Gtk.Window.__init__(self, title="Menu Example")
         self.set_default_size(1100, 200)
-        self.set_icon_from_file(ICON)
-        
+        try:
+            self.set_icon_from_file(ICON)
+        except:
+            pass
         # Path and filename of working file.
         self.filename = None
         self.main_data = "This is a test \n"
