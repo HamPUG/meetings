@@ -54,4 +54,4 @@ plus displays the About box. A label manually placed in the main window.
 Manually launched Gtk.Window. Gtk.Builder reads the XML file that contains a HeaderBar with buttons that Open and Save files, etc., 
 plus displays the About box. A label manually placed in the main window. The main feature of the program is to model double precision 
 floating point data. This requires over 150 widgets to be added to the application. These are added manually using python looping 
-methods rather that with Gtk.Builder and an XML file.
+methods rather than with Gtk.Builder and a XML file.
