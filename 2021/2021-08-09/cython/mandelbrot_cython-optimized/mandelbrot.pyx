@@ -4,7 +4,7 @@ from PIL import Image
 from colour import Color
 
 
-def calculate(float cx, float cy, int max_iter):
+def calculate(float cx, float cy, int max_iter, float max_value):
     cdef float zx, zy, zx_new, zy_new
     cdef int i
     zx = 0
@@ -32,8 +32,8 @@ for color in colors:
 
 width = 800
 height = 600
-max_iter = 100
-max_value = 16*16
+max_iter = 1000
+max_value = 16.0*16.0
 mat = np.zeros((height, width))
 
 xmin = -2.5
@@ -49,7 +49,7 @@ for y in range(height):
 
     for x in range(width):
         cx = xmin + x * xinc
-        i = calculate(cx, cy, max_iter)
+        i = calculate(cx, cy, max_iter, max_value)
         if i == max_iter:
             mat[y][x] = 0
         else:
