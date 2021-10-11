@@ -1,0 +1,6 @@
+venv/
+*~
+*.bak
+*.swp
+data/
+output/
