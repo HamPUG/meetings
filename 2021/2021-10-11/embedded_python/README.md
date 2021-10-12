@@ -1,6 +1,6 @@
 # Python embedded in LibreOffice or OpenOffice files.
 
-Ian Stewart provided this presentation. His slide show is available as and odp or pdf file:
+Ian Stewart provided this presentation. His slide show is available as an odp or pdf file:
 
 * Python Embedded Presentation.odp
 * Python Embedded Presentation.pdf
@@ -32,3 +32,6 @@ As another example the following two Calc documents contain either BASIC or Pyth
 The APSO extension to LibreOffice/OpenOffice includes a utility that provide Python with the capability to generate a Message box that is similar to the built-in Msgbox function in BASIC. The following Writer document, with embedded Python, demonstrates this Message box.
 
 * writer_python_msgbox
+
+Additional information is avaiable at Ian Stewart's github account: https://github.com/irsbugs/LO-OO-Macro-Programming
+
