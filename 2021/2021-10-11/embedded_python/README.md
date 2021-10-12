@@ -1,3 +1,3 @@
-# Python embedded in LibreOffice or Openoffice files.
+# Python embedded in LibreOffice or OpenOffice files.
 
 Ian Stewart
