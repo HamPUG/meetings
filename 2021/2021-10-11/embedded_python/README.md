@@ -24,3 +24,11 @@ The following two documents contain either BASIC or Python embedded scripting to
 * draw_embedded_basic_plan.odg
 * draw_embedded_python_plan.odg
 
+As another example the following two Calc documents contain either BASIC or Python embedded scripting to demo a spreadsheet and its chart show the amortization of a loan.
+
+* calc_embedded_basic_amortization.ods
+* calc_embedded_python_amortization.ods
+
+The APSO extension to LibreOffice/OpenOffice includes a utility that provide Python with the capability to generate a Message box that is similar to the built-in Msgbox function in BASIC. The following Writer document, with embedded Python, demonstrates this Message box.
+
+* writer_python_msgbox
