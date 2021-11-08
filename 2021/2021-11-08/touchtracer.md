@@ -85,11 +85,13 @@ package.name = touchtracer
 orientation = all
 ```
 
-* Build
+Build the application - takes about 30 mins the first time.
 
 ```bash
-buildozer android debug # Takes about 30 mins the first time.
+buildozer android debug 
 ```
+
+## Deploy
 
 Plug in the phone via USB cable, with USB debugging and File Transfer mode.
 
@@ -121,7 +123,7 @@ buildozer android deploy
 
 ...This time the Touch tracer app is on the phone and appears in the phone menu.
 
-Adding scrcpy (Screen Copy), allows a phone screen to be displayed as a window on
+Adding `scrcpy` (Screen Copy), allows a phone screen to be displayed as a window on
 a PC. Connection can be via wifi or USB cable.
 
 This github site provides the latest (V1.19) source code for scrcpy...
@@ -152,7 +154,7 @@ buildozer distclean
 
 Do these later if required...
 
-These installs may have just been for "showcase" example...
+These installs may have just been for **showcase** example...
 
 ```bash
 $ sudo apt install xclip xsel
