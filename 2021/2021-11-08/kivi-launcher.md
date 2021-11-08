@@ -1,6 +1,6 @@
 # kivi-launcher
 
-Install Kivy Launcher from Github repository. 
+Install [Kivy Launcher](https://github.com/kivy/kivy-launcher) from Github repository. 
 
 Kivy_Launcher may be in the google play store, but it may be out-of-date and
 only support python2.
