@@ -10,3 +10,7 @@ buildozer by launching them straight from source instead.
 
 * [Touch tracer](touchtracer.md)
 * [kivi launcher](kivi-launcher.md)
+
+The recording is available from here:
+
+https://bbb.nzoss.nz/playback/presentation/2.0/playback.html?meetingId=6edc548c22debac4fb66721972cc80a03ddb3f87-1636351033522
