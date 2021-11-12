@@ -2,8 +2,7 @@
 
 Install [Kivy Launcher](https://github.com/kivy/kivy-launcher) from Github repository. 
 
-Kivy_Launcher may be in the google play store, but it may be out-of-date and
-only support python2.
+Kivy_Launcher may be in the google play store, but it may be out-of-date and only support python2.
 
 An up-to-date release can be obtained from github.
 
@@ -34,7 +33,7 @@ Make this change (since 2.0.0 is out)...
 osx.kivy_version = 2.0.0
 ```
 
-Note these settings...
+Note these default settings. It will use Python3 and build for a 32-bit ARM chip phone.
 
 ```ini
 # change the major version of python used by the app
@@ -57,9 +56,9 @@ Now deploy to phone...
 buildozer android deploy
 ```
 
-Kivy Launcher is now on the phone menu
+Kivy Launcher is now on the phone menu.
 
-Launch and get screen: "Allow Livy Launcher to access photos, media and files on your device?"
+Launch and get screen: "Allow Kivy Launcher to access photos, media and files on your device?"
 
 Select *Allow*
 
@@ -86,3 +85,12 @@ OR:
 * Kivy Launcher should now find Touchtrace.
 
 * Double tap to launch Touchtrace
+
+You may edit the main.py in the `Android/internal shared storage/kivy/touchtracer/` folder. Then get Kivy Launcher to re-launch Touchtracer. The changes made to the code may now be observed.
+
+
+## Documentation
+
+For documentation on programming in *Kivy* :
+
+* https://kivy.org/doc/stable/
