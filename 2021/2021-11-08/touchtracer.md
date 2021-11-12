@@ -1,13 +1,13 @@
 # Touchtracer
 
-Commands used to install kivy on new install of Ubuntu Mate 20.04.3 and 
-hightlights of the console log from executing the commands 
+This guide provides the commands used to install *Kivy* and *Buildozer* on a new installation of Ubuntu Mate 20.04.3 which has been brought up-to-date with the latest patches.
 
-Summay of commands to install Kivy:
+
+Summary of commands to install Kivy:
 
 ## Prerequisites
 
-Install extra apps with apt...
+Use Advanced Package Tool, *apt*, to install prerequisite applications of *Kivy* and *Buildozer*...
 
 ```bash
 sudo apt install python-is-python3 python3-pip git openjdk-8-jdk
@@ -22,7 +22,7 @@ python -m virtualenv kivy_venv
 source kivy_venv/bin/activate
 ```
 
-Remain in Kivy Virtual envrionment from here onwards...
+NOTE: Remain in Kivy Virtual envrionment from here onwards...
 
 ## Install Kivy and Kivy examples
 
@@ -30,24 +30,29 @@ Remain in Kivy Virtual envrionment from here onwards...
 python -m pip install kivy[base] kivy_examples
 ```
 
-## Try out Touchtracer example
+## Try out the Touchtracer example
 
 ```bash
 ls -l ~/kivy_venv/share/kivy-examples/demo/touchtracer/
 python ~/kivy_venv/share/kivy-examples/demo/touchtracer/main.py
 ```
 
+A window opens on the PC running the *Touch tracer* application. Mouse buttons are used to simulate the multi-touch control that would be used if the application was running on a phone. 
+
+## Try out the Touchtracer example in a local folder.
+
 Make a local kivy folder and copy touchtracer to it and try it out...
 
 ```bash
 mkdir kivy
 cd kivy
-# copy to kivy folder
 cp -R ~/kivy_venv/share/kivy-examples/demo/touchtracer/ touchtracer/
 ls -l touchtracer
 cd touchtracer/
 python main.py
 ```
+
+Again a window opens on the PC running the *Touch tracer* application. The *Touch tracer* in this local kivy folder will now be built into an Android Package (APK) file. 
 
 ## Install buildozer, which needs Cython
 
@@ -56,7 +61,7 @@ pip install Cython --install-option="--no-cython-compile"
 pip install buildozer
 ```
 
-Use buildozer to make an apk file of the Touchtracer application in /bin folder. 
+Use buildozer to make an APK file of the Touchtracer application in /bin folder. 
 It will later be downloaded into the phone. Start with init to make the buildozer.spec file
 
 ```bash
@@ -91,26 +96,39 @@ Build the application - takes about 30 mins the first time.
 buildozer android debug 
 ```
 
-## Deploy
+Upon completion a bin folder has been created contianing the file:
 
-Plug in the phone via USB cable, with USB debugging and File Transfer mode.
+```bash
+~/kivy/touchtracer/bin/touchtracer-0.1-armeabi-v7a-debug.apk 
+```
+
+This APK file needs to be deployed to the mobile phone. 
+
+
+## Deployment to Mobile Phone
+
+Plug in the phone via USB cable, with USB Debugging and File Transfer mode enabled.
 
 ```bash
 buildozer android deploy 
 ```
 
-This will fail. A message on phone states:...
+This will fail the first time. A message on phone states:...
 
 ```
-Allow USB debugging?
-
-The computer RSA key fingerprint is:
-
-FD: ... :BD
-
-[] Always allow from this computer
-
-Cancel Allow
+=========================================
+=                                       =
+= Allow USB debugging?                  =
+=                                       =
+= The computer RSA key fingerprint is:  =
+=                                       =
+= FD:... ...:BD                         =
+=                                       =
+= [] Always allow from this computer    =
+=                                       =
+= Cancel Allow                          =
+=                                       =
+=========================================
 ```
 
 Check and click Allow
@@ -121,7 +139,11 @@ Deploy a second time....
 buildozer android deploy 
 ```
 
-...This time the Touch tracer app is on the phone and appears in the phone menu.
+...This time the Touch tracer app is installed on the phone and appears in the phone menu.
+
+
+
+## Adding Scrcpy
 
 Adding `scrcpy` (Screen Copy), allows a phone screen to be displayed as a window on
 a PC. Connection can be via wifi or USB cable.
@@ -130,11 +152,11 @@ This github site provides the latest (V1.19) source code for scrcpy...
 
 https://github.com/Genymobile/scrcpy
 
-...however it is in the Ubuntu repository and not too many version behind, so
+...however it is in the Ubuntu repository and not too many versions behind, so
 easier to install with apt.
 
 ```bash
-(kivy_venv) ian@kivy:~/kivy/touchtracer$ apt search scrcpy
+apt search scrcpy
 Sorting... Done
 Full Text Search... Done
 scrcpy/focal 1.12.1+ds-1 amd64
@@ -143,19 +165,14 @@ scrcpy/focal 1.12.1+ds-1 amd64
 sudo apt install scrcpy
 ```
 
-Adding the Kivy Launcher is done with GUI so its best to show this in an Impress
-slide show.
-
-Note: If everything gets screwed up, then try...
+With the phone connected to the PC by USB cable, run scrcpy:
 
 ```bash
-buildozer distclean
+scrcpy -m 1024
 ```
 
-Do these later if required...
 
-These installs may have just been for **showcase** example...
+## Kivy Launcher
 
-```bash
-$ sudo apt install xclip xsel
-```
+The second part of this presentation is the installation and operation of the [kivi launcher](kivi-launcher.md) 
+
