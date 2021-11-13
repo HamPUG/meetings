@@ -80,7 +80,9 @@ OR:
 
 * `<internal shared storage>` contains folder `kivy`
 
-* Drag and drop Touchtrace folder from `~/kivy/` to `Android/internal shared storage/kivy/`
+* Drag and drop Touchtracer folder from `~/kivy/` to `Android/internal shared storage/kivy/`
+
+WARNING: Don't use a GUI file manager to drag and drop all of Touchtracer folder across to the mobile phone SD Card. This is the folder that you did the $ buildozer android debug deploy to so it has the massive /.buildozer folder and a /bin folder that you don't want on the mobile phones SD Card.
 
 * Kivy Launcher should now find Touchtrace.
 
