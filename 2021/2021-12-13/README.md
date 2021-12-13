@@ -2,6 +2,11 @@
 
 During last month's meeting, we came across the PyInstaller library (https://www.pyinstaller.org/). Let's take a look at it, to see whether we can easily create installers for various operating systems and what the library's limitations are.
 
+## Presentation
+
+* [.odp](pyinstaller.odp)
+* [.pdf](pyinstaller.pdf)
+
 ## Examples
 
 * [1 hello world](1-hello_world)
