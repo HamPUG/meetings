@@ -4,7 +4,7 @@ During last month's meeting, we came across the PyInstaller library (https://www
 
 ## Examples
 
-* [1 hello world](1-hellow_world)
+* [1 hello world](1-hello_world)
 * [2 with dependencies](2-with_dependencies)
 * [3 gtk](3-gtk)
 * [4 gtk with glade](4-gtk_with_glade)
