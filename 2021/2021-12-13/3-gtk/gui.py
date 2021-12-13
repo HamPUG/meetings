@@ -1,3 +1,5 @@
+# taken from here:
+# https://python-gtk-3-tutorial.readthedocs.io/en/latest/introduction.html#extended-example
 import gi
 
 gi.require_version("Gtk", "3.0")
