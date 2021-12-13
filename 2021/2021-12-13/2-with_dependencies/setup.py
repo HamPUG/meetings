@@ -1,17 +1,6 @@
 from setuptools import setup
 
 
-def _read(f):
-    """
-    Reads in the content of the file.
-    :param f: the file to read
-    :type f: str
-    :return: the content
-    :rtype: str
-    """
-    return open(f, 'rb').read()
-
-
 setup(
     name="pyinst-with-deps",
     description="PyInstaller test project with dependencies.",

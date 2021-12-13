@@ -11,6 +11,14 @@ virtualenv -p /usr/bin/python3 venv
 
 ## Execution
 
+In theory, it should find the numpy dependency:
+
+```
+./venv/bin/pyinstaller --name with_dependencies runner.py
+```
+
+But if it doesn't, then add it as `--hidden-import`:
+
 ```
 ./venv/bin/pyinstaller --hidden-import numpy --name with_dependencies runner.py
 ```
