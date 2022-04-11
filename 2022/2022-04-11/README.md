@@ -4,5 +4,4 @@
 
 # Links
 * [Meetup](https://www.meetup.com/NZPUG-Hamilton/events/283776793/)
-* [Github](https://github.com/HamPUG/meetings/tree/master/2022/2022-04-11)
 
