@@ -1,0 +1,92 @@
+<!DOCTYPE HTML>
+<!--
+    Example page for connecting to example WebSocket server.
+    See accompanying README for an explanation.
+
+    Copyright 2022 by Lawrence D'Oliveiro <ldo@geek-central.gen.nz>. This
+    script is licensed CC0
+    <https://creativecommons.org/publicdomain/zero/1.0/>; do with it
+    what you will.
+-->
+<html>
+<head>
+<meta http-equiv="content-type" content="text/html; charset=utf-8">
+<title>WebSockets Demo: Real-Time Ping</title>
+</head>
+<body>
+<script>
+"use strict"
+
+function escape_html(s)
+  {
+    return s
+        .replaceAll("&", "&amp;") /* always do first, rest can be in any order */
+        .replaceAll("\"", "&quot;")
+        .replaceAll("<", "&lt;")
+        .replaceAll(">", "&gt;")
+        .replaceAll("\t", "&#9;")
+        .replaceAll("\n", "&#10;")
+  } /*escape_html*/
+
+let conn = null
+
+function show_buttons(pinging)
+  {
+    document.getElementById("start_ping").style.display = pinging ? "none" : ""
+    document.getElementById("stop_ping").style.display = !pinging ? "none" : ""
+  } /*show_buttons*/
+
+function doit()
+  {
+    if (conn !== null)
+      {
+        conn.close()
+      } /*if*/
+    conn = new WebSocket("ws://127.0.0.1:9370/ping", "pingu.example.com")
+      /* actually path part of URL is ignored by my Python code */
+    conn.onopen =
+        function ()
+          {
+            console.log("accepted protocol " + conn.protocol)
+            document.getElementById("message").innerHTML = "pinging..."
+            document.getElementById("output").innerHTML = ""
+            conn.send(document.getElementById("ping_target").value)
+            show_buttons(true)
+          } /*function*/
+    conn.onmessage =
+        function (evt)
+          {
+            document.getElementById("output").innerHTML += escape_html(evt.data) + "<br>\n"
+          } /*function*/
+    conn.onclose =
+        function (evt)
+          {
+            const message = document.getElementById("message")
+            if (evt.code == 1000)
+              {
+                message.innerHTML = "done"
+              }
+            else
+              {
+                message.innerHTML = "terminated with code " + evt.code
+              } /*if*/
+            show_buttons(false)
+          } /*function*/
+  } /*doit*/
+
+function stopit()
+  {
+    if (conn !== null)
+      {
+        conn.close()
+        show_buttons(false)
+      } /*if*/
+  } /*stopit*/
+</script>
+<p><label>Name/Address to ping:<input type="text" id="ping_target" autofocus></label>
+&nbsp;<input type="button" onclick="doit()" value="Ping It!" id="start_ping">
+<input type="button" onclick="stopit()" value="Ping No More" id="stop_ping" style="display: none">
+<p><span id="output">(Ping output will appear here.)</span>
+<p><span id="message"></span>
+</body>
+</html>

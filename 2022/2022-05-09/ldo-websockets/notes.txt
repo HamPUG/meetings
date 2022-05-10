@@ -1,0 +1,285 @@
+Background
+==========
+
+In the beginning of the Web, pages were static. But not for long. Web
+servers quickly acquired the ability to invoke external code to
+generate HTML on the fly, at first using the “cgi-bin” mechanism. But
+this required a new process to be created for every page request, and
+is considered inefficient nowadays.
+
+Then Web servers acquired plug-in modules, to allow the
+page-generation code to run within subprocesses/threads managed by the
+server process. For example, you have “mod_php” for PHP code, and
+there is also “mod_python” for Python code, which though it has fallen
+out of fashion in recent years, still seems to be getting ongoing
+maintenance work <https://github.com/grisha/mod_python>.
+
+But the Python community decided to develop a spec called “WSGI”, the
+Web Server Gateway Interface
+<https://wsgi.readthedocs.io/en/latest/what.html>. The idea was that
+this spec could be implemented by different servers, and different
+server plug-ins/frameworks, and they could all run the same Python
+code that was written to the common spec.
+
+So for example, for Apache you have mod_wsgi
+<http://www.modwsgi.org/>,
+<https://modwsgi.readthedocs.io/en/master/>. For Nginx, it seems you
+must run a separate uWSGI <http://projects.unbit.it/uwsgi/> server, if
+I understand the docs
+<http://nginx.org/en/docs/http/ngx_http_uwsgi_module.html> correctly,
+and it will relay connections to that.
+
+Concurrently with all this, HTML was acquiring new abilities, in the
+form of “Dynamic HTML”. A page could contain embedded JavaScript code,
+which would run in the browser and make dynamic changes to the page
+content, and also react to user input, using a browser-side API called
+the “DOM” (“Document Object Model”)
+<https://developer.mozilla.org/en-US/docs/Web/API/Document_Object_Model>.
+The way it works is, the HTML can assign names and IDs to various
+elements of the page, and the JavaScript code can refer to those
+elements using those names and IDs, and examine and alter various
+properties of them, including inserting HTML content into them.
+
+Of course, the use of this gets limited somewhat if you have to reload
+the whole page for every update. So a new Web API called
+XMLHttpRequest
+<https://developer.mozilla.org/en-US/docs/Web/API/XMLHttpRequest> was
+defined, to let the JavaScript code issue HTTP requests to the Web
+server, and use the responses to make changes to the page content
+without having to reload the whole thing. Such updates could be
+happening concurrently with user actions, leading to the term “AJAX”
+(“Asynchronous JavaScript And XMLHttpRequest”).
+
+But XMLHttpRequest, being just a repackaging of HTTP, is still based
+on request/response transactions, and having to make a request for
+each new response. Wouldn’t it be nice if the client code could open
+raw TCP connections to the server and transfer arbitrary data at
+arbitrary times in both directions?
+
+Obviously there were security implications to be considered before
+allowing this. But they were worked out, and we have the WebSockets
+spec <https://websockets.spec.whatwg.org/>, which gives us effectively
+such a raw connection, after some initial setup handshake. The
+corresponding JavaScript-accessible Web API is described here
+<https://developer.mozilla.org/en-US/docs/Web/API/WebSockets_API>.
+
+Meanwhile, back in the Python world, Python 3.5 was released,
+including a major new feature called “coroutines”, and a standard,
+pluggable event-loop API called “asyncio”. While the WSGI spec was
+adequate for HTTP-style request/response transactions, clearly
+something more was needed if you wanted to write a WebSockets server
+in Python.
+
+And so a new server-side spec called ASGI, the “Asynchronous Server
+Gateway Interface” <https://asgi.readthedocs.io/en/latest/index.html>
+was developed. This would replace WSGI, and handle both HTTP and
+WebSocket requests in a single framework.
+
+There are a number of ASGI-compliant server frameworks available. The
+one I was using is Uvicorn <https://github.com/encode/uvicorn/>.
+
+
+The Example Application
+=======================
+
+Trying to think of a suitable application to demonstrate the
+usefulness of WebSockets, a few days ago I was looking at the pfSense
+firewall OS. This is basically a FreeBSD installation with an
+elaborate Web-based GUI for managing all the functionality for setting
+up LAN/WAN interfaces, routing tables, firewall rules, VLANs and all
+the rest of it. A very powerful and versatile system.
+
+Naturally, it also includes access to diagnostic functions, such as
+ping. However, I think they missed a trick with the interface to the
+ping function. When you do the ping command from a terminal, you get a
+live update the moment the response to each packet comes back. But
+through the Web interface, you click the Start button, and then wait a
+while, but nothing further appears. After you have left it running for
+what you think is a sufficient time, you click the Stop button, and
+then the collected results from the ping operation will (hopefully)
+appear.
+
+Why can’t you see the Web page immediately update as soon as each ping
+response comes back? Well, with WebSockets, you can. In my example,
+the JavaScript code in the client-side page opens a WebSockets
+connection to my custom server, which spawns a subprocess running the
+standard ping command. As each line of output comes from the
+subprocess, it is immediately relayed back to the JavaScript code,
+which adds it to the page.
+
+To demonstrate the nonblocking behaviour of the server, you can open
+multiple instances of the client page, and have them all running
+independent ping operations and updating simultaneously. These are all
+being services through a single instance of the server process.
+(Though of course each ping command runs in its own child process.)
+
+
+The Code--Client-Side
+=====================
+
+Strict mode -- gets rid of a lot of opportunities for misbehaviour,
+particularly undefined variables.
+
+Semicolons are optional in JavaScript. Some people prefer to put them
+in, but that doesn’t really help you avoid any bugs, so why bother.
+The statement-continuation rule is a bit complex, but by and large it
+doesn’t do too much violence to my usual code-formatting conventions.
+
+Connection URL can contain the usual path and query components. These
+are ignored by my server code in this case, but could be used in other
+cases. Protocol prefix “ws:” indicates an unencrypted connection; use
+“wss:” for TLS encryption. Latter will be pretty much mandatory in
+real-world use. Also I think you get the same cookies from the browser
+as for the page itself, so server-side WebSockets code can share the
+same authentication mechanism as HTTP code.
+
+Note also the “subprotocol”, which can be a single string or a list of
+strings. The intention is that the client sends a list of subprotocols
+it can handle, the server checks this list for ones that it knows
+about, and sends one back (presumably the “best” one, whatever that
+means) if it can find one, else it rejects the connection as
+incompatible. Meaning of this is up to your code, you can even omit
+it. I include a value here just as an example.
+
+Escaping returned text data before including in HTML -- of course this
+depends on your application. Maybe you do expect the server to return
+formatted HTML, which then gets inserted as is into the page to be
+displayed according to its formatting. Actually makes no difference
+here -- I don’t think there’s a way to get the ping command to return
+anything containing “<”, or “&” characters.
+
+At what point does the connection process actually start? There is
+nothing resembling an explicit “conn.start_connecting()” call. Part of
+the JavaScript standard specifically says that there is *no*
+multithreading of script execution within a single page--all scripts
+have to share a single thread. Thus, the connection task starts in the
+background, only after the “doit()” function has finished executing.
+It then invokes the specified callbacks as the corresponding
+connection events occur.
+
+Note that the buttons do not belong to any form. There is no form
+submission on this page, no page refresh during normal execution.
+There are two buttons, one to start pinging and one to stop it; only
+the relevant one is made visible, depending on whether pinging is in
+progress or not.
+
+In Firefox, at least, the “View Source” function cannot show you the
+dynamic page source; to see this, you select part or all of the page,
+and then use “View Selection Source”. This will show the dynamic HTML
+generated by the JavaScript execution.
+
+
+The Code--Server-Side
+=====================
+
+When I started writing the example code for this talk, I was under the
+impression that a Python WebSockets server had to work through ASGI.
+This is not the case. For example, Uvicorn is built on top of other
+frameworks that provide the actual HTTP and WebSockets serving, it
+mainly combines them together and puts an ASGI face on top. But you
+can use those lower-level layers directly.
+
+So I ended up writing two versions of the server side of the example
+code; one uses ASGI, tested with Uvicorn, while the other makes direct
+use of python3-websockets
+<https://websockets.readthedocs.io/en/stable/>.
+
+Uvicorn is a Python library, which you can use in your own application
+mainline. Alternatively, a simple command-line tool is also provided,
+which you can use to load your code as a Python module.
+
+python3-websockets is a Python library, and you have to create your
+own application mainline.
+
+
+Server Code--ASGI
+-----------------
+
+The way the ASGI version works is, your server mainline is a coroutine
+function invoked with three arguments, e.g.:
+
+    async def service(scope, receive, send) :
+        ...
+    #end service
+
+“scope” is a dictionary giving information about the incoming
+connection, and “receive” and “send” are coroutine callbacks you can
+invoke to obtain an incoming message and send an outgoing message
+respectively.
+
+There are also “lifespan” events that the ASGI framework can send to
+your code, but you can easily block these by simply raising an
+exception for them. That tells the framework that you don’t want to
+see them.
+
+As you can see, the actual “pingu” protocol is quite simple: on
+connection, the server receives a DNS name or IP address to ping, it
+starts the ping, sends back one or more lines of output back to the
+client, and when the ping process terminates, the connection is
+closed.
+
+Note that, while the child ping process is running, the server has to
+wait for either of two events: either another line of output from the
+child process, or a notification that the child has terminated. Note
+these lines:
+
+    nextline = asyncio.create_task(child.stdout.readline())
+    child_done = asyncio.create_task(child.wait())
+
+“child.stdout.readline()” and “child.wait()” are coroutine calls, so
+they do not actually read a line or wait for the child to terminate
+right away: you have to “await” them to cause these actions to occur.
+I don’t know which one will happen first, but I can use the
+asyncio.wait() call to wait for them simultaneously, with the
+“return_when = asyncio.FIRST_COMPLETED” argument to indicate that the
+wait terminates when either one of them is done.
+
+This call cannot take Python coroutine objects directly; it expects
+asyncio “Task” objects, which are wrappers created by the
+“create_task()” calls.
+
+I ignore the returned result from asyncio.wait(), instead doing my own
+checks on the individual task objects to see if they’re done. When the
+readline() call completes, I send back the result over the WebSocket
+connection, and start a new read for the next line. If the child
+terminates, then I check whether this was a normal (ping limit
+reached) or abnormal termination, and send back a suitable status code
+to notify the client.
+
+Actually, I later realized, doing the wait for these two separate
+tasks was not necessary. I could just wait for the next line. Remember
+that the semantics of POSIX pipes says that, when the writing end is
+closed (as when the child process terminates), any attempt to read
+will return an EOF indication. At that point, I can do my check to
+confirm the child has terminated. But I left the code like this, just
+to demonstrate how to do a wait for more than one thing to happen at a
+time.
+
+
+Server Code--Direct WebSockets
+------------------------------
+
+The Python Websockets library defines its own interface for invoking
+your server code. To create a server context, you call
+websockets.serve(), telling it what address and port to listen on,
+what subprotocol(s) you expect, and a coroutine callback to be invoked
+to handle an incoming connection.
+
+The bulk of the code in the connection handler is close to the ASGI
+version, differing mainly in the exception handling. Uvicorn seemed to
+default to using the same library to handle WebSockets, but I couldn’t
+handle the WebSockets-specific exceptions directly without assuming
+that they would indeed be coming from this library.
+
+
+Conclusion
+==========
+
+I think I prefer the direct-WebSockets version over the ASGI version.
+There are just fewer layers of indirection between server and client
+code, so you get more control over what is going on. I suppose an ASGI
+server is convenient if you want to handle both HTTP and WebSocket
+connections in one set of code. And a WebSocket server will likely
+need to interoperate with an HTTP server at some point. But that can
+be arranged in any number of ways via various backend services,
+without them having to share the same server framework.
