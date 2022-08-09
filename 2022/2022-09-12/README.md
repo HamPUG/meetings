@@ -1,2 +1,2 @@
-# Hampug meeting for 12 Sep 2022
+# Reserved for Hampug meeting scheduled for 12 Sep 2022
 
