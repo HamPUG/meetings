@@ -1,4 +1,4 @@
-# WebScrapping
+# Web Scraping
 
 **Peter Reutemann** delivered a presentation on web scraping.
 
