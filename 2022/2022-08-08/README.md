@@ -1,6 +1,6 @@
 # WebScrapping
 
-**Peter Reutemann** delivered a presentation on webscrapping
+**Peter Reutemann** delivered a presentation on web scraping.
 
 
 # GTK3/4 Python Help Applications
