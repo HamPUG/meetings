@@ -14,4 +14,4 @@ He also presented on upgrading the application to use GTK4.
 
 ## Links
 * [Meetup](https://www.meetup.com/nzpug-hamilton/events/283776838/)
-* Youtube
+* [Youtube](https://youtu.be/nQRSxYVPL_Q)
