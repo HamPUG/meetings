@@ -26,6 +26,6 @@ The presentation material is in two parts:
 
 * [kivi launcher](kivi-launcher.md) is built as an APK and deployed to the phone. The source code of *Touch Tracer* application is copied to the phones SD Card. Kivy Launcher then runs *Touch Tracer*. Changes to the source code may be performed by directly editing the Python files on the phones SD Card.
 
-Peter's presentation was recorded and may be viewed at:
-
-https://bbb.nzoss.nz/playback/presentation/2.0/playback.html?meetingId=6edc548c22debac4fb66721972cc80a03ddb3f87-1636351033522
+## Links
+* [Meetup](https://www.meetup.com/nzpug-hamilton/events/274860995/)
+* [Youtube](https://youtu.be/pPlSjTEGEKU)
