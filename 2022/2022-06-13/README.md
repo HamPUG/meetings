@@ -3,7 +3,7 @@
 Python is a great language for processing and visualizing data. 
 
 [Peter Reutemann](pandas) will demonstrate some basic usage of Pandas and 
-Lawrence D'Oliveiro will show how Jupyter notebooks can be used for that purpose.
+[Lawrence D'Oliveiro](ldo) will show how Jupyter notebooks can be used for that purpose.
 
 ## Links
 
