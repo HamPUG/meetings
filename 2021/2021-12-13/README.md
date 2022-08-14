@@ -14,3 +14,6 @@ During last month's meeting, we came across the PyInstaller library (https://www
 * [3 gtk](3-gtk)
 * [4 gtk with glade](4-gtk_with_glade)
 
+## Links
+* [Meetup](https://www.meetup.com/nzpug-hamilton/events/274860996/)
+* [Youtube](https://youtu.be/al2E8Gpn_B0)
