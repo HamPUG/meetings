@@ -4,4 +4,5 @@
 
 
 ## Links
+* [Meetup](https://www.meetup.com/nzpug-hamilton/events/283776830/)
 * [Youtube](https://youtu.be/kXJFefa3hpQ)
