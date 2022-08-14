@@ -5,4 +5,4 @@ Combating spam in online forums is an ever-changing landscape. Can we design a s
 ## Links
 
 * [Meetup](https://www.meetup.com/NZPUG-Hamilton/events/283776884/)
-
+* [Youtube](https://youtu.be/w2D4CI8LFy4)
