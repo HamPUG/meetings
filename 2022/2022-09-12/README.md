@@ -1,6 +1,9 @@
 # 2022-09-12
 
-Lawrence D'Oliveiro will introduce the "ast" module (part of the standard library) for abstract syntax trees, which can be used for parsing Python files and retrieve information like doc strings, imports, functions, etc.
+Lawrence D'Oliveiro will give an introduction to some of the language-services facilities in the standard Python library, including abstract syntax trees (AST) and the inspect module.
+
+[Peter Reutemann](ast_module_deps) will show how to use AST to generate a module dependency graph.
+
 
 ## Links
 * [Meetup](https://www.meetup.com/nzpug-hamilton/events/283776844/)

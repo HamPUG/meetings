@@ -1,0 +1,6 @@
+.idea/
+*.iml
+python-weka-wrapper3/
+*.dot
+*.png
+
