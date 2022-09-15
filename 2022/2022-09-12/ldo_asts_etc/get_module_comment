@@ -1,0 +1,61 @@
+#!/usr/bin/python3
+#+
+# Get the header comment or docstring from a module, without
+# actually loading the full module. Invoke as follows:
+#
+#     get_module_comment «filename» [«filename»...]
+#
+# and it will display information for the specified files.
+#
+# Written 2022 August 1 by Lawrence D'Oliveiro <ldo@geek-central.gen.nz>.
+# This script is licensed CC0
+# <https://creativecommons.org/publicdomain/zero/1.0/>; do with it
+# what you will.
+#-
+
+import sys
+import os
+import ast
+import getopt
+
+opts, args = getopt.getopt \
+  (
+    sys.argv[1:],
+    "",
+    []
+  )
+
+for modname in args :
+    try :
+        modu = ast.parse(open(modname, "rt").read(), modname)
+    except SyntaxError as err :
+        sys.stdout.write("bad module %s: %s\n" % (modname, str(err)))
+        modu = None
+    #end try
+    if modu != None :
+        assert isinstance(modu, ast.Module)
+        cmt = ast.get_docstring(modu)
+        if cmt == None :
+            # try for header comment
+            modu = open(modname, "rt")
+            while True :
+                line = modu.readline()
+                if not line.startswith("#") :
+                    break
+                if cmt == None :
+                    cmt = ""
+                #end if
+                cmt += line
+            #end while
+            modu.close()
+        #end if
+        if cmt != None :
+            sys.stdout.write("%s:\n%s" % (modname, cmt))
+            if not cmt.endswith("\n") :
+                sys.stdout.write("\n")
+            #end if
+        else :
+            sys.stdout.write("%s: none found\n" % modname)
+        #end if
+    #end if
+#end for
