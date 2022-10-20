@@ -12,7 +12,7 @@ pyside6-install-presentation.odp
 pyside6-install-presentation.pdf
 ```
 
-For information on a *pyside6-assistant.py*tool written by Ian:
+For information on a *pyside6-assistant.py* tool written by Ian:
 ```
 pyside6-assistant-presentation.odp
 pyside6-assistant-presentation.pdf
