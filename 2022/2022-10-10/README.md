@@ -2,7 +2,7 @@
 
 # PySide6
 
-**PySide6** is a Python wrapper for *Qt* https://www.qt.io/ Version 6 software. Qt is cross-platform software for creating graphical user interfaces written in C++. https://wiki.qt.io/Qt_for_Python
+**PySide6** is a Python wrapper for **Qt** https://www.qt.io/ Version 6 software. *Qt* is cross-platform software for creating graphical user interfaces written in C++. https://wiki.qt.io/Qt_for_Python
 
 **Ian Stewart** delivered a presentation on Pyside6/Qt. His slide presentions are:
 
