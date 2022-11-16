@@ -5,7 +5,7 @@ Computers provide recursion ...with no effort. In some cases a mathematical theo
 
 Ian Stewart will demo his take on Kaprekar's constant (https://en.wikipedia.org/wiki/6174_(number)).
 
-Lawrence D'Oliveiro will show you some fun things with continued fractions, such as approximating Pi.
+[Lawrence D'Oliveiro](ldo) will show you some fun things with continued fractions, such as approximating Pi.
 
 [Peter Reutemann](fractals) will combine simple formulas with complex numbers to generate some fractals.
 
@@ -13,3 +13,4 @@ Lawrence D'Oliveiro will show you some fun things with continued fractions, such
 ## Links
 
 * [Meetup](https://www.meetup.com/nzpug-hamilton/events/283776852/)
+* [Youtube](https://www.youtube.com/watch?v=kYV8qbU6oHI)
