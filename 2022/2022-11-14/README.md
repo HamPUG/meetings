@@ -13,4 +13,4 @@ Computers provide recursion ...with no effort. In some cases a mathematical theo
 ## Links
 
 * [Meetup](https://www.meetup.com/nzpug-hamilton/events/283776852/)
-* [Youtube](https://www.youtube.com/watch?v=kYV8qbU6oHI)
+* [Youtube](https://youtu.be/trd925Fv6q4)
