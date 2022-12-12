@@ -6,4 +6,4 @@
 
 The presentation is in two parts. *Part 1* covers the hardware of the Pico module, while *Part 2* features installing MicroPython and using it to write code for the Pico module. 
 
-The presentations in .ODP and .PDF formats.
+The slide show presentations are in .ODP and .PDF formats.
