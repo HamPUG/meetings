@@ -12,4 +12,5 @@ The presentation is in two parts.
 The slide show presentations are in .ODP and .PDF formats.
 
 The following python files were used for demonstration:
-* adc_temp.py
+* [adc_temp.py](demo_progs/adc_temp.py) Analog to Digical converter for RP2040 chip temperature
+
