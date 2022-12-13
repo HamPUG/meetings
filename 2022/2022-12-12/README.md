@@ -9,7 +9,12 @@ The presentation is in two parts.
 * *Part 1* covers the hardware of the Raspberry Pi RP2040 chip and the Pico module.
 * *Part 2* features installing MicroPython and using it to write code for the Pico module. 
 
-The slide show presentations are in .ODP and .PDF formats.
+The slide show presentations are in .ODP and .PDF formats:
+
+* [ pico-presentation-part1.odp](pico-presentation-part1.odp)
+* [ pico-presentation-part1.pdf](pico-presentation-part1.pdf)
+* [ pico-presentation-part2.odp](pico-presentation-part2.odp)
+* [ pico-presentation-part2.pdf](pico-presentation-part2.pdf) 
 
 The following MicroPython programs were used for demonstration purposes:
 
@@ -17,7 +22,7 @@ The following MicroPython programs were used for demonstration purposes:
 * [get_info.py](demo_progs/get_info.py) Display dir() and help().
 * [pin16_blink.py](demo_progs/pin16_blink.py) Blink external led connected to pin16.
 * [pin25_blink_toggle.py](demo_progs/pin25_blink_toggle.py) Use "toggle" method to blink Pico led.
-* [pwm_pin25_dimmer.py](demo_progs/pwm_pin25_dimmer.py) Apply PWM to Pico led to provide dimming of the led.
+* [pwm_pin25_dimmer.py](demo_progs/pwm_pin25_dimmer.py) Apply Pulse Width Modulation to Pico led to provide dimming of the led.
 * [rtc_time.py](demo_progs/rtc_time.py) Display output from the Real Time Clock (RTC).
 * [switch.py](demo_progs/switch.py) A simple switch.
 * [switch_interupt.py](demo_progs/switch_interupt.py) Switch with Interupt Request.
