@@ -1,6 +1,6 @@
 2022-12-12
 
-# MicroPython on Raspberry Pi Pico
+# MicroPython on the Raspberry Pi Pico Module
 
 **Ian Stewart** delivered a presentation introducing *MicroPython* on the *Raspberry Pi Pico* module.
 
