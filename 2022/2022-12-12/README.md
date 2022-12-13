@@ -10,3 +10,6 @@ The presentation is in two parts.
 * *Part 2* features installing MicroPython and using it to write code for the Pico module. 
 
 The slide show presentations are in .ODP and .PDF formats.
+
+The following python files were used for demonstration:
+* adc_temp.py
