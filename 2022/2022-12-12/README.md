@@ -2,7 +2,8 @@
 
 # MicroPython on the Raspberry Pi Pico Module
 
-**Ian Stewart** delivered a presentation introducing *MicroPython* on the *Raspberry Pi Pico* module.
+**Ian Stewart** delivered a presentation introducing [MicroPython](http://micropython.org/) on 
+the [Raspberry Pi Pico](https://www.raspberrypi.com/products/raspberry-pi-pico/) module.
 
 The presentation is in two parts. 
 
