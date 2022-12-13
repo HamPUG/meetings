@@ -11,14 +11,15 @@ The presentation is in two parts.
 
 The slide show presentations are in .ODP and .PDF formats.
 
-The following python files were used for demonstration:
+The following MicroPython programs were used for demonstration purposes:
+
 * [adc_temp.py](demo_progs/adc_temp.py) Analog to Digital converter for RP2040 chip temperature, and voltage reading.
-* [get_info.py](demo_progs/get_info.py)
-* [pin16_blink.py](demo_progs/pin16_blink.py)
-* [pin25_blink_toggle.py](demo_progs/pin25_blink_toggle.py)
-* [pwm_pin25_dimmer.py](demo_progs/pwm_pin25_dimmer.py)
-* [rtc_time.py](demo_progs/rtc_time.py)
-* [switch.py](demo_progs/switch.py)
-* [switch_interupt.py](demo_progs/switch_interupt.py)
-* [switch_interupt_routine.py](demo_progs/switch_interupt_routine.py)
-* [timer_pin25_flash.py](demo_progs/timer_pin25_flash.py)
+* [get_info.py](demo_progs/get_info.py) Display dir() and help().
+* [pin16_blink.py](demo_progs/pin16_blink.py) Blink external led connected to pin16.
+* [pin25_blink_toggle.py](demo_progs/pin25_blink_toggle.py) Use "toggle" method to blink Pico led.
+* [pwm_pin25_dimmer.py](demo_progs/pwm_pin25_dimmer.py) Apply PWM to Pico led to provide dimming of the led.
+* [rtc_time.py](demo_progs/rtc_time.py) Display output from the Real Time Clock (RTC).
+* [switch.py](demo_progs/switch.py) A simple switch.
+* [switch_interupt.py](demo_progs/switch_interupt.py) Switch with Interupt Request.
+* [switch_interupt_routine.py](demo_progs/switch_interupt_routine.py) Two switches with Interupt Request.
+* [timer_pin25_flash.py](demo_progs/timer_pin25_flash.py) Use Timer to false Pico led.
