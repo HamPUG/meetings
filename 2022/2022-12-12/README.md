@@ -27,4 +27,4 @@ The following MicroPython programs were used for demonstration purposes:
 * [switch.py](demo_progs/switch.py) A simple switch.
 * [switch_interupt.py](demo_progs/switch_interupt.py) Switch with Interupt Request.
 * [switch_interupt_routine.py](demo_progs/switch_interupt_routine.py) Two switches with Interupt Request.
-* [timer_pin25_flash.py](demo_progs/timer_pin25_flash.py) Use Timer to false Pico led.
+* [timer_pin25_flash.py](demo_progs/timer_pin25_flash.py) Use Timer to flash Pico led.
