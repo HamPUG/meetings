@@ -66,13 +66,3 @@ while True:
     get_temp()
     get_voltage()
     time.sleep(2)
-
-    led.toggle()
-    
-tim.init(freq=10, mode=Timer.PERIODIC, callback=tick)
-
-while True:
-    get_temp()
-    get_voltage()
-    time.sleep(2)
-
