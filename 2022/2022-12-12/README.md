@@ -5,6 +5,8 @@
 **Ian Stewart** delivered a presentation introducing [MicroPython](http://micropython.org/) on 
 the [Raspberry Pi Pico](https://www.raspberrypi.com/products/raspberry-pi-pico/) module.
 
+A video recording was made of the presentation. This is available on [youtube](https://www.youtube.com/watch?v=Ua-uwaed68Y).
+
 The presentation is in two parts. 
 
 * *Part 1* covers the hardware of the Raspberry Pi RP2040 chip and the Pico module.
