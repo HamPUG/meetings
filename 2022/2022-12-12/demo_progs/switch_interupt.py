@@ -3,17 +3,20 @@
 from machine import Pin
 import time
 
-switch_1 = Pin(14, Pin.IN,  Pin.PULL_DOWN)
-switch_1.irq(lambda pin: print("IRQ with flags:", pin.irq().flags()), Pin.IRQ_RISING)
+# switch_1, when closed, connects GP14 (Pico 19) to the Ground rail.
+# Pin.PULL_UP keeps the pin at 3.15V when swtich is open.
+switch_1 = Pin(14, Pin.IN,  Pin.PULL_UP)
+switch_1.irq(lambda pin: print("IRQ with flags:", pin.irq().flags()), Pin.IRQ_FALLING)
 
-led = Pin(25, Pin.OUT)
+# Led on the Pico module, GP25.
+led_1 = Pin(25, Pin.OUT)
 
 while True:
     #print(dir(switch_1))
-    print(switch_1.value()) # 1 when switch is on
+    print(switch_1.value()) # 1 when switch is off
     if switch_1.value() == 1:
-        led.value(1)
+        led_1.value(1)
     else:
-        led.value(0)
+        led_1.value(0)
     time.sleep(1)
  
