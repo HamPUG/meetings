@@ -9,6 +9,6 @@ The files that ChatGPT created and were displayed in the presentation are all in
 
 * [chatgpt_programs.tar.gz](chatgpt_programs.tar.gz)
 
-The video of this meeting is availble at:
+The video of this meeting is available at:
 
 * https://www.youtube.com/watch?v=qEqjfqja72M
