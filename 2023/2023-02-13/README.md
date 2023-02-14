@@ -5,6 +5,6 @@
 * [ChatGPT Presentation.odp](ChatGPT%20Presentation.odp)
 * [ChatGPT Presentation.pdf](ChatGPT%20Presentation.pdf)
 
-The video of the presentation is availble at:
+The video of this meeting is availble at:
 
 * https://www.youtube.com/watch?v=qEqjfqja72M
