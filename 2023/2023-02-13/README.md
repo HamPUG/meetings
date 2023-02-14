@@ -5,6 +5,10 @@
 * [ChatGPT Presentation.odp](ChatGPT%20Presentation.odp)
 * [ChatGPT Presentation.pdf](ChatGPT%20Presentation.pdf)
 
+The files that ChatGPT created and were displayed in the presentation are all included in this file:
+
+* [chatgpt_programs.tar.gz](chatgpt_programs.tar.gz)
+
 The video of this meeting is availble at:
 
 * https://www.youtube.com/watch?v=qEqjfqja72M
