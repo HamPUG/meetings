@@ -13,7 +13,7 @@ def flip_image(x):
 
 
 with gr.Blocks() as demo:
-    gr.Markdown("Flip text or image files using this demo.")
+    gr.Markdown("Flip **text** or **image** files using this demo.")
     with gr.Tab("Flip Text"):
         text_input = gr.Textbox()
         text_output = gr.Textbox()

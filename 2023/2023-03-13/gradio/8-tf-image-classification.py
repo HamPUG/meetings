@@ -9,7 +9,7 @@ import gradio as gr
 import os
 
 # load pretraind model
-inception_net = tf.keras.applications.MobileNetV2()
+mobile_net = tf.keras.applications.MobileNetV2()
 
 # Download human-readable labels for ImageNet if not on disk.
 labels_file = "./labels.txt"
@@ -24,7 +24,7 @@ with open(labels_file, "r") as fp:
 def classify_image(inp):
   inp = inp.reshape((-1, 224, 224, 3))
   inp = tf.keras.applications.mobilenet_v2.preprocess_input(inp)
-  prediction = inception_net.predict(inp).flatten()
+  prediction = mobile_net.predict(inp).flatten()
   confidences = {labels[i]: float(prediction[i]) for i in range(1000)}
   return confidences
 

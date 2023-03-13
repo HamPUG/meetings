@@ -5,6 +5,8 @@ import gradio as gr
 
 def sepia(input_img):
     # images get supplied as numpy arrays
+    print(type(input_img))
+    print(input_img.shape)
     sepia_filter = np.array([
         [0.393, 0.769, 0.189], 
         [0.349, 0.686, 0.168], 
