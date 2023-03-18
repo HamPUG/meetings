@@ -1,0 +1,2693 @@
+===
+
+2023-03-13
+
+Gradio and Textual user interfaces
+
+Details
+
+Over the years, we have explored how we can build user interfaces using tkinter, GTK, PyQt, kivy and Jupyter Notebooks. However, there are other, not so well known ways that have appeal.
+This time, Peter Reutemann will demo how you can use gradio (which is aimed at machine learning models; browser-based) and textual (user interfaces for the console) to quickly build some simple interfaces.
+
+Comments
+
+===
+
+2023-02-13
+
+ChatGPT writing Python programs
+
+Details
+
+Let's jump on the ChatGPT hype train and test whether we can use it as a tool for writing Python programs. Ian Stewart will not only recount his experiences so far, but also perform a live demo (attendees are welcome to provide their Python query to ChatGPT and then we will review the Python code that is produced).
+
+Comments
+
+Ian S.~
+
+The video of this meeting is available at:
+https://www.youtube.com/watch?v=qEqjfqja72M
+
+The presentation slide show is available at:
+https://github.com/HamPUG/meetings/tree/master/2023/2023-02-13
+
+cheers, Ian.
+
+===
+
+2022-12-12
+
+Raspberry Pi Pico and MicroPython
+
+Details
+
+The Raspberry Pi Foundation designed and now manufacture the RP2040
+microprocessor chip (https://www.raspberrypi.com/products/rp2040/).
+They deliver this chip on a printed circuit board named "Pico" (https://www.raspberrypi.com/products/raspberry-pi-pico/).
+
+Ian Stewart will demonstrate a Pico module running MicroPython (https://www.raspberrypi.com/documentation/microcontrollers/micropython.html).
+
+Comments
+
+David C.~
+
+Learning developments https://learningdevelopments.co.nz/
+Adafruit feather with BLE https://learningdevelopments.co.nz/products/adafruit-feather-nrf52840-express?_pos=1&_psq=feather%20express&_ss=e&_v=1.0
+
+Ian S.~
+
+The presentation slides and demonstration programs have been posted at: https://github.com/HamPUG/meetings/tree/master/2022/2022-12-12
+
+Ian S.~
+
+The video of the presentation is available at: https://www.youtube.com/watch?v=Ua-uwaed68Y
+
+===
+
+2022-11-14
+
+Number Theory and use of recursion
+
+Details
+
+Mathematics is often seen as a closed book by many people. However, with an easy to read programming language, like Python, it is possible to make mathematical fields such as number theory more approachable and even fun.
+Computers provide recursion ...with no effort. In some cases a mathematical theory may be explored with a simple Python program that quickly covers all possibilities and their outcomes. A tedious task if it was to be done manually.
+
+Ian Stewart will demo his take on Kaprekar's constant (https://en.wikipedia.org/wiki/6174_(number)).
+
+Lawrence D'Oliveiro will show you some fun things with continued fractions, such as approximating Pi.
+
+Peter Reutemann will combine simple formulas with complex numbers to generate some fractals.
+
+Please contact Peter if you'd like to demo/present other interesting or quirky, "mathematically" inspired Python code snippets. Maybe take a look at the "On-line Encyclopedia of Integer Sequences" (http://oeis.org/)?
+
+Comments
+
+Peter R.~
+
+Our notes are now available from our Github repo: https://github.com/HamPUG/meetings/tree/master/2022/2022-11-14
+
+Peter R.~
+
+The recording is now available from youtube as well: https://www.youtube.com/watch?v=kYV8qbU6oHI
+
+Peter R.~
+
+Due to recording issues, Ian re-recorded some parts and the edited video is available here: https://youtu.be/trd925Fv6q4
+
+===
+
+2022-10-10
+
+PySide6/Qt6 Graphical User Interface
+
+Details
+
+Ian Stewart will demo features of PySide6/Qt6, which allows you to write Python applications with graphical user interfaces that work across all major platforms.
+
+Comments
+
+Peter R.~
+
+The recording of the presentation is now available on youtube: https://www.youtube.com/watch?v=iD62xBAzLJs
+
+Peter R.~
+
+Due to BBB not recording some slide transitions properly, Ian created an updated version of the video that fixes that: https://www.youtube.com/watch?v=kOVXRP5Lx_M
+
+Ian S.~
+
+I've posted my PySide6/Qt6 presentation slides and python code at... https://github.com/HamPUG/meetings/tree/master/2022/2022-10-10
+
+===
+
+2022-09-12
+
+Language services facilities in the standard Python library
+
+Details
+
+Lawrence D'Oliveiro will give an introduction to some of the language-services facilities in the standard Python library, including abstract syntax trees (AST) and the inspect module.
+
+Comments
+
+Peter R.~
+
+My example code is available from github now: https://github.com/HamPUG/meetings/tree/master/2022/2022-09-12
+
+Peter R.~
+
+Lawrence uploaded his material as well: https://github.com/HamPUG/meetings/tree/master/2022/2022-09-12
+
+===
+
+2022-08-08
+
+Web Scraping and Graphical version of Python help
+
+Details
+
+Peter Reutemann will give a short introduction to web scraping and what libraries you can use.
+Ian Stewart will demo his graphical version of the built-in Python command "help(...)".
+
+Comments
+
+Peter R.~
+
+Last night's recording will be available for the next 1-2 weeks: https://bbb2.nzoss.nz/playback/presentation/2.3/ddca5558af43cf14cdf2f8146d63878544281e7e-1659942127046
+
+Peter R.~
+
+My notes are now online as well: https://github.com/HamPUG/meetings/tree/master/2022/2022-08-08/webscraping
+
+Ian S.~
+
+I have added my Python Help GUI presentation material. Please link to: https://github.com/HamPUG/meetings/tree/master/2022/2022-08-08
+
+===
+
+2022-07-11
+
+Coqui Text-To-Speech
+
+Details
+
+At previous meetings, older approaches for text-to-speech like espeak and Google's TTS were presented, which are primarily used by vision impaired people. In this meeting, Ian Stewart will demo a new kid on the block, called "Coqui" ( https://coqui.ai/ ). Although Coqui also supports speech-to-text, he will only show the text-to-speech side of things.
+
+Peter R.~
+
+Last night's recording is now available (for approx 1-2 weeks): https://bbb2.nzoss.nz/playback/presentation/2.3/01466e06e953a8c86fd53faadb71ef1ccf9621ba-1657522944067
+
+===
+
+2022-06-13
+
+Processing and Visualizing Data - Pandas and Jupyter
+
+Details
+
+Python is a great language for processing and visualizing data. Peter Reutemann will demonstrate some basic usage of Pandas and Lawrence D'Oliveiro will show how Jupyter notebooks can be used for that purpose.
+
+Comments
+
+Peter R.~
+
+My scripts from last night's talk are now available from our github repo: https://github.com/HamPUG/meetings/tree/master/2022/2022-06-13/pandas
+
+===
+
+2022-05-09
+
+WebSockets Server
+
+Details
+
+There are different ways of adding dynamism to pages coming from your Web server. You may have heard of “AJAX” (“asynchronous JavaScript and XmlHttpRequest”). The next level beyond that is called “WebSockets”, which creates a server connection that allows for an ongoing stream of messages in both directions, to implement a live, continuously-updating Web page.
+Lawrence will demonstrate how to write a simple WebSockets server in Python, using one of the existing server frameworks that implement ASGI, the Asynchronous Server Gateway Interface.
+
+Comments
+
+Peter R.~
+
+The recording from last night is now available online (for a week or so): https://bbb2.nzoss.nz/playback/presentation/2.3/925d435bf3984089204b6a806b2775824ec473fe-1652079435691
+
+Peter R.~
+
+Lawrence made his material available: https://github.com/HamPUG/meetings/tree/master/2022/2022-05-09
+
+===
+
+2022-04-11
+
+Virtual Environments
+
+Details
+
+Peter Reutemann will talk about virtual environments: what they are, why you should use them and, of course, demo various approaches on Linux and Windows.
+
+We still have time if you would like to present/demo a library or project. Just get in contact with the organizer Peter.
+
+Comments
+
+Ian S.~
+
+Correction: It wasn't curly braces added to Python 3.10 that I'd heard about, it was adding "Using enclosing parentheses for continuation across multiple lines in context managers"
+
+See...
+
+https://docs.python.org/3/whatsnew/3.10.html#parenthesized-context-managers
+
+cheers, Ian.
+
+Peter R.~
+
+The recording from last night's session is available for the next few days from this link: https://bbb2.nzoss.nz/playback/presentation/2.3/63d76590e08f5091653b71f52b0db18638fa0251-1649660022020
+
+Peter R.~
+
+And my slides are available from github as well: https://github.com/HamPUG/meetings/tree/master/2022/2022-04-11
+
+===
+
+2022-03-14
+
+Combating Spam in Online Forums
+
+Details
+
+Combating spam in online forums is an ever-changing landscape. Can we design a system that can handle anything thrown at it? Ethan McKee-Harris spent nearly 18 months programming a package around this very idea and has a few things he would like to discuss. These range from actually solving the problem at hand, as well as ideas like software design, testing, and optimization.
+
+Comments
+
+Peter R.~
+
+Ethan's slides are now available from our github repo: https://github.com/HamPUG/meetings/tree/master/2022/2022-03-14
+
+Peter R.~
+
+The recording of Ethan's talk will stay online for a few more days: https://bbb2.nzoss.nz/playback/presentation/2.3/58e71d996c0f4317cb917c36ab256d0bd01971fd-1647237038561
+
+===
+
+2022-02-14
+
+Wordle
+
+Details
+
+Recently the internet based daily word puzzle Wordle (https://www.powerlanguage.co.uk/wordle/) has become quite a sensation.
+Ian Stewart has written a python program that can be used to provide assistance in solving the puzzle. He will present the source code of his "wordle_assistant.py" program and demonstrate it in action.
+
+Comments
+
+===
+
+2021-12-13
+
+PyInstaller library
+
+Details
+
+During last month's meeting, we came across the PyInstaller library (https://www.pyinstaller.org/). Let's take a look at it, to see whether we can easily create installers for various operating systems and what the library's limitations are.
+
+Comments
+
+Peter R.~
+
+My presentation and examples are available from github now: https://github.com/HamPUG/meetings/tree/master/2021/2021-12-13
+
+hong l.~
+
+Thank you so much for your sharing, Peter.
+
+===
+
+2021-11-08
+
+Kivy and Buildozer
+
+Details
+
+Unfortunately, Ian Stewart will not be able to revisit kivy (https://kivy.org/), a Python framework for writing cross-platform applications. Instead we will have a hands-on session (with Peter Reutemann's laptop/phone as the guinea pigs) on deploying applications on Android and how the kivy-launcher project (https://github.com/kivy/kivy-launcher) can cut down on development time. kivy-launcher avoids having to compile your kivy projects to an APK beforehand using buildozer by launching them straight from source instead.
+
+Comments
+
+Peter R.~
+
+I've converted Ian's notes and put them on github: https://github.com/HamPUG/meetings/tree/master/2021/2021-11-08
+
+Peter R.~
+
+And here is the link to the recording: https://bbb.nzoss.nz/playback/presentation/2.0/playback.html?meetingId=6edc548c22debac4fb66721972cc80a03ddb3f87-1636351033522
+
+Aodhan~
+
+Sorry I couldn't make it in the end, I lost track of time
+
+===
+
+2021-10-11
+
+Embedding Python in LibreOffice documents and Redis
+
+Details
+
+Ian Stewart will demo how to use embedded Python scripts in LibreOffice/OpenOffice for manipulating the Writer, Draw and Calc applications, like the amortization of a loan.
+The Alternative Python Script Organizer (APSO), an addon extension to LibreOffice, will be featured. See link for more info:
+https://extensions.libreoffice.org/en/extensions/show/apso-alternative-script-organizer-for-python
+
+Peter Reutemann will talk about Redis (https://redis.io/), an in-memory data structure store, which can be used as database, cache and message broker.
+
+Comments
+
+Peter R.~
+
+The notes from this week's Python meeting are now available from our github repo (incl link to recording): https://github.com/HamPUG/meetings/tree/master/2021/2021-10-11
+
+===
+
+2021-09-13
+
+ImageAI
+
+Details
+
+Glenn will demonstrate the use of ImageAI, a high-level python library for object detection and classification (http://www.imageai.org/) that makes it extremely easy to apply deep learning models to real-world problems. He utilizes this library to identify objects that his DJI drone encounters during its flight.
+
+Comments
+
+Peter R.~
+
+The recording of last night's presentation is available here: https://bbb.nzoss.nz/playback/presentation/2.0/playback.html?meetingId=6edc548c22debac4fb66721972cc80a03ddb3f87-1631515645060
+
+===
+
+2021-08-09
+
+Ctypes and Cython
+
+Details
+
+Do you have a C library that you would like to use but it has no Python bindings? Let Lawrence D'Oliveiro show you how to create these bindings yourself using ctypes, from toy examples to large, real-world libraries.
+Does your code need to be more efficient? Then maybe you should write Cython extensions. Peter Reutemann will walk you through the basics of how to achieve this.
+
+Comments
+
+Peter R.~
+
+My Cython presentation and source code are now available from our github repo: https://github.com/HamPUG/meetings/tree/master/2021/2021-08-09/cython
+
+Heitor Murilo G.~
+
+Thanks!
+
+Peter R.~
+
+Lawrence has made his notes/notebook available as well: https://github.com/HamPUG/meetings/tree/master/2021/2021-08-09/ldo
+
+===
+
+2021-07-12
+
+Cloud infrastructure in Amazon Web Services and Deep Learning Techniques
+
+Details
+
+Dean Stringer will demonstrate how you can utilize Python to setup cloud infrastructure in Amazon Web Services (AWS), an important building block for anyone's cloud-based venture.
+
+Whether you laugh or cry, David Hamilton will be able to tell you by applying deep learning techniques for detection of facial expressions.
+
+Comments
+
+Peter R.~
+
+Dean's material is now available from our github repo: https://github.com/HamPUG/meetings/tree/master/2021/2021-07-12
+
+===
+
+2021-06-14
+
+Solving Mathematical Problems
+
+Details
+
+David Hamilton has embarked on a journey to solve mathematical problems that Project Euler proposes (https://projecteuler.net/), requiring mathematical and programming skills. David will demo how he is using Python to help him solve these tasks.
+
+Comments
+
+===
+
+2021-05-10
+
+REST API for a machine learning model
+
+Details
+
+Peter Reutemann will demonstrate how to create a simple REST API for a machine learning model. In order to secure the service, JSON Web Tokens (JWT) are employed.
+
+Comments
+
+Peter R.~
+
+My slides and code examples are now online: https://github.com/HamPUG/meetings/tree/master/2021/2021-05-10/rest-jwt
+
+Ian S.~
+
+Peter and Ian have added their presentation slides and python code to the HamPUG github repository...
+https://github.com/HamPUG/meetings/tree/master/2021/2021-05-10
+
+===
+
+2021-04-12
+
+DEC Alpha Computer Instruction Builder and Deep Learning on Edge devices.
+
+Details
+
+Ian Stewart will be demoing his early prototype of a DEC Alpha 64-bit Computer Instruction builder, a GTK GUI that he is currently working on.
+
+Peter Reutemann will talk about his experiences with Deep Learning on edge devices.
+
+Comments
+
+Ian S.~
+
+I have added my GTK presentation and demonstration code to:
+
+https://github.com/HamPUG/meetings/tree/master/2021/2021-04-12/ian
+
+cheers, Ian.
+
+===
+
+2021-03-08
+
+Introduction to Python and Introduction to Virtual Environments
+
+Details
+
+Ever been curious about Python, but never had the time to take a look? Then come along to this meeting, where Lawrence D'Oliveiro will give an introduction into Python, suited for beginners and very good refresher for intermediate users.
+
+Time permitting, Peter Reutemann will give a short introduction into virtual environments and how they will make your life easier when managing multiple Python projects.
+
+Comments
+
+===
+
+2021-02-15
+
+Blender 
+
+Details
+
+Blender (https://www.blender.org/) is an amazing piece of Free Software that covers all the major aspects of the production of computer graphics in a single compact package. It also integrates an extensive Python scripting API. Lawrence D'Oliveiro will demonstrate the Python API, along with an overview of the many ways it can be used to extend the power of Blender. Bring your laptop along to get some hands-on experience with Blender.
+
+===
+
+2020-12-14
+
+Python Games
+
+Details
+
+Let's do something a bit different for our last meeting this year: Python games! Lawrence came across a repository of free Python games aimed at education and fun (https://github.com/grantjenks/free-python-games). Together we can have a play and a nosy under the hood of the games themselves.
+
+Feel free to bring your laptop along!
+
+Comments
+
+===
+
+2020-11-09
+
+Tools to turn Python programs into Debian packages
+
+Details
+
+Peter Reutemann will talk about tools that can turn your Python programs into Debian packages, making them easy to install for Linux users that run Debian/Ubuntu systems, and discuss their pros and cons..
+
+Comments
+
+Peter R.~
+
+Slides and code from last night's talk are now online: https://github.com/HamPUG/meetings/tree/master/2020/2020-11-09
+
+===
+
+2020-10-12
+
+Questions and Answers session
+
+Details
+
+Rather than presenting on a specific topic, we will have a Q&A session instead. So bring your laptop and Python questions along and we will try to solve them together.
+
+Comments
+
+Ian S.~
+
+FYI: I have added to the HamPUG github repository the two small programs that I presented at the meeting.
+
+cheers, Ian.
+
+https://github.com/HamPUG/meetings/tree/master/2020/2020-10-12
+
+===
+
+2020-09-14
+
+Introduction to Python - Continued
+
+Details
+
+Lawrence D'Oliveiro will continue with his introduction to Python, demonstrating some more advanced features like reflection, decorators, properties and lexical binding.
+
+Comments
+
+Peter R.~
+
+Lawrence has made the Jupyter notebook from his talk last night available here: https://github.com/HamPUG/meetings/tree/master/2020/2020-09-14/ldo
+
+===
+
+2020-08-10
+
+Discord.py
+
+Details
+
+The usage of Discord.py within Python for interacting with today's teenager social platform, discord. Today, discord is a multi-utility chat service used by millions of people. So how can we as developers jump on the trend and begin integrating our software with the service? Ethan McKee-Harris will answer this question.
+
+Comments
+
+Peter R.~
+
+I've linked Ethan's repo (presentation and code) from our own meetings repo: https://github.com/HamPUG/meetings/tree/master/2020/2020-08-10
+
+===
+
+2020-07-13
+
+PyDub and Paeamiko Libraries
+
+Details
+
+Peter Reutemann will demo some basic ways of manipulating audio files using the PyDub library.
+
+Ian Stewart will revisit the Paramiko library, which implements the SSHv2 protocol and offers client and server functionality.
+
+Comments
+
+Rod A.~
+
+I will join late if my other meeting finishes in time.
+
+Peter R.~
+
+I've just made my code from tonight's meeting available on github: https://github.com/HamPUG/meetings/tree/master/2020/2020-07-13
+
+Ian S.~
+
+I have posted my presentation material and programs on https://github.com/HamPUG/meetings/tree/master/2020/2020-07-13 .
+This includes the review of the paramiko module and the three parts to the Gtk bits and pieces. These parts include:
+embedding images, the Message_Dialog(), and reviewing constants, enums and flags. cheers, Ian.
+
+===
+
+2020-06-08
+
+GStreamer
+
+Details
+
+GStreamer ( https://gstreamer.freedesktop.org/ ) is a pipeline-based multimedia framework. Although it is written in C it has Python bindings. Ian Stewart has been writing small python programs that highlight features of GStreamer. Ian will provide an overview of GStreamer and present his python code.
+
+Comments
+
+Rod A.~
+
+Sorry - got a clash of meetings.I might be able to join later.
+
+Peter R.~
+
+No worries, Rod.
+
+Khushboo~
+
+Hi Sorry totally got caught up with unplanned workload, won't be able to make it
+
+Peter R.~
+
+Sorry to hear that.
+
+===
+
+2020-05-18
+
+Laby the Ant and Manipulation of PulseAudio
+
+Details
+
+The Laby application (https://sgimenez.github.io/laby/) is designed to help you learn programming languages and this includes the Python language. The programs you write need to guide an ant through a labyrinth full of rocks and spider webs until the ant gets to the escape door. Ian Stewart will demonstrate some of the code that he has written in Python for his ant.
+
+Peter Reutemann got annoyed at his laptop dock always reverting the audio settings on Linux, so he decided to see whether it was possible to manipulate pulseaudio from Python. The result: a bunch of command-line tools and a tray-icon application for managing profiles.
+
+Comments
+
+Peter R.~
+
+Update on the recording capability: no recording showed up on my home screen, so they may have disabled the feature to save disk space. Which is absolutely fine for a free service!
+
+Peter R.~
+
+The (preliminary) slides are available from here: https://github.com/HamPUG/meetings/tree/master/2020/2020-05-18
+Ian may still update his...
+
+Peter R.~
+
+Just found out that the BBB recording actually worked. You can watch the recording "NZPUG-Hamilton- pulseaudio via Python" here: https://bbb.nzoss.nz/b/u/gl-hoszgrydimga/recordings
+
+Rod A.~
+
+Thanks for making the slides available.
+
+===
+
+2020-04-20
+
+Manipulating Constants
+
+Details
+
+A computer program will launch using its default parameters. During the launch it may read its configuration file and update some of these parameters. After this the launching command line arguments may again change these parameters. Ian Stewart will present on his way of manipulating these parameter "constants".
+
+Comments
+
+Ian S.~
+
+Thanks for attending and for the comments you posted. I have uploaded my presentation slides in otp and pdf formats.
+
+https://github.com/HamPUG/meetings/tree/master/2020/2020-04-20
+
+At the end of the presentation I've added a few extra slides which are notes on the discussion held at the end of the presentation. Cheers, Ian.
+
+===
+
+2020-03-09
+
+Introduction to Python and Kivy Demo
+
+Details
+
+Lawrence D'Oliveiro will give an introduction into Python, suited for beginners and very good refresher for intermediate users.
+
+Ian Stewart will quickly demo a "Hello World" application that utilizes the Kivy framework (https://kivy.org/) for writing cross-platform applications. This application runs on his Linux laptop and his Android phone.
+
+Comments
+
+Ian S.~
+
+The Kivy / Buildozer presentation is available at:
+
+https://github.com/HamPUG/meetings/tree/master/2020/2020-03-09/ian
+
+Cheers, Ian.
+
+Peter R.~
+
+Lawrence has made his Jupyter notebook available as well: https://github.com/HamPUG/meetings/tree/master/2020/2020-03-09/ldo
+
+===
+
+2020-02-10
+
+BaseXClient and Poetry
+
+Details
+
+Ian has continued his investigations into the BaseXClient python module. He will use jupyter-notebook so that you can review the python code executing and utilizing the BaseX applications which in turn use xml files for creating their database.
+
+The never ending story of Python packaging standards. There is a new kid on the block, called "Poetry" (https://python-poetry.org/). Let's have a look at it together.
+
+
+Comments
+
+===
+
+2019-12-09
+
+Python in AWS Lambda and Farewell to Python V2.7
+
+Details
+
+David Watson will demo how to run Python in AWS Lambda.
+
+With Python 2.7 no longer being supported after January 1st, 2020, let's get together and give Python 2.7 the send off it deserves. Time to remember the good times/things and the bad times/things
+
+Comments
+
+===
+
+2019-11-11
+
+Console Scripts and Office Document Formats using XML
+
+Details
+
+Peter Reutemann will briefly discuss how you can add "console scripts" to your library (and how to reference them in the library's setup.py), to simplify calling your scripts from the command-line.
+
+Ian Stewart will takes us on a quick tour of office document formats that are using XML, namely ODF and OOXML, demonstrating how they store their data.
+
+Comments
+
+Peter R.~
+
+My code and slides are now available online: https://github.com/HamPUG/meetings/tree/master/2019/2019-11-11
+
+David W.~
+
+👍🏻
+
+===
+
+2019-10-14
+
+Widgets in Jupyter Notebook
+
+Details
+
+Using widgets in Jupyter Notebooks or how to make your notebooks interactive and more captivating. Peter Reutemann will present material prepared by Ian Stewart, who unfortunately cannot attend himself.
+
+Comments
+
+Peter R.~
+
+Pointers to last night's presentation (github repos with example notebooks demonstrating widgets) are now available: https://github.com/HamPUG/meetings/tree/master/2019/2019-10-14
+
+===
+
+2019-09-09
+
+Modify Jupyter Noteboke via Python's JSON module
+
+Details
+
+Ian Stewart will talk about how you can access and modify Jupyter
+Notebooks via Python's JSON module.
+
+Comments
+Ian S.
+
+At last Monday's Python meeting there was discussion regarding using the open() functions "r+" mode of opening a file. In particular, was it necessary to include the line of code f.truncate()?
+
+The following stackoverflow posting discusses this:
+https://stackoverflow.com/questions/2424000/read-and-overwrite-a-file-in-python
+
+cheers, Ian.
+
+===
+
+2019-08-12
+
+Blender
+
+Details
+
+Blender (https://www.blender.org/) is an amazing piece of Free Software that covers all the major aspects of the production of computer graphics in a single compact package. It also integrates an extensive Python scripting API. Lawrence D'Oliveiro will demonstrate the Python API, along with an overview of the many ways it can be used to extend the power of Blender.
+
+Comments
+
+kri k.~
+
+Hi, how long would the meet go on for?
+
+Peter R.~
+
+It veryuch depends on the talk, whether quick show and tell or longer one. Usually 1-2 hours plus some light refreshments afterwards to allow to chatting.
+
+kri k.~
+
+Ok thanks
+
+===
+
+2019-07-08
+
+Typing Hints and Different kernels for Jupyter Notebooks
+
+Details
+
+Peter Reutemann will briefly talk about Typing hints, introduced with Python 3.6, and also talk about different kernels for Jupyter Notebooks.
+
+Comments
+
+Peter R.~
+
+I'm still looking for a presenter. Don't be shy, even a 5min presentation/demo can be very useful to attendees - and you will most likely get useful feedback. Or if you have a problem that you just can't solve, present it and we can attempt to solve it together!
+
+Peter R.~
+
+Somebody feel like talking about type hints (PEP 484)? https://www.python.org/dev/peps/pep-0484/
+
+Peter R.~
+
+My Jupyter notebooks and instructions are now available online:
+https://github.com/HamPUG/meetings/tree/master/2019/2019-07-08
+NB: Python itself does not do anything with the type hints itself, you need a static checker like mypy (http://mypy-lang.org/) for this.
+
+===
+
+2019-06-10
+
+Libraries/frameworks that can assist with ETL (extract, transform, load)
+
+Details
+
+Peter Reutemann will present some libraries/frameworks that can assist with ETL (extract, transform, load). ETL is a process for copying from one or more sources to a destination that represents the data differently, often used in Data Warehousing (https://en.wikipedia.org/wiki/Extract,_transform,_load).
+
+Comments
+
+Peter R.~
+
+Thanks to the projector removed, we are next door in TX4.
+
+Peter R.~
+
+My presentation and code is online now: https://github.com/HamPUG/meetings/tree/master/2019/2019-06-10
+
+Peter R.~
+
+I have to apologize regarding petl: the "addcolumn" method returns a copy of the table, rather than performing the operation in-place. Also fixed the data truncation issues by using sqlalchemy engines instead of native sqlite/mysql connections. Finally, I added timing output to show the performance of the frameworks (top-level README.md contains the overview of speeds).
+
+Peter R.~
+
+Since we had people new to Python, here is Lawrence's Jupyter Notebook based introduction to Python: https://github.com/HamPUG/meetings/tree/master/2019/2019-04-08/ldo
+
+===
+
+2019-05-13
+
+Creating a website using Nikola
+
+Details
+
+Ian Stewart will present on how he created the web-site http://hampug1.pythonanywhere.com
+
+The web-site is a presentation on how to create a web-site and covers:
+
+    Using ReText, the reStructuredText editor.
+    Creating reST web-pages.
+    Using Nikola to build a static website from the web-pages
+    Deploy and host the website at http://hampug1.pythonanywhere.com
+
+Comments
+
+Peter R.~
+
+Ian's material is now available from github: https://github.com/HamPUG/meetings/tree/master/2019/2019-05-13
+
+===
+
+2019-04-08
+
+Introduction to Python
+
+Details
+
+Lawrence D'Oliveiro will give an introduction into Python, suited for beginners and very good refresher for intermediate users.
+
+Comments
+
+Peter R.~
+
+Lawrence's Jupyter notebook is now available from our github repo: https://github.com/HamPUG/meetings/tree/master/2019/2019-04-08/ldo
+
+===
+
+2019-03-11
+
+Pet Monitor - Raspberry Pi 3, Wireless webcams and Tensorflow
+
+Details
+
+Using a Raspberry Pi 3, wireless webcams and tensorflow, Peter Reutemann is attempting at building a pet monitor and burglar detection rig.
+
+Comments
+
+Peter R.~
+
+My presentation and code are now available from github: https://github.com/HamPUG/meetings/tree/master/2019/2019-03-11/rpi3_and_tensorflow
+
+Peter R.~
+
+And Ian's presentation is now online as well: https://github.com/HamPUG/meetings/tree/master/2019/2019-03-11/local_bin
+
+===
+
+2019-02-11
+
+Django
+
+Details
+
+Sum Abiut will explain how Django, the Python framework for developing websites (https://www.djangoproject.com/), is structured and how to create a new website with it.
+
+Comments
+
+Peter R.
+
+Unfortunately, I will have to postpone this presentation till March due to last-minute work commitments. Who's willing to step in, for a short show and tell?
+
+Ian S.~
+
+Sum, thanks for doing the Django presentation. I had no problems in repeating the install and getting started parts of your presentation on a laptop running Debian 9.6 and another laptop running Ubuntu 18.04. I captured the commands and did screen-shots of the browser windows. I've put this info into a pdf file and e-mailed it to Peter. When he gets back to Hamilton, he will put the pdf file on the Python Users Group github repository.
+Cheers, Ian.
+
+sum a.~
+
+Thanks ian, I still have the message app with me. Let me know if you want to put that in github repository.
+
+Ian S.~
+
+Yss the manage app would be good. Please e-mail the app to Peter and he will post it on github. He will be back tomorrow. However note that it is then publicly accessible so you probably don't want to use real email addresses, etc. inside the app.
+
+Peter R.~
+
+I just placed Ian's material on github:
+https://github.com/HamPUG/meetings/tree/master/2019/2019-02-11
+
+sum a.~
+
+Peter, I want to send you the app but I don't have your email.
+
+Peter R.~
+
+fracpete at waikato.ac.nz
+
+===
+
+2018-12-10
+
+Gathering - No Topic
+
+Details
+
+Have you come across a cool library or are you working on a project that you are passionate about? Would you like to give a short demo and/or presentation? Then please contact Peter the organizer.
+
+Comments
+
+Irene~
+
+Will there be a presentation this time?
+
+Peter R.~
+
+Nobody has volunteered at this stage.
+
+Sharon M.~
+
+Hi Guys, sorry I cannot make it tonight, just got something turn up.
+
+===
+
+2018-11-12
+
+Hacking EV's - CAN bus
+
+Details
+
+Hacking EVs for dummies. Niall and Mark have been trying to take control of a Nissan Leaf's Battery Computer so that they can use it in other applications. They have had to learn a little CAN bus (Controller Area Network), a little Python and a little Raspberry Pi. They explain their progress so far and also where they hope to go with the project.
+
+Comments
+
+Peter R.~
+
+Unfortunately, I won't be able to attend. Enjoy the presentation!
+
+Andrew~
+
+I was gutted as this event totally slipped my mind this evening
+I'll try and get along to the next one
+
+===
+
+2018-10-08
+
+Web-Scraping, Python Performance and Manipulating Lists
+
+Details
+
+Lawrence D’Oliveiro will demonstrate a simple web-scraping task, namely automating the downloading of files from a 3D model archive site, using Python with the BeautifulSoup HTML-analysis library. This could be a useful introduction to those new to the concept of web-scraping.
+
+Intel claims that their custom Python distribution (https://software.seek.intel.com/python-distribution) delivers "close-to-native-code performance". Peter Reutemann will run some basic speed comparisons to see whether it lives up to that claim.
+
+The list() function to convert a string to an array of characters is complemented by a string's join() method. The list methods include append() and pop(0) which allow a list to be used as a fifo buffer. Time permitting, Ian Stewart will give a brief Jupyter Notebook presentation to introduce data manipulation using list methods.
+
+Comments
+
+Peter R.~
+
+I've just put my slides and test scripts on our github repo: https://github.com/HamPUG/meetings/tree/master/2018/2018-10-08
+
+Peter R.~
+
+Nice intro to web scraping by Lawrence, Intel's Python was a bit of a let down and Ian's FIFO approach to HTML generation was refreshingly different way of solving a problem. Great to see some new faces!
+
+Karun~
+
+Great, love beautiful soup.
+
+Sharon M.~
+
+Thank you, guys. Very nice.
+
+Peter R.~
+
+Ian's presentation is now available from the same github URL.
+
+Peter R.~
+
+Lawrence uploaded his notes and Jupyter notebook for beautiful soup as well (same github URL).
+
+===
+
+2018-09-10
+
+Django served by WSGI server Waitress
+
+Details
+
+Peter Reutemann will show how to serve a Django application (https://www.djangoproject.com/) through the pure-Python WSGI server waitress (https://github.com/Pylons/waitress).
+waitress is an interesting and light-weight alternative to other WSGI capable servers like Apache/mod_wsgi, especially if you are only serving a single Python application.
+
+Comments
+
+Raglan Electric B.~
+
+I'd love to come but I'm in Auckland trying to Zombie a Nissan Leaf :(
+
+Peter R.~
+
+Hopefully at the next meetup!
+
+Sharon M.~
+
+Hi guys, I really love to come, but my partner got sick, I have to stay at home to look after him and my child. :(
+
+Peter R.~
+
+No worries, we'll see you next time!
+
+Peter R.~
+
+Great feedback from audience when giving my talk, with lively discussions.
+
+Peter R.~
+
+I've put my code fragments on github (as usual): https://github.com/HamPUG/meetings/tree/master/2018/2018-09-10
+
+Navi S.~
+
+Excellent!!!
+
+Karun~
+
+Great group
+
+===
+
+2018-08-13
+
+Introduction to Ctypes
+
+Details
+
+Creating Custom API Bindings Using ctypes - Lawrence D'Oliveiro will give an introduction to ctypes, and how to use it to create bindings for non-Python APIs using pure Python. And also why doing so is actually a good idea.
+
+Comments
+
+===
+
+2018-07-09
+
+Python Pandas
+
+Details
+
+Gary Buczma will demo Python Pandas to unlock and exploit the potential of unstructured data and open data, as a Data science tool.
+
+Comments
+
+Peter R.~
+
+Unfortunately, I'm unable to attend tonight due to work commitments. Would have enjoyed getting to know Pandas a bit better! :-)
+
+Chris O.~
+
+Thanks to the presenters. Good discussions afterwards.
+
+Chris O.~
+
+And for those interested in a debugger within Jupyter Notetbook.
+
+https://www.youtube.com/watch?v=Z-tPeEkVqjk
+
+https://ibm-watson-data-lab.github.io/pixiedust/install.html
+
+Peter R.~
+
+Gary's notebooks are now available from out github repo: https://github.com/HamPUG/meetings/tree/master/2018/2018-07-09
+
+Raglan Electric B.~
+
+Great to learn these methods. Fantastic discussion afterwards. Thanks guys and gals.
+
+===
+
+2018-06-11
+
+Introduction to a Microservice written in Python
+
+Details
+
+Andreas Löf will give a gentle introduction to a microservice written in Python using the Flask framework. He will also show how to dockerise the microservice for testing in a production-like environment. Finally, Andreas will demonstrate the steps needed to deploy the microservice on Heroku as a Platform-as-a-Service (PaaS).
+
+Comments
+
+Peter R.~
+
+https://kivy.org/ promises cross-platform development of applications for natural user interfaces (NUI; multi-touch in other words). Not that I have worked with it, but shall we have a go at it together and see whether we can deploy an app on an Android phone?
+
+Peter R.~
+
+Very cool presentation by Andreas, from developing to deploying and integrating a microservice. Shame we couldn't get the heaters going.
+
+Peter R.~
+
+Andreas' talk is now available from our github repo: https://github.com/HamPUG/meetings/tree/master/2018/2018-06-11
+
+Andreas~
+
+Thanks Peter!
+
+You can find the source for cowsay.io here: https://github.com/aginor/cowsay-as-a-service
+
+Peter R.~
+
+The repo contains a readme with links to your other repos. :-)
+
+===
+
+2018-05-14
+
+Jupyter Notebook
+
+Details
+
+Let's have a Jupyter Notebook (https://jupyter.org/) install fest. So bring your laptop to the meetup, we'll set you up and show you the basics!
+
+Comments
+
+Peter R.~
+
+Great collaborative session on Jupyter Notebooks. Input is always appreciated! :-)
+
+Peter R.~
+
+Great collaborative session on Jupyter Notebooks. Input is always appreciated! :-)
+
+Peter R.~
+
+The presentations and the example notebook that we generated are now available from github: https://github.com/HamPUG/meetings/tree/master/2018/2018-05-14
+
+Peter R.~
+
+Lawrence remembered the public server that lets you paste in the URL of a Jupyter notebook to have it served up for interactive use. It's located here: https://mybinder.org/
+
+Peter R.~
+
+Lawrence also came across the post on "Interpreted C++ for GIS with Jupyter" https://blog.jupyter.org/interpreted-c-for-gis-with-jupyter-ae191bc6fb8e
+
+===
+
+2018-04-09
+
+Introduction to Python Classes and Virtual Environents
+
+Details
+
+Lawrence D’Oliveiro will give an introduction to Python classes and the more esoteric aspects like descriptors and metaclasses.
+
+Peter Reutemann will show you how to use virtual environments, plain and with Anaconda.
+
+Comments
+
+Glen T.~
+
+Hi there i have only started learning coding a month ago and am using python language was just wondering how advanced i need to be to come to this meetup cheers
+
+Peter R.~
+
+This meetup will build on last month's intro, so it is a but more advanced. But object oriented programming (aka classes) will be very useful to know. My section on virtual environments is useful for anyonw. Just bring your laptop and we can help you out with anything after the talks.
+
+Glen T.~
+
+sweet as thx
+
+Peter R.~
+
+Very insightful talk by Lawrence on classes, meta-classes and decorators. Hyper flexible language! :-)
+
+Peter R.~
+
+Just uploaded my presentation to github: https://github.com/HamPUG/meetings/tree/master/2018/2018-04-09
+
+Chris O.~
+
+Good. Thanks to Lawrence for his insights into the language.
+
+===
+
+2018-03-12
+
+Introduction into Python, Python on Windows and Qt-Charts
+
+Details
+
+Lawrence D'Oliveiro will give an introduction into Python, suited for beginners and very good refresher for intermediate users.
+
+Ian Stewart will talk you through installing Python on Windows 64bit for user interface development.
+Time permitting, Ian will provide an update on the progress of his python PyQt application designed to aid in the learning of how to write python code that generates Qt-Charts.
+
+Comments
+
+Peter R.~
+
+Great intro by Lawrence. Juyter Notebooks are simply the way to go for interactive talks. Very helpful presentation by Ian on how to get Python installed on Windows and progress update on his Qt teaching tool.
+
+Peter R.~
+
+What interests me as organizer: why didn't you make it to the meetup?
+
+Peter R.~
+
+The notes for the talks are now online:
+https://github.com/HamPUG/meetings/tree/master/2018/2018-03-12
+
+===
+
+2018-02-12
+
+Deploy to PyPI, Deploy with mkdocs to Github. Python Learning Experience and QtCharts
+
+Details
+
+Having your Python projects on github.com is a good start, but a lot of people are not familiar with using git or don't want to install code/generate documentation from source.
+Peter Reutemann will show how to set up an installer for a Python library and how to deploy it to pypi.org, the central repository for Python libraries, making it available to everyone via "pip install". He will also demonstrate how you can use mkdocs (http://www.mkdocs.org/) to deploy beautiful documentation for your Python library straight to github.
+
+Joseph Karl is a self-taught programmer, who learnt as a child, but didn't really carry it through seriously past my teens. He now has a desire to return to studying Computer Science or similar, and decided to have a go at programming again. After a bit of thought as to which language to use, he chose Python, and has set about learning to use it. For his attempt at Python, he took a text-based Star Trek game which he had started coding as a child, and this time successfully(ish) made it work in Python.
+He will give a short presentation on his trials and travails in the art of learning to code again.
+
+Time permitting, Ian has a prototype of his python PyQt application designed to aid in the learning of how to write python code that generates Qt-Charts. He'd like to demonstrate the way that it works and get feedback on how it could be improved.
+
+Comments
+
+Peter R.~
+
+Not to late, just send me a short blurb and I'll add it.
+
+Peter R.~
+
+Just added your blurb. Thanks, Joseph.
+
+Peter R.~
+
+Just a reminder, we're meeting in TX3.G.01 tonight, not the usual spot:
+https://www.waikato.ac.nz/contacts/map?TX3
+
+Peter R.~
+
+Great turnout, good discussions with everyone contributing.
+
+Peter R.~
+
+I've uploaded my presentation from last night to our github account: https://github.com/HamPUG/meetings/tree/master/2018/2018-02-12
+
+Peter R.~
+
+Update the presentation in terms of uploading project to pypi: you need twine>=1.8.0 installed
+
+Ian S.~
+
+Thanks for everyone’s feedback on my QtChart prototype program. I’ve cleaned up my resource collection of images and stored them in the main program but not in the exported example programs. I also found a way to make the splitter handles have an image and some colour. The python/css-ish code is…
+
+    self.splitter.setStyleSheet(""",
+    QSplitter::handle {
+    background-color: skyblue;
+    image: url(:/images/horizontal_splitter.svg);
+    height: 12px;
+
+    }
+    QSplitter::handle:pressed {
+    background-color: rgb(100, 200, 255);
+    image: url(:/images/horizontal_splitter_pressed.svg);
+    }""")
+
+...I'll show you at next months meeting.
+
+Peter R.~
+
+Lawrence came across the test.pypi.org website, which is a test-bed completely separate from pypi.org. You can find more information about deployment here: https://packaging.python.org/guides/using-testpypi/
+
+===
+
+2017-12-11
+
+Review of Talks from Kiwi PyCon
+
+Details
+
+Let's finish this year on a high, with William Mckee telling us about interesting talks that he came across at Kiwi PyCon (Dec 2/3 2017).
+
+Comments
+
+William M.~
+
+In Hamilton for month of December. Can do a talk on the meme generator I am building. Looking forward to catching up, it's been 6 months.
+
+Peter R.~
+
+6 months already? Wow... Would you like to talk a little bit about Kiwi PyCon as well? Maybe suggest a video to watch?
+
+William M.~
+
+that sounds good Peter. Happy to talk about kiwipycon also. You won't be there? Both me and Ian talking. Tron represented!!
+
+Peter R.~
+
+Watched great videos on geopandas , recombination and Nikola from kiwi pycon 2017.
+
+===
+
+2017-11-13
+
+Gathering at Homestead Bar and Restaurant
+
+Details
+
+It is the end of semester and university is busy with exams again. Let's just head down to the pub and discuss all things Python over a drink. This is a great opportunity to meet other Pythonistas or, if you are thinking about diving into Python, to get first hand information about using the programming language.
+
+Comments
+
+Peter R.~
+
+The Cook is currently getting renovated, hence the switch to The Homestead. I reserved for 10 people in the bar stool table area for "Python User Group". At least this time they seem to have understood the name. Not "Pipe Music group" like last time. ;-)
+
+William M.~
+
+I'm going to be back in New Zealand for KiwiPyCon in Auckland on 2/3rd December. I'll be speaking about Nikola. Hope to see some of you there. I'm also speaking this week at SyDjango on Nikola (been awhile since I've talked about it so good warmup).
+
+Peter R.~
+
+Great catch up. Nice Python story swapping.
+
+Chris O.~
+
+Nice to catch up.
+
+===
+
+2017-10-09
+
+Asyncio/Conway's Game of Life and Client/Server via the sysyem D-Bus
+
+Details
+
+asyncio (https://docs.python.org/3/library/asyncio.html) - Asynchronous I/O, event loop, coroutines and tasks in Python 3.5.
+
+Lawrence D'Oliveiro will give an intro to his wrapper for the GLib event loop and also explain the asyncio API a bit.
+
+Ian Stewart will first talk about how Cycle Analyst (http://www.ebikes.ca/product-info/cycle-analyst-3.html) is used to monitor and control an electric bike. It also broadcasts the status of the bike every second as a ttl async ascii record of 14 tab delimited fields.
+
+After that, Ian will present how to use USB to ttl serial converter cable (https://en.wikipedia.org/wiki/USB_adapter) to create the device ttyUSB0. He will demonstrate a Python 3.5 server program using asyncio to capture the data. The server emits this data over the system D-Bus. A client app subscribes to the D-Bus to capture and process the data. The clients processed data is broadcast as a console and an audio message.
+
+Comments
+
+Peter R.~
+
+Great demonstration of what you can do with light-weight coroutines. Hadn't seen Conway's Game of Life in years! ;-) Cool hardware demo by Ian.
+
+===
+
+2017-09-11
+
+Database Techniques and Visualization. Client/Server using D-Bus
+
+Details
+
+Lawrence D'Oliveiro gives an introduction to database techniques and data visualization: importing data from CSV files into SQLite (https://sqlite.org/) and generating statistics and plots using Matplotlib (http://matplotlib.org/) and Seaborn (http://seaborn.pydata.org/).
+
+Comments
+
+Peter R.~
+
+Great introduction to using SQLite from Python, generating stats and visualization them using Matplotlib by Lawrence. Hilarious, yet educational, pub-themed client/server application demo using D-Bus by Ian.
+
+===
+
+2017-08-14
+
+Introduction to Python classes. Processing CSV files and API calls.
+
+Details
+
+Lawrence D'Oliveiro will give an introduction into Python classes and the more esoteric aspects like meta-classes.
+
+Nathan Humphrey will show how you can use Python to process CSV files from the command-line.
+
+As a follow-on to the presentation William delivered last month on using API's to access data at the Zalando web-site, Ian Stewart will present the three API calls (http://docs.energyhiveapi.apiary.io/) that retrieve data from the energyhive (https://www.energyhive.com/) web-site.
+
+Comments
+
+Peter R.~
+
+Shall hold an intro to Python again?
+
+Peter R.~
+
+Despite the overtime, great meetup. Nice presentation by Nathan how to automate tedious work tasks with Python. Diving deep into classes, decorators and meta-classes with Lawrence. Nice application of using web APIs to retrieve energy readings for the visually impaired by Ian.
+
+William M.~
+
+Great meetup. Lots of content. I found Peters comment regarding payload/params in Requests especially helpful. Used it today in a script, and will replace my other code. Enjoyed Nathans talk. I have feature requests for Nathans uni room request. GIFs and memes, analyze the text and respond appropriately :P
+
+Ian S.~
+
+Nathan. Many thanks for your presentation and good to see your programs working OK.
+
+I noticed that your code is comprised of sequential statements. This works fine, but as you add more functionality to the program, then it will become difficult to maintain. A solution to this is to write code in a "procedural" programming style.
+
+I have written 4 x example programs. The first program is a set of sequential statements. The next 3 x examples, show this code being rearranged so that it becomes a procedural program. These programs are at...
+
+https://github.com/HamPUG/examples/tree/master/procedural_programming
+
+Please take a look at these examples and try converting your code. Alternatively if you'd like to send me your code examples, then I'll do the conversions.
+
+I've also posted seven programs showing the incremental steps in writing a python GUI program using Gtk+. You might be able to use these as template programs for porting your code to be a GUI application.
+
+cheers,
+Ian.
+
+===
+
+2017-07-10
+
+Analyzing data with Natural Language Toolkit
+
+Details
+
+William Mckee will talk about the fashion company Zalando (https://www.zalando.co.uk/) -, their API (https://api.zalando.com/) - and analyzing the data with the Natural Language Toolkit (http://www.nltk.org/).
+
+Are you working on a Python project at the moment or did you come across a nifty Python library? Then how about a little show and tell? It doesn't have to be a presentation, a simple hands-on demo will do. If that's the case, then please send Peter, the organizer, a little blurb and he'll add you to the lineup of speakers.
+
+Comments
+
+William M.~
+
+https://textblob.readthedocs.io/en/dev/
+
+Owen M.~
+
+Sorry, I'm still unavailable. Hopefully will be back on board in about three months. :)
+
+Peter R.~
+
+Interesting use of public Zalando API by William. Ian demonstrated an interesting performance hit when using too many pulsed messages on dbus. Bit of a shame about the poor turn-out, though.
+
+===
+
+2017-06-12
+
+Gathering at the Cook
+
+Details
+
+University is busy with exams, so let's just meet down the road at the pub. It's always great to have a chat with like minded people about what makes Python such a great programming language. This is a great opportunity if you are interested in Python but haven't had the chance to tinker with it yet.
+
+Comments
+
+===
+
+2017-05-08
+
+Coroutines / Asyncio, Text-to-Speech and RPi-GPIO using hall effect to measure bike speed.
+
+Details
+
+Lawrence D’Oliveiro will talk about coroutines and asyncio in Python 3.5, including an introduction to decorator functions.
+
+Ian Stewart will make a LibreOffice Impress presentation talk!
+
+Ian Stewart will demo his bicycle speedometer. His demo includes a hall effect sensor module, a Raspberry Pi, use of the client/server programming model, use of python modules pydbus, RPi-GPIO, and GTK+, ...and a bicycle!
+
+William Mckee's talk has been moved to the July meetup (https://www.meetup.com/NZPUG-Hamilton/events/236200062/).
+
+Comments
+
+Lawrence D.~
+
+I could talk a bit about coroutines and asyncio in Python 3.5, if anyone’s interested.
+
+Peter R.~
+
+I'd be interested :-)
+
+Lawrence D.~
+
+I figure I could talk for about half an hour.
+
+Lawrence D.~
+
+Can I assume that people know about generator functions? Otherwise it’ll end up being a longer talk. ;)
+
+William M.~
+
+Hi, I have got a ticket to blockchainnz conf so unable to make it. Sorry. Can do this talk another month. seems like Lawrence and Ian can make up for my change.
+
+Peter R.~
+
+Shame. I'll move you to next month then.
+
+Peter R.~
+
+Best to include the generator functions :-)
+
+Lawrence D.~
+
+OK, it shall be a longer talk: generators, coroutines, asyncio.
+
+Syyed H.~
+
+Hi, I am yet to start learning Python development but I am really interested. Would this session help me or should I join in later meetings after doing some catching up ? If Catching up is required, can you please guide me on what sources do I need to go through for it ?
+
+Thanks
+
+Lawrence D.~
+
+I intend to start gently, but I will go deep.
+
+Lawrence D.~
+
+Do you know what a coroutine is? It’s like a thread, only simpler.
+
+Chris O.~
+
+Sorry. Please accept my apologies for tonight's talk. Looks good.
+
+Peter R.~
+
+Lawrence's is probably a bit more advanced, but Ian's should be easy to follow, even for beginner. We try putting the material on our GitHub account: GitHub.com/hampug/meetings - see the last two meetings where Lawrence gave an excellent intro to Python.
+
+Peter R.~
+
+Sorry, but something has cropped up on short notice and I won't be able to attend tonight after all. Enjoy the great line up!
+
+===
+
+2017-04-10
+
+Advanced Introduction to Python, Flask on pythonanywhere.com and Nvidia CUDA GPU's.
+
+Details
+
+Lawrence D'Oliveiro will continue with his introduction into Python, covering more advanced topics, once again using Jupyter Notebook (http://jupyter.org/).
+
+Ian Stewart will demonstrate how to set up a website on pythonanywhere.com using the flask (http://flask.pocoo.org/) framework.
+
+Chris O'Halloran will give a mini presentation on how to use Python in conjunction with Nvidia CUDA GPUs, to speed up processing of large datasets. Using pycuda and scikit-cuda, he will show how to: install the libraries, compile kernels, allocate grids/block/threads, compare the performance. Jupyter will be used to compare numpy, scipy, and skcuda for Fast Fourier Transforms - the latter using CUDA.
+
+Comments
+
+William M.~
+
+im especially interested on the talk on gpus.
+
+Owen M.~
+
+Sorry I can't make it as my wife is undergoing chemo at the moment. Hopefully will be back in 3 months or so.
+
+Peter R.~
+
+Not a problem. Hopefully your wife will get well soon.
+
+William M.~
+
+Great meetup as usual - shame about so many no shows. Disappointing. Lawrence certainly gave good tips that I can use - especially with looping. Always good to hear about my 2nd fav web framework - Flask (I bet you can guess my number 1), Chris talk on python and gpus is something I know nothing about about so lots of learning. Cheers!
+
+Chris O.~
+
+Thanks to the other presenters. Learnt a few tips from Lawrence's talk.
+
+===
+
+2017-03-13
+
+Introduction to Python, Django, and Flask
+
+Details
+
+Our March meeting is aimed at people new to Python and ones that would like to find out more about the language.
+
+Lawrence D'Oliveiro will give an introduction into Python, showing off its succinct but easy to read syntax, using
+Jupyter Notebook (http://jupyter.org/).
+
+Peter Reutemann will talk about developing web applications using the Django (https://www.djangoproject.com/) framework.
+
+Ian Stewart will demonstrate how to set up a website on pythonanywhere.com using the flask (http://flask.pocoo.org/) framework.
+
+The evening will conclude with a ability to mingle, ask more questions and get first-hand advice from Pythonistas.
+
+If you would like to demo an application or how to use a cool library, then please contact the organizer Peter.
+
+Comments
+
+William M.~
+
+Unable to make it. Have nz.js.conf on in Wellington and not going to rush back. Did quite a bit of advertising at uni so hopefully numbers are good. See you next month (I'm keen to do a talk on nltk sometime this year).
+
+Peter R.~
+
+No worries. Thanks for advertising!
+
+===
+
+2017-02-13
+
+Gathering at The Cook restaurant and bar
+
+Details
+
+Let's start the New Year with a social get together and meet at The Cook in Hamilton East. There we can talk about all things Python and the cool things that we got up to over the Xmas break!
+
+Comments
+
+Edward W.~
+
+The cook has a quiz night on mondays @ 7:30pm so all the tables get reserved by quiz teams.
+
+William M.~
+
+not upstairs. When we did this in the past we have been upstairs.
+
+Owen M.~
+
+Look forward to meeting you. New to Python so go easy on me!
+
+Peter R.~
+
+Don't worry, we are a very mixed group in terms of Python skill levels.
+
+Owen M.~
+
+Great to meet you all this evening, and thanks for the crash course. A very eclectic bunch, and we probably would have aced the quiz downstairs.
+
+Peter R.~
+
+Great to see so many new faces. Looking forward to the next meeting.
+
+===
+
+2016-12-12
+
+IEEE=754 Exceptions and Rounding. Escape sequences of Windows10 CMD. IPython Notebook on pythonanywhere.com
+
+Details
+
+Lawrence D'Oliveiro has written a module https://github.com/ldo/pyfenv to give control to IEEE-754 exceptions and rounding from Python, which he will introduce.
+
+Do you remember in the 80s how we had video terminals that used escape sequences to draw rectangles, change colors, and enhance text with underline and reverse video etc.? In May 2016 Microsoft enabled support for this on their Windows 10 CMD and Powershell console windows. Ian Stewart (or Peter Reutemann) will demonstrate some Python code highlighting these escape sequences.
+
+Harry, our support specialist at pythonanywhere.com, has granted our account at https://hampug.pythonanywhere.com/ the temporary ability to use IPython Notebook. We will give a demo of using IPython Notebook on pythonanywhere.com.
+
+Comments
+
+William M.~
+
+There were lots at last months meeting. would be great to hear from them and how they use python. Saw Jeremy at kiwicon and said hes interested in coming down to hamilton again for a meeting - would be great to get him to do a talk (his talks are always favs of mine at kiwipycon/kiwicon).
+
+William M.~
+
+Have a 50th of family friend to attend this weekend and likely won't be back in Hamilton for this meetup.
+
+The website seems down. Getting a Error code: 502-backend.
+
+Peter R.~
+
+Enjoy the celebration and we'll see you in the new year!
+
+Ian S.~
+
+Sorted out the error on https://hampug.pythonanywhere.com/ web-site. Should be OK now.
+
+William M.~
+
+Good news - going to be able make it to the meetup now - was a quick trip down south.
+
+William M.~
+
+also any chance someone can bring along a wlug membership form? I will have 20 dollars for it.
+
+Peter R.~
+
+Can print one and bring it along.
+
+Ian S.~
+
+Sorry, but I'm expecting to be a bit late - depends on AKL traffic! I've logged the website error with their support team.
+
+Nathan H.~
+
+Hey all, great Python meetup on Monday 12 December! Lawrence might have actually made floating point math fun for a change. For me, it was quite fascinating. Question: Do we own this forum? https://groups.google.com/forum/#!forum/nzpug Wonder if we have rights to clean it up. I noticed some pretty unnecessary, defamatory ranting going on in there.
+
+Peter R.~
+
+That's the forum of the overarching NZ Python User Group Society, which is open to any Python user (aimed at NZ users). If you come across posts that go against their code of conduct, make the moderator aware of it.
+
+Peter R.~
+
+Great talk by Lawrence on IEEE 754 in relation to Python. Probably the most entertaining and engaging IEEE talk that I've been to. Loved Ian's presentation on ANSI escape sequences in the Windows command prompt - should be a good exercise for High School students that want to make their command-line applications look nicer.
+
+===
+
+2016-11-14
+
+Telsa Model S JSON API. Flask. Meetup.com accessed from web2py website. Teaching Python
+
+Details
+
+William Mckee is talking about the Tesla Model S JSON API (http://docs.timdorr.apiary.io/) and the Vehicle Information Access API (https://www.w3.org/TR/vehicle-information-api/) - configuring and extending with Python.
+
+William will also talk about the Python micro-framework Flask (http://flask.pocoo.org/) for building websites and apps. He will cover the history, basics and extensions such as flask_restful/Flask-Security/flask-jsonify. Demo of how easy it is to get started. How to use it to build and serve a RESTful API. With Flask you can build up rather than start heavy and bloated with frameworks such as Django (https://www.djangoproject.com/).
+
+Together with Ian Stewart we will attempt on accessing the Meetup.com API (https://www.meetup.com/meetup_api/) in a web2py (http://www.web2py.com/) test environment for displaying the next upcoming meeting.
+
+Also, Ian Stewart has been creating a template methodology as an approach for teaching Python to secondary school students. Ian will display and demonstrate his template code, and welcomes all feedback on this methodology and how to improve the code in his templates.
+
+Comments
+
+William M.~
+
+Really looking forward to Ians talk on Meetup API. It's something I have wanted to look at myself - especially for creating meetups and checking if it's a public holiday and embedding them into apps
+
+Tim~
+
+I look forward to it. But I have to work
+
+Tim~
+
+😂
+
+Lawrence D.~
+
+After discussion with Ian about floating-point behaviour, I have written a module https://github.com/ldo/pyfenv to give control to IEEE-754 exceptions and rounding from Python. I can talk a little about this, if anybody is interested.
+
+Peter R.~
+
+Already lined up quite a bit. Maybe we can push that into December? I'm interested in that topic!
+
+Ian S.~
+
+Lawrence, Thanks for further investigation of python's floating point. One program I'll present is an introduction to floating point.
+https://github.com/irsbugs/pystuff
+It demos the integer overflow we observed when converting to float.
+
+Greg C.~
+
+Apologies for not being able to attend
+
+Peter R.~
+
+Great interactive talks. Loved William's presentations on Tesla and Flask. Robust discussion on Ian's example/template code for secondary teachers.
+
+Ian S.~
+
+Congratulations to Peter on his robust code enhancements to the
+https://hampug.pythonanywhere.com/ web-site. I see that today its picked up 12 December as the date for the next Python meeting. I'd like to thank everyone for their feedback which I'll incorporate into the presentation I'll be doing for teachers. ...and sorry I went on so long and made for a rather late evening.
+
+Peter R.~
+
+Thanks for that, Ian. I enhanced it a bit more, also displaying the description of the next meeting. However, I haven't found a way to output raw HTML...
+
+William M.~
+
+Thanks for the talk Ian. Might create something that displays the next meetup in a markdown file. Would create a script that gets the information and writes to file, then builds the site.
+
+Chris O.~
+
+Good to see lots of discussion about how to teach programming to high school kids
+
+===
+
+2016-10-10
+
+Web2py
+
+Details
+
+Postponed due to sickness: William Mckee is talking about the Tesla Model S JSON API (http://docs.timdorr.apiary.io/) and the Vehicle Information Access API (https://www.w3.org/TR/vehicle-information-api/) - configuring and
+extending with Python.
+
+web2py (http://www.web2py.com/) is a free open source full-stack framework for rapid development of fast, scalable, secure and portable database-driven web-based applications. Written and programmable in Python. Ian Stewart will provide an update on downloading and installing web2py and how he's getting along with reading the 600 page manual (https://dl.dropboxusercontent.com/u/18065445/web2py/web2py_manual_5th.pdf) and understanding the 50 example programs (http://www.web2py.com/init/default/examples).
+
+Comments
+
+Owen M.~
+
+I will get to a python meeting, keen to learn more. Sorry I can't be there this evening.
+
+William M.~
+
+I've came down with a sore throat and running nose. Do not want to spread it so will do talk another month.
+
+Syed Nayyar M.~
+
+Thanks for updates ... see you next month.
+
+Peter R.~
+
+Cool demo by Ian on web2py, looks like a really neat library for creating websites (nice use of MVC). William will be hopefully get well soon and give his presentation at one of the next meetings. Just a shame that we had such a low turnout.
+
+Greg C.~
+
+Terribly sorry I couldn't make it.
+
+Chris O.~
+
+Thanks Ian for you talk.
+
+===
+
+2016-09-12
+
+Introduction to Python Continued and Evolution of a Python Program
+
+Details
+
+Lawrence D'Oliveiro will continue with his Introduction to Python using Jupyter Notebook, covering topics such as:
+
+• Sets
+
+• Classes, including special method names
+
+• More looping fun: enumerate(), generator functions
+
+• A bit about reflection/RTTI (https://en.wikipedia.org/wiki/Run-time_type_information)
+
+• "any" and "all" built-in functions
+
+Ian Stewart will show the Evolution of a Python Program, of how to turn a hack into a more standardized, pythonistic program. He will also introduce you to Python Code Generation, as he is currently working on a project that will make it easy to generate Tkinter (https://en.wikipedia.org/wiki/Tkinter) GUIs from templates.
+
+Comments
+
+Owen M.~
+
+Hope to get along, but am in Jafaton most Mondays.
+
+Peter R.~
+
+Great presentations by Ian and Lawrence. Loved Ian's "Evolution of a Python program" and very structured and informative "Intro to Python Pt 2" by Lawrence.
+
+===
+
+2016-08-08
+
+Nikola, Raspberry Pi and Introduction to Python
+
+Details
+
+Our August meeting is aimed at people new to Python and ones that would like to find out more about the language.
+
+We will kick off the evening by demonstrating Python tools and applications:
+
+• Peter Reutemann will demonstrate Nikola (https://getnikola.com/), a static site generator written in Python, for generating great looking, mobile-friendly websites.
+
+• Ian Stewart and his Raspberry Pi (https://www.raspberrypi.org/) will show off Python's hardware side of things, bringing LEDs to light.
+
+After the demonstrations, Lawrence D'Oliveiro will give an introduction into Python, showing off its succinct but easy to read syntax, using Jupyter Notebook (https://ipython.org/notebook.html).
+
+The evening will conclude with the ability to mingle, ask more questions and get first-hand advice from Pythonistas (https://en.wiktionary.org/wiki/Pythonista).
+
+Comments
+
+Peter R.~
+
+Turnout lower than hoped for, but still good sized crowd. Great Raspberry Pi live demo by Ian and excellent introduction to Python using Jupyter Notebook by Lawrence
+
+===
+
+2016-07-11
+
+Marketing of August Meeting
+
+Details
+
+Let's plan the August meeting, which will be once again an Introduction to Python. This will include distribution of flyers and other advertising, as well as topics to cover during the introduction evening.
+
+Comments
+
+William M.~
+
+Will be unable to make it as I am heading to Napier for the weekend. Will have a draft version of the flyer finished and sent to Peter. Please discuss it and get back to me regarding changes. I'm also not interested in speaking August. Cheers.
+
+Peter R.~
+
+That's a shame that can't make it. Will let you know about feedback on flyer!
+
+William M.~
+
+Yeah sorry I can't make it. Going to Napier to visit family then Auckland for a conference. Made a draft of the poster for August - http://imgur.com/a/GA5GI I'm not happy with the (Hamilton) font, and the QR code is pointing to nzpug-hamilton rather the meetup event (easy to update this once event created). Will be back middle of next week so can work on final then. Good luck with the meeting.
+
+George H.~
+
+Where is MS4.G.02 on the campus? Somewhere near CompSci?
+
+Peter R.~
+
+It's on the management side, close to parking lot Gate 10. You can get to it from Gate 7. Here's the campus map: http://www.waikato.ac.nz/contacts/map?MS4
+
+Chris O.~
+
+http://w3w.co/bother.cosmetic.season
+
+Peter R.~
+
+Lots of discussions on format and content. :-)
+
+===
+
+2016-06-13
+
+Kiwi PyCon 2016 review
+
+Details
+
+Discussion of PyCon 2016 (https://www.youtube.com/channel/UCwTD5zJbsQGJN75MwbykYNw) talks, with William Mckee introducing:
+
+• Wendy Grus - When is it good to be bad? Web scraping and data analysis of NHL penalties.
+
+• A. Jesse Jiryu Davis - Write an Excellent Programming Blog.
+
+Comments
+
+Peter R.~
+
+Watched interesting PyCon 2016 talks and discussed them. Decided to use next month's meeting to prepare for the "Introduction to Python" meeting in August.
+
+Michael~
+
+... and good to see me too (:
+
+Michael~
+
+Enjoyed the contact ... looking forward to and intro evening. Meanwhile I'd better get some fell for the coding. late coffee nights coming up ((:
+
+===
+
+2016-05-09
+
+Python for Secondary Schools and Migrating Python from V2.7 to V3.x
+
+Details
+
+Presentation of programs that meet the secondary school NCEA specification.
+
+Experiences of migrating a Python 2.7 project to Python 3.x.
+
+Comments
+
+Helen C.~
+
+I'm keen to come tonight as I am a beginner Python programmer that needs to teach it to my Yr 11, 12 and 13 classes, however we have a Waikato Secondary Digital Technology Teacher's Meeting tonight as well. Will you be re-presenting this session at any stage?
+
+Peter R.~
+
+Hi Helen. At start of uni b semester, we will have another introduction to Python session. Will get advertised closer to the time. Cheers, Peter
+
+===
+
+2016-04-11
+
+Meeting Secondary School NCEA specification
+
+Details
+
+Review some of the units of the Secondary School NCEA computing and digital technologies. For those that want to give it a try, the challenge for the next month will be to write a Python program that meets the specification and present their program at the May meeting
+
+Comments
+
+William M.~
+
+I've taken a look at some of the units and have rewritten some of the assessment examples to make them suck less.
+
+Using sample instead of randint, and using getpass instead of inputting user, plus cleaning up repetitive code. Imports randomly throughout the examples instead of at the top (even in the excellence!)
+
+Can present some of the example assessments, my thoughts and the changes.
+
+Also integrated giphy api for lawls.
+
+William M.~
+
+Sorry, can't make it. Have the flu. The script I was working on - https://github.com/wcmckee/wcmckee/blob/master/numbernerd.ipynb. Will work on it further and talk about it at May meeting.
+
+===
+
+2016-03-14
+
+Nikola, Raspberry Pi and Introduction to Python
+
+Details
+
+Our March meeting is aimed at people new to Python and ones that would like to find out more about the language.
+
+We will kick off the evening by demonstrating Python tools and applications:
+
+• William McKee will demonstrate Nikola (https://getnikola.com/), a static site generator written in Python, for generating great looking, mobile-friendly websites.
+
+• Ian Stewart and his Raspberry Pi (https://www.raspberrypi.org/) will show off Python's hardware side of things, bringing LEDs to light.
+
+After the demonstrations, Lawrence D'Oliveiro will give an introduction into Python, showing off its succinct but easy to read syntax, using IPython Notebook (http://ipython.org/notebook.html).
+
+The evening will conclude with a ability to mingle, ask more questions and get first-hand advice from Pythonistas (https://en.wiktionary.org/wiki/Pythonista).
+
+Comments
+
+William M.~
+
+I will also bring the newly released Raspberry Pi 3, official 7 inch touch screen,
+PiTFT Plus 480x320 3.5" TFT+Touchscreen, Pimoroni Unicorn HAT and
+Pimoroni Skywriter HAT.
+
+Chris O.~
+
+https://nzpug.org/blog/2016/03/07/winners-viral-marketing-campaign-competition-annou/
+
+I saw this. Well done William and Peter.
+
+Ian S.~
+
+Hi Everyone. Please note that, as of this morning, Waikato University Gate 7 on Hillcrest Road is still closed due to construction work. For those driving to the Python meetup tonight please use Gate 10 off Silverdale Rd. Drive up through all the car parks to park next to building MS4.
+
+Chris O.~
+
+I know I mentioned it a few times last night, but if you're interested in getting python working on Windows system then you can use the Anaconda distribution from continuum.
+
+https://docs.continuum.io/anaconda/install
+
+https://www.continuum.io/downloads
+
+If you new to Python, start with Python3.5. Pretty much all the active third party libraries have migrated now.
+
+With Ananconda installed, you'll even get a GUI menu option to start your ipython3 notebook and away you go!.
+
+Anaconda has done all the hard work of compiling a large variety of third party libraries - which is one of the huge attractions of Python.
+
+Excellent variety of talks guys.
+
+Raul C.~
+
+to the organizers, thanks a lot for setting this up and most especially for selflessly sharing your knowledge, time and food with everyone. great to have met quite a number of pythonistas.
+
+Ian S.~
+
+The files used for the Monday 14 March 2016 presentations have been posted on the Hamilton Python User Group github site. Look in the subdirectories of...
+
+https://github.com/HamPUG/meetings/tree/master/2016/2016-03-14
+
+The overall presentation is an open document presentation (.odp) file. LibreOffice and OpenOffice Impress will open it, as well as newer versions of MS Office Powerpoint.
+
+The Python Intro Talk.ipynb requires the IPython/Jupyter notebook application to be installed to excute the cells of the example python code.
+
+Jason E.~
+
+Will there be any new meet ups aimed at new python users coming up? I am new to the language and programming, should i come along anyway?
+
+Peter R.~
+
+Sorry for late reply. We will have another introduction to Python session at start of uni b semester. Will get advertised closer to the time. Cheers, Peter
+
+===
+
+2016-02-08
+
+Interactive Graphics using Ipython Notebook and Jupyter Notebook with Nikola
+
+Details
+
+Lawrence D'Oliveiro is demoing interactive graphics using IPython Notebook.
+
+William McKee is demoing Jupyter Notebook/Jupyterhub and how it can be used with Nikola.
+
+Discussion of March meeting, which will be run as an introduction to Python (eg Python basics, teaser on GUI and web development).
+
+We have plenty of space for lightning talks! I you have come across a cool library or done something cool, hacky with Python, then this is your chance to give a short demo/presentation of what you have done (5min will do). Just contact the organizer Peter and let him know.
+
+Comments
+
+William M.~
+
+IPython Notebook is deprecated and has been replaced by Jupyter.
+
+Jupyter is far broader. I've been using both Jupyter Notebook and Jupyterhub (multi user notebooks).
+
+I could maybe do a lightning talk on Jupyter and using it with Nikola (relevant from previous meeting).
+
+Ian S.~
+
+With regard to discussing the delivery of an "Introduction to Python" at future meetings, then at some point there is the issue of introducing a GUI. Tkinter/ttk appears to be the de-facto GUI to get started on. I'm in the process of writing some python3 programs that introduce all the ttk widgets. Perhaps these programs could be turned into a tutorial and demonstrated. You can try out the programs I've written so far at...
+
+https://github.com/irsbugs/ttk_demos/tree/master
+
+All the GUI programs have the a similar layout. This should help with negotiating the GUI learning curve.
+
+cheers, Ian.
+
+micah w.~
+
+Just throwing it out there.. and ive been wrestling with this over time so Im a sympathiser (happy to be shot down)... my q is whats the relevance of windows gui dev these days when we have browser based 2 way binding thru client side web mvc incl websockets etc and more control over look n feel.. Howsabout say a flask app fired up locally and using an mvc like angular 2 ( heard 2 is v v fast ) and render everything in the browser? My Windows UI world became a happier place when WPF and MVVM kicked off, but now the same is available in a browser context? Thoughts?
+
+William M.~
+
+My glasses are completely broken now so I will see how I go - rather blind. If anyone else can talk instead of me might be good. Sorry, see how i get on.
+
+Peter R.~
+
+No worries
+
+===
+
+2015-12-14
+
+Raspberry Pi using Tkinter GUI to adjust Pulse Width Modulation and Nikola Demo
+
+Details
+
+Ian Stewart: Use of the Python RPi.GPIO (https://pypi.python.org/pypi/RPi.GPIO) module to control the General Purpose Input/Output ports of the Broadcom chip on a Raspberry Pi. This includes using a tkinter GUI to allow dynamic adjustment of frequency and duty cycle of the RPi.GPIO modules pulse width modulation feature.
+
+Comments
+
+Tony T.~
+
+It gets hectic at this time of the year - I had two other meetings scheduled for Monday nite !
+
+Peter R.~
+
+Great demo by Ian on doing low level I/O stuff on a Raspberry Pi using Python. Peter's Nikola demo was well received as well.
+
+Chris O.~
+
+Excellent presentations, guys. Sorry I had I couldn't stay until the end.
+
+===
+
+2015-11-09
+
+Nikola, Pelican, Communication with USB devices
+
+Details
+
+Currently lined up:
+
+• William Mckee will demo Nikola (https://getnikola.com/), a Static Site Generator
+
+• Peter Reutemann will give a short intro to the Pelican (http://blog.getpelican.com/) Static Site Generator
+
+• Ian Stewart - Using Python to communicate with USB devices or What I do NOT know about USB devices!
+
+If you'd like to give a short demo or talk about a Python-related topic (eg site generator, command-line parser are current topics), then please contact the organizer (Peter).
+
+Comments
+
+William M.~
+
+Created slides for the talk. Will wing it for the demo. Demoed before a Hamilton Computer Club so should be sweet. Ready for your questions.
+
+Might be neat if someone wants to talk about a different static blog or even a responsive blog/cms
+Pelican is popular (and very pretty) that is Python based - Linux Kernal use it for their blog.
+
+William M.~
+
+Hi,
+I've been having issues with my laptops so may need to borrow one for my talk.
+My slides wont be a problem because all they need is a web browser.
+
+I guess you will get to see a full, fresh install of Nikola!
+
+Preference for a system running Debian Jessie.
+
+Peter R.~
+
+I'm running Mint 17.
+
+William M.~
+
+Sweet, that should be fine. I can do a python3 virtualenv. Other option is Ian.
+
+Peter R.~
+
+Back to basics, or how to generate websites using static site generators. William gave a nice introduction to Nikola and Peter about Pelican. Ian was delving deep (or at least started diving) into USB hardware using pyudev.
+
+Chris O.~
+
+low key but definitely interesting
+
+===
+
+2015-10-15
+
+Command-line Parsing Frameworks
+
+Details
+
+Lightning talks on command-line parsing frameworks.
+
+Currently lined up:
+
+• Ian Stewart: sys.argv
+
+• Luke Jansch: argparse (https://docs.python.org/3/library/argparse.html#module-argparse)
+
+• Jeremy Stott: docopt (https://github.com/docopt/docopt)
+
+• Ian Stewart: plac (https://pypi.python.org/pypi/plac)
+
+• Peter Reutemann: begins (https://pypi.python.org/pypi/begins)
+
+Please refer to this post (https://groups.google.com/forum/#!topic/nzpug/1mcEMVvfqKE) on the NZPUG mailing list and contact me if you're interested in a short 5 min demonstration of a framework.
+
+We need volunteers to make this work!
+
+Comments
+
+William M.~
+
+super cool that you are coming down from akl fot this Jeremy!
+
+Jeremy S.~
+
+Had to return the favour :)
+
+Peter R.~
+
+Great demos of various command-line parsing frameworks! Was really amazed at simplicity of "begins" - definitely my choice for small projects. Also, "docopt" uses the definitions taken from doc strings to generate a parser, which I will consider for some larger projects.
+
+Yindong X.~
+
+it's cool, make things simple.
+
+William M.~
+
+Great meetup. This is definitely something I need to add to my programs. Special thanks to Jeremy/Aaron for making the trip down from Auckland. The led badge was awesome.
+
+Peter R.~
+
+Some of the notes are now on our github repository:
+https://github.com/HamPUG/meetings/tree/master/2015-10-12
+
+===
+
+2015-09-14
+
+Kiwi PyCon 2105 review and Skype4Py with Espeak for the Visually Impaired
+
+Details
+
+William McKee will talk about his Kiwi PyCon (http://lanyrd.com/2015/kiwi-pycon/) experience in Christchurch.
+
+Ian Stewart will present his application that connects to Skype (http://www.skype.com/) using the module Skype4Py (https://github.com/awahlig/skype4py) and uses espeak (http://espeak.sourceforge.net/) to allow visually impaired people to use the voice-call functions of Skype. Verne Pavreal, who is blind, will demonstrate this application together with Ian.
+
+Comments
+
+Luke M.~
+
++6 guests in case they don't respond on this site.
+
+Peter R.~
+
+Great recap of Kiwi PyCon by William, with a short mashup of the presentations and behind the scenes photos. Kudos to Verne and Ian, demoing the Python/Skype interface. Great to see Python making a difference for visually impaired people.
+
+===
+
+2015-08-10
+
+Dominate along with the libraries requests, beautifulsoup4, json and praw
+
+Details
+
+William Mckee will demo the Python library Dominate (https://github.com/Knio/dominate). It allows you to write Python code to generate HTML. Example will be given with his Ministry of Education (from recent GovHack (http://govhack.org.nz/) held at Waikato University (http://govhack.org.nz/govhack-hamilton/)) and GetsDrawn scripts. Other libraries used will include requests, beautifulsoup4, json and praw (python reddit wrapper).
+
+Comments
+
+Lawrence D.~
+
+Fun gathering, as usual. Some candid comments from William about the behaviour of certain online communities...
+
+Interesting to see “good to see you” messages from people who weren’t even there...
+
+===
+
+2015-07-13
+
+Tkinter
+
+Details
+
+Brian Hardyment will show you how to use tkinter (http://en.wikipedia.org/wiki/Tkinter) for developing graphical user interfaces in Python. Why tkinter? It is part of the Python installation on Windows and Mac, requiring no further libraries to be installed. Also, the latest iterations of tkinter provide native widgets, making your Python application look like an actual native application.
+
+Comments
+
+Saeid S.~
+
+Hi everyone..
+
+Recently I bumped into an interview question which looks very simple but it is not !!
+
+here is the question :
+
+Given a string of numbers in sequence order. find the missing number. Range is not given.
+sample input:"9899100101103104105"
+Answer:102
+
+If you like challenges try it !! keep in mind that you are not supposed to spend too much time on it..
+
+Regards,
+Saeid.
+
+Peter R.~
+
+Live streaming to YouTube didn't work, unfortunately. But it was a helpful session to decide (for myself) that tkinter is definitely not the way to go for developing user interfaces in Python.
+
+===
+
+2015-06-08
+
+Gathering at The Cook
+
+Details
+
+Let's go and chat over a drink at The Cook (upstairs). The odd laptop might appear and Python code written. If you are new to Python, this is the perfect opportunity to meet some locals that are passionate about it.
+
+Comments
+
+Chris O.~
+
+Sorry I didn't make it.
+
+===
+
+2015-05-11
+
+Plotting and Drawing. Pyqtgraph, Matplotlib and LibreOffice Draw
+
+Details
+
+This meeting is all about plotting and drawing.
+
+Chris O'Halloran will talk about using pyqtgraph (http://www.pyqtgraph.org/),
+Peter Reutemann will introduce matplotlib (http://matplotlib.org/) and Ian Stewart will show how to use Python for manipulating LibreOffice Draw (https://www.libreoffice.org/discover/draw/).
+
+Comments
+
+Peter R.~
+
+Good turnout with lots of good discussions around plotting and graphics. Impressed by Chris' presentation and he tied in with a commercial application. Loved Ian's little house drawing script.
+Chris O.~
+
+Yes, Ian's Python House was very cool!
+
+===
+
+2015-04-13
+
+LibreOffice and Collections / Tulip
+
+Details
+
+Ian Stewart will demonstrate how to use Python from within LibreOffice (http://www.libreoffice.org/).
+
+Yindong Xiao will introduce the collections (https://docs.python.org/2/library/collections.html) Python standard library using the Tulip (http://tulip.labri.fr/Documentation/current/tulip-python/html/index.html) environment.
+
+Comments
+
+Peter R.~
+
+Small group, but very lively discussions. Good exchange on Python libraries und best practices.
+
+===
+
+2015-03-09
+
+Introduction to Python
+
+Details
+
+Lawrence D'Oliveiro will give an introduction to the Python programming language. Ideal for people who know a bit of programming, but want to know what Python is all about and why people rave about it.
+
+Comments
+
+Tony T.~
+
+hope to attend meeting
+
+Chris O.~
+
+Good. Thanks Lawrence
+
+===
+
+2015-02-09
+
+Automated Tests
+
+Details
+
+Testing, testing, testing. Peter Reutemann (http://www.cms.waikato.ac.nz/~fracpete/) will give a short intro to automated tests in Python and what frameworks can be used.
+
+Comments
+
+Peter R.~
+
+Good turn out for first meeting of the year with a number of new faces. One member even started using unittest during the talk and found several bugs in their code already.
+
+Eric Z.~
+
+good but beyond my knowledge
+
+Chris O.~
+
+Thanks Peter for a good talk - especially for those unfamiliar with formal testing methods. Good to see some new faces for the new year.
+
+===
+
+2014-12-08
+
+Data Mining, Tkinter and PyQt5
+
+Details
+
+• Peter Reutemann (http://www.cms.waikato.ac.nz/~fracpete/): let's do some data mining (https://github.com/fracpete/python-weka-wrapper)!
+
+• Ian Stewart: The use of python list[]'s to manipulate widgets in a Tkinter and a PyQt5 GUI environment.
+
+Comments
+
+Christopher B.~
+
+Grr, I should have set a reminder on my phone. I am currently using the WEKA wrapper for a project of mine and it's really nice to use! Probably would have looked forward to your demo, Peter.
+
+Chris O.~
+
+Doop! Missed this one. Sorry guys.
+
+===
+
+2014-11-10
+
+Social Gathering
+
+Details
+
+No fixed agenda for this meeting, just a social gathering. We'll chat about all things Python and may have some adhoc presentations.
+
+Comments
+
+Chris O.~
+
+Good to see everyone there. Thanks for the tips on transferring variables between a gui and calculation model.
+
+===
+
+2014-10-13
+
+Gooey ~ Convert Command line to GUI and Wifi Webcams
+
+Details
+
+Chris Beckham: Gooey (https://github.com/chriskiehl/Gooey) is a fairly recent project written in Python that allows one to convert easily console applications to GUI ones with just one extra line of code. This gives command-line loving developers (i.e. Unix philosophers) a way to cater their programs to those that are more comfortable with GUIs without having to do a bunch more work.
+
+Peter Reutemann: DIY home monitoring with Wifi webcam(s) and a few lines of Python code.
+
+Comments
+
+Chris O.~
+
+Can I please put in my belated apologies for not attending last nights meeting. I was interested to read up about the project and would have been interested to see it demonstrated.
+
+Peter R.~
+
+No worries. I've put my stuff re monitoring on github (https://github.com/HamPUG/meetings/tree/master/2014-10-13). Hopefully, Chris will put some examples of the gooey tool up there as well.
+
+Christopher B.~
+
+Don't worry, I'll put some stuff on too. :)
+
+===
+
+2014-09-08
+
+Python scripts on Android and Blender
+
+Details
+
+Chris Beckham will show how to run Python scripts on an Android phone.
+Lawrence D'Oliveiro will demonstrate how to script the 3D animation software Blender using Python.
+
+Comments
+
+Eric L.~
+
+Damn going to miss this one as well....getting ready for Kiwi PyCon! Have fun everyone :)
+
+Peter R.~
+
+In that case you'll have to wear a T-shirt at Kiwi PyCon advertising Python meetups in Hamilton. :-)
+
+Peter R.~
+
+Cool demo on modifying a Blender scene from a Python shell. sl4a sounds like a nice way for prototyping on Android, without overheads of IDEs.
+
+Peter R.~
+
+Cool demo on modifying a Blender scene from a Python shell. sl4a sounds like a nice way for prototyping on Android, without overheads of IDEs.
+
+===
+
+2014-08-18
+
+Using Setuptools and Anjunta IDE
+
+Details
+
+Writing Python scripts is only the first step in developing a useful piece of software. Making the software available to other users via installers is a bit more challenging. In this meeting Peter Reutemann will discuss how to use setuptools for creating installers and virtualenv for testing them.
+
+Furthermore, Ian Stewart will discuss the Anjuta IDE, which uses the Gnome libraries (Glib, GObject, GTK+, GBuilder, ...) and has built-in support for Glade as well.
+
+Comments
+
+Peter R.~
+
+Lively discussion as usual. :-)
+
+Chris O.~
+
+Great. Thanks to both Peter and Ian for well prepared talks.
+
+Chris O.~
+
+After the meeting I manage to compile PyQt4 and numpy into a virtual environment using python3.2 IIRC. I probably should have stopped when it needed sudo permissions since it's now put some files (overwritten, gulp) into /usr/share. Hopefully it hasn't broken anything.
+
+===
+
+2014-07-14
+
+Common Mistakes
+
+Details
+
+Despite being an easy to learn programming language, there are some common pitfalls when switching over to Python from another programming language or starting from scratch with programming. Grace will be talking about the 10 most common mistakes that people make when developing with Python.
+
+Comments
+
+Eric L.~
+
+Really enjoyed hanging around and chatting after this one. Good run-down of some tricky bits by Grace, and a good pre-talk talk by Lawrence
+
+===
+
+2014-06-09
+
+Editors and IDE's
+
+Details
+
+We continue with our journey on exploring editors and IDEs that can be used for Python development: Ninja IDE, Spyderlib, Cat, Komodo, Textmate, Sublime, Eric.
+Furthermore, Grace will be talking about the most common mistakes that people make when developing with Python.
+
+Note: First month of using Meetup.com
+
+Comments
+
+Peter R.~
+
+Probably due to the meetup.com group change, some previous attendees didn't come along to this meeting. However, it was still as interesting evening, despite some improvisation regarding presentations.
+
+Christopher B.~
+
+Argggh, apologies for not making it, I completely forgot. (Recently, I did look at meetup.com to find when the next meeting was happening and didn't see anything. I think it was due to the group change as you said Peter.)
+
+I can always do it next presentation, but if you're sick of IDE presentations and/or I don't have a time slot to present in, I can put my IDE "first impressions" on Github, which I believe is a nice summary of things.
+
+Peter R.~
+
+We had a quick round up of SpyderLib and Sublime, so I think we're good with IDEs/editors for now. Please commit your "first impressions" to github!
+
+Chris O.~
+
+I should belately put in my apologies. My wife was sick yesterday so I was looking after our little one. I had hoped to still make the meeting but by 7pm it was apparent I was still needed at home.
+I was keen to see the Sublime presentation.
+
+Peter R.~
+
+Family comes first! My knowledge of Sublime was limited to installing and playing with it for 5min. However, Garion uses it as his main tool for developing in PHP. Looked pretty good!
+
+===
+
+2014-05-12
+
+IDLE
+
+Details
+
+IDLE is the Integrated DeveLopment Environment for Python. It is normally included with a Python distribution.
+
+Comments
+
+===
+
+2014-04-14
+
+Wordle and R's Wordcloud
+
+Details
+
+Using Python to scrape all the song lyrics from a particular artist (from lyricsfreak.com) and then create a word cloud from all those lyrics using either using Wordle or using R's wordcloud package. The idea was to get a visual representation of the words that were said the most by a particular band or artist.
+
+Comments
+
+===
+
+2014-03-10
+
+Established HamPUG Regular Monthly meeting
+
+Details
+
+General discussion
+
+Comments
+
+===
+
+2014-02-24
+
+Initial Meeting of Hamilton Python User Group
+
+Details
+
+Initial get together and discussion of format as a Python Users Group.
+
+Comments
+
+===
+
+
+
