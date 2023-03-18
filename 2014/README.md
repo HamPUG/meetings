@@ -48,13 +48,8 @@ Peter Reutemann: DIY home monitoring with Wifi webcam(s) and a few lines of Pyth
 
 No fixed agenda for this meeting, just a social gathering. We'll chat about all things Python and may have some adhoc presentations.
 
-## [2013-12-08](2013-12-08) Data Mining, Tkinter and PyQt5
+## [2014-12-08](2014-12-08) Data Mining, Tkinter and PyQt5
 
 • Peter Reutemann (http://www.cms.waikato.ac.nz/~fracpete/): let's do some data mining (https://github.com/fracpete/python-weka-wrapper)!
 
 • Ian Stewart: The use of python list[]'s to manipulate widgets in a Tkinter and a PyQt5 GUI environment.
-
-## [2014-02-09](2014-02-09) Automated Tests
-
-Testing, testing, testing. Peter Reutemann (http://www.cms.waikato.ac.nz/~fracpete/) will give a short intro to automated tests in Python and what frameworks can be used.
-
