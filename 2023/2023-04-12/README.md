@@ -19,5 +19,6 @@ The presentation slide show is available in either .odp or pdf formats:
 
 Python code was run to demonstrate parts of the presentation. The files of the python code are:
 
-* taylor_expansion.py - Shows 12 bit expansion to 16bit, and then reducing back to 12 bit.
-* 
+* **taylor_expansion.py** - Shows 12 bit expansion to 16 bit, and then reducing back to 12 bit.
+* **view_pyc_file_3.7_up.py** - Display the bytecode in a .pyc file. 
+* **display_op_code.py** - For the current version of python, display all the op codes.
