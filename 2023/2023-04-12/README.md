@@ -13,5 +13,11 @@
 * Demo of Raspberry Pi Pico Analog to Digital Converter
 
 The presentation slide show is available in either .odp or pdf formats:
+
 * [python_presentation_2023-04-12.odp](python_presentation_2023-04-12.odp)
 * [python_presentation_2023-04-12.pdf](python_presentation_2023-04-12.pdf)
+
+Python code was run to demonstrate parts of the presentation. The files of the python code are:
+
+* taylor_expansion.py - Shows 12 bit expansion to 16bit, and then reducing back to 12 bit.
+* 
