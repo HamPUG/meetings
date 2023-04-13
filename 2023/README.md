@@ -11,3 +11,8 @@ Let's jump on the ChatGPT hype train and test whether we can use it as a tool fo
 Over the years, we have explored how we can build user interfaces using tkinter, GTK, PyQt, kivy and Jupyter Notebooks. However, there are other, not so well known ways that have appeal.
 This time, Peter Reutemann will demo how you can use gradio (which is aimed at machine learning models; browser-based) and textual (user interfaces for the console) to quickly build some simple interfaces.
 
+
+## [2023-04-12](2023-04-12) Aspects of Python
+
+Stuck with your Python project and you would like to get a fresh perspective? Got a little project that you would like to demo for a few minutes? Then come along to this "social gathering" and catch up with other Pythonistas like Ian Stewart.
+Due to the University being closed on the Easter Monday and Tuesday, the meeting will be held on Wednesday 12 April.
