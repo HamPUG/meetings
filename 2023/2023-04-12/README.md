@@ -1,6 +1,6 @@
 # 2023-04-12
 
-**Ian Stewart** delivered an introducton on the following Python topics:
+**Ian Stewart** delivered an introduction on the following Python topics:
 
 * Hamilton Python Users Group 100th meeting
 * Intro to CPython
