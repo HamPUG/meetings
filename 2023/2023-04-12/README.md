@@ -22,3 +22,4 @@ Python code was run to demonstrate parts of the presentation. The files of the p
 * **taylor_expansion.py** - Shows 12 bit expansion to 16 bit, and then reducing back to 12 bit.
 * **view_pyc_file_3.7_up.py** - Display the bytecode in a .pyc file. 
 * **display_op_code.py** - For the current version of python, display all the op codes.
+* **adc_1.py** - MicroPython program for Raspberry Pi Pico Analog to Digital Converter
