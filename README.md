@@ -94,7 +94,7 @@ Below is a summary of the Meeting dates and the meeting topic.
 * [2020-12-14](2020/2020-12-14) **Python Games**
 
 ## [2021](2021)
-* [2021-02-??](2021/2021-02-15) **Blender**
+* [2021-02-15](2021/2021-02-15) **Blender**
 * [2021-03-08](2021/2021-03-08) **Introduction to Python and Introduction to Virtual Environments**
 * [2021-04-12](2021/2021-04-12) **DEC Alpha Computer Instruction Builder and Deep Learning on Edge devices.**
 * [2021-05-10](2021/2021-05-10) **REST API for a machine learning model**
@@ -122,3 +122,4 @@ Below is a summary of the Meeting dates and the meeting topic.
 ## [2023](2023)
 * [2023-02-13](2023/2023-02-13) **ChatGPT writing Python programs**
 * [2023-03-13](2023/2023-03-13) **Gradio and Textual user interfaces**
+* [2023-04-12](2023/2023-04-12) **Various aspects of Python**
