@@ -7,6 +7,6 @@ https://catalogue.data.govt.nz/dataset/biodiversity-vegetation-20072/resource/78
 ## Import
 
 ```bash
-geojson-to-sqlite data/Biodiversity_Vegetation_2007.db biodiversity_2007 data/Biodiversity_Vegetation_2007.geojson
+geojson-to-sqlite data/Biodiversity_Vegetation_2007.db biodiversity_vegetation_2007 data/Biodiversity_Vegetation_2007.geojson
 ```
 

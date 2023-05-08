@@ -7,5 +7,5 @@ https://github.com/waikato-datamining/adams-base/blob/1fb362b28910bbcbbdd3e17910
 ## Import
 
 ```bash
-csvs-to-sqlite data/iris.csv iris.db
+csvs-to-sqlite data/iris.csv data/iris.db
 ```

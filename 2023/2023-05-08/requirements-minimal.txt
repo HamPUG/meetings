@@ -5,3 +5,5 @@ datasette-vega==0.6.2
 csvs-to-sqlite==1.3
 geojson-to-sqlite==1.1.1
 datasette-cluster-map==0.17.2
+datasette-geojson-map==0.4.0
+
