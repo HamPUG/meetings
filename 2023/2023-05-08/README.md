@@ -6,3 +6,6 @@ Enter Datasette, which according to their website: helps people take data of any
 
 Peter Reutemann will take the tool for a spin and see what you can do with it.
 
+Video:
+
+* https://youtu.be/epyA6_mMe3I
