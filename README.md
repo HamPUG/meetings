@@ -123,3 +123,5 @@ Below is a summary of the Meeting dates and the meeting topic.
 * [2023-02-13](2023/2023-02-13) **ChatGPT writing Python programs**
 * [2023-03-13](2023/2023-03-13) **Gradio and Textual user interfaces**
 * [2023-04-12](2023/2023-04-12) **Various aspects of Python**
+* [2023-05-08](2023/2023-05-08) **datasette**
+* [2023-07-10](2023/2023-07-10) **pygubu-designer**
