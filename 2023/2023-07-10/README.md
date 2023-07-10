@@ -8,4 +8,4 @@ https://github.com/alejandroautalan/pygubu-designer/tree/master/examples
 
 Video:
 
-* TBA
+* https://www.youtube.com/watch?v=93S_7ixE3Y8
