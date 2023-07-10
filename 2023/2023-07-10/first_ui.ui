@@ -1,0 +1,184 @@
+<?xml version='1.0' encoding='utf-8'?>
+<interface version="1.3">
+  <object class="tk.Toplevel" id="toplevel1">
+    <property name="geometry">800x600</property>
+    <property name="height">200</property>
+    <property name="title" translatable="yes">My First App</property>
+    <property name="width">200</property>
+    <child>
+      <object class="ttk.Notebook" id="notebook1">
+        <property name="height">300</property>
+        <property name="width">200</property>
+        <layout manager="pack">
+          <property name="anchor">nw</property>
+          <property name="expand">true</property>
+          <property name="fill">both</property>
+          <property name="side">top</property>
+        </layout>
+        <child>
+          <object class="ttk.Notebook.Tab" id="tab_first" named="True">
+            <property name="text" translatable="yes">First</property>
+            <child>
+              <object class="ttk.Frame" id="frame1">
+                <property name="height">200</property>
+                <property name="width">200</property>
+                <layout manager="grid">
+                  <property name="column">0</property>
+                  <property name="row">0</property>
+                  <property name="sticky">ew</property>
+                </layout>
+                <containerlayout manager="grid">
+                  <property type="col" id="0" name="pad">10</property>
+                  <property type="col" id="all" name="pad">10</property>
+                  <property type="row" id="0" name="pad">10</property>
+                  <property type="row" id="all" name="pad">10</property>
+                </containerlayout>
+                <child>
+                  <object class="ttk.Label" id="label2">
+                    <property name="text" translatable="yes">label2</property>
+                    <layout manager="grid">
+                      <property name="column">0</property>
+                      <property name="row">0</property>
+                    </layout>
+                  </object>
+                </child>
+                <child>
+                  <object class="ttk.Button" id="my_super_cool_nottub" named="True">
+                    <property name="command" type="command" cbtype="with_wid">on_button1_click</property>
+                    <property name="text" translatable="yes">button1</property>
+                    <layout manager="grid">
+                      <property name="column">1</property>
+                      <property name="columnspan">1</property>
+                      <property name="row">0</property>
+                      <property name="sticky">ew</property>
+                    </layout>
+                  </object>
+                </child>
+                <child>
+                  <object class="ttk.Label" id="label3">
+                    <property name="text" translatable="yes">label3</property>
+                    <layout manager="grid">
+                      <property name="column">0</property>
+                      <property name="row">1</property>
+                    </layout>
+                  </object>
+                </child>
+                <child>
+                  <object class="ttk.Button" id="button2">
+                    <property name="command" type="command" cbtype="simple">on_button2_click</property>
+                    <property name="text" translatable="yes">button2 long story</property>
+                    <layout manager="grid">
+                      <property name="column">1</property>
+                      <property name="row">1</property>
+                      <property name="sticky">ew</property>
+                    </layout>
+                  </object>
+                </child>
+                <child>
+                  <object class="ttk.Scale" id="scale1">
+                    <property name="from_">0</property>
+                    <property name="orient">horizontal</property>
+                    <property name="to">255</property>
+                    <property name="value">127</property>
+                    <property name="variable">int:scale_var</property>
+                    <layout manager="grid">
+                      <property name="column">0</property>
+                      <property name="row">2</property>
+                    </layout>
+                  </object>
+                </child>
+                <child>
+                  <object class="ttk.Checkbutton" id="checkbutton1">
+                    <property name="offvalue">false</property>
+                    <property name="onvalue">true</property>
+                    <property name="text" translatable="yes">checkbutton1</property>
+                    <property name="variable">string:check_var</property>
+                    <layout manager="grid">
+                      <property name="column">0</property>
+                      <property name="row">3</property>
+                    </layout>
+                  </object>
+                </child>
+              </object>
+            </child>
+          </object>
+        </child>
+        <child>
+          <object class="ttk.Notebook.Tab" id="tab_second" named="True">
+            <property name="text" translatable="yes">Second</property>
+            <child>
+              <object class="ttk.Frame" id="frame2">
+                <property name="height">200</property>
+                <property name="width">200</property>
+                <layout manager="pack">
+                  <property name="expand">true</property>
+                  <property name="fill">both</property>
+                  <property name="side">top</property>
+                </layout>
+              </object>
+            </child>
+          </object>
+        </child>
+      </object>
+    </child>
+    <child>
+      <object class="ttk.Frame" id="frame3">
+        <property name="height">40</property>
+        <property name="width">200</property>
+        <layout manager="pack">
+          <property name="anchor">sw</property>
+          <property name="expand">false</property>
+          <property name="fill">x</property>
+          <property name="side">bottom</property>
+        </layout>
+        <child>
+          <object class="ttk.Label" id="label1">
+            <property name="text" translatable="yes">Hello world</property>
+            <layout manager="pack">
+              <property name="side">left</property>
+            </layout>
+          </object>
+        </child>
+        <child>
+          <object class="ttk.Sizegrip" id="sizegrip1">
+            <layout manager="pack">
+              <property name="anchor">se</property>
+              <property name="side">bottom</property>
+            </layout>
+          </object>
+        </child>
+      </object>
+    </child>
+    <child>
+      <object class="pygubu.builder.widgets.toplevelmenu" id="toplevelmenu1">
+        <child>
+          <object class="tk.Menu" id="menu1">
+            <property name="tearoff">false</property>
+            <child>
+              <object class="tk.Menuitem.Submenu" id="submenu1">
+                <property name="label" translatable="yes">File</property>
+                <property name="specialmenu">system</property>
+                <property name="tearoff">false</property>
+                <property name="underline">0</property>
+                <child>
+                  <object class="tk.Menuitem.Command" id="command1">
+                    <property name="accelerator">Ctrl+O</property>
+                    <property name="command" type="command" cbtype="with_wid">on_file_open_click</property>
+                    <property name="label" translatable="yes">Open...</property>
+                  </object>
+                </child>
+                <child>
+                  <object class="tk.Menuitem.Command" id="command2">
+                    <property name="command" type="command" cbtype="simple">on_file_close_click</property>
+                    <property name="label" translatable="yes">Close</property>
+                    <property name="underline">1</property>
+                  </object>
+                </child>
+              </object>
+            </child>
+          </object>
+        </child>
+      </object>
+    </child>
+  </object>
+</interface>

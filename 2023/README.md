@@ -24,3 +24,8 @@ Whilst there are plenty of Python libraries around for exploring data, like Pand
 Enter Datasette, which according to their website: helps people take data of any shape, analyze and explore it, and publish it as an interactive website and accompanying API and is aimed at data journalists, museum curators, archivists, local governments, scientists, researchers and anyone else who has data that they wish to share with the world.
 
 Peter Reutemann will take the tool for a spin and see what you can do with it.
+
+## [2023-05-10](2023-07-10) pygubu-designer
+
+tkinter is the standard Python interface to the Tk GUI toolkit and the de-facto standard for Python user interfaces. However, developing interfaces by hand is slow and error-prone. Peter Reutemann will demo the pygubu designer, which makes creating tkinter interfaces not only faster, but also easier to create good looking ones.
+
