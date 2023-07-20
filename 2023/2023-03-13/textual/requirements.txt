@@ -26,7 +26,7 @@ mkdocs-exclude==1.0.2
 msgpack==1.0.5
 multidict==6.0.4
 packaging==23.0
-Pygments==2.14.0
+Pygments==2.15.0
 python-dateutil==2.8.2
 PyYAML==6.0
 pyyaml-env-tag==0.1
