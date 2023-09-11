@@ -25,7 +25,16 @@ Enter Datasette, which according to their website: helps people take data of any
 
 Peter Reutemann will take the tool for a spin and see what you can do with it.
 
-## [2023-05-10](2023-07-10) pygubu-designer
+## [2023-07-10](2023-07-10) pygubu-designer
 
 tkinter is the standard Python interface to the Tk GUI toolkit and the de-facto standard for Python user interfaces. However, developing interfaces by hand is slow and error-prone. Peter Reutemann will demo the pygubu designer, which makes creating tkinter interfaces not only faster, but also easier to create good looking ones.
+
+## [2023-08-14](2023-08-14) Census 2023
+
+David Clarke was involved in the development of the system underpinning the recent census. He will provide a high-level view of how the responses are turned into useable data. Due to the sensitive nature of the project, there will be no actual census data or source code from the system available or viewable at any point. However, there are still plenty of options for discussing the tools and techniques used for deriving the output data from the input responses.
+
+
+## [2023-09-11](2023-09-11) Developing a Python Beginner Course
+
+Daniel Tait is a Spatial Analyst who creates technical courses as a hobby. He is currently creating a course for beginners to learn Python. This presentation offers a behind-the-scenes look at the course creation process, highlighting the challenges faced, decisions made, and teaching techniques employed to ensure the optimal learning experience.
 
