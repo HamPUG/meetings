@@ -1,0 +1,15 @@
+[tool.poetry]
+name = "census23"
+version = "0.1.0"
+description = ""
+authors = ["David Clarke <davidclarke@zebracrossing.co.nz>"]
+readme = "README.md"
+
+[tool.poetry.dependencies]
+python = "^3.11"
+behave = "^1.2.6"
+
+
+[build-system]
+requires = ["poetry-core"]
+build-backend = "poetry.core.masonry.api"

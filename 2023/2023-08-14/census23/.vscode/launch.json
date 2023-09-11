@@ -1,0 +1,36 @@
+{
+    // Use IntelliSense to learn about possible attributes.
+    // Hover to view descriptions of existing attributes.
+    // For more information, visit: https://go.microsoft.com/fwlink/?linkid=830387
+    "version": "0.2.0",
+    "configurations": [
+        {
+            "name": "pytest: current file",
+            "type": "python",
+            "request": "launch",
+            "cwd": "${workspaceFolder}",
+            "module": "pytest",
+            "justMyCode": true,
+            "console": "integratedTerminal",
+            "args": [
+                "-m",
+                "not integration",
+                "${file}",
+            ]
+        },
+        {
+            "name": "behave: current file",
+            "type": "python",
+            "request": "launch",
+            "cwd": "${workspaceFolder}",
+            "module": "behave",
+            "justMyCode": true,
+            "console": "integratedTerminal",
+            "args": [
+                "-q",
+                "-k",
+                "${file}",
+            ]
+        }
+    ]
+}
