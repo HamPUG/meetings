@@ -8,4 +8,4 @@ techniques employed to ensure the optimal learning experience.
 
 Video:
 
-* TBC
+* https://www.youtube.com/watch?v=rWG2Ro92qgI
